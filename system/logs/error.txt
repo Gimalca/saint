@@ -22400,3 +22400,19 @@
 2015-04-14 2:14:18 - PHP Notice:  Undefined variable: text_from_the_staff in C:\wamp\www\saint\catalog\view\theme\vigo\template\module\pavbloglatest.tpl on line 10
 2015-04-14 2:14:18 - PHP Notice:  Undefined variable: download in C:\wamp\www\saint\catalog\view\theme\vigo\template\common\footer.tpl on line 60
 2015-04-14 2:14:19 - PHP Notice:  Use of undefined constant label_new_border_color - assumed 'label_new_border_color' in C:\wamp\www\saint\vqmod\vqcache\vq2-catalog_view_theme_vigo_template_common_header.tpl on line 247
+2015-04-23 8:44:33 - PHP Notice:  Error: Could not load template D:\localhost\www\aint/catalog/view/theme/default/template/module/welcome.tpl! in D:\localhost\www\saint\vqmod\vqcache\vq2-system_engine_controller.php on line 90
+2015-04-23 8:45:01 - PHP Notice:  Undefined variable: text_from_the_staff in D:\localhost\www\saint\catalog\view\theme\vigo\template\module\pavbloglatest.tpl on line 10
+2015-04-23 8:45:07 - PHP Notice:  Undefined variable: download in D:\localhost\www\saint\catalog\view\theme\vigo\template\common\footer.tpl on line 60
+2015-04-23 8:45:07 - PHP Notice:  Use of undefined constant label_new_border_color - assumed 'label_new_border_color' in D:\localhost\www\saint\vqmod\vqcache\vq2-catalog_view_theme_vigo_template_common_header.tpl on line 247
+2015-04-23 8:45:56 - PHP Notice:  Undefined variable: download in D:\localhost\www\saint\catalog\view\theme\vigo\template\common\footer.tpl on line 60
+2015-04-23 8:45:56 - PHP Notice:  Use of undefined constant label_new_border_color - assumed 'label_new_border_color' in D:\localhost\www\saint\vqmod\vqcache\vq2-catalog_view_theme_vigo_template_common_header.tpl on line 247
+2015-04-23 8:45:56 - PHP Warning:  Illegal string offset 'value' in D:\localhost\www\saint\catalog\view\theme\vigo\template\product\category.tpl on line 100
+2015-04-23 8:45:56 - PHP Warning:  Illegal string offset 'href' in D:\localhost\www\saint\catalog\view\theme\vigo\template\product\category.tpl on line 103
+2015-04-23 8:45:56 - PHP Warning:  Illegal string offset 'text' in D:\localhost\www\saint\catalog\view\theme\vigo\template\product\category.tpl on line 103
+2015-04-23 8:45:56 - PHP Warning:  Invalid argument supplied for foreach() in D:\localhost\www\saint\catalog\view\theme\vigo\template\product\category.tpl on line 382
+2015-04-23 8:47:00 - PHP Notice:  Undefined variable: download in D:\localhost\www\saint\catalog\view\theme\vigo\template\common\footer.tpl on line 60
+2015-04-23 8:47:01 - PHP Notice:  Use of undefined constant label_new_border_color - assumed 'label_new_border_color' in D:\localhost\www\saint\vqmod\vqcache\vq2-catalog_view_theme_vigo_template_common_header.tpl on line 247
+2015-04-23 8:47:01 - PHP Warning:  Illegal string offset 'value' in D:\localhost\www\saint\catalog\view\theme\vigo\template\product\category.tpl on line 100
+2015-04-23 8:47:01 - PHP Warning:  Illegal string offset 'href' in D:\localhost\www\saint\catalog\view\theme\vigo\template\product\category.tpl on line 103
+2015-04-23 8:47:01 - PHP Warning:  Illegal string offset 'text' in D:\localhost\www\saint\catalog\view\theme\vigo\template\product\category.tpl on line 103
+2015-04-23 8:47:01 - PHP Warning:  Invalid argument supplied for foreach() in D:\localhost\www\saint\catalog\view\theme\vigo\template\product\category.tpl on line 382
