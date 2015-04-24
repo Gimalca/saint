@@ -3,3 +3,6 @@
 /system/cache/
 /vqmod/vqcache/
 /vqmod/logs/
+config.php
+/admin/config.php
+/system/logs/
