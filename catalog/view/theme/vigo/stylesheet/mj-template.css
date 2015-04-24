@@ -1122,10 +1122,10 @@ ul.nav-child li:hover > ul.nav-child {
 .simple_menu li.submenu a:hover span {
     color: #f0877c;
 }
-/*Simple Menu End*/
-.block-category-nav .akordeon-heading a, .block-category-nav a, .block-layered-nav a {text-transform: uppercase;}
-#columnright .narrow-by-list .box-filter .akordeon-item {margin-top: 70px;}
-#columnright .narrow-by-list .box-filter .akordeon-item .akordeon-item-head{margin-bottom:30px;}
+/*Simple Menu End
+.block-category-nav .akordeon-heading a, .block-category-nav a, .block-layered-nav a {text-transform: uppercase;}*/
+#columnright .narrow-by-list .box-filter .akordeon-item {margin-top: 10px;}
+#columnright .narrow-by-list .box-filter .akordeon-item .akordeon-item-head{margin-bottom:20px; width: 208px}
 .products-grid.producteffect5 .short_desc{margin-top:20px; color:#777777;}
 .products-grid.producteffect5 .price-box .regular-price .price, .products-grid.producteffect5 .price-box .old-price .price, .products-grid.producteffect5 .price-box .special-price .price{color: #F0877C;}
 

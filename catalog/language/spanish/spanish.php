@@ -49,6 +49,7 @@ $_['button_voucher']        = 'Apicar Vale';
 $_['button_upload']         = 'Subir Archivo';
 $_['button_reward']         = 'Aplicar Puntos';
 $_['button_quote']          = 'Obtener Cotizaciones';
+$_['button_filter']          = 'Filtrar';
 
 // Error
 $_['error_upload_1']        = 'Cuidado: El archivo subido excede la directiva upload_max_filesize (tamaño máximo subida) de php.ini!';

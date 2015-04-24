@@ -116,7 +116,7 @@
                 <?php if ($products) { ?>
                 <?php if($listing_effect==6){ ?>
                 <ul class="products-grid producteffect<?php echo "$listing_effect"; ?>">
-                    <?php foreach ($products as $product) { ?>
+                    <?php foreach ($products as $product) { print_r($product)?>
                     <li class="item">
 
                         <div class="main_image" >
@@ -131,6 +131,7 @@
                                 <?php } ?>
 
                                 <div class="hover-area" style="display: none;">
+                                    <h3> <?php   echo $product['manufacturer']; ?></h3>
                                     <h2 class="product-name"><a href="<?php echo $product['href']; ?>">
 
 
@@ -287,7 +288,7 @@
                                     <?php } ?>
                                 </div>
                             </div>
-
+                            <h2 class="product-fabricante"> <?php   echo $product['manufacturer']; ?></h2>
                             <h2 class="product-name"><a href="<?php echo $product['href']; ?>">
 
                                     <?php 
@@ -501,11 +502,15 @@ function display(view) {
                     html += '</ul>';
                     html += '</div>';
                     html += '</div>';
-                    html += '<h2 class="product-name">' + $(element).find('.product-name').html() + '</h2>';
-                    html += '<h2 class="product-fabricante">' + $(element).find('.product-fabricante').html() + '</h2>';
+                    html += '<div class="des-product">';
+                    html += '<div class="product-fabricante">' + $(element).find('.product-fabricante').html() + '</div>';
+                    html += '<div class="product-name">' + $(element).find('.product-name').html() + '</div>';
+                     
+                   
                     var price = $(element).find('.price-box').html();
                     if (price != null) {
             html += '<div class="price-box">' + price + '</div>';
+            html += '</div>';
             }
 
             $(element).html(html);

@@ -95,7 +95,8 @@ class ControllerModuleCategory extends Controller
 
                         $l3_data[] = array(
                             'category_id' => $l3['category_id'],
-                            'name' => $l3['name'] . ' (' . $product_total . ')',
+                            //'name' => $l3['name'] . ' (' . $product_total . ')',
+                            'name' => $l3['name'] ,
                             'href' => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id'] . '_' . $l3['category_id'])
                         );
                     } else {
@@ -119,7 +120,8 @@ class ControllerModuleCategory extends Controller
 
                     $children_data[] = array(
                         'category_id' => $child['category_id'],
-                        'name' => $child['name'] . ' (' . $product_total . ')',
+                        //'name' => $child['name'] . ' (' . $product_total . ')',
+                        'name' => $child['name'] ,
                         'href' => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id']),
                         'children3' => $l3_data
                     );
@@ -146,7 +148,8 @@ class ControllerModuleCategory extends Controller
             if ($setting['count']) {
 
                 $this->data['categories'][] = array(
-                    'name' => $category['name'] . ' (' . $product_total . ')',
+                    //'name' => $category['name'] . ' (' . $product_total . ')',
+                    'name' => $category['name'],
                     'children' => $children_data,
                     'href' => $this->url->link('product/category', 'path=' . $category['category_id']),
                     'category_id' => $category['category_id']
