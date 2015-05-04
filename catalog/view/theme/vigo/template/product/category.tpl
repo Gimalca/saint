@@ -14,16 +14,23 @@
     </div>
 
     <div class="main container">
+        
+        
         <?php echo $content_top; ?>
-
 
         <?php if ($thumb || $description) { ?>
 
         <?php if ($thumb) { ?>
         <p class="category-image"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></p>
         <?php } ?>
+        
         <?php if ($description) { ?>
-        <?php echo $description; ?>
+        <div class=" header-category">
+            <div class=" title">
+                <?php echo $heading_title; ?>
+            </div>
+        </div>
+        <?php //echo $description; ?>
         <?php } ?>
 
         <?php } ?>

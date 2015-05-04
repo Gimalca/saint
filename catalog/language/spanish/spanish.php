@@ -31,6 +31,7 @@ $_['button_coupon']         = 'Aplicar Cupón';
 $_['button_delete']         = 'Borrar';
 $_['button_download']       = 'Descargar';
 $_['button_edit']           = 'Editar';
+$_['button_filter']         = 'Filtrar';
 $_['button_new_address']    = 'Nueva Dirección';
 $_['button_change_address'] = 'Cambiar Dirección';
 $_['button_reviews']        = 'Comentarios';
@@ -49,7 +50,7 @@ $_['button_voucher']        = 'Apicar Vale';
 $_['button_upload']         = 'Subir Archivo';
 $_['button_reward']         = 'Aplicar Puntos';
 $_['button_quote']          = 'Obtener Cotizaciones';
-$_['button_filter']          = 'Filtrar';
+
 
 // Error
 $_['error_upload_1']        = 'Cuidado: El archivo subido excede la directiva upload_max_filesize (tamaño máximo subida) de php.ini!';

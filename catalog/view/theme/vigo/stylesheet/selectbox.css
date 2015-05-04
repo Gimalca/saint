@@ -90,7 +90,7 @@
 
 
 
-.selectbox.default .select { height: 30px; padding: 0 28px 0 0; color: #999; line-height: 28px; background-color: transparent; }
+.selectbox.default .select { height: 30px; padding: 0 28px 0 0; color: #000; line-height: 28px; background-color: transparent; }
 .selectbox.default:hover .select { background-color: transparent; }
 .selectbox.default .select .text {
     padding: 0 10px;
