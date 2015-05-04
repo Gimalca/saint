@@ -760,7 +760,7 @@ tr.summary-details-excluded { font-style:italic; }
 .navbar .navbar-nav>.active>a { background-color: transparent; }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {background-color: transparent;}
 
-.container > .navbar-header { margin: 0; border-top: 1px solid #eee; }
+.container > .navbar-header { margin: 0;  }
 .container > .navbar-collapse { margin: 0; border: 0; }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus { background: transparent; }
 .navbar-default .navbar-toggle { border: 0; float: left; margin: 0; border-top: 1px solid #444; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; padding: 16px 0; font-weight: normal; font-size: 18px; color: #444; margin-top: -1px; }
@@ -2266,11 +2266,12 @@ a.custom-icon {
  a.main-menu { height: 38px;width: 14px; background-image: url(../image/top_links2.png); background-repeat: no-repeat; transition: background-image 300ms ease-in-out, color 300ms ease-in-out; -moz-transition: background-image 300ms ease-in-out, color 300ms ease-in-out; -webkit-transition: background-image 300ms ease-in-out, color 300ms ease-in-out; -o-transition: background-image 300ms ease-in-out, color 300ms ease-in-out; }
  a.main-menu { background-position: 0 22px; padding: 0px !important }
  .sticky-menu a.main-menu{ padding: }
-.header-container .top-links ul.links li a:hover { background-image: url(../image/top_links_hover.png); }
+.header-container .top-links ul.links li a:hover { background-image: url(../image/top_links.png); }
 .header-container .top-links ul.links li.first a { padding-left: 20px; }
  a.top-link-home { background-position: 0 4px; }
 
-a.top-link-account { background-position: 15px -13px; }
+a.top-link-account { background-position: 15px -22px; }
+a.top-link-account:hover { background-position: 15px -22px; }
 a.top-link-cart { background-position: 15px -31px; }
 a.top-link-checkout { background-position: 15px -46px; }
 .header-container .top-links ul.right-links { margin-top: 7px; }
