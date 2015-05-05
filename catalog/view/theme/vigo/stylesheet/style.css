@@ -727,6 +727,7 @@ tr.summary-details-excluded { font-style:italic; }
 #nav_custom li.level0:hover > a { color: #f0877c; border-top: 1px solid #444; cursor: pointer; }
 
 /* 1st Level */
+#nav_custom li.level0:hover ul {display: block;}
 #nav_custom ul li { display: inline-block; margin:0; padding-bottom:1px; vertical-align: top; width: 100%; padding: 0 20px; }
 #nav_custom ul li img { width: 100%; margin-top: 20px; }
 #nav_custom ul li ul { position: static; display: block; }
