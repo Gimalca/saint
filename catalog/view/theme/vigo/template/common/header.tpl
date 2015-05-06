@@ -424,17 +424,17 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
                 <?php if ($categories) { ?>
                     <ul id="nav_custom" class="nav navbar-nav">
                         <li class="level0">
-                            <a href="http://200.47.182.254:8080/saint/index.php?route=common/home" class="main-menu"></a>
+                            <a id="linkm" href="http://200.47.182.254:8080/saint/index.php?route=common/home" class="main-menu"></a>
                         </li>
                         <?php foreach ($categories as $category) { ?>
                             
                        
                             <?php if($category['name'] != 'Blogs'): ?>
-                             <li class="level0"><a href="<?php echo $category['href']; ?>"><span><?php echo $category['name'];?></span></a>
+                             <li class="level0"><a id="linkm" href="<?php echo $category['href']; ?>"><span><?php echo $category['name'];?></span></a>
                             
                             <?php else: ?> 
-                            <li class="level0"><a href="http://200.47.182.254:8080/saint/index.php?route=product/category&amp;path=163"><span>Bloggers</span></a>
-                            <li class="level0"><a href="<?php echo $category['href']; ?>"><span><?php $category['name'] = 'Blog'; echo $category['name'];?></span></a>
+                            <li class="level0"><a id="linkm" href="http://200.47.182.254:8080/saint/index.php?route=product/category&amp;path=163"><span>Bloggers</span></a>
+                            <li class="level0"><a id="linkm" href="<?php echo $category['href']; ?>"><span><?php $category['name'] = 'Blog'; echo $category['name'];?></span></a>
                             <?php endif; ?>    
                             <span class="plus"></span>
                               <?php if ($category['children']) { ?>
@@ -500,7 +500,7 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
                     <ul  class="nav navbar-nav simple_menu for-desktop">
                         <?php foreach ($categories as $category) { ?>
                         
-                            <li class="level0"><a href="<?php echo $category['href']; ?>"><span><?php echo $category['name']; ?></span></a>
+                            <li class="level0"><a id="linkm" href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
                             
                               <?php if ($category['children']) { ?>
                                     
@@ -539,7 +539,7 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
                     
                     <ul id="nav_custom" class="nav navbar-nav for-mobile">
                         <?php foreach ($categories as $category) { ?>
-                        	<li class="level0"><a href="<?php echo $category['href']; ?>"><span><?php echo $category['name']; ?></span></a>
+                        	<li class="level0"><a id="linkm" href="<?php echo $category['href']; ?>"><span><?php echo $category['name']; ?></span></a>
                             <span class="plus"></span>
                               <?php if ($category['children']) { ?>
                                     
@@ -581,7 +581,7 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
                               <?php } ?>
                             </li>
                         <?php } ?>
-                        	<li class="level0 for-desktop custom-menu parent"><a href="#"><span>Custom</span></a>
+                        	<li class="level0 for-desktop custom-menu parent"><a id="linkm" href="#"><span>Custom</span></a>
                             <ul class="level1" style="display: none;">
                             <li style="width: 100%;" class="level1 first">
                             <div class="row">
@@ -687,7 +687,7 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
                 scrolled = false;
             }
         });
-        jQuery("#nav_custom li.level0").mouseover(function(){
+        {*jQuery("#nav_custom li.level0").mouseover(function(){
             if(jQuery(window).width() >= 768){
                 jQuery(this).children('ul.level1').fadeIn();
             }
@@ -697,7 +697,7 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
                 jQuery(this).children('ul.level1').hide();
             }
             return false;
-        });
+        });*}
         jQuery("#nav_custom li span.plus").click(function(e){
             e.stopPropagation();
             if(jQuery(this).hasClass('expanded')){
