@@ -687,7 +687,7 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
                 scrolled = false;
             }
         });
-        {*jQuery("#nav_custom li.level0").mouseover(function(){
+       /* jQuery("#nav_custom li.level0").mouseover(function(){
             if(jQuery(window).width() >= 768){
                 jQuery(this).children('ul.level1').fadeIn();
             }
@@ -697,7 +697,7 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
                 jQuery(this).children('ul.level1').hide();
             }
             return false;
-        });*}
+        }); */
         jQuery("#nav_custom li span.plus").click(function(e){
             e.stopPropagation();
             if(jQuery(this).hasClass('expanded')){
