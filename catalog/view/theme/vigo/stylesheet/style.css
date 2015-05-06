@@ -2290,7 +2290,7 @@ a.sign-link:hover { color: #555; text-decoration: none; }
 
 .language-switcher, .currency-switcher {position: relative; z-index: 1001;}
 .currency-switcher .selectbox .select { width: 75px; }
-.language-switcher .selectbox .select { width: 115px; }
+.language-switcher .selectbox .select { width: 75px; }
 
 li.mini-cart #topCartContent { position: absolute; right: 0; top: 40px; width: 300px; background-color: #fff; box-shadow: 2px 2px 5px 0px #ddd; -moz-box-shadow: 2px 2px 5px 0px #ddd; -webkit-box-shadow: 2px 2px 5px 0px #ddd; z-index: 15; opacity: 0; filter: alpha(opacity=0); transition: opacity 300ms ease-in-out; -moz-transition: opacity 300ms ease-in-out; -webkit-transition: opacity 300ms ease-in-out; -o-transition: opacity 300ms ease-in-out; display: none; padding: 20px; text-align: left; text-transform: none;  font-size: 14px; color: #000; }
 

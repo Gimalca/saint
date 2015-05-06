@@ -6,3 +6,6 @@
 config.php
 /admin/config.php
 /system/logs/
+/.settings/
+/deployment.properties
+/deployment.xml
