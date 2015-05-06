@@ -190,7 +190,7 @@ ul,ol         { list-style:none; }
 
 /* Tools */
 .hidden       { display:block !important; border:0 !important; margin:0 !important; padding:0 !important; font-size:0 !important; line-height:0 !important; width:0 !important; height:0 !important; overflow:hidden !important; }
-.nobr         { white-space:nowrap !important; }
+.nobr         { white-space:nowrap !important; color: black; }
 .wrap         { white-space:normal !important; }
 .a-left       { text-align:left !important; }
 .a-center     { text-align:center !important; }
@@ -208,7 +208,8 @@ ul,ol         { list-style:none; }
 .no-padding   { padding:0 !important; }
 .no-bg        { background:none !important; }
 
-
+/*Bordes de la tabla*/
+table{ border-color: black; }
 /* ======================================================================================= */
 
 
@@ -541,8 +542,8 @@ p.required { font-size:11px; text-align:right; color:#f0877c; }
 .data-table th { padding:3px 8px; font-weight:bold; }
 .data-table td { padding:3px 8px; }
 
-.data-table thead th { font-weight: 600; border-top: 2px solid #999; border-bottom: 2px solid #999; padding: 5px 0; color: #444; white-space: nowrap; vertical-align: middle; font-size: 16px; text-transform: uppercase; text-align: center; }
-.data-table thead th span { width: 100%; display: inline-block; border-right: 1px solid #ccc; line-height: 16px; margin-right: -1px; padding: 0 5px; }
+.data-table thead th { font-weight: 600; border-top: 2px solid black; border-bottom: 2px solid black; padding: 5px 0; color: #444; white-space: nowrap; vertical-align: middle; font-size: 16px; text-transform: uppercase; text-align: center; }
+.data-table thead th span { width: 100%; display: inline-block; border-right: 1px solid black; line-height: 16px; margin-right: -1px; padding: 0 5px; }
 .data-table thead th.wrap { white-space:normal; }
 .data-table thead th a,
 .data-table thead th a:hover { color:#fff; }
@@ -2117,15 +2118,12 @@ div.social-icons a {
     text-indent: -9999px;
     margin-left: 10px;
     margin-bottom: 0px;
+    margin-top: 2px;
     /*background-color: #3b3b3b;*/
     transition: background-color 200ms ease-in-out;
     -moz-transition: background-color 200ms ease-in-out;
     -webkit-transition: background-color 200ms ease-in-out;
     -o-transition: background-color 200ms ease-in-out;
-}
-div.social-icons a:hover {
-    background-position: 0 -40px;
-    /*background-color: #f0877c;*/
 }
 a.facebook-icon {
     background: url(../images/socialicons/facebook.png) no-repeat;

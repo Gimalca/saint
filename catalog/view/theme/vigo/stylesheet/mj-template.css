@@ -444,7 +444,7 @@ a.no-border{border:none !important;}
 }
 .blogpage .add-to-box .add-to-links li{display:inline !important;}
 .akordeon.category-list {border-bottom: medium none;}
-#shopping-cart-table {margin-top: 10px;}
+#shopping-cart-table {margin-top: 10px; color: black;}
 .cart .cart-collaterals .akordeon .cart-module {margin-left: 20px;}
 .cart .totals td {border-bottom: 3px double #E2E2E2;}
 #product_comparison {margin-top: 20px;}

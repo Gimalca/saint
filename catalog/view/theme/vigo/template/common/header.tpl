@@ -692,7 +692,7 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
                 jQuery(this).children('ul.level1').fadeIn();
             }
             return false;
-        }).mouseleave(function(){
+        }){*.mouseleave(function(){
             if(jQuery(window).width() >= 768){
                 jQuery(this).children('ul.level1').hide();
             }
