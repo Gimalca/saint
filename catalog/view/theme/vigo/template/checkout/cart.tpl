@@ -12,7 +12,6 @@
 <div id="content" class="main-container col1-layout"><?php echo $content_top; ?>
   
   
-  
   <div class="breadcrumbs">
 		<div class="container">
         <div class="page-title"><?php echo $heading_title; ?></div>
@@ -28,54 +27,48 @@
     	<div class="page-title title-buttons">
         	<h1><?php echo $heading_title; ?></h1>
     	</div>
-        <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-            <fieldset>
-              <table id="shopping-cart-table" class="data-table cart-table">
-                <thead>
-                  <tr class="first last">
-                    <!--<th  rowspan="1"><?php echo $column_image; ?></th>-->
-                    <th rowspan="1" colspan="2"><span class="nobr"><?php echo $column_name; ?></span></th>
-                    <th colspan="1"><span class="nobr"><?php echo $column_model; ?></span></th>
-                    <th rowspan="1"><span class="nobr"><?php echo $column_quantity; ?></span></th>
-                    <th colspan="1"><span class="nobr"><?php echo $column_price; ?></span></th>
-                    <th colspan="1"><span class="nobr"><?php echo $column_total; ?></span></th>
-                    <th class="last" rowspan="1">
-                    	<input type="image" src="catalog/view/theme/vigo/images/icon_remove_15x15.png" alt="<?php echo $button_update; ?>" title="<?php echo $button_update; ?>" />
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <?php foreach ($products as $product) { ?>
-                    <?php if($product['recurring']): ?>
-                      <tr>
-                          <td colspan="6" style="border:none;"><img src="catalog/view/theme/vigo/image/reorder.png" alt="" title="" style="float:left;" />
-                          <span style="float:left; line-height:18px; margin-left:10px;"> 
-                              <strong><?php echo $text_recurring_item ?></strong>
-                              <?php echo $product['profile_description'] ?>
-                          </span>
-                          </td>
-                        </tr>
-                    <?php endif; ?>
-                  <tr>
-                    <td class="no-border-right pr-img-td"><?php if ($product['thumb']) { ?>
-                   <a class="btn-remove btn-remove2 for-mobile" href="<?php echo $product['remove']; ?>"></a>
-                      <a class="product-image" href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" /></a>
-                      <?php } ?></td>
-                    <td class="a-left product-name-td">
-                    	<h2 class="product-name">
-                        	<a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
-                        </h2>
-                      <?php if (!$product['stock']) { ?>
-                      <span class="stock">***</span>
-                      <?php } ?>
-                      
-                      <div class="item-options">
-                      <?php foreach ($product['option'] as $option) { ?>
-                      	<div>
+          <div class=" row carro-compras">
+            <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+            <fieldset class="col-md-12">
+                <div class="row ">
+                    <div class="col-md-8 col-sm-12" >
+                    <?php foreach ($products as $product) { ?>
+                    <div class="carro-producto col-xs-12 col-sm-6 col-md-12">
+                        
+                        <div class="row imagen-producto col-md-4">
+                            
+                            <?php if ($product['thumb']) { ?>                        
+                        <a class="product-image" href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" /></a>
+                        <?php } ?>
+                        </div>
+                        
+                        <div class="row nombre-container col-md-8">
+                            <h2 class="product-name">
+                                    <a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
+                            </h2>
+                            <?php if (!$product['stock']) { ?>
+                                <span class="stock">El Item no esta disponible</span>
+                            <?php } else { ?>
+                                <span class="stock">En Stock</span>
+                                <?php } ?>
+                        </div>
+                        <div class="datos-container col-md-8">
+                            <?php foreach ($product['option'] as $option) { ?>
+                      	<div class="col-md-6" id="posicion">
                         	<?php echo $option['name']; ?>: <b><?php echo $option['value']; ?></b>
                         </div>
                       <?php } ?>
-                      <?php if($product['recurring']): ?>
+                      <div class="col-md-6">
+                                <p class="qty-price" id="posicion">
+                                    QTY: <?php echo $product['quantity']; ?>                                                                  
+                                                                
+                                </p>
+                      </div>
+                      <div class="modelo-container col-md-6" id="posicion">
+                          Modelo:  <b><?php echo $product['model']; ?></b> 
+                        </div>
+                        <div class="reward-container col-md-6" id="posicion">
+                            <?php if($product['recurring']): ?>
                         <div>
                         	<?php echo $text_payment_profile ?>: <b><?php echo $product['profile_name'] ?></b>
                         </div>
@@ -83,160 +76,68 @@
                         <?php if ($product['reward']) { ?>
                           <div><?php echo $product['reward']; ?></div>
                           <?php } ?>
-                      </div>
-                    </td>
-                    
-                    
-                    <td class="model"><?php echo $product['model']; ?></td>
-                    <td class="a-center qty-td">
-                    	<div class="qty-holder">
-                        	<input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" class="input-text qty"/>
-                            <div class="qty-changer">
-                                <a class="qty_inc" href="javascript:void(0)">
-                                    <span>+</span>
-                                </a>
-                            </div>
-                            <div class="clear"></div>
                         </div>
-                        <div class="qtl-refress">
-                        	<input type="image" src="catalog/view/theme/vigo/images/update.png" alt="<?php echo $button_update; ?>" title="<?php echo $button_update; ?>" />
-                        </div>
-                    </td>
-                    <td class="a-center unit-price">
-                    	<span class="mobile-show"><?php echo $column_price; ?></span>
+                      <div class="col-md-6"></div>
+                           <div class="precio-unitario col-md-6" id="posicion">
+                            <span class="mobile-show"><?php echo $column_price; ?></span>
                     	<span class="cart-price">
-	                        <span class="price"><?php echo $product['price']; ?></span>
+                            <span class="price"><b>SUBTOTAL:  <?php echo $product['price']; ?></b></span>
                         </span>
-                    </td>
-                    <td class="a-center sub-total">
-                    	<span class="mobile-show"><?php echo $column_total; ?></span>
-                        <span class="cart-price">
-                        	<span class="price"><?php echo $product['total']; ?></span>
-                        </span>
-                   </td>
-                   	<td class="a-center rm-td for-desktop last">
-                    	<a class="btn-remove btn-remove2" href="<?php echo $product['remove']; ?>"></a>
-                    </td>
-                  </tr>
-                  <?php } ?>
-                  <?php foreach ($vouchers as $vouchers) { ?>
-                  <tr>
-                    <td class="image"></td>
-                    <td class="name">
-                    	<h2 class="product-name">
-                        	<?php echo $vouchers['description']; ?>
-                        </h2>
-                    </td>
-                    <td class="model"></td>
-                    <td class="a-center qty-td">
-                    <div class="qty-holder">
-                        	<input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" class="input-text qty qty_vau"/>
-                            <div class="qty-changer">
-                                <a class="qty_vau_inc" href="javascript:void(0)">
-                                    <span>+</span>
-                                </a>
-                            </div>
-                            <div class="clear"></div>
                         </div>
+                      <?php foreach ($vouchers as $voucher) { ?>
+                      <a class="btn-remove btn-remove2 top-btn-remove" title="Remove This Item" onclick="(getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') ? location = 'index.php?route=checkout/cart&remove=<?php echo $voucher['key']; ?>' : $('#cart').load('index.php?route=module/cart&remove=<?php echo $voucher['key']; ?>' + ' #cart > *');" /></a>
+                        <?php } ?>
+                        </div>
+                    </div>
+                        <?php } ?>
+                    </div>
                     
-                     </td>
-                    <td class="price"><?php echo $vouchers['amount']; ?></td>
-                    <td class="total"><?php echo $vouchers['amount']; ?></td>
-                    <td class="a-center rm-td for-desktop last">
-                    	<a class="btn-remove btn-remove2" href="<?php echo $vouchers['remove']; ?>"></a>
-                    </td>
-                  </tr>
-                  <?php } ?>
-                </tbody>
-              </table>
-    
-              <script type="text/javascript">
-					decorateTable('shopping-cart-table')
-				</script>
+                    <div class="col-md-4 col-sm-12" >
+                        <div class="totals col-md-4 col-xs-2">
+            	
+                <table id="total" class="shopping-cart-totals-table">
+                    <colgroup>
+                        <col />
+                        <col width="1"  />
+                    </colgroup>
+                    <tbody>
+                        <?php foreach ($totals as $total) { ?>
+                        <tr>
+                            <td colspan="1" class="a-right" style=""> <?php echo $total['title']; ?></td>
+                            <td class="a-right" style="">
+                                <span class="price"><?php echo $total['text']; ?></span>
+                           </td>
+                       </tr>
+                       <?php } ?>
+                    </tbody>
+                </table>
+  
+            </div>
+                    </div>
+                    
+                </div>   
             </fieldset>
         </form>
-        
+          </div>
+       
         <div class="cart-collaterals">
         	<?php if ($coupon_status || $voucher_status || $reward_status || $shipping_status) { ?>
         	<div class="cart-extra col-md-8 col-xs-12">
 				<ul class="cart-extra-tab">
-      <?php if ($coupon_status) { ?>
-      <li class="highlight">
-        <span class="radio_button_hide_shopping_cart"><?php if ($next == 'coupon') { ?>
-          <input type="radio" name="next" value="coupon" id="use_coupon" checked="checked" />
-          <?php } else { ?>
-          <input type="radio" name="next" value="coupon" id="use_coupon" />
-          <?php } ?></span>
-        <span id="cart_page_span1" class="active"><label for="use_coupon"><?php echo $text_use_coupon; ?></label></span>
-      </li>
-      <?php } ?>
-      <?php if ($voucher_status) { ?>
-      <li class="highlight">
-        <span class="radio_button_hide_shopping_cart"><?php if ($next == 'voucher') { ?>
-          <input type="radio" name="next" value="voucher" id="use_voucher" checked="checked" />
-          <?php } else { ?>
-          <input type="radio" name="next" value="voucher" id="use_voucher" />
-          <?php } ?></span>
-        <span id="cart_page_span2"><label for="use_voucher"><?php echo $text_use_voucher; ?></label></span>
-      </li>
-      <?php } ?>
-      <?php if ($reward_status) { ?>
-      <li class="highlight">
-        <span class="radio_button_hide_shopping_cart"><?php if ($next == 'reward') { ?>
-          <input type="radio" name="next" value="reward" id="use_reward" checked="checked" />
-          <?php } else { ?>
-          <input type="radio" name="next" value="reward" id="use_reward" />
-          <?php } ?></span>
-        <span id="cart_page_span3"><label for="use_reward"><?php echo $text_use_reward; ?></label></span>
-      </li>
-      
-      <?php } ?>
-      <?php if ($shipping_status) { ?>
-      <li class="highlight">
-        <span class="radio_button_hide_shopping_cart"><?php if ($next == 'shipping') { ?>
-          <input type="radio" name="next" value="shipping" id="shipping_estimate" checked="checked" />
-          <?php } else { ?>
-          <input type="radio" name="next" value="shipping" id="shipping_estimate" />
-          <?php } ?></span>
-        <span id="cart_page_span4"><label for="shipping_estimate"><?php echo $text_shipping_estimate; ?></label></span>
-      </li >
-      
-      <?php } ?>
-    </ul>
-			<script type="text/javascript">
-				jQuery("#cart_page_span1").click(function(){
-				jQuery(this).parent().children('span').addClass('active');
-				}).blur(function(){
-				jQuery(this).parent().children('span#cart_page_span1').removeClass('active');
-				});
-			</script>
-            <script type="text/javascript">
-				jQuery("#cart_page_span2").click(function(){
-				jQuery(this).parent().children('span').addClass('active');
-				}).blur(function(){
-				jQuery(this).parent().children('span#cart_page_span2').removeClass('active');
-				});
-			</script>
-            <script type="text/javascript">
-				jQuery("#cart_page_span3").click(function(){
-				jQuery(this).parent().children('span').addClass('active');
-				}).blur(function(){
-				jQuery(this).parent().children('span#cart_page_span3').removeClass('active');
-				});
-			</script>
-            <script type="text/javascript">
-				jQuery("#cart_page_span4").click(function(){
-				jQuery(this).parent().children('span').addClass('active');
-				}).blur(function(){
-				jQuery(this).parent().children('span#cart_page_span4').removeClass('active');
-				});
-			</script>
-  				<div class="akordeon">
-                	
-                <div class="cart-module">
-    <div id="coupon" class="content" style="display: <?php echo ($next == 'coupon' ? 'block' : 'block'); ?>;">
-      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-      	<div class="discount">
+ 
+			
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          USAR CÓDIGO DEL CUPÓN
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <div class="discount">
 			<div class="discount-form">
             	<label for="coupon_code"><?php echo $entry_coupon; ?></label>
                 <div class="input-box">
@@ -250,9 +151,20 @@
                 </div>
             </div>
         </div>
-      </form>
+      </div>
     </div>
-    <div id="voucher" class="content " style="display: <?php echo ($next == 'voucher' ? 'block' : 'none'); ?>;">
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          USAR VALE DE REGALO
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+              <div id="voucher" class="content " style="display: <?php echo ($next == 'voucher' ? 'block' : 'none'); ?>;">
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
       	<div class="discount">
 			<div class="discount-form">
@@ -288,7 +200,20 @@
             </div>
       </form>
     </div>
-    <div id="shipping" class="content " style="display: <?php echo ($next == 'shipping' ? 'block' : 'none'); ?>;">
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          ESTIMAR ENVÍO & IMPUESTOS
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+          <div id="shipping" class="content " style="display: <?php echo ($next == 'shipping' ? 'block' : 'none'); ?>;">
     	<div class="shipping">
 			<div class="shipping-form">
             	<label for="reward_code"><?php echo $text_shipping_detail; ?></label>
@@ -322,31 +247,14 @@
             </div>
         </div>
     </div>
+        </div>
+    </div>
   </div>
-                </div>
+</div>
             </div>	
 			<?php } ?>
         	
-        	<div class="totals col-md-4 col-xs-12">
-            	
-                <table id="total" class="shopping-cart-totals-table">
-                    <colgroup>
-                        <col />
-                        <col width="1"  />
-                    </colgroup>
-                    <tbody>
-                        <?php foreach ($totals as $total) { ?>
-                        <tr>
-                            <td colspan="1" class="a-right" style=""> <?php echo $total['title']; ?></td>
-                            <td class="a-right" style="">
-                                <span class="price"><?php echo $total['text']; ?></span>
-                           </td>
-                       </tr>
-                       <?php } ?>
-                    </tbody>
-                </table>
-  
-            </div>
+        	
         </div>
         
         <ul class="checkout-types">

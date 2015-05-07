@@ -23,7 +23,7 @@
                                     <a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
                                 </p>
                                 <p class="qty-price">
-                                    <?php echo $product['quantity']; ?> x 
+                                    <?php echo $product['quantity']; ?> 
                                     <span class="price"><?php echo $product['total']; ?></span>                                                                  
                                 </p>
                                 <a class="btn-remove btn-remove2 top-btn-remove" title="Remove This Item" onclick="(getURLVar('route') == '' || getURLVar('route') == '') ? location = 'index.php?route=checkout/cart&remove=<?php echo $product['key']; ?>' : $('#cart').load('index.php?route=module/cart&remove=<?php echo $product['key']; ?>' + ' #cart > *');"> </a>
@@ -45,7 +45,7 @@
                           <p class="qty-price">
                           
                             
-                              1 x&nbsp;
+                              1  x&nbsp;
                               <span class="price"><?php echo $voucher['amount']; ?></span>
                            </p>
                       
