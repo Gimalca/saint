@@ -39,7 +39,6 @@
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/vigo/stylesheet/settings.css" />
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/vigo/stylesheet/etalage.css" media="all" />
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/vigo/stylesheet/styles-noroute.css"/>
-
 <!--VIGO vigo css End-->
 
 
@@ -285,10 +284,17 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
             return ($url . '&' . $key . '=' . $value);
         }
     }
+    
+    function multiexplode ($delimiters,$string) {
+    
+    $ready = str_replace($delimiters, $delimiters[0], $string);
+    $launch = explode($delimiters[0], $ready);
+    return  $launch;
+}
 
 ?>
 
-<?php  $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER["QUERY_STRING"]; ?>
+<?php  $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER["QUERY_STRING"]; $words = multiexplode(array('/','&'),$_SERVER["QUERY_STRING"]); echo $category_s = $words[1]  ?>
 <body class="">
 <div class="wrapper">
 
@@ -299,7 +305,8 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
         <div class="notice-inner">
             <p>
                 <strong>JavaScript seems to be disabled in your browser.</strong><br />
-                You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+                You must have JavaScript enabled in your browser to utilize the functionality of this website.                
+            </p>
         </div>
     </div>
 </noscript>
@@ -366,24 +373,20 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
                     </div>      
                 </div>
             </div>
-            <div class="header container">
+          
+        </div>
+  <div class="header container">
                  <a class="logo" href="<?php echo $home; ?>"><!--<?php echo $name; ?>-->
                      <!--img src="<?php echo $logo; ?>" alt="<?php echo $home; ?>" /-->
                      <img width="360px" src="image/logo-ejmp.png" alt="<?php echo $home; ?>" />
                  </a>
-              
             </div>
-        </div>
-
         <div class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                         <span><?php echo $text_header_menu;?></span>
                     </button>
-                
-                	
-                   
                 </div>
         		<div class="for-mobile">
                     	<div class="form-search">
@@ -672,8 +675,29 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
     
 <?php } ?>
 
+<?php if ($category_s == "category" || $category_s == "product"  ):?>
 
 <script type="text/javascript">
+//<![CDATA[
+    jQuery(document).ready(function(){
+        var scrolled = false;
+        jQuery(window).scroll(function(){
+            if(50<jQuery(window).scrollTop() && !scrolled){
+                jQuery('.header-container').addClass('sticky-menu').css('top','-50px').animate({top:'0px'}, 500);
+                scrolled = true;
+            }
+            if(50>jQuery(window).scrollTop() && scrolled){
+                jQuery('.header-container').removeClass('sticky-menu');
+                scrolled = false;
+            }
+        });
+      
+    });
+//]]>
+</script>  
+
+<?php else: ?>
+    <script type="text/javascript">
 //<![CDATA[
     jQuery(document).ready(function(){
         var scrolled = false;
@@ -724,6 +748,8 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
     });
 //]]>
 </script>  
+<?php endif;?>
+
 <!-- Latest,    Featured,    Specials on hover black come -->
 <script type="text/javascript">
 jQuery(document).ready(function(){
