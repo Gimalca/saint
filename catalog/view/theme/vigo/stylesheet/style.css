@@ -1474,11 +1474,19 @@ tr.summary-details-excluded { font-style:italic; }
 .cart .totals .checkout-types .paypal-or { clear:both; display:block; padding:8px 55px 0 0; line-height:1.0; font-size:11px; }
 
 /*Carro de Compras nuevo*/
-.carro-producto{ border: 1px dotted Black; margin-bottom: 30px; height: 239px; float: left;}
+.carro-producto{ border: 1px dotted gray; margin-bottom: 30px; height: 239px; float: left;}
 .imagen-producto{float: left; margin-top: 27px;}
-.nombre-container{  float: left;  margin-top: 12px; margin-left: 12px; border-bottom: 1px solid black;}
-.datos-container{color: black; margin-top: 20px; font-size: 14px; margin-left: 12px; border-bottom: 1px solid black;}
+.nombre-container{  float: left;  margin-top: 12px; margin-left: 12px; border-bottom: 1px solid gray;}
+.datos-container{color: black; margin-top: 20px; font-size: 14px; margin-left: 12px; border-bottom: 1px solid gray;}
 #posicion {margin-bottom: 14px; color:black;}
+
+/*Totales Nuevo*/
+.sumario{  border: 1px solid gray;  height: 242px;   margin-bottom: 27px;   background: #f0f0f0;}
+.sumario-sub{border-bottom: 1px solid gray;  height: 22px;}
+.titulo{  text-align: center;  margin-top: 30px;  font-size: 20px; font-size: 1.5em; font-weight: bold; text-transform: uppercase;}
+.precio{ text-align: center;   height: 133px;}
+.cancelar{border-top: 1px solid gray;  height: 52px;   background: #7e7e7e;}
+.cancelar button{  margin-top: 11px;  margin-right: 22px;  margin-left: 34px; background-color: white;}
 
 /* Shopping Cart Table */
 .cart-table th { padding:2px 10px; }
@@ -1537,7 +1545,7 @@ tr.summary-details-excluded { font-style:italic; }
 .cart .shipping .sp-methods { margin:10px 0 0; padding:5px 0 0; background:url(../images/bkg_divider1.gif) 0 0 repeat-x; }
 
 /* Shopping Cart Totals */
-.cart .totals {  width:23%; padding: 0; }
+.cart .totals { color:black;  padding: 0; }
 .cart .totals table { width:100%; margin: 0; border: 1px solid #e2e2e2;  }
 .cart .totals td { border-right: 0; border-bottom: 1px solid #e2e2e2; font-weight: bold; font-size: 16px; color: #777; padding: 15px; text-transform: uppercase;}
 .cart .totals tr td:first-child { border-right: 1px solid #e2e2e2; }

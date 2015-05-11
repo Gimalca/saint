@@ -93,51 +93,59 @@
                     </div>
                     
                     <div class="col-md-4 col-sm-12" >
-                        <div class="totals col-md-4 col-xs-2">
-            	
-                <table id="total" class="shopping-cart-totals-table">
-                    <colgroup>
-                        <col />
-                        <col width="1"  />
-                    </colgroup>
-                    <tbody>
-                        <?php foreach ($totals as $total) { ?>
-                        <tr>
-                            <td colspan="1" class="a-right" style=""> <?php echo $total['title']; ?></td>
-                            <td class="a-right" style="">
-                                <span class="price"><?php echo $total['text']; ?></span>
-                           </td>
-                       </tr>
-                       <?php } ?>
-                    </tbody>
-                </table>
-  
-            </div>
-                    </div>
-                    
-                </div>   
-            </fieldset>
-        </form>
-          </div>
-       
-        <div class="cart-collaterals">
-        	<?php if ($coupon_status || $voucher_status || $reward_status || $shipping_status) { ?>
-        	<div class="cart-extra col-md-8 col-xs-12">
-				<ul class="cart-extra-tab">
- 
-			
+                        <div class="totals">
+                            <div class="sumario">
+                                <div class="titulo col-md-12">
+                                    Sumario de compra
+                                </div>
+                                <div class="precio col-md-12">
+                                    <?php foreach ($totals as $total) { ?><br>
+                                
+                                    <div class="sumario-sub col-md-12">
+                                        <div class="col-md-6" style="text-align: left;"><?php echo $total['title']; ?></div>
+                                        <div class="col-md-6" style="text-align: right;"><?php echo $total['text']; ?></div>
+                                        </div>
+                                   
+                               <?php } ?>
+                                </div>
+                                <div class="cancelar">
+                                        <a href="<?php echo $continue; ?>">
+                                            <button class="button btn-continue" type="button" value="<?php echo $button_shopping; ?>">
+                                                <span><span><?php echo $button_shopping; ?></span></span>
+                                            </button>
+                                        </a>
+                                        <a href="<?php echo $checkout; ?>">
+                                            <button class="button btn-continue" type="button" value="<?php echo $button_checkout; ?>">
+                                                <span><span><?php echo $button_checkout; ?></span></span>
+                                            </button>
+                                       </a>
+                                </div>
+                            </div>
+                                
+                            </div>
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingOne">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          USAR CÓDIGO DEL CUPÓN
+          <?php if ($coupon_status) { ?>
+
+        <span class="radio_button_hide_shopping_cart"><?php if ($next == 'coupon') { ?>
+          <input type="radio" name="next" value="coupon" id="use_coupon" checked="checked" />
+          <?php } else { ?>
+          <input type="radio" name="next" value="coupon" id="use_coupon" />
+          <?php } ?></span>
+        <span id="cart_page_span1" class="active"><label for="use_coupon"><?php echo $text_use_coupon; ?></label></span>
+      <?php } ?>
         </a>
       </h4>
     </div>
     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+        
       <div class="panel-body">
-        <div class="discount">
+        <div id="coupon" class="content" style="display: <?php echo ($next == 'coupon' ? 'block' : 'block'); ?>;">
+      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+      	<div class="discount">
 			<div class="discount-form">
             	<label for="coupon_code"><?php echo $entry_coupon; ?></label>
                 <div class="input-box">
@@ -151,14 +159,35 @@
                 </div>
             </div>
         </div>
+      </form>
+    </div>
       </div>
     </div>
   </div>
-  <div class="panel panel-default">
+  <div class="panel panel-default" >
     <div class="panel-heading" role="tab" id="headingTwo">
       <h4 class="panel-title">
         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          USAR VALE DE REGALO
+          <?php if ($voucher_status) { ?>
+        <span class="radio_button_hide_shopping_cart"><?php if ($next == 'voucher') { ?>
+          <input type="radio" name="next" value="voucher" id="use_voucher" checked="checked" />
+          <?php } else { ?>
+          <input type="radio" name="next" value="voucher" id="use_voucher" />
+          <?php } ?></span>
+        <span id="cart_page_span2" class="active"><label for="use_voucher"><?php echo $text_use_voucher; ?></label></span>
+      
+      <?php } ?>
+      <?php if ($reward_status) { ?>
+      
+        <span class="radio_button_hide_shopping_cart"><?php if ($next == 'reward') { ?>
+          <input type="radio" name="next" value="reward" id="use_reward" checked="checked" />
+          <?php } else { ?>
+          <input type="radio" name="next" value="reward" id="use_reward" />
+          <?php } ?></span>
+        <span id="cart_page_span3" class="active"><label for="use_reward"><?php echo $text_use_reward; ?></label></span>
+
+      
+      <?php } ?>
         </a>
       </h4>
     </div>
@@ -200,6 +229,7 @@
             </div>
       </form>
     </div>
+    
       </div>
     </div>
   </div>
@@ -207,7 +237,17 @@
     <div class="panel-heading" role="tab" id="headingThree">
       <h4 class="panel-title">
         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          ESTIMAR ENVÍO & IMPUESTOS
+          <?php if ($shipping_status) { ?>
+    
+        <span class="radio_button_hide_shopping_cart"><?php if ($next == 'shipping') { ?>
+          <input type="radio" name="next" value="shipping" id="shipping_estimate" checked="checked" />
+          <?php } else { ?>
+          <input type="radio" name="next" value="shipping" id="shipping_estimate" />
+          <?php } ?></span>
+        <span id="cart_page_span4"><label for="shipping_estimate"><?php echo $text_shipping_estimate; ?></label></span>
+
+      
+      <?php } ?>
         </a>
       </h4>
     </div>
@@ -251,6 +291,50 @@
     </div>
   </div>
 </div>
+  
+            </div>
+                    </div>
+                    
+                </div>   
+            </fieldset>
+        </form>
+          </div>
+       
+        <div class="cart-collaterals">
+        	<?php if ($coupon_status || $voucher_status || $reward_status || $shipping_status) { ?>
+        	<div class="cart-extra col-md-8 col-xs-12">
+				
+			<script type="text/javascript">
+				jQuery("#cart_page_span1").click(function(){
+				jQuery(this).parent().children('span').addClass('active');
+				}).blur(function(){
+				jQuery(this).parent().children('span#cart_page_span1').removeClass('active');
+				});
+			</script>
+            <script type="text/javascript">
+				jQuery("#cart_page_span2").click(function(){
+				jQuery(this).parent().children('span').addClass('active');
+				}).blur(function(){
+				jQuery(this).parent().children('span#cart_page_span2').removeClass('active');
+				});
+			</script>
+            <script type="text/javascript">
+				jQuery("#cart_page_span3").click(function(){
+				jQuery(this).parent().children('span').addClass('active');
+				}).blur(function(){
+				jQuery(this).parent().children('span#cart_page_span3').removeClass('active');
+				});
+			</script>
+            <script type="text/javascript">
+				jQuery("#cart_page_span4").click(function(){
+				jQuery(this).parent().children('span').addClass('active');
+				}).blur(function(){
+				jQuery(this).parent().children('span#cart_page_span4').removeClass('active');
+				});
+			</script>
+  				
+            </div>			
+
             </div>	
 			<?php } ?>
         	
@@ -258,21 +342,7 @@
         </div>
         
         <ul class="checkout-types">
-            <li class="first">
-            	<a href="<?php echo $continue; ?>">
-                    <button class="button btn-continue" type="button" value="<?php echo $button_shopping; ?>">
-                        <span><span><?php echo $button_shopping; ?></span></span>
-                    </button>
-                </a>
-            </li>
-            <li class="">
-            	<a href="<?php echo $checkout; ?>">
-                    <button class="button btn-continue" type="button" value="<?php echo $button_checkout; ?>">
-                        <span><span><?php echo $button_checkout; ?></span></span>
-                    </button>
-               </a>
-            	
-            </li>
+            
 		</ul>
         
       </div>
