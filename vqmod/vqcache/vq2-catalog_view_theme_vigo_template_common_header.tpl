@@ -338,6 +338,17 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
                                    
                            
                          </li>
+                         <script type="text/javascript">
+                             jQuery('.mini-cart').mouseover(function(){
+                               jQuery('#topCartContent').show()
+                                return false;
+                            }).mouseleave(function(){
+                              jQuery('#topCartContent').hide()
+                            });
+                                 
+                                     
+                             
+                         </script>
                     </ul>
                     <ul class="links right">
                     
@@ -398,7 +409,8 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
                                 <button type="button" title="Search" class="button btn-search-flg"><span><span><?php echo $text_search;?></span></span></button>
                     		
         <script type="text/javascript">
-        //&lt;![CDATA[
+          //&lt;![CDATA[   
+         
         jQuery("button.btn-search-flg").click(function(){
             jQuery(this).parent().children("button.btn-search-flg").hide();
             jQuery(this).parent().children("button.btn-search").show();

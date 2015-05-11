@@ -49,14 +49,16 @@
                               <span class="price"><?php echo $voucher['amount']; ?></span>
                            </p>
                       
-                      <a class="btn-remove btn-remove2 top-btn-remove" title="Remove This Item" onclick="(getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') ? location = 'index.php?route=checkout/cart&remove=<?php echo $voucher['key']; ?>' : $('#cart').load('index.php?route=module/cart&remove=<?php echo $voucher['key']; ?>' + ' #cart > *');" /></a>
+                      <a id="remove-item" class="btn-remove btn-remove2 top-btn-remove" title="Remove This Item" onclick="(getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') ? location = 'index.php?route=checkout/cart&remove=<?php echo $voucher['key']; ?>' : $('#cart').load('index.php?route=module/cart&remove=<?php echo $voucher['key']; ?>' + ' #cart > *'); alert('ver');" /></a>
                       </div>
 					</li>
                 </ol>
           <?php } ?>
           
     <script type="text/javascript">
-		decorateList('mini-cart', 'none-recursive')
+       
+            
+		decorateList('mini-cart', 'none-recursive');
 	</script>
     <div class="minicart_total col-xs-7">
     	<?php foreach ($totals as $total) { ?>

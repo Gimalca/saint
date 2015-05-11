@@ -361,9 +361,9 @@
 
 
 
-                            <div class="add-to-cart">
+                            <!--div class="add-to-cart">
 
-                            </div>      
+                            </div-->      
 
 
                             <div class="add-to-box">
@@ -698,9 +698,9 @@
                 }
 
                 if (json['success']) {
-                $('#notification').html('<div class="success" style="display: none;">' + json['success'] + '<img src="catalog/view/theme/vigo/image/close.png" alt="" class="close" /></div>');
-                        $('.success').fadeIn('slow');
-                        $('#cart-total').html(json['total']);
+                   // $('#notification').html('<div class="success" style="display: none;">' + json['success'] + '<img src="catalog/view/theme/vigo/image/close.png" alt="" class="close" /></div>');
+                   //         $('.success').fadeIn('slow');
+                          $('#cart-total').html(json['total']);    
 
             	$('#cart').addClass('active');
 		
@@ -708,8 +708,11 @@
 		
 				setTimeout(function() {$('#cart').removeClass('active');}, 5000);
             
-                        $('html, body').animate({ scrollTop: 0 }, 'slow');
-                }
+                          $('html, body').animate({ scrollTop: 0 }, 'slow');
+                          $('#topCartContent').show() 
+                          $('.mybag-link').html(json['total']);
+                         
+                    }
                 }
         });
                 });
