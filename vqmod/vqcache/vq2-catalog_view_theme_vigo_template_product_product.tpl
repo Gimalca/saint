@@ -361,9 +361,9 @@
 
 
 
-                            <div class="add-to-cart">
+                            <!--div class="add-to-cart">
 
-                            </div>      
+                            </div-->      
 
 
                             <div class="add-to-box">
@@ -373,13 +373,13 @@
                                 </div>
                                 <ul class="add-to-links">
                                     <li><a class="link-wishlist" onclick="addToWishList('<?php echo $product_id; ?>');"><?php echo $button_wishlist; ?> </a></li>
-                                    <li><span class="separator">|</span> <a class="link-compare" onclick="addToCompare('<?php echo $product_id; ?>');"><?php echo $button_compare; ?></a></li>
+                                    <!--li><span class="separator">|</span> <a class="link-compare" onclick="addToCompare('<?php echo $product_id; ?>');"><?php echo $button_compare; ?></a></li-->
                                 </ul>
                             </div>
 
-                            <div class="product-accordion col-md-6 col-sm-12">
+                            <div class="product-accordion col-md-10 col-sm-12">
                     <div class="product-collateral akordeon">
-                        <div class="box-collateral box-description akordeon-item">
+                        <div class="box-collateral box-description akordeon-item ">
                             <div class="akordeon-item-head akordeon-border-bottom">
                                 <div class="akordeon-item-head-container">
                                     <div class="akordeon-heading">
@@ -444,10 +444,13 @@
                 </div>
                             <div class="clear"></div>
                             <!-- AddThis API Config END -->
+                            <style type="text/css">
+                               .sharing-tool-area a span{ background-color: #000 !important}
+                            </style>
                             <div class="sharing-tool-area">
                                 <span class="label">Share: </span>
                                 <div class="addthis_toolbox addthis_default_style addthis_32x32_style" >
-                                    <a class="addthis_button_preferred_1"></a>
+                                    <a class="addthis_button_preferred_1 "></a>
                                     <a class="addthis_button_preferred_2"></a>
                                     <a class="addthis_button_preferred_3"></a>
                                     <a class="addthis_button_preferred_4"></a>
@@ -631,7 +634,7 @@
     <script type="text/javascript">
     //<![CDATA[
                 jQuery(document).ready(function(){
-        jQuery('.akordeon.product-collateral').akordeon({ buttons: true, toggle: true });
+        jQuery('.akordeon.product-collateral').akordeon({ buttons: true, toggle: true, hiddenItem: 1});
                 });
     //]]>
     </script>				
@@ -695,9 +698,9 @@
                 }
 
                 if (json['success']) {
-                $('#notification').html('<div class="success" style="display: none;">' + json['success'] + '<img src="catalog/view/theme/vigo/image/close.png" alt="" class="close" /></div>');
-                        $('.success').fadeIn('slow');
-                        $('#cart-total').html(json['total']);
+                   // $('#notification').html('<div class="success" style="display: none;">' + json['success'] + '<img src="catalog/view/theme/vigo/image/close.png" alt="" class="close" /></div>');
+                   //         $('.success').fadeIn('slow');
+                          $('#cart-total').html(json['total']);    
 
             	$('#cart').addClass('active');
 		
@@ -705,8 +708,11 @@
 		
 				setTimeout(function() {$('#cart').removeClass('active');}, 5000);
             
-                        $('html, body').animate({ scrollTop: 0 }, 'slow');
-                }
+                          $('html, body').animate({ scrollTop: 0 }, 'slow');
+                          $('#topCartContent').show() 
+                          $('.mybag-link').html(json['total']);
+                         
+                    }
                 }
         });
                 });

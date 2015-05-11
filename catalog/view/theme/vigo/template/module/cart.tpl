@@ -23,7 +23,7 @@
                                     <a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
                                 </p>
                                 <p class="qty-price">
-                                    <?php echo $product['quantity']; ?> 
+                                    <?php echo $product['quantity']; ?> x 
                                     <span class="price"><?php echo $product['total']; ?></span>                                                                  
                                 </p>
                                 <a class="btn-remove btn-remove2 top-btn-remove" title="Remove This Item" onclick="(getURLVar('route') == '' || getURLVar('route') == '') ? location = 'index.php?route=checkout/cart&remove=<?php echo $product['key']; ?>' : $('#cart').load('index.php?route=module/cart&remove=<?php echo $product['key']; ?>' + ' #cart > *');"> </a>
@@ -45,18 +45,20 @@
                           <p class="qty-price">
                           
                             
-                              1  x&nbsp;
+                              1 x&nbsp;
                               <span class="price"><?php echo $voucher['amount']; ?></span>
                            </p>
                       
-                      <a class="btn-remove btn-remove2 top-btn-remove" title="Remove This Item" onclick="(getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') ? location = 'index.php?route=checkout/cart&remove=<?php echo $voucher['key']; ?>' : $('#cart').load('index.php?route=module/cart&remove=<?php echo $voucher['key']; ?>' + ' #cart > *');" /></a>
+                      <a id="remove-item" class="btn-remove btn-remove2 top-btn-remove" title="Remove This Item" onclick="(getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') ? location = 'index.php?route=checkout/cart&remove=<?php echo $voucher['key']; ?>' : $('#cart').load('index.php?route=module/cart&remove=<?php echo $voucher['key']; ?>' + ' #cart > *'); alert('ver');" /></a>
                       </div>
 					</li>
                 </ol>
           <?php } ?>
           
     <script type="text/javascript">
-		decorateList('mini-cart', 'none-recursive')
+       
+            
+		decorateList('mini-cart', 'none-recursive');
 	</script>
     <div class="minicart_total col-xs-7">
     	<?php foreach ($totals as $total) { ?>
