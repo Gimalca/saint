@@ -1,5 +1,6 @@
 <div class="col2-set">
-<div class="block block-new-users col-md-6 col-sm-6 col-xs-12">
+    <div class="col-md-2 col-sm-2"></div>
+    <div class="block block-new-users col-md-4 col-sm-4 col-xs-12" id="nuevo-cliente">
 	<div class="block-title">
     	<strong><span><?php echo $text_new_customer; ?></span></strong>
   	</div>
@@ -31,7 +32,10 @@
   
   
 </div>
-<div id="login" class="block block-registered-users col-md-6 col-sm-6 col-xs-12">
+    <div class="dividern col-md-2 col-sm-2 col-xs-12">
+        
+    </div>
+<div id="login" class="block block-registered-users col-md-4 col-sm-4 col-xs-12">
 	<div class="block-title">
     	<strong><span><?php echo $text_returning_customer; ?></span></strong>
     </div>
@@ -40,12 +44,12 @@
   		<ul class="form-list">
         	<li>
             	<div class="input-box input-email">
-  					<input type="text" name="email" value="" class="input-text validate-password required-entry" placeholder="   <?php echo $entry_email;?> *"/>
+  					<input type="text" id="input-emailn" name="email" value="" class="input-text validate-password required-entry" placeholder="   <?php echo $entry_email;?> *"/>
   				</div>
            </li>
            <li>
-           		<div class="input-box input-password">
-  					<input type="password" name="password" value="" class="input-text validate-password required-entry" placeholder="   <?php echo $entry_password;?> *"/>
+                <div class="input-box input-password">
+  					<input type="password" id="input-emailn" name="password" value="" class="input-text validate-password required-entry" placeholder="   <?php echo $entry_password;?> *"/>
                 </div>
           </li>
   	</ul>
@@ -54,16 +58,18 @@
   
   
 </div>
+    <div class="col-md2 col-sm-2"></div>
 </div>
 <div class="col2-set for-desktop">
-	<div class="new-users col-md-6 col-sm-6 col-xs-12">
+	<div class="new-users col-md-4 col-sm-4 col-xs-12">
     	<div class="buttons-set">
         	<button type="button" value="<?php echo $button_continue; ?>" id="button-account" class="button" >
             	<span><span><?php echo $button_continue; ?></span></span>
             </button>
         </div>
     </div>
-    <div class="registered-users col-md-6 col-sm-6 col-xs-12">
+    <div class="col-md-4 col-sm-4 col-xs-12"></div>
+    <div class="registered-users col-md-4 col-sm-4 col-xs-12">
     	<div class="buttons-set">
         	<a href="<?php echo $forgotten; ?>"><?php echo $text_forgotten; ?></a>
         	<button type="button" value="<?php echo $button_login; ?>" id="button-login" class="button" >

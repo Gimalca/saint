@@ -16,7 +16,7 @@
     <div id="checkout" class="section allow">
       <div class="checkout-heading">
       	<div class="step-title">
-        	<h2><?php echo $text_checkout_option; ?></h2>
+            <h2><?php echo $text_checkout_option; ?></h2>
         </div>
       </div>
       <div class="checkout-content "></div>
@@ -25,7 +25,8 @@
     <div id="payment-address" class="section allow">
       <div class="checkout-heading">
       	<div class="step-title">
-        	<h2><?php echo $text_checkout_account; ?></h2>
+        	<h2><?php echo $text_checkout_account; ?></h2>  
+                sojdsojvved
         </div>
       </div>
       <div class="checkout-content  a-item"></div>

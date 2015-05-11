@@ -1473,20 +1473,7 @@ tr.summary-details-excluded { font-style:italic; }
 .cart .checkout-types .paypal-or { margin:0 8px; line-height:2.3; }
 .cart .totals .checkout-types .paypal-or { clear:both; display:block; padding:8px 55px 0 0; line-height:1.0; font-size:11px; }
 
-/*Carro de Compras nuevo*/
-.carro-producto{ border: 1px dotted gray; margin-bottom: 30px; height: 239px; float: left;}
-.imagen-producto{float: left; margin-top: 27px;}
-.nombre-container{  float: left;  margin-top: 12px; margin-left: 12px; border-bottom: 1px solid gray;}
-.datos-container{color: black; margin-top: 20px; font-size: 14px; margin-left: 12px; border-bottom: 1px solid gray;}
-#posicion {margin-bottom: 14px; color:black;}
 
-/*Totales Nuevo*/
-.sumario{  border: 1px solid gray;  height: 242px;   margin-bottom: 27px;   background: #f0f0f0;}
-.sumario-sub{border-bottom: 1px solid gray;  height: 22px;}
-.titulo{  text-align: center;  margin-top: 30px;  font-size: 20px; font-size: 1.5em; font-weight: bold; text-transform: uppercase;}
-.precio{ text-align: center;   height: 133px;}
-.cancelar{border-top: 1px solid gray;  height: 52px;   background: #7e7e7e;}
-.cancelar button{  margin-top: 11px;  margin-right: 22px;  margin-left: 34px; background-color: white;}
 
 /* Shopping Cart Table */
 .cart-table th { padding:2px 10px; }
@@ -3108,3 +3095,25 @@ li.custom-menu .custom-menu-item p {
     .navbar.sticky-menu {  position: fixed; width: 100%; top: -50px; z-index: 20000;0 }
 }
 
+/*Carro de Compras nuevo*/
+.carro-producto{ border: 1px dotted gray; margin-bottom: 30px; height: 239px; float: left;}
+.imagen-producto{float: left; margin-top: 27px;}
+.nombre-container{  float: left;  margin-top: 12px; margin-left: 12px; border-bottom: 1px solid gray;}
+.datos-container{color: black; margin-top: 20px; font-size: 14px; margin-left: 12px; border-bottom: 1px solid gray;}
+#posicion {margin-bottom: 14px; color:black;}
+
+/*Totales Nuevo*/
+.sumario{  border: 1px solid gray;  height: 242px;   margin-bottom: 27px;   background: #f0f0f0;}
+.sumario-sub{border-bottom: 1px solid gray;  height: 22px;}
+.titulo{  text-align: center;  margin-top: 30px;  font-size: 20px; font-size: 1.5em; font-weight: bold; text-transform: uppercase;}
+.precio{ text-align: center;   height: 133px;}
+.cancelar{border-top: 1px solid gray;  height: 52px;   background: #7e7e7e;}
+.cancelar button{  margin-top: 11px;  margin-right: 22px;  margin-left: 34px; background-color: white;}
+
+/*Compra Nuevo*/
+/*Opcion 1 Nuevo*/
+#input-emailn{   margin: 0;  border: 1px solid #aaa;  height: 28px;  width: 100%;  font-size: inherit; text-transform: uppercase;  font-family: inherit;  outline: none;}
+.dividern{height: 278px;  display: table-cell;  text-align: center;  vertical-align: middle;  background: url("../images/center_line.png") repeat-y center;}
+#nuevo-cliente{
+    
+}

@@ -61,7 +61,7 @@
 </div>
 <div class="block block-address-info">
     <div class="block-title">
-    	<strong><span><?php echo $text_your_address; ?></span></strong>
+    	<strong><span><?php echo $text_your_address; ?> viujduif</span></strong>
     </div>
     <div class="block-content">
     	<ul class="form-list">
