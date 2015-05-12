@@ -29,7 +29,11 @@
       </ul>
   	<p><?php echo $text_register_account; ?></p>
   	</div>
-  
+    	<div class="buttons-set">
+        	<button type="button" value="<?php echo $button_continue; ?>" id="button-account" class="button" >
+            	<span><span><?php echo $button_continue; ?></span></span>
+            </button>
+        </div>
   
 </div>
     <div class="dividern col-md-2 col-sm-2 col-xs-12">
@@ -53,7 +57,12 @@
                 </div>
           </li>
   	</ul>
-  		
+  		<div class="buttons-set">
+        	<a href="<?php echo $forgotten; ?>"><?php echo $text_forgotten; ?></a>
+        	<button type="button" value="<?php echo $button_login; ?>" id="button-login" class="button" >
+            	<span><span><?php echo $button_login; ?></span></span>
+            </button>
+        </div>
   </div>
   
   
@@ -61,20 +70,9 @@
     <div class="col-md2 col-sm-2"></div>
 </div>
 <div class="col2-set for-desktop">
-	<div class="new-users col-md-4 col-sm-4 col-xs-12">
-    	<div class="buttons-set">
-        	<button type="button" value="<?php echo $button_continue; ?>" id="button-account" class="button" >
-            	<span><span><?php echo $button_continue; ?></span></span>
-            </button>
-        </div>
-    </div>
+	
     <div class="col-md-4 col-sm-4 col-xs-12"></div>
     <div class="registered-users col-md-4 col-sm-4 col-xs-12">
-    	<div class="buttons-set">
-        	<a href="<?php echo $forgotten; ?>"><?php echo $text_forgotten; ?></a>
-        	<button type="button" value="<?php echo $button_login; ?>" id="button-login" class="button" >
-            	<span><span><?php echo $button_login; ?></span></span>
-            </button>
-        </div>
+    	
    </div>
 </div>

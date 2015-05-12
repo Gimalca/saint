@@ -1,9 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-/* General CSS */
-.breadcrumbs .container {color: #999999;}
-.breadcrumbs .container ul > li + li:before {content: "\2192 "; color: #999999; padding:0 5px;}
 
 /*MY CSS (my account page)(vinod's css) START*/
 .block-content .row .col-sm-6 .box .box-content li a {border-bottom: 1px solid #EEEEEE; color: #666666;
@@ -334,7 +331,7 @@ a.no-border{border:none !important;}
     margin-bottom: 30px;
 }
 .col-main .checkout.opc {
-    margin-top: 40px;
+    margin-top: 56px;
 }
 .checkout-content {
     margin-top: 40px;
