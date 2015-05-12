@@ -294,7 +294,7 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
 
 ?>
 
-<?php  $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER["QUERY_STRING"]; $words = multiexplode(array('/','&'),$_SERVER["QUERY_STRING"]); echo $category_s = $words[1]  ?>
+<?php  $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER["QUERY_STRING"]; $words = multiexplode(array('/','&'),$_SERVER["QUERY_STRING"]); $category_s = $words[1]  ?>
 <body class="">
 <div class="wrapper">
 
