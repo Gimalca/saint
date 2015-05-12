@@ -37,20 +37,6 @@
                 </div>
             </div>
         </li>
-        <li class="fields">
-            <div class="field">
-	            <div class="input-box input-company">
-                	<input type="text" name="company" value="" class="large-field input-text" placeholder="Company"/>
-                </div>
-            </div>
-            <?php if ($company_id_display) { ?>
-            <div class="field">
-    	        <div class="input-box input-companyid">
-                	<input type="text" name="company_id" value="" class="large-field input-text" placeholder="Company id"/>
-                </div>
-            </div>
-            <?php } ?>
-        </li>
         <?php if ($tax_id_display) { ?>
         <li id="tax-id-display">
 	        <div class="input-box input-tax">
