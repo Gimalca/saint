@@ -171,7 +171,7 @@ body, .products-grid .product-name a, .products-grid.producteffect5 .short_desc,
 <!--Link color start-->
 <style type="text/css">
 a,  .header-container a, .header-container a.sign-link, .navbar-default .navbar-nav > li > a, .simple_menu li.level0 > a, .simple_menu li.submenu a span, .filter-products .tabs li a, .comments-widget .comment-box h2 a, .block-from-blog a.more-link, .comments-widget .avatar-line .text .name, .block-about-shop a.more-link, .block-twitter-feed p.tweet a, .block-twitter-feed p.tweet a span, .block-category-nav .akordeon-heading a, .block-category-nav .akordeon-heading a, .block-category-nav a, .block-layered-nav a, .breadcrumbs a, .block-account .block-content li a, .block-content .row .col-sm-6 .box .box-content li a, .link-wishlist, .link-compare, .mini-products-list .product-details .product-name a{
-	color:<?php echo $link_color; ?>
+	color:#000
 	}
 
 </style>
@@ -294,7 +294,7 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
 
 ?>
 
-<?php  $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER["QUERY_STRING"]; $words = multiexplode(array('/','&'),$_SERVER["QUERY_STRING"]); $category_s = $words[1]  ?>
+<?php  $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER["QUERY_STRING"]; $words = multiexplode(array('/','&'),$_SERVER["QUERY_STRING"]); echo $category_s = $words[1]  ?>
 <body class="">
 <div class="wrapper">
 
@@ -439,7 +439,7 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
                 <?php if ($categories) { ?>
                     <ul id="nav_custom" class="nav navbar-nav">
                         <li class="level0">
-                            <a id="linkm" href="http://200.47.182.254:8080/saint/index.php?route=common/home" class="main-menu"></a>
+                            <a id="linkm" href="index.php?route=common/home" class="main-menu"></a>
                         </li>
                         <?php foreach ($categories as $category) { ?>
                             
@@ -448,7 +448,7 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
                              <li class="level0"><a id="linkm" href="<?php echo $category['href']; ?>"><span><?php echo $category['name'];?></span></a>
                             
                             <?php else: ?> 
-                            <li class="level0"><a id="linkm" href="http://200.47.182.254:8080/saint/index.php?route=product/category&amp;path=163"><span>Bloggers</span></a>
+                            <li class="level0"><a id="linkm" href="index.php?route=product/category&amp;path=163"><span>Bloggers</span></a>
                             <li class="level0"><a id="linkm" href="<?php echo $category['href']; ?>"><span><?php $category['name'] = 'Blog'; echo $category['name'];?></span></a>
                             <?php endif; ?>    
                             <span class="plus"></span>
@@ -687,7 +687,7 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
     
 <?php } ?>
 
-<?php if ($category_s == "category" || $category_s == "product"  ):?>
+<?php if ($category_s == "category" || $category_s == "product" || $category_s == "cart"  ):?>
 
 <script type="text/javascript">
 //<![CDATA[

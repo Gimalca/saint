@@ -77,6 +77,6 @@
 </div>
 <script type="text/javascript">
     jQuery(document).ready(function () {
-        jQuery('.akordeon.category-list').akordeon({buttons: true, toggle: true});
+        jQuery('.akordeon.category-list').akordeon({expandedItem: 5, buttons: true, toggle: true});
     });
 </script>

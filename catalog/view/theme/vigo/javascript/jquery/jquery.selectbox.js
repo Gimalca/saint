@@ -78,7 +78,7 @@
 					dropdown.hide();
                     dropdown.css('width', dropdown.parent().width()+"px");
 					/* Ð¿Ñ€Ð¸ ÐºÐ»Ð¸ÐºÐµ Ð½Ð° Ð¿ÑÐµÐ²Ð´Ð¾ÑÐµÐ»ÐµÐºÑ‚Ðµ */
-					divSelect.mouseover(function() {
+					divSelect.click(function() {
 						/* ÑƒÐ¼Ð½Ð¾Ðµ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¾Ð½Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ */
 						var topOffset = selectbox.offset().top;
 						var bottomOffset = $(window).height() - selectHeight - (topOffset - $(window).scrollTop());
