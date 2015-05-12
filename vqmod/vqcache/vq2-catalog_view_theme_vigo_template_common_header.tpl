@@ -190,7 +190,7 @@ a:hover,  .header-container a:hover, .header-container a.sign-link:hover, .navba
 <!--Button background color start-->
 <style type="text/css">
 ul.cart-button-set a.addtocart, ul.cart-button-set a.addtowishlist, ul.cart-button-set a.addtocompare, .button.btn-twitter-follow, button.button, #content .col-right #button-filter, .my-account input.button.btn-cart, a.button.btn-cart, .products-grid.producteffect2 .addtowishlist.link-wishlist, .products-grid.producteffect2 a.addtowishlist, .products-grid.producteffect2 .addtocompare.link-compare,.products-grid.producteffect2 a.addtocompare, .products-grid.producteffect2 .addtocart.button.btn-cart, .products-grid.producteffect2 a.addtocart, .products-grid.producteffect3 .addtocart.button.btn-cart, .products-grid.producteffect3 a.addtocart, .products-grid.producteffect3 .addtowishlist.link-wishlist, .products-grid.producteffect3 a.addtowishlist, .products-grid.producteffect3 .addtocompare.link-compare, .products-grid.producteffect3 a.addtocompare, .products-grid.producteffect5 .addtocart.button.btn-cart, .products-grid.producteffect5 a.addtocart, .products-grid.producteffect5 .addtowishlist.link-wishlist, .products-grid.producteffect5 a.addtowishlist, .products-grid.producteffect5 .addtocompare.link-compare,.products-grid.producteffect5 a.addtocompare{
-	background-color:<?php echo $button_background_color; ?>
+	background-color:#000;
 	}
 </style>
 <!--Button background color end-->
@@ -198,7 +198,7 @@ ul.cart-button-set a.addtocart, ul.cart-button-set a.addtowishlist, ul.cart-butt
 <!--Button border color start-->
 <style type="text/css">
 /*ul.cart-button-set a.addtocart, ul.cart-button-set a.addtowishlist, ul.cart-button-set a.addtocompare,*/ .button.btn-twitter-follow,  #content .col-right #button-filter, .my-account input.button.btn-cart, a.button.btn-cart, .products-grid.producteffect2 .addtowishlist.link-wishlist, .products-grid.producteffect2 a.addtowishlist, .products-grid.producteffect2 .addtocompare.link-compare,.products-grid.producteffect2 a.addtocompare, .products-grid.producteffect2 .addtocart.button.btn-cart, .products-grid.producteffect2 a.addtocart, .products-grid.producteffect3 .addtocart.button.btn-cart, .products-grid.producteffect3 a.addtocart, .products-grid.producteffect3 .addtowishlist.link-wishlist, .products-grid.producteffect3 a.addtowishlist, .products-grid.producteffect3 .addtocompare.link-compare, .products-grid.producteffect3 a.addtocompare, .products-grid.producteffect5 .addtocart.button.btn-cart, .products-grid.producteffect5 a.addtocart, .products-grid.producteffect5 .addtowishlist.link-wishlist, .products-grid.producteffect5 a.addtowishlist, .products-grid.producteffect5 .addtocompare.link-compare,.products-grid.producteffect5 a.addtocompare{
-	border:2px solid <?php echo $button_border_color; ?>
+	border:0px solid <?php echo $button_border_color; ?>
 	}
 </style>
 <!--Button border color end-->
@@ -206,7 +206,7 @@ ul.cart-button-set a.addtocart, ul.cart-button-set a.addtowishlist, ul.cart-butt
 <!--Button text color start-->
 <style type="text/css">
 /*ul.cart-button-set a.addtocart, ul.cart-button-set a.addtowishlist, ul.cart-button-set a.addtocompare,*/ .button.btn-twitter-follow, button.button, #content .col-right #button-filter, .my-account button.button span, .my-account input.button.btn-cart, a.button.btn-cart, .products-grid.producteffect2 .addtowishlist.link-wishlist, .products-grid.producteffect2 a.addtowishlist, .products-grid.producteffect2 .addtocompare.link-compare,.products-grid.producteffect2 a.addtocompare, .products-grid.producteffect2 .addtocart.button.btn-cart, .products-grid.producteffect2 a.addtocart, .products-grid.producteffect3 .addtocart.button.btn-cart, .products-grid.producteffect3 a.addtocart, .products-grid.producteffect3 .addtowishlist.link-wishlist, .products-grid.producteffect3 a.addtowishlist, .products-grid.producteffect3 .addtocompare.link-compare, .products-grid.producteffect3 a.addtocompare, .products-grid.producteffect5 .addtocart.button.btn-cart, .products-grid.producteffect5 a.addtocart, .products-grid.producteffect5 .addtowishlist.link-wishlist, .products-grid.producteffect5 a.addtowishlist, .products-grid.producteffect5 .addtocompare.link-compare,.products-grid.producteffect5 a.addtocompare{
-	color:<?php echo $button_text_color; ?>
+	color:#fff
 	}
 </style>
 <!--Button text color end-->
@@ -214,7 +214,7 @@ ul.cart-button-set a.addtocart, ul.cart-button-set a.addtowishlist, ul.cart-butt
 <!--Button hover background color start-->
 <style type="text/css">
 ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, ul.cart-button-set a.addtocompare:hover, .button.btn-twitter-follow:hover, button.button:hover span, ul.cart-button-set a.addtocart.button:hover, #content .col-right #button-filter:hover, .my-account input.button.btn-cart:hover, .products-list a.btn-cart:hover, .products-grid.producteffect2 .addtowishlist.link-wishlist:hover, .products-grid.producteffect2 a.addtowishlist:hover, .products-grid.producteffect2 .addtocompare.link-compare:hover,.products-grid.producteffect2 a.addtocompare:hover, .products-grid.producteffect2 .addtocart.button.btn-cart:hover, .products-grid.producteffect2 a.addtocart:hover, .products-grid.producteffect3 .addtocart.button.btn-cart:hover, .products-grid.producteffect3 a.addtocart:hover, .products-grid.producteffect3 .addtowishlist.link-wishlist:hover, .products-grid.producteffect3 a.addtowishlist:hover, .products-grid.producteffect3 .addtocompare.link-compare:hover, .products-grid.producteffect3 a.addtocompare:hover, .products-grid.producteffect5 .addtocart.button.btn-cart:hover, .products-grid.producteffect5 a.addtocart:hover, .products-grid.producteffect5 .addtowishlist.link-wishlist:hover,.products-grid.producteffect5 a.addtowishlist:hover, .products-grid.producteffect5 .addtocompare.link-compare:hover,.products-grid.producteffect5 a.addtocompare:hover{
-	background-color:<?php echo $button_hover_background_color; ?>
+	background-color:#444;
 	}
 </style>
 <!--Button hover background color end-->
@@ -222,7 +222,7 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
 <!--Button hover border color start-->
 <style type="text/css">
 ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, ul.cart-button-set a.addtocompare:hover, .button.btn-twitter-follow:hover, button.button:hover span, ul.cart-button-set a.addtocart.button:hover, #content .col-right #button-filter:hover, .my-account input.button.btn-cart:hover, .products-list a.btn-cart:hover, .products-grid.producteffect2 .addtowishlist.link-wishlist:hover, .products-grid.producteffect2 a.addtowishlist:hover, .products-grid.producteffect2 .addtocompare.link-compare:hover,.products-grid.producteffect2 a.addtocompare:hover, .products-grid.producteffect2 .addtocart.button.btn-cart:hover, .products-grid.producteffect2 a.addtocart:hover, .products-grid.producteffect3 .addtocart.button.btn-cart:hover, .products-grid.producteffect3 a.addtocart:hover, .products-grid.producteffect3 .addtowishlist.link-wishlist:hover, .products-grid.producteffect3 a.addtowishlist:hover, .products-grid.producteffect3 .addtocompare.link-compare:hover, .products-grid.producteffect3 a.addtocompare:hover, .products-grid.producteffect5 .addtocart.button.btn-cart:hover, .products-grid.producteffect5 a.addtocart:hover, .products-grid.producteffect5 .addtowishlist.link-wishlist:hover,.products-grid.producteffect5 a.addtowishlist:hover, .products-grid.producteffect5 .addtocompare.link-compare:hover,.products-grid.producteffect5 a.addtocompare:hover{
-	border:2px solid <?php echo $button_hover_border_color; ?>
+	border:0px solid <?php echo $button_hover_border_color; ?>
 	}
 </style>
 <!--Button hover border color end-->
@@ -230,7 +230,7 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
 <!--Button hover text color start-->
 <style type="text/css">
 ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, ul.cart-button-set a.addtocompare:hover, .button.btn-twitter-follow:hover, button.button:hover span, ul.cart-button-set a.addtocart.button:hover, #content .col-right #button-filter:hover, .my-account button.button:hover span, .my-account input.button.btn-cart:hover, .products-list a.btn-cart:hover, .products-grid.producteffect2 .addtowishlist.link-wishlist:hover, .products-grid.producteffect2 a.addtowishlist:hover, .products-grid.producteffect2 .addtocompare.link-compare:hover,.products-grid.producteffect2 a.addtocompare:hover, .products-grid.producteffect2 .addtocart.button.btn-cart:hover, .products-grid.producteffect2 a.addtocart:hover, .products-grid.producteffect3 .addtocart.button.btn-cart:hover, .products-grid.producteffect3 a.addtocart:hover, .products-grid.producteffect3 .addtowishlist.link-wishlist:hover, .products-grid.producteffect3 a.addtowishlist:hover, .products-grid.producteffect3 .addtocompare.link-compare:hover, .products-grid.producteffect3 a.addtocompare:hover, .products-grid.producteffect5 .addtocart.button.btn-cart:hover, .products-grid.producteffect5 a.addtocart:hover, .products-grid.producteffect5 .addtowishlist.link-wishlist:hover,.products-grid.producteffect5 a.addtowishlist:hover, .products-grid.producteffect5 .addtocompare.link-compare:hover,.products-grid.producteffect5 a.addtocompare:hover{
-	color:<?php echo $button_hover_text_color; ?>
+	color:#fff
 	}
 </style>
 <!--Button hover text color end-->

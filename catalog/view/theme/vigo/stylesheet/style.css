@@ -285,7 +285,7 @@ input.qty:focus { background: none; }
 button.button::-moz-focus-inner { padding:0; border:0; } /* FF Fix */
 button.button { -webkit-border-fit:lines; } /* <- Safari & Google Chrome Fix */
 button.button { overflow:visible; width:auto; border:0; padding:0; margin:0; background:transparent; cursor:pointer; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; text-shadow: none; }
-button.button span { display:block; height:30px; border:2px solid #666; background:transparent; padding:0 10px; font:bold 13px/28px 'Scada', Helvetica, sans-serif; text-align:center; white-space:nowrap; color:#666; text-transform: uppercase; transition: background-color 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out; -moz-transition: background-color 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out; -webkit-transition: background-color 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out; -o-transition: background-color 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; }
+button.button span { display:block; height:30px; border:0px solid #666; background:transparent; padding:0 10px; text-align:center; white-space:nowrap; color:#fff; text-transform: uppercase; transition: background-color 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out; -moz-transition: background-color 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out; -webkit-transition: background-color 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out; -o-transition: background-color 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; }
 button.button span span { border:0; padding:0; background: transparent !important; }
 
 button.button:hover span, button.button:active span { background: #f0877c; color: #fbfbfb; border:2px solid #f0877c; }
@@ -846,7 +846,10 @@ tr.summary-details-excluded { font-style:italic; }
 .mini-cart p.cart-empty { margin: 0; }
 .mini-cart .actions { padding-right: 0; }
 .mini-cart .actions button.button { width: 100%; margin-bottom: 3px; }
-.mini-cart .actions button.button span { width: 100%; border-color: #777; color: #777; }
+.mini-cart .actions button.button span {color: #fff;
+    font: 10px Arial,Helvetica,sans-serif;
+    line-height: 30px;
+    width: 100%; }
 .mini-cart .actions button.button:hover span { border-color: #f0877c; color: #fff; }
 .mini-cart .totals { padding-left: 0; }
 .mini-cart .totals .label { font-weight: bold; font-size: 14px; color: #666; text-transform: uppercase; }

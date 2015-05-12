@@ -10,558 +10,568 @@
 <?php } ?>
 <?php echo $column_left; ?><?php echo $column_right; ?>
 <div id="content" class="main-container col1-layout"><?php echo $content_top; ?>
-  
-  
-  <div class="breadcrumbs">
-		<div class="container">
-        <div class="page-title"><?php echo $heading_title; ?></div>
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
-    <?php } ?>
+
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="page-title"><?php echo $heading_title; ?></div>
+            <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+            <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+            <?php } ?>
+        </div>
     </div>
-  </div>
-  
-  <div class="main container">
-	<div class="col-main">
-      <div class="cart">
-    	<div class="page-title title-buttons">
-        	<h1><?php echo $heading_title; ?></h1>
-    	</div>
-          <div class=" row carro-compras">
-            <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-            <fieldset class="col-md-12">
-                <div class="row ">
-                    <div class="col-md-8 col-sm-12" >
-                    <?php foreach ($products as $product) { ?>
-                    <div class="carro-producto col-xs-12 col-sm-6 col-md-12">
-                        
-                        <div class="row imagen-producto col-md-4">
-                            
-                            <?php if ($product['thumb']) { ?>                        
-                        <a class="product-image" href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" /></a>
-                        <?php } ?>
-                        </div>
-                        
-                        <div class="row nombre-container col-md-8">
-                            <h2 class="product-name">
-                                    <a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
-                            </h2>
-                            <?php if (!$product['stock']) { ?>
-                                <span class="stock">El Item no esta disponible</span>
-                            <?php } else { ?>
-                                <span class="stock">En Stock</span>
-                                <?php } ?>
-                        </div>
-                        <div class="datos-container col-md-8">
-                            <?php foreach ($product['option'] as $option) { ?>
-                      	<div class="col-md-6" id="posicion">
-                        	<?php echo $option['name']; ?>: <b><?php echo $option['value']; ?></b>
-                        </div>
-                      <?php } ?>
-                      <div class="col-md-6">
-                                <p class="qty-price" id="posicion">
-                                    QTY: <?php echo $product['quantity']; ?>                                                                  
-                                                                
-                                </p>
-                      </div>
-                      <div class="modelo-container col-md-6" id="posicion">
-                          Modelo:  <b><?php echo $product['model']; ?></b> 
-                        </div>
-                        <div class="reward-container col-md-6" id="posicion">
-                            <?php if($product['recurring']): ?>
-                        <div>
-                        	<?php echo $text_payment_profile ?>: <b><?php echo $product['profile_name'] ?></b>
-                        </div>
-                        <?php endif; ?>
-                        <?php if ($product['reward']) { ?>
-                          <div><?php echo $product['reward']; ?></div>
-                          <?php } ?>
-                        </div>
-                      <div class="col-md-6"></div>
-                           <div class="precio-unitario col-md-6" id="posicion">
-                            <span class="mobile-show"><?php echo $column_price; ?></span>
-                    	<span class="cart-price">
-                            <span class="price"><b>SUBTOTAL:  <?php echo $product['price']; ?></b></span>
-                        </span>
-                        </div>
-                      <?php foreach ($vouchers as $voucher) { ?>
-                      <a class="btn-remove btn-remove2 top-btn-remove" title="Remove This Item" onclick="(getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') ? location = 'index.php?route=checkout/cart&remove=<?php echo $voucher['key']; ?>' : $('#cart').load('index.php?route=module/cart&remove=<?php echo $voucher['key']; ?>' + ' #cart > *');" /></a>
-                        <?php } ?>
-                        </div>
-                    </div>
-                        <?php } ?>
-                    </div>
-                    
-                    <div class="col-md-4 col-sm-12" >
-                        <div class="totals">
-                            <div class="sumario">
-                                <div class="titulo col-md-12">
-                                    Sumario de compra
-                                </div>
-                                <div class="precio col-md-12">
-                                    <?php foreach ($totals as $total) { ?><br>
-                                
-                                    <div class="sumario-sub col-md-12">
-                                        <div class="col-md-6" style="text-align: left;"><?php echo $total['title']; ?></div>
-                                        <div class="col-md-6" style="text-align: right;"><?php echo $total['text']; ?></div>
+
+    <div class="main container">
+        <div class="col-main">
+            <div class="cart">
+                <div class="page-title title-buttons">
+                    <h1><?php echo $heading_title; ?></h1>
+                </div>
+                <div class=" row carro-compras">
+                    <form id="cart_checkout" action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+                        <fieldset class="col-md-12">
+                            <div class="row ">
+                                <div class="col-md-8 col-sm-12" >
+                                    <?php foreach ($products as $product) { ?>
+                                    <div class="carro-producto col-xs-12 col-sm-6 col-md-12">
+
+                                        <div class="row imagen-producto col-md-4">
+
+                                            <?php if ($product['thumb']) { ?>                        
+                                            <a class="product-image" href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" /></a>
+                                            <?php } ?>
                                         </div>
-                                   
-                               <?php } ?>
+
+                                        <div class="row nombre-container col-md-8">
+                                            <h2 class="product-name">
+                                                <a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
+                                                <a class="right btn-remove btn-remove2" href="<?php echo $product['remove']; ?>"></a>
+                                            </h2>
+                                            <?php if (!$product['stock']) { ?>
+                                            <span class="stock">El Item no esta disponible</span>
+                                            <?php } else { ?>
+                                            <span class="stock">En Stock</span>
+                                            <?php } ?>
+                                        </div>
+                                        <div class="datos-container col-md-8">
+                                            <div class="col-md-5">
+                                                <div class="item-options">
+                                                    <?php foreach ($product['option'] as $option) { ?>
+                                                    <div>
+                                                        <?php echo $option['name']; ?>: <b><?php echo $option['value']; ?></b>
+                                                    </div>
+                                                    <?php } ?>
+                                                    <?php if($product['recurring']): ?>
+                                                    <div>
+                                                        <?php echo $text_payment_profile ?>: <b><?php echo $product['profile_name'] ?></b>
+                                                    </div>
+                                                    <?php endif; ?>
+                                                    <?php if ($product['reward']) { ?>
+                                                    <div><?php echo $product['reward']; ?></div>
+                                                    <?php } ?>
+                                                    <div> <?php echo $column_model;?>: <b><?php echo $product['model']; ?></b> </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-md-7">           
+                                                <div class="col-md-12">
+                                                    <div class="qty-holder">
+                                                        <?php echo $column_quantity; ?>:
+
+                                                        <select name="quantity[<?php echo $product['key']; ?>]" id="" onchange="change_quantity()">
+                                                            <?php 
+                                                            $x = 1; 
+
+                                                            while($x <= 10) { ?>
+                                                            <option <?php if($product['quantity'] == $x ) echo 'selected'?> value="<?php echo $x ?>"><?php echo $x ?></option>
+                                                           <?php  $x++;
+                                                            } 
+                                                            ?>
+                                                           
+                                                       
+
+                                                        </select>
+
+                                                       
+                                                    </div>
+                                                    </p>
+                                                </div>
+
+                                                <div class="col-md-12">
+
+                                                    <span class="cart-price">
+                                                        <?php echo $column_price; ?>:<span class="price"><?php echo $product['price']; ?></span>
+                                                    </span>
+                                                </div>
+                                                <div class="precio-unitario col-md-12" id="posicion">
+
+                                                    <span class="cart-price">
+                                                        <?php echo $column_total; ?>: <span class="price"><b>  <?php echo $product['total']; ?></b></span>
+                                                    </span>
+                                                </div>
+                                                <?php foreach ($vouchers as $voucher) { ?>
+                                                <a class="btn-remove btn-remove2 top-btn-remove" title="Remove This Item" onclick="(getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') ? location = 'index.php?route=checkout/cart&remove=<?php echo $voucher['key']; ?>' : $('#cart').load('index.php?route=module/cart&remove=<?php echo $voucher['key']; ?>' + ' #cart > *');" /></a>
+                                                <?php } ?>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <?php } ?>
                                 </div>
-                                <div class="cancelar">
-                                        <a href="<?php echo $continue; ?>">
-                                            <button class="button btn-continue" type="button" value="<?php echo $button_shopping; ?>">
-                                                <span><span><?php echo $button_shopping; ?></span></span>
-                                            </button>
-                                        </a>
-                                        <a href="<?php echo $checkout; ?>">
-                                            <button class="button btn-continue" type="button" value="<?php echo $button_checkout; ?>">
-                                                <span><span><?php echo $button_checkout; ?></span></span>
-                                            </button>
-                                       </a>
+
+                                <div class="col-md-4 col-sm-12" >
+                                    <div class="totals">
+                                        <div class="sumario">
+                                            <div class="titulo col-md-12">
+                                                Sumario de compra
+                                            </div>
+                                            <div class="precio col-md-12">
+                                                <?php foreach ($totals as $total) { ?><br>
+
+                                                <div class="sumario-sub col-md-12">
+                                                    <div class="col-md-6" style="text-align: left;"><?php echo $total['title']; ?></div>
+                                                    <div class="col-md-6" style="text-align: right;"><?php echo $total['text']; ?></div>
+                                                </div>
+
+                                                <?php } ?>
+                                            </div>
+                                            <div class="cancelar">
+                                                <a href="<?php echo $continue; ?>">
+                                                    <button class="button btn-continue" type="button" value="<?php echo $button_shopping; ?>">
+                                                        <span><span><?php echo $button_shopping; ?></span></span>
+                                                    </button>
+                                                </a>
+                                                <a href="<?php echo $checkout; ?>">
+                                                    <button class="button btn-continue" type="button" value="<?php echo $button_checkout; ?>">
+                                                        <span><span><?php echo $button_checkout; ?></span></span>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingOne">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <?php if ($coupon_status) { ?>
+
+                                                        <span class="radio_button_hide_shopping_cart"><?php if ($next == 'coupon') { ?>
+                                                            <input type="radio" name="next" value="coupon" id="use_coupon" checked="checked" />
+                                                            <?php } else { ?>
+                                                            <input type="radio" name="next" value="coupon" id="use_coupon" />
+                                                            <?php } ?></span>
+                                                        <span id="cart_page_span1" class="active"><label for="use_coupon"><?php echo $text_use_coupon; ?></label></span>
+                                                        <?php } ?>
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+
+                                                <div class="panel-body">
+                                                    <div id="coupon" class="content" style="display: <?php echo ($next == 'coupon' ? 'block' : 'block'); ?>;">
+                                                        <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+                                                            <div class="discount">
+                                                                <div class="discount-form">
+                                                                    <label for="coupon_code"><?php echo $entry_coupon; ?></label>
+                                                                    <div class="input-box">
+                                                                        <input type="text" name="coupon" value="<?php echo $coupon; ?>" class="input-text"/>
+                                                                        <input type="hidden" name="next" value="coupon" />
+                                                                    </div>
+                                                                    <div class="buttons-set">
+                                                                        <button type="submit" value="<?php echo $button_coupon; ?>" class="button" >
+                                                                            <span><span><?php echo $button_coupon; ?></span></span>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default" >
+                                            <div class="panel-heading" role="tab" id="headingTwo">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        <?php if ($voucher_status) { ?>
+                                                        <span class="radio_button_hide_shopping_cart"><?php if ($next == 'voucher') { ?>
+                                                            <input type="radio" name="next" value="voucher" id="use_voucher" checked="checked" />
+                                                            <?php } else { ?>
+                                                            <input type="radio" name="next" value="voucher" id="use_voucher" />
+                                                            <?php } ?></span>
+                                                        <span id="cart_page_span2" class="active"><label for="use_voucher"><?php echo $text_use_voucher; ?></label></span>
+
+                                                        <?php } ?>
+                                                        <?php if ($reward_status) { ?>
+
+                                                        <span class="radio_button_hide_shopping_cart"><?php if ($next == 'reward') { ?>
+                                                            <input type="radio" name="next" value="reward" id="use_reward" checked="checked" />
+                                                            <?php } else { ?>
+                                                            <input type="radio" name="next" value="reward" id="use_reward" />
+                                                            <?php } ?></span>
+                                                        <span id="cart_page_span3" class="active"><label for="use_reward"><?php echo $text_use_reward; ?></label></span>
+
+
+                                                        <?php } ?>
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                <div class="panel-body">
+                                                    <div id="voucher" class="content " style="display: <?php echo ($next == 'voucher' ? 'block' : 'none'); ?>;">
+                                                        <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+                                                            <div class="discount">
+                                                                <div class="discount-form">
+                                                                    <label for="voucher_code"><?php echo $entry_voucher; ?></label>
+                                                                </div>
+                                                                <div class="input-box">
+                                                                    <input type="text" name="voucher" value="<?php echo $voucher; ?>" class="input-text"/>
+                                                                    <input type="hidden" name="next" value="voucher" />
+                                                                </div>
+                                                                <div class="buttons-set">
+                                                                    <button type="submit" value="<?php echo $button_voucher; ?>" class="button" >
+                                                                        <span><span><?php echo $button_voucher; ?></span></span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div id="reward" class="content" style="display: <?php echo ($next == 'reward' ? 'block' : 'none'); ?>;">
+                                                        <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+                                                            <div class="discount">
+                                                                <div class="discount-form">
+                                                                    <label for="reward_code"><?php echo $entry_reward; ?></label>
+                                                                </div>
+                                                                <div class="input-box">
+                                                                    <input type="text" name="reward" value="<?php echo $reward; ?>" class="input-text"/>
+                                                                    <input type="hidden" name="next" value="reward" />
+                                                                </div>
+                                                                <div class="buttons-set">
+                                                                    <button type="submit" value="<?php echo $button_reward; ?>" class="button" >
+                                                                        <span><span><?php echo $button_reward; ?></span></span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingThree">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        <?php if ($shipping_status) { ?>
+
+                                                        <span class="radio_button_hide_shopping_cart"><?php if ($next == 'shipping') { ?>
+                                                            <input type="radio" name="next" value="shipping" id="shipping_estimate" checked="checked" />
+                                                            <?php } else { ?>
+                                                            <input type="radio" name="next" value="shipping" id="shipping_estimate" />
+                                                            <?php } ?></span>
+                                                        <span id="cart_page_span4"><label for="shipping_estimate"><?php echo $text_shipping_estimate; ?></label></span>
+
+
+                                                        <?php } ?>
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                <div class="panel-body">
+                                                    <div id="shipping" class="content " style="display: <?php echo ($next == 'shipping' ? 'block' : 'none'); ?>;">
+                                                        <div class="shipping">
+                                                            <div class="shipping-form">
+                                                                <label for="reward_code"><?php echo $text_shipping_detail; ?></label>
+                                                                <ul class="form-list">
+                                                                    <li>
+                                                                        <div class="input-box medium-size">
+                                                                            <select name="country_id">
+                                                                                <option value=""><?php echo $text_select; ?></option>
+                                                                                <?php foreach ($countries as $country) { ?>
+                                                                                <?php if ($country['country_id'] == $country_id) { ?>
+                                                                                <option value="<?php echo $country['country_id']; ?>" selected="selected"><?php echo $country['name']; ?></option>
+                                                                                <?php } else { ?>
+                                                                                <option value="<?php echo $country['country_id']; ?>"><?php echo $country['name']; ?></option>
+                                                                                <?php } ?>
+                                                                                <?php } ?>
+                                                                            </select>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="input-box medium-size">
+                                                                            <select name="zone_id"></select>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="input-box medium-size">
+                                                                            <input type="text" name="postcode" value="<?php echo $postcode; ?>" class="input-text validate-postcode" placeholder="postcode *"/>
+                                                                            <button type="button" value="<?php echo $button_quote; ?>" id="button-quote" class="button medium-size" ><span><span><?php echo $button_quote; ?></span></span></button>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-                                
-                            </div>
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          <?php if ($coupon_status) { ?>
 
-        <span class="radio_button_hide_shopping_cart"><?php if ($next == 'coupon') { ?>
-          <input type="radio" name="next" value="coupon" id="use_coupon" checked="checked" />
-          <?php } else { ?>
-          <input type="radio" name="next" value="coupon" id="use_coupon" />
-          <?php } ?></span>
-        <span id="cart_page_span1" class="active"><label for="use_coupon"><?php echo $text_use_coupon; ?></label></span>
-      <?php } ?>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-        
-      <div class="panel-body">
-        <div id="coupon" class="content" style="display: <?php echo ($next == 'coupon' ? 'block' : 'block'); ?>;">
-      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-      	<div class="discount">
-			<div class="discount-form">
-            	<label for="coupon_code"><?php echo $entry_coupon; ?></label>
-                <div class="input-box">
-                	<input type="text" name="coupon" value="<?php echo $coupon; ?>" class="input-text"/>
-			        <input type="hidden" name="next" value="coupon" />
+                            </div>   
+                        </fieldset>
+                    </form>
                 </div>
-                <div class="buttons-set">
-                	<button type="submit" value="<?php echo $button_coupon; ?>" class="button" >
-                    	<span><span><?php echo $button_coupon; ?></span></span>
-        			</button>
-                </div>
-            </div>
-        </div>
-      </form>
-    </div>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default" >
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          <?php if ($voucher_status) { ?>
-        <span class="radio_button_hide_shopping_cart"><?php if ($next == 'voucher') { ?>
-          <input type="radio" name="next" value="voucher" id="use_voucher" checked="checked" />
-          <?php } else { ?>
-          <input type="radio" name="next" value="voucher" id="use_voucher" />
-          <?php } ?></span>
-        <span id="cart_page_span2" class="active"><label for="use_voucher"><?php echo $text_use_voucher; ?></label></span>
-      
-      <?php } ?>
-      <?php if ($reward_status) { ?>
-      
-        <span class="radio_button_hide_shopping_cart"><?php if ($next == 'reward') { ?>
-          <input type="radio" name="next" value="reward" id="use_reward" checked="checked" />
-          <?php } else { ?>
-          <input type="radio" name="next" value="reward" id="use_reward" />
-          <?php } ?></span>
-        <span id="cart_page_span3" class="active"><label for="use_reward"><?php echo $text_use_reward; ?></label></span>
 
-      
-      <?php } ?>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-              <div id="voucher" class="content " style="display: <?php echo ($next == 'voucher' ? 'block' : 'none'); ?>;">
-      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-      	<div class="discount">
-			<div class="discount-form">
-            	<label for="voucher_code"><?php echo $entry_voucher; ?></label>
-            </div>
-            <div class="input-box">
-            	<input type="text" name="voucher" value="<?php echo $voucher; ?>" class="input-text"/>
-		        <input type="hidden" name="next" value="voucher" />
-            </div>
-            <div class="buttons-set">
-            	<button type="submit" value="<?php echo $button_voucher; ?>" class="button" >
-                	<span><span><?php echo $button_voucher; ?></span></span>
-                </button>
-            </div>
-        </div>
-      </form>
-    </div>
-    <div id="reward" class="content" style="display: <?php echo ($next == 'reward' ? 'block' : 'none'); ?>;">
-      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-      		<div class="discount">
-				<div class="discount-form">
-                	<label for="reward_code"><?php echo $entry_reward; ?></label>
-                </div>
-                <div class="input-box">
-                	<input type="text" name="reward" value="<?php echo $reward; ?>" class="input-text"/>
-			        <input type="hidden" name="next" value="reward" />
-                </div>
-                <div class="buttons-set">
-                	<button type="submit" value="<?php echo $button_reward; ?>" class="button" >
-                    	<span><span><?php echo $button_reward; ?></span></span>
-                    </button>
-                </div>
-            </div>
-      </form>
-    </div>
-    
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          <?php if ($shipping_status) { ?>
-    
-        <span class="radio_button_hide_shopping_cart"><?php if ($next == 'shipping') { ?>
-          <input type="radio" name="next" value="shipping" id="shipping_estimate" checked="checked" />
-          <?php } else { ?>
-          <input type="radio" name="next" value="shipping" id="shipping_estimate" />
-          <?php } ?></span>
-        <span id="cart_page_span4"><label for="shipping_estimate"><?php echo $text_shipping_estimate; ?></label></span>
+                <div class="cart-collaterals">
+                    <?php if ($coupon_status || $voucher_status || $reward_status || $shipping_status) { ?>
+                    <div class="cart-extra col-md-8 col-xs-12">
 
-      
-      <?php } ?>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body">
-          <div id="shipping" class="content " style="display: <?php echo ($next == 'shipping' ? 'block' : 'none'); ?>;">
-    	<div class="shipping">
-			<div class="shipping-form">
-            	<label for="reward_code"><?php echo $text_shipping_detail; ?></label>
-                <ul class="form-list">
-					<li>
-                        <div class="input-box medium-size">
-                        	<select name="country_id">
-                              <option value=""><?php echo $text_select; ?></option>
-                              <?php foreach ($countries as $country) { ?>
-                              <?php if ($country['country_id'] == $country_id) { ?>
-                              <option value="<?php echo $country['country_id']; ?>" selected="selected"><?php echo $country['name']; ?></option>
-                              <?php } else { ?>
-                              <option value="<?php echo $country['country_id']; ?>"><?php echo $country['name']; ?></option>
-                              <?php } ?>
-                              <?php } ?>
-                            </select>
-                        </div>
-                    </li>
-					<li>
-                        <div class="input-box medium-size">
-                        	<select name="zone_id"></select>
-                        </div>
-                    </li>
-					<li>
-                        <div class="input-box medium-size">
-                        	<input type="text" name="postcode" value="<?php echo $postcode; ?>" class="input-text validate-postcode" placeholder="postcode *"/>
-                            <button type="button" value="<?php echo $button_quote; ?>" id="button-quote" class="button medium-size" ><span><span><?php echo $button_quote; ?></span></span></button>
-                        </div>
-                    </li>
-				</ul>
+                        <script type="text/javascript">
+                                    jQuery("#cart_page_span1").click(function(){
+                            jQuery(this).parent().children('span').addClass('active');
+                            }).blur(function(){
+                            jQuery(this).parent().children('span#cart_page_span1').removeClass('active');
+                            });</script>
+                        <script type="text/javascript">
+                                    jQuery("#cart_page_span2").click(function(){
+                            jQuery(this).parent().children('span').addClass('active');
+                            }).blur(function(){
+                            jQuery(this).parent().children('span#cart_page_span2').removeClass('active');
+                            });</script>
+                        <script type="text/javascript">
+                                    jQuery("#cart_page_span3").click(function(){
+                            jQuery(this).parent().children('span').addClass('active');
+                            }).blur(function(){
+                            jQuery(this).parent().children('span#cart_page_span3').removeClass('active');
+                            });</script>
+                        <script type="text/javascript">
+                                    jQuery("#cart_page_span4").click(function(){
+                            jQuery(this).parent().children('span').addClass('active');
+                            }).blur(function(){
+                            jQuery(this).parent().children('span#cart_page_span4').removeClass('active');
+                            });</script>
+
+                    </div>			
+
+                </div>	
+                <?php } ?>
+
+
             </div>
+
+            <ul class="checkout-types">
+
+            </ul>
+
         </div>
+        <script type="text/javascript">
+             function change_quantity(){
+               $("#cart_checkout").submit();
+             };
+                    jQuery(document).ready(function(){
+                      
+            jQuery(".qty_inc").click(function(){
+            jQuery(this).parent().parent().children("input.qty").val(( + jQuery(this).parent().parent().children("input.qty").val() + 1) || 0);
+            });
+            });</script>
+        <script type="text/javascript">
+                    jQuery(document).ready(function(){
+            jQuery(".qty_vau_inc").click(function(){
+            jQuery(this).parent().parent().children("input.qty_vau").val(( + jQuery(this).parent().parent().children("input.qty_vau").val() + 1) || 0);
+            });
+            });</script>
+
     </div>
-        </div>
-    </div>
-  </div>
 </div>
-  
-            </div>
-                    </div>
-                    
-                </div>   
-            </fieldset>
-        </form>
-          </div>
-       
-        <div class="cart-collaterals">
-        	<?php if ($coupon_status || $voucher_status || $reward_status || $shipping_status) { ?>
-        	<div class="cart-extra col-md-8 col-xs-12">
-				
-			<script type="text/javascript">
-				jQuery("#cart_page_span1").click(function(){
-				jQuery(this).parent().children('span').addClass('active');
-				}).blur(function(){
-				jQuery(this).parent().children('span#cart_page_span1').removeClass('active');
-				});
-			</script>
-            <script type="text/javascript">
-				jQuery("#cart_page_span2").click(function(){
-				jQuery(this).parent().children('span').addClass('active');
-				}).blur(function(){
-				jQuery(this).parent().children('span#cart_page_span2').removeClass('active');
-				});
-			</script>
-            <script type="text/javascript">
-				jQuery("#cart_page_span3").click(function(){
-				jQuery(this).parent().children('span').addClass('active');
-				}).blur(function(){
-				jQuery(this).parent().children('span#cart_page_span3').removeClass('active');
-				});
-			</script>
-            <script type="text/javascript">
-				jQuery("#cart_page_span4").click(function(){
-				jQuery(this).parent().children('span').addClass('active');
-				}).blur(function(){
-				jQuery(this).parent().children('span#cart_page_span4').removeClass('active');
-				});
-			</script>
-  				
-            </div>			
 
-            </div>	
-			<?php } ?>
-        	
-        	
-        </div>
-        
-        <ul class="checkout-types">
-            
-		</ul>
-        
-      </div>
-<script type="text/javascript">
-    jQuery(document).ready(function(){
-        jQuery(".qty_inc").click(function(){
-            jQuery(this).parent().parent().children("input.qty").val((+jQuery(this).parent().parent().children("input.qty").val() + 1) || 0);
-        });
-    });
-</script>
-<script type="text/javascript">
-    jQuery(document).ready(function(){
-        jQuery(".qty_vau_inc").click(function(){
-            jQuery(this).parent().parent().children("input.qty_vau").val((+jQuery(this).parent().parent().children("input.qty_vau").val() + 1) || 0);
-        });
-    });
-</script>
 
-    </div>
-  </div>
-  
-
-  <?php echo $content_bottom; ?></div>
+<?php echo $content_bottom; ?></div>
 <script type="text/javascript"><!--
 $('input[name=\'next\']').bind('change', function() {
-	$('.cart-module > div').hide();
-	
-	$('#' + this.value).show();
-});
+    $('.cart-module > div').hide();
+            $('#' + this.value).show();
+    });
 //--></script>
 <?php if ($shipping_status) { ?>
 
 <script type="text/javascript"><!--
+   
 $('select[name=\'country_id\']').bind('change', function() {
-	$.ajax({
-		url: 'index.php?route=checkout/cart/country&country_id=' + this.value,
-		dataType: 'json',
-		beforeSend: function() {
-			$('select[name=\'country_id\']').after('<span class="wait">&nbsp;<img src="catalog/view/theme/vigo/image/loading.gif" alt="" /></span>');
-		},
-		complete: function() {
-			$('.wait').remove();
-		},			
-		success: function(json) {
-			if (json['postcode_required'] == '1') {
-				$('#postcode-required').show();
-			} else {
-				$('#postcode-required').hide();
-			}
-			
-			html = '<option value=""><?php echo $text_select; ?></option>';
-			
-			if (json['zone'] != '') {
-				for (i = 0; i < json['zone'].length; i++) {
-        			html += '<option value="' + json['zone'][i]['zone_id'] + '"';
-	    			
-					if (json['zone'][i]['zone_id'] == '<?php echo $zone_id; ?>') {
-	      				html += ' selected="selected"';
-	    			}
-	
-	    			html += '>' + json['zone'][i]['name'] + '</option>';
-				}
-			} else {
-				html += '<option value="0" selected="selected"><?php echo $text_none; ?></option>';
-			}
-			
-			$('select[name=\'zone_id\']').html(html);
-		},
-		error: function(xhr, ajaxOptions, thrownError) {
-			alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-		}
-	});
-});
+    $.ajax({
+    url: 'index.php?route=checkout/cart/country&country_id=' + this.value,
+            dataType: 'json',
+            beforeSend: function() {
+            $('select[name=\'country_id\']').after('<span class="wait">&nbsp;<img src="catalog/view/theme/vigo/image/loading.gif" alt="" /></span>');
+            },
+            complete: function() {
+            $('.wait').remove();
+            },
+            success: function(json) {
+            if (json['postcode_required'] == '1') {
+            $('#postcode-required').show();
+            } else {
+            $('#postcode-required').hide();
+            }
 
-$('select[name=\'country_id\']').trigger('change');
+            html = '<option value=""><?php echo $text_select; ?></option>';
+                    if (json['zone'] != '') {
+            for (i = 0; i < json['zone'].length; i++) {
+            html += '<option value="' + json['zone'][i]['zone_id'] + '"';
+                    if (json['zone'][i]['zone_id'] == '<?php echo $zone_id; ?>') {
+            html += ' selected="selected"';
+            }
+
+            html += '>' + json['zone'][i]['name'] + '</option>';
+            }
+            } else {
+            html += '<option value="0" selected="selected"><?php echo $text_none; ?></option>';
+            }
+
+            $('select[name=\'zone_id\']').html(html);
+            },
+            error: function(xhr, ajaxOptions, thrownError) {
+            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+            }
+    });
+    });
+            $('select[name=\'country_id\']').trigger('change');
 //--></script>
 <script type="text/javascript"><!--
 $('#button-quote').live('click', function() {
-	$.ajax({
-		url: 'index.php?route=checkout/cart/quote',
-		type: 'post',
-		data: 'country_id=' + $('select[name=\'country_id\']').val() + '&zone_id=' + $('select[name=\'zone_id\']').val() + '&postcode=' + encodeURIComponent($('input[name=\'postcode\']').val()),
-		dataType: 'json',		
-		beforeSend: function() {
-			$('#button-quote').attr('disabled', true);
-			$('#button-quote').after('<span class="wait">&nbsp;<img src="catalog/view/theme/vigo/image/loading.gif" alt="" /></span>');
-		},
-		complete: function() {
-			$('#button-quote').attr('disabled', false);
-			$('.wait').remove();
-		},		
-		success: function(json) {
-			$('.success, .warning, .attention, .error').remove();			
-						
-			if (json['error']) {
-				if (json['error']['warning']) {
-					$('#notification').html('<div class="warning" style="display: none;">' + json['error']['warning'] + '<img src="catalog/view/theme/vigo/image/close.png" alt="" class="close" /></div>');
-					
-					$('.warning').fadeIn('slow');
-					
-					$('html, body').animate({ scrollTop: 0 }, 'slow'); 
-				}	
-							
-				if (json['error']['country']) {
-					$('select[name=\'country_id\']').after('<span class="error">' + json['error']['country'] + '</span>');
-				}	
-				
-				if (json['error']['zone']) {
-					$('select[name=\'zone_id\']').after('<span class="error">' + json['error']['zone'] + '</span>');
-				}
-				
-				if (json['error']['postcode']) {
-					$('input[name=\'postcode\']').after('<span class="error">' + json['error']['postcode'] + '</span>');
-				}					
-			}
-			
-			if (json['shipping_method']) {
-				html  = '<h2><?php echo $text_shipping_method; ?></h2>';
-				html += '<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">';
-				html += '  <ul class="cart-extra-tab">';
-				
-				for (i in json['shipping_method']) {
-					html += '<li>';
-					html += '  <span><b>' + json['shipping_method'][i]['title'] + '</b></span>';
-					html += '</li>';
-				
-					if (!json['shipping_method'][i]['error']) {
-						for (j in json['shipping_method'][i]['quote']) {
-							html += '<li class="highlight">';
-							
-							if (json['shipping_method'][i]['quote'][j]['code'] == '<?php echo $shipping_method; ?>') {
-								html += '<span><input type="radio" name="shipping_method" value="' + json['shipping_method'][i]['quote'][j]['code'] + '" id="' + json['shipping_method'][i]['quote'][j]['code'] + '" checked="checked" /></span>';
-							} else {
-								html += '<span><input type="radio" name="shipping_method" value="' + json['shipping_method'][i]['quote'][j]['code'] + '" id="' + json['shipping_method'][i]['quote'][j]['code'] + '" /></span>';
-							}
-								
-							html += '  <span><label for="' + json['shipping_method'][i]['quote'][j]['code'] + '">' + json['shipping_method'][i]['quote'][j]['title'] + '</label></span>';
-							html += '  <span style="text-align: right;"><label for="' + json['shipping_method'][i]['quote'][j]['code'] + '">' + json['shipping_method'][i]['quote'][j]['text'] + '</label></span>';
-							html += '</li>';
-						}		
-					} else {
-						html += '<li>';
-						html += '  <span><div class="error">' + json['shipping_method'][i]['error'] + '</div></span>';
-						html += '</li>';						
-					}
-				}
-				
-				html += '  </ul>';
-				html += '  <br />';
-				html += '  <input type="hidden" name="next" value="shipping" />';
-				
-				<?php if ($shipping_method) { ?>
-				html += '  <input type="submit" value="<?php echo $button_shipping; ?>" id="button-shipping" class="button" />';	
-				<?php } else { ?>
-				html += '  <input type="submit" value="<?php echo $button_shipping; ?>" id="button-shipping" class="button" disabled="disabled" />';	
-				<?php } ?>
-							
-				html += '</form>';
-				
-				$.colorbox({
-					overlayClose: true,
-					opacity: 0.5,
-					width: '600px',
-					height: '400px',
-					href: false,
-					html: html
-				});
-				
-				$('input[name=\'shipping_method\']').bind('change', function() {
-					$('#button-shipping').attr('disabled', false);
-				});
-			}
-		}
-	});
-});
+    $.ajax({
+    url: 'index.php?route=checkout/cart/quote',
+            type: 'post',
+            data: 'country_id=' + $('select[name=\'country_id\']').val() + '&zone_id=' + $('select[name=\'zone_id\']').val() + '&postcode=' + encodeURIComponent($('input[name=\'postcode\']').val()),
+            dataType: 'json',
+            beforeSend: function() {
+            $('#button-quote').attr('disabled', true);
+                    $('#button-quote').after('<span class="wait">&nbsp;<img src="catalog/view/theme/vigo/image/loading.gif" alt="" /></span>');
+            },
+            complete: function() {
+            $('#button-quote').attr('disabled', false);
+                    $('.wait').remove();
+            },
+            success: function(json) {
+            $('.success, .warning, .attention, .error').remove();
+                    if (json['error']) {
+            if (json['error']['warning']) {
+            $('#notification').html('<div class="warning" style="display: none;">' + json['error']['warning'] + '<img src="catalog/view/theme/vigo/image/close.png" alt="" class="close" /></div>');
+                    $('.warning').fadeIn('slow');
+                    $('html, body').animate({ scrollTop: 0 }, 'slow');
+            }
+
+            if (json['error']['country']) {
+            $('select[name=\'country_id\']').after('<span class="error">' + json['error']['country'] + '</span>');
+            }
+
+            if (json['error']['zone']) {
+            $('select[name=\'zone_id\']').after('<span class="error">' + json['error']['zone'] + '</span>');
+            }
+
+            if (json['error']['postcode']) {
+            $('input[name=\'postcode\']').after('<span class="error">' + json['error']['postcode'] + '</span>');
+            }
+            }
+
+            if (json['shipping_method']) {
+            html = '<h2><?php echo $text_shipping_method; ?></h2>';
+                    html += '<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">';
+                    html += '  <ul class="cart-extra-tab">';
+                    for (i in json['shipping_method']) {
+            html += '<li>';
+                    html += '  <span><b>' + json['shipping_method'][i]['title'] + '</b></span>';
+                    html += '</li>';
+                    if (!json['shipping_method'][i]['error']) {
+            for (j in json['shipping_method'][i]['quote']) {
+            html += '<li class="highlight">';
+                    if (json['shipping_method'][i]['quote'][j]['code'] == '<?php echo $shipping_method; ?>') {
+            html += '<span><input type="radio" name="shipping_method" value="' + json['shipping_method'][i]['quote'][j]['code'] + '" id="' + json['shipping_method'][i]['quote'][j]['code'] + '" checked="checked" /></span>';
+            } else {
+            html += '<span><input type="radio" name="shipping_method" value="' + json['shipping_method'][i]['quote'][j]['code'] + '" id="' + json['shipping_method'][i]['quote'][j]['code'] + '" /></span>';
+            }
+
+            html += '  <span><label for="' + json['shipping_method'][i]['quote'][j]['code'] + '">' + json['shipping_method'][i]['quote'][j]['title'] + '</label></span>';
+                    html += '  <span style="text-align: right;"><label for="' + json['shipping_method'][i]['quote'][j]['code'] + '">' + json['shipping_method'][i]['quote'][j]['text'] + '</label></span>';
+                    html += '</li>';
+            }
+            } else {
+            html += '<li>';
+                    html += '  <span><div class="error">' + json['shipping_method'][i]['error'] + '</div></span>';
+                    html += '</li>';
+            }
+            }
+
+            html += '  </ul>';
+                    html += '  <br />';
+                    html += '  <input type="hidden" name="next" value="shipping" />';
+                    < ?php if ($shipping_method) { ? >
+                    html += '  <input type="submit" value="<?php echo $button_shipping; ?>" id="button-shipping" class="button" />';
+                    < ?php } else { ? >
+                    html += '  <input type="submit" value="<?php echo $button_shipping; ?>" id="button-shipping" class="button" disabled="disabled" />';
+                    < ?php } ? >
+                    html += '</form>';
+                    $.colorbox({
+                    overlayClose: true,
+                            opacity: 0.5,
+                            width: '600px',
+                            height: '400px',
+                            href: false,
+                            html: html
+                    });
+                    $('input[name=\'shipping_method\']').bind('change', function() {
+            $('#button-shipping').attr('disabled', false);
+            });
+            }
+            }
+    });
+    });
 //--></script> 
 <script type="text/javascript"><!--
 $('select[name=\'country_id\']').bind('change', function() {
-	$.ajax({
-		url: 'index.php?route=checkout/cart/country&country_id=' + this.value,
-		dataType: 'json',
-		beforeSend: function() {
-			$('select[name=\'country_id\']').after('<span class="wait">&nbsp;<img src="catalog/view/theme/vigo/image/loading.gif" alt="" /></span>');
-		},
-		complete: function() {
-			$('.wait').remove();
-		},			
-		success: function(json) {
-			if (json['postcode_required'] == '1') {
-				$('#postcode-required').show();
-			} else {
-				$('#postcode-required').hide();
-			}
-			
-			html = '<option value=""><?php echo $text_select; ?></option>';
-			
-			if (json['zone'] != '') {
-				for (i = 0; i < json['zone'].length; i++) {
-        			html += '<option value="' + json['zone'][i]['zone_id'] + '"';
-	    			
-					if (json['zone'][i]['zone_id'] == '<?php echo $zone_id; ?>') {
-	      				html += ' selected="selected"';
-	    			}
-	
-	    			html += '>' + json['zone'][i]['name'] + '</option>';
-				}
-			} else {
-				html += '<option value="0" selected="selected"><?php echo $text_none; ?></option>';
-			}
-			
-			$('select[name=\'zone_id\']').html(html);
-		},
-		error: function(xhr, ajaxOptions, thrownError) {
-			alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-		}
-	});
-});
+    $.ajax({
+    url: 'index.php?route=checkout/cart/country&country_id=' + this.value,
+            dataType: 'json',
+            beforeSend: function() {
+            $('select[name=\'country_id\']').after('<span class="wait">&nbsp;<img src="catalog/view/theme/vigo/image/loading.gif" alt="" /></span>');
+            },
+            complete: function() {
+            $('.wait').remove();
+            },
+            success: function(json) {
+            if (json['postcode_required'] == '1') {
+            $('#postcode-required').show();
+            } else {
+            $('#postcode-required').hide();
+            }
 
-$('select[name=\'country_id\']').trigger('change');
+            html = '<option value=""><?php echo $text_select; ?></option>';
+                    if (json['zone'] != '') {
+            for (i = 0; i < json['zone'].length; i++) {
+            html += '<option value="' + json['zone'][i]['zone_id'] + '"';
+                    if (json['zone'][i]['zone_id'] == '<?php echo $zone_id; ?>') {
+            html += ' selected="selected"';
+            }
+
+            html += '>' + json['zone'][i]['name'] + '</option>';
+            }
+            } else {
+            html += '<option value="0" selected="selected"><?php echo $text_none; ?></option>';
+            }
+
+            $('select[name=\'zone_id\']').html(html);
+            },
+            error: function(xhr, ajaxOptions, thrownError) {
+            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+            }
+    });
+    });
+            $('select[name=\'country_id\']').trigger('change');
 //--></script>
 <?php } ?>
 <?php echo $footer; ?>
