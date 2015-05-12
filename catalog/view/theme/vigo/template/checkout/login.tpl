@@ -1,5 +1,5 @@
 <div class="col2-set">
-    <div class="col-md-2 col-sm-2"></div>
+    <div class="col-md-1 col-sm-1"></div>
     <div class="block block-new-users col-md-4 col-sm-4 col-xs-12" id="nuevo-cliente">
 	<div class="block-title">
     	<strong><span><?php echo $text_new_customer; ?></span></strong>

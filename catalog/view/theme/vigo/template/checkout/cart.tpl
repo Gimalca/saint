@@ -10,18 +10,35 @@
 <?php } ?>
 <?php echo $column_left; ?><?php echo $column_right; ?>
 <div id="content" class="main-container col1-layout"><?php echo $content_top; ?>
-
-
-    <div class="breadcrumbs">
-        <div class="container">
-            <div class="page-title"><?php echo $heading_title; ?></div>
-            <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-            <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
-            <?php } ?>
-        </div>
+    <div>
+        
     </div>
 
+    
     <div class="main container">
+        <div id="shopping_process_bar" class="col-md-12">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+                <td>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tbody><tr>
+                            <td width="800" align="left">
+                                <ul id="progressTracker">
+                                    <li class="active heading2">SHOPPING BAG</li>
+                                    <li class="heading2">SHIPPING &amp; BILLING</li>
+                                    <li class="heading2">SHIPPING METHOD</li>
+                                    <li class="heading2">PAYMENT</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><div class="billing-block-wrapper" style="border-top: 1px solid #000000;width:100%;"></div></td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
         <div class="col-main">
             <div class="cart">
                 <div class="page-title title-buttons">
@@ -136,14 +153,14 @@
 
                                                 <?php } ?>
                                             </div>
-                                            <div class="cancelar">
+                                            <div class="cancelar" id="botonn">
                                                 <a href="<?php echo $continue; ?>">
-                                                    <button class="button btn-continue" type="button" value="<?php echo $button_shopping; ?>">
+                                                    <button  class="button btn-continue" type="button" value="<?php echo $button_shopping; ?>">
                                                         <span><span><?php echo $button_shopping; ?></span></span>
                                                     </button>
                                                 </a>
                                                 <a href="<?php echo $checkout; ?>">
-                                                    <button class="button btn-continue" type="button" value="<?php echo $button_checkout; ?>">
+                                                    <button  class="button btn-continue" type="button" value="<?php echo $button_checkout; ?>">
                                                         <span><span><?php echo $button_checkout; ?></span></span>
                                                     </button>
                                                 </a>

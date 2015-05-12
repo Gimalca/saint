@@ -3103,8 +3103,42 @@ li.custom-menu .custom-menu-item p {
 .carro-producto{ border: 1px dotted gray; margin-bottom: 30px; height: 239px; float: left;}
 .imagen-producto{float: left; margin-top: 27px;}
 .nombre-container{  float: left;  margin-top: 12px; margin-left: 12px; border-bottom: 1px solid gray;}
-.datos-container{color: black; margin-top: 20px; font-size: 14px; margin-left: 12px; border-bottom: 1px solid gray;}
+.datos-container{  color: black;
+  margin-top: 20px;
+  font-size: 11px;
+  margin-left: 12px;
+  border-bottom: 1px solid gray;
+  text-transform: uppercase;}
 #posicion {margin-bottom: 14px; color:black;}
+#progressTracker {
+  list-style: none;
+  position: relative;
+  right: 17px;
+}
+#progressTracker li {
+  background: url("../images/indicator.gif") no-repeat scroll center 17px transparent;
+  float: left;
+  height: 35px;
+  margin: 0 0 0 21px !important;
+  position: relative;
+  font-size: 12px;
+}
+#shopping_process_bar .active {
+  color: #c70101;
+}
+#shopping_process_bar {
+  display: block;
+  float: left;
+  text-align: center;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 20px 0 0 0;
+  margin-bottom: 20px;
+}
+.active {
+  background: url("../images/active.gif") no-repeat scroll center 17px transparent !important;
+  font-weight: bold;
+}
 
 /*Totales Nuevo*/
 .sumario{  border: 1px solid gray;  height: 242px;   margin-bottom: 27px;   background: #f0f0f0;}
@@ -3113,6 +3147,9 @@ li.custom-menu .custom-menu-item p {
 .precio{ text-align: center;   height: 133px;}
 .cancelar{border-top: 1px solid gray;  height: 52px;   background: #7e7e7e;}
 .cancelar button{  margin-top: 11px;  margin-right: 22px;  margin-left: 34px; background-color: white;}
+#botonn button.button span{
+      padding: 4px;
+}
 
 /*Compra Nuevo*/
 /*Opcion 1 Nuevo*/
