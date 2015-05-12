@@ -3129,7 +3129,6 @@ li.custom-menu .custom-menu-item p {
 }
 #shopping_process_bar {
   display: block;
-  float: left;
   text-align: center;
   font-size: 1em;
   text-transform: uppercase;
@@ -3148,7 +3147,7 @@ li.custom-menu .custom-menu-item p {
 .cancelar{border-top: 1px solid gray;  height: 52px;   background: #7e7e7e;}
 .cancelar button{  margin-top: 11px;  margin-right: 22px;  margin-left: 34px; background-color: white;}
 #botonn button.button span{
-      padding: 4px;
+      padding: 0px;
 }
 
 /*Compra Nuevo*/
