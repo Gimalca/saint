@@ -42,7 +42,7 @@
     </div>
     
 
-    <button  type="button" value="<?php echo $button_filter; ?>" id="button-cart" class="button btn-cart"><span><?php echo $button_filter; ?></span></button>
+    <button style="margin-top: 10px;" type="button" value="<?php echo $button_filter; ?>" id="button-cart" class="button btn-cart"><span><?php echo $button_filter; ?></span></button>
 
 </div>
 
@@ -62,7 +62,7 @@ $('#button-filter').bind('click', function () {
 
 <script type="text/javascript">
     jQuery(document).ready(function () {
-        jQuery('.akordeon.narrow-by-list').akordeon({buttons: true, toggle: true, expandedAll: true});
+        jQuery('.akordeon.narrow-by-list').akordeon({expandedItem: 5,buttons: true, toggle: true, expandedAll: false});
     });
 </script>                                                           
 

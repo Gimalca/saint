@@ -90,8 +90,8 @@ button.button:hover span {
 #nav_custom ul li.level1 > a { border-bottom-color: #e4e4e4; }
 #nav_custom ul span { color: #777777; }
 #nav_custom ul li a:hover span { color: #f0877c !important; }
-.footer .split.scroll-top a { background-color: #2a2a2a; border-color: #505050; }
-.footer .split.scroll-top a:hover { background-color: #f0877c; border-color: #f0877c; }
+.footer .split.scroll-top a {}
+.footer .split.scroll-top a:hover {  }
 .footer .products-list .product-name a { color: #999999; }
 .footer .products-list .product-name a:hover { color: #999999; }
 .footer .products-list .ratings .rating-links .separator { color: #999999; }

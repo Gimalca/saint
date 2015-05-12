@@ -10,7 +10,7 @@
 .selectbox .select {
 	height: 32px;
 	padding: 0 30px 0 10px;
-	font: 13px/32px Verdana, Arial, Tahoma, sans-serif;
+	font: 10px ;
 	color: #fff;
 }
 .selectbox:hover .select {
@@ -23,7 +23,7 @@
 	box-shadow: inset 0 1px 3px rgba(0,0,0,0.15);
 }
 .selectbox.focused .select {
-	border: 1px solid #5794BF;
+	border: 1px solid #000;
 }
 .selectbox .select .text {
 	display: block;
@@ -94,15 +94,15 @@
 .selectbox.default:hover .select { background-color: transparent; }
 .selectbox.default .select .text {
     padding: 0 10px;
-    border: 1px solid #d6d6d6;
+    border: 1px solid #000;
 }
 .selectbox.default .trigger {
-    border: 1px solid #d6d6d6;
-    width: 29px;
+    border: 1px solid #000;
+    width: 27px;
     height: 30px;
 }
 .selectbox.default:hover .trigger {
-    border: 2px solid #a3a3a3;
+    border: 1px solid #000;
 }
 .selectbox.default .trigger .arrow {
     margin-top: 4px;

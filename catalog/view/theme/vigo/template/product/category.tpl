@@ -84,6 +84,7 @@
 
                             <div class="limiter">
                                 <label><?php echo $text_limit; ?></label>
+                                  <span class="selectbox default">
                                 <select onchange="location = this.value;">
                                     <?php foreach ($limits as $limits) { ?>
                                     <?php if ($limits['value'] == $limit) { ?>
@@ -93,6 +94,7 @@
                                     <?php } ?>
                                     <?php } ?>
                                 </select>
+                                  </span>
                             </div>
 
                         </div>
