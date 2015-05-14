@@ -322,7 +322,7 @@ input.input-text:focus,select:focus,textarea:focus {  }
 .form-list input.input-text { width: 100%; height: 46px; border: 1px solid #dbdbdb; padding: 10px 15px; }
 .form-list .medium-size input.input-text { height: 35px; font-size: 14px; }
 .form-list textarea { width:100%; padding: 15px; height:10em; }
-.form-list select { width: 100%; height: 46px; ; font-size: 16px; font-weight: normal; padding: 10px 18px; }
+.form-list select { width: 100%; height: 46px; ; font-size: 16px; font-weight: normal;  }
 .form-list .medium-size select { height: 35px; font-size: 13px; padding: 5px 7px; }
 .form-list li.wide .input-box {  }
 .form-list li.wide input.input-text {  }
@@ -791,7 +791,7 @@ tr.summary-details-excluded { font-style:italic; }
 .block .block-title strong span { border-bottom: 2px solid #000; display: inline-block; margin-bottom: -2px; color: #000 !important }
 .block .block-title a { text-decoration:none !important; }
 .block .block-subtitle { margin:0; padding:5px 0; font-size:1em; font-weight:bold; color: #555;}
-.block .block-content { padding-top: 50px; }
+.block .block-content {  }
 .sidebar .block .block-content { padding-top: 0; }
 .block .block-content li.item { padding: 7px 0; }
 .block.box-reviews .block-content ol li.item, .block.box-tags .block-content ol li.item { border-top: 1px solid #eee; }
@@ -3154,6 +3154,5 @@ li.custom-menu .custom-menu-item p {
 /*Opcion 1 Nuevo*/
 #input-emailn{   margin: 0;  border: 1px solid #aaa;  height: 28px;  width: 100%;  font-size: inherit; text-transform: uppercase;  font-family: inherit;  outline: none;}
 .dividern{height: 278px;  display: table-cell;  text-align: center;  vertical-align: middle;  background: url("../images/center_line.png") repeat-y center;}
-#nuevo-cliente{
-    
-}
+
+#personales{  height: 508px;}

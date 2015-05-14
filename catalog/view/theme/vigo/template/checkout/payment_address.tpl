@@ -1,3 +1,6 @@
+<div class="col2-set">
+    <div class="col-md-1 col-sm-1"></div>
+    <div class="block-content col-md-4">
 <?php if ($addresses) { ?>
 <ul class="form-list">
 <li class="control">
@@ -15,24 +18,31 @@
     <?php } ?>
   </select>
 </div>
-<li class="control">
+</ul>
+<?php } ?>
+    </div>
+        <div class="dividern col-md-2 col-sm-2 col-xs-12" id="personales"></div>
+        <div class="block-content col-md-4">
+            <ul class="form-list">
+                <li class="control">
   <input type="radio" name="payment_address" value="new" id="payment-address-new" class="radio" />
   <label for="payment-address-new"><?php echo $text_address_new; ?></label>
 </li>
-</ul>
-<?php } ?>
-<div id="payment-new" style="display: <?php echo ($addresses ? 'none' : 'block'); ?>;">
+            </ul>
+            
+        
+<div id="payment-new" style="display: <?php echo ($addresses ? 'none' : 'block'); ?>;" col-md-5>
 	<ul class="form-list">
         <li class="fields">
         	<div class="customer-name">
             	<div class="field name-firstname col-md-6 col-sm-6 col-xs-12">
                 	<div class="input-box">
-                    	<input type="text" name="firstname" value="" class="large-field input-text "  placeholder="Enter your first name*"/>
+                    	<input type="text" name="firstname" id="input-emailn" value="" class="large-field input-text "  placeholder="Enter your first name*"/>
                     </div>
 				</div>
                 <div class="field name-lastname col-md-6 col-sm-6 col-xs-12">
                 	<div class="input-box">
-                    	<input type="text" name="lastname" value="" class="large-field input-text" placeholder="Enter your last name*"/>
+                    	<input type="text" name="lastname" id="input-emailn" value="" class="large-field input-text" placeholder="Enter your last name*"/>
                     </div>
                 </div>
             </div>
@@ -40,38 +50,38 @@
         <?php if ($tax_id_display) { ?>
         <li id="tax-id-display">
 	        <div class="input-box input-tax">
-            	<input type="text" name="tax_id" value="" class="large-field input-text" placeholder="tax id *"/>
+            	<input type="text" name="tax_id" id="input-emailn" value="" class="large-field input-text" placeholder="tax id *"/>
             </div>
         </li>
         <?php } ?>
         <li class="fields">
             <div class="field">
 	            <div class="input-box input-address">
-                	<input type="text" name="address_1" value="" class="large-field input-text" placeholder="address *"/>
+                	<input type="text" name="address_1" id="input-emailn"  value="" class="large-field input-text" placeholder="address *"/>
                 </div>
             </div>
             <div class="field">
     	        <div class="input-box input-address">
-                	<input type="text" name="address_2" value="" class="large-field input-text" placeholder="address 2"/>
+                	<input type="text" name="address_2" id="input-emailn" value="" class="large-field input-text" placeholder="address 2"/>
                 </div>
             </div>
         </li>
         <li class="fields">
             <div class="field">
 	            <div class="input-box input-city">
-                	<input type="text" name="city" value="" class="large-field input-text" placeholder="city *"/>
+                	<input type="text" name="city" id="input-emailn" value="" class="large-field input-text" placeholder="city *"/>
                 </div>
             </div>
             <div class="field">
     	        <div class="input-box input-postcode">
-                	<input type="text" name="postcode" value="" class="large-field input-text" placeholder="postcode *"/>
+                	<input type="text" name="postcode" id="input-emailn" value="" class="large-field input-text" placeholder="postcode *"/>
                 </div>
             </div>
         </li>
         <li class="fields">
             <div class="field">
     	        <div class="input-box input-country">
-                	<select name="country_id" class="large-field input-text">
+                	<select name="country_id" class="large-field input-text" id="input-emailn">
                       <option value=""><?php echo $text_select; ?></option>
                       <?php foreach ($countries as $country) { ?>
                       <?php if ($country['country_id'] == $country_id) { ?>
@@ -85,7 +95,7 @@
             </div>
             <div class="field">
 	            <div class="input-box input-region">
-                	<select name="zone_id" class="large-field input-text"></select>
+                	<select name="zone_id" id="input-emailn" class="large-field input-text"></select>
                 </div>
             </div>
         </li>
@@ -99,7 +109,8 @@
     <span><span><?php echo $button_continue; ?></span></span>
     </button>
 </div>
-
+            </div>
+</div>
 
 <script type="text/javascript"><!--
 $('#payment-address input[name=\'payment_address\']').live('change', function() {
