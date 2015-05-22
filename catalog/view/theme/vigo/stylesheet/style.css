@@ -3156,3 +3156,11 @@ li.custom-menu .custom-menu-item p {
 .dividern{height: 278px;  display: table-cell;  text-align: center;  vertical-align: middle;  background: url("../images/center_line.png") repeat-y center;}
 
 #personales{  height: 508px;}
+
+/*Footer*/
+#posicion-footer{
+    text-align: left; margin-top: 29px; line-height: 3px;
+}
+#footer-titulo{
+    font-weight: bold; margin-bottom: 5px; color: white;
+}
