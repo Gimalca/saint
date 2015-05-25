@@ -150,7 +150,7 @@ body          {font-family: 'Open Sans', sans-serif; font-size: 12px; color:#000
 
 img           { border:0; vertical-align:top; }
 
-a             { color: #000 !important; text-decoration: none; transition: color 200ms ease-in-out; -moz-transition: color 200ms ease-in-out; -webkit-transition: color 200ms ease-in-out; -o-transition: color 200ms ease-in-out; }
+a             { color: #000 ; text-decoration: none; transition: color 200ms ease-in-out; -moz-transition: color 200ms ease-in-out; -webkit-transition: color 200ms ease-in-out; -o-transition: color 200ms ease-in-out; }
 a:hover       {  text-decoration: none; }
 :focus        { outline:0 !important; }
 
@@ -3168,3 +3168,5 @@ li.custom-menu .custom-menu-item p {
 #boton-footer{margin-left: -32px;}
 #boton-footer:hover{background: none;}
 .footer button.button span:hover{background-color: transparent;}
+.pull-left a{color: white !important; }
+.pull-left{text-transform: capitalize;}
