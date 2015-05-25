@@ -8,6 +8,10 @@
     <td><input type="text" name="lastname" value="<?php echo $lastname; ?>" class="large-field" /></td>
   </tr>
   <tr>
+    <td><?php echo $entry_company; ?></td>
+    <td><input type="text" name="company" value="<?php echo $company; ?>" class="large-field" /></td>
+  </tr>
+  <tr>
     <td><span class="required">*</span> <?php echo $entry_address_1; ?></td>
     <td><input type="text" name="address_1" value="<?php echo $address_1; ?>" class="large-field" /></td>
   </tr>
@@ -53,7 +57,7 @@ $('#shipping-address select[name=\'country_id\']').bind('change', function() {
 		url: 'index.php?route=checkout/checkout/country&country_id=' + this.value,
 		dataType: 'json',
 		beforeSend: function() {
-			$('#shipping-address select[name=\'country_id\']').after('<span class="wait">&nbsp;<img src="catalog/view/theme/vigo/image/loading.gif" alt="" /></span>');
+			$('#shipping-address select[name=\'country_id\']').after('<span class="wait">&nbsp;<img src="catalog/view/theme/default/image/loading.gif" alt="" /></span>');
 		},
 		complete: function() {
 			$('.wait').remove();
