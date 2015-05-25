@@ -31,28 +31,27 @@
         	<div class="checkout opc">
     <div id="checkout" class="section allow">
       <div class="checkout-heading">
-      	<div class="step-title">
-            <h2><?php echo $text_checkout_option; ?></h2>
-        </div>
+      <?php echo $text_checkout_option; ?>
+      
       </div>
       <div class="checkout-content "></div>
     </div>
     <?php if (!$logged) { ?>
     <div id="payment-address" class="section allow">
       <div class="checkout-heading">
-      	<div class="step-title">
-        	<h2><?php echo $text_checkout_account; ?></h2>  
-                sojdsojvved
-        </div>
+      	
+        	<?php echo $text_checkout_account; ?>
+               
+     
       </div>
       <div class="checkout-content  a-item"></div>
     </div>
     <?php } else { ?>
     <div id="payment-address" class="section allow">
       <div class="checkout-heading">
-      	<div class="step-title">
-        	<h2><?php echo $text_checkout_payment_address; ?></h2>
-        </div>
+     
+        <?php echo $text_checkout_payment_address; ?>
+       
       </div>
       <div class="checkout-content  a-item"></div>
     </div>
@@ -60,34 +59,34 @@
     <?php if ($shipping_required) { ?>
     <div id="shipping-address" class="section allow">
       <div class="checkout-heading">
-      	<div class="step-title">
-        	<h2><?php echo $text_checkout_shipping_address; ?></h2>
-        </div>
+      	
+        	<?php echo $text_checkout_shipping_address; ?>
+        
       </div>
       <div class="checkout-content  a-item" style="display: none;"></div>
     </div>
     <div id="shipping-method" class="section allow">
       <div class="checkout-heading">
-      	<div class="step-title">
-        	<h2><?php echo $text_checkout_shipping_method; ?></h2>
-        </div>
+      	
+        	<?php echo $text_checkout_shipping_method; ?>
+        
       </div>
       <div class="checkout-content  a-item" style="display: none;"></div>
     </div>
     <?php } ?>
     <div id="payment-method" class="section allow">
       <div class="checkout-heading">
-      	<div class="step-title">
-        	<h2><?php echo $text_checkout_payment_method; ?></h2>
-        </div>
+      	
+        	<?php echo $text_checkout_payment_method; ?>
+      
      </div>
       <div class="checkout-content  a-item" style="display: none;"></div>
     </div>
     <div id="confirm" class="opc-review section allow">
       <div class="checkout-heading">
-      	<div class="step-title">
-        	<h2><?php echo $text_checkout_confirm; ?></h2>
-      	</div>
+      	
+        	<?php echo $text_checkout_confirm; ?>
+      	
       </div>
       <div class="checkout-content  a-item"></div>
     </div>

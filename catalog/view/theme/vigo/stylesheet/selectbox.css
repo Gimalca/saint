@@ -31,6 +31,8 @@
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden;
+        line-height: 3;
+        text-transform: uppercase;
 }
 .selectbox .select .text img {
     margin: 11px 6px 0 0;

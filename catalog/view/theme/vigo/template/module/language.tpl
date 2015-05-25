@@ -5,9 +5,9 @@
 ).submit(); $(this).parent().parent().submit();" >
 			<?php foreach ($languages as $language) { ?>
             	<?php if ($language['code'] == $language_code) { ?>
-                    	<option class="option" selected value="<?php echo $language['code']; ?>" data-image="image/flags/<?php echo $language['image']; ?>"></option>
+                    	<option class="option" selected value="<?php echo $language['code']; ?>" data-image="image/flags/<?php echo $language['image']; ?>"><?php echo $language['code']; ?></option>
             	<?php }else{  ?>
-                    	<option class="option" value="<?php echo $language['code']; ?>" data-image="image/flags/<?php echo $language['image']; ?>"></option>
+                    	<option class="option" value="<?php echo $language['code']; ?>" data-image="image/flags/<?php echo $language['image']; ?>"><?php echo $language['code']; ?></option>
 				<?php } ?>
             <?php } ?>
             </select>

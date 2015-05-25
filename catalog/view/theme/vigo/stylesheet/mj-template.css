@@ -27,7 +27,7 @@ font-weight: bold;}
     font-size: 18px;font-weight: bold;padding: 15px 20px;text-transform: uppercase;}
 .opc-review .data-table td {font-family: Verdana;font-size: 12px;font-weight: bold;padding: 15px 20px;
     vertical-align: middle;}
-.opc div.section {margin-bottom: 70px;}
+.opc div.section {margin-bottom: 10px;}
 .opc-review .data-table tfoot td .price {color: #222222;font-family: 'Archivo Narrow';font-size: 18px;
     font-weight: bold;}
 .input-box.input-payment.step {padding: 0;}
@@ -334,7 +334,7 @@ a.no-border{border:none !important;}
     margin-top: 56px;
 }
 .checkout-content {
-    margin-top: 40px;
+    margin-top: 15px;
 }
 .checkout-content .form-list li.control {
     margin-bottom: 20px;

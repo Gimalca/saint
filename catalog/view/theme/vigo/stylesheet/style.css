@@ -786,7 +786,7 @@ tr.summary-details-excluded { font-style:italic; }
 
 /* Sidebar =============================================================================== */
 .block { margin-bottom: 40px; }
-.block .block-title {  text-align: left; }
+.block .block-title {  text-align: left; margin-bottom: 10px }
 .block .block-title strong { display:block; font-size:16px; color:#000; }
 .block .block-title strong span { border-bottom: 2px solid #000; display: inline-block; margin-bottom: -2px; color: #000 !important }
 .block .block-title a { text-decoration:none !important; }
@@ -1692,7 +1692,7 @@ ul.checkout-types li a { line-height: 50px; }
 .opc { position:relative; }
 .opc li.section { margin-bottom: 20px; }
 .opc .step .form-list li.control { margin: 15px 0; }
-.opc .step-title {  font-size: 16px; font-weight: 600; line-height: 40px; border-top: 1px solid #e2e2e2; border-bottom: 1px solid #e2e2e2; }
+.opc .step-title {  font-size:14px; font-weight: 600; line-height: 40px;  }
 .opc .step-title .number { float: left; margin-right: 2px; color: #444; }
 .opc .step-title h2 { float: left; font-size: 16px; font-weight: 600; line-height: 40px; color: #444; text-transform: uppercase; margin: 0; }
 .opc .step-title a { float: right; background: url(../images/expand_icon_small.png) 7px -32px no-repeat; width: 30px; height: 30px; border: 2px solid transparent; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; display: block; margin: 5px 0; text-indent: -9999px; transition: border-color 200ms ease-in-out; -moz-transition: border-color 200ms ease-in-out; -webkit-transition: border-color 200ms ease-in-out; -o-transition: border-color 200ms ease-in-out; }
@@ -2289,7 +2289,7 @@ a.sign-link:hover { color: #555; text-decoration: none; }
 
 .language-switcher, .currency-switcher {position: relative; z-index: 1001;}
 .currency-switcher .selectbox .select { width: 75px; }
-.language-switcher .selectbox .select { width: 75px; }
+.language-switcher .selectbox .select { width: 80px;}
 
 li.mini-cart #topCartContent { position: absolute; right: 0; top: 40px; width: 300px; background-color: #fff; box-shadow: 2px 2px 5px 0px #ddd; -moz-box-shadow: 2px 2px 5px 0px #ddd; -webkit-box-shadow: 2px 2px 5px 0px #ddd; z-index: 15; filter: alpha(opacity=0); transition: opacity 300ms ease-in-out; -moz-transition: opacity 300ms ease-in-out; -webkit-transition: opacity 300ms ease-in-out; -o-transition: opacity 300ms ease-in-out; display: none; padding: 20px; text-align: left; text-transform: none;  font-size: 14px; color: #000; }
 
@@ -3168,3 +3168,75 @@ li.custom-menu .custom-menu-item p {
 #boton-footer{margin-left: -32px;}
 #boton-footer:hover{background: none;}
 .footer button.button span:hover{background-color: transparent;}
+
+/* checkout */
+.checkout-heading {
+	background: #F8F8F8;
+	border: 1px solid #DBDEE1;
+	padding: 8px;
+	font-weight: bold;
+	font-size: 13px;
+	color: #000;
+	margin-bottom: 15px;
+}
+.checkout-heading a {
+	  float: right;
+  margin-top: 1px;
+  font-weight: normal;
+  text-decoration: inherit;
+  cursor: pointer;
+  font-size: 11px;
+}
+.checkout-content {
+	padding: 0px 0px 15px 0px;
+	display: none;
+	overflow: auto;
+}
+.checkout-content .left {
+	float: left;
+	width: 48%;
+}
+.checkout-content .right {
+	float: right;
+	width: 48%;
+}
+.checkout-content .buttons {
+	clear: both;
+}
+.checkout-product table {
+	width: 100%;
+	border-collapse: collapse;
+	border-top: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	border-right: 1px solid #DDDDDD;
+	margin-bottom: 20px;
+}
+.checkout-product td {
+	padding: 7px;
+}
+.checkout-product thead td {
+	color: #4D4D4D;
+	font-weight: bold;
+	background-color: #F7F7F7;
+	border-bottom: 1px solid #DDDDDD;
+}
+.checkout-product thead .name, .checkout-product thead .model {
+	text-align: left;
+}
+.checkout-product thead .quantity, .checkout-product thead .price, .checkout-product thead .total {
+	text-align: right;
+}
+.checkout-product tbody td {
+	vertical-align: top;
+	border-bottom: 1px solid #DDDDDD;
+}
+.checkout-product tbody .name, .checkout-product tbody .model {
+	text-align: left;
+}
+.checkout-product tbody .quantity, .checkout-product tbody .price, .checkout-product tbody .total {
+	text-align: right;
+}
+.checkout-product tfoot td {
+	text-align: right;
+	border-bottom: 1px solid #DDDDDD;
+}
