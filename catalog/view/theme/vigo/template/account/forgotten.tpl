@@ -21,11 +21,11 @@
               		<div class="block-title">
                 	<strong><span><?php echo $heading_title; ?></span></strong>
                 </div>
-                	<div class="block-content">
+                	<div class="block-content"  style="margin-top: 25px;">
                 	<ul class="form-list">
                     	<li>
                         	<div class="input-box input-email">
-               <input type="text" name="email" value="" class="input-text required-entry validate-email" placeholder="<?php echo $entry_email; ?> *"/>
+               <input type="text" name="email" id="input-emailn" value="" class="input-text required-entry validate-email" placeholder="<?php echo $entry_email; ?> *"/>
                             </div>
                         </li>
                     </ul>

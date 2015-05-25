@@ -11,7 +11,7 @@
   
   <div class="main container">
   	<div class="col-main col-md-9 col-sm-8 col-xs-12">
-    	<div class="my-account">
+    	<div class="my-account col-md-8">
         	<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
         	
                 <div class="block block-contact-info">
@@ -24,7 +24,7 @@
                             <div class="customer-name">
                                 <div class="field name-firstname col-md-6 col-sm-6 col-xs-12">
                                     <div class="input-box">
-                <input type="text" name="firstname" value="<?php echo $firstname; ?>" class="input-text required-entry" placeholder="<?php echo $entry_firstname; ?> *"/>
+                <input type="text" id="input-emailn" name="firstname" value="<?php echo $firstname; ?>" class="input-text required-entry" placeholder="<?php echo $entry_firstname; ?> *"/>
                 <?php if ($error_firstname) { ?>
                 <span class="error"><?php echo $error_firstname; ?></span>
                 <?php } ?>
@@ -32,7 +32,7 @@
                                 </div>
                                 <div class="field name-lastname col-md-6 col-sm-6 col-xs-12">
                                     <div class="input-box">
-                <input type="text" name="lastname" value="<?php echo $lastname; ?>" class="input-text required-entry" placeholder="<?php echo $entry_lastname; ?> *"/>
+                <input type="text" id="input-emailn" name="lastname" value="<?php echo $lastname; ?>" class="input-text required-entry" placeholder="<?php echo $entry_lastname; ?> *"/>
                 <?php if ($error_lastname) { ?>
                 <span class="error"><?php echo $error_lastname; ?></span>
                 <?php } ?>
@@ -40,25 +40,10 @@
                                 </div>
                             </div>
                          </li>
-                         <li class="wide">
-                            <div class="input-box input-company">
-                <input type="text" name="company" value="<?php echo $company; ?>" class="input-text required-entry" placeholder="<?php echo $entry_company; ?>"/>
-                            </div>
-                         </li>
-                         <?php if ($company_id_display) { ?>
-                         <li class="wide">
-                            <div class="input-box input-company-id">
-                                <input type="text" name="company_id" value="<?php echo $company_id; ?>" class="input-text required-entry" placeholder="<?php echo $entry_company_id; ?>"/>
-                <?php if ($error_company_id) { ?>
-                <span class="error"><?php echo $error_company_id; ?></span>
-                <?php } ?>
-                            </div>
-                         </li>
-                         <?php } ?>
                          <?php if ($tax_id_display) { ?>
                          <li class="wide">
                             <div class="input-box input-tax">
-                            <input type="text" name="tax_id" value="<?php echo $tax_id; ?>" class="input-text required-entry" placeholder="<?php echo $entry_tax_id; ?>"/>
+                            <input type="text" id="input-emailn" name="tax_id" value="<?php echo $tax_id; ?>" class="input-text required-entry" placeholder="<?php echo $entry_tax_id; ?>"/>
                 <?php if ($error_tax_id) { ?>
                 <span class="error"><?php echo $error_tax_id; ?></span>
                 <?php } ?>
@@ -67,7 +52,7 @@
                          <?php } ?>
                          <li class="wide">
                             <div class="input-box input-address">
-                            <input type="text" name="address_1" value="<?php echo $address_1; ?>" class="input-text required-entry" placeholder="<?php echo $entry_address_1; ?> *"/>
+                            <input type="text" id="input-emailn" name="address_1" value="<?php echo $address_1; ?>" class="input-text required-entry" placeholder="<?php echo $entry_address_1; ?> *"/>
                 <?php if ($error_address_1) { ?>
                 <span class="error"><?php echo $error_address_1; ?></span>
                 <?php } ?>
@@ -75,12 +60,12 @@
                          </li>
                          <li class="wide">
                             <div class="input-box input-address">
-                            <input type="text" name="address_2" value="<?php echo $address_2; ?>" class="input-text required-entry" placeholder="<?php echo $entry_address_2; ?>"/>
+                            <input type="text" id="input-emailn" name="address_2" value="<?php echo $address_2; ?>" class="input-text required-entry" placeholder="<?php echo $entry_address_2; ?>"/>
                             </div>
                          </li>
                          <li class="wide">
                             <div class="input-box input-city">
-                 <input type="text" name="city" value="<?php echo $city; ?>" class="input-text required-entry" placeholder="<?php echo $entry_city; ?>"/>
+                 <input type="text" name="city" id="input-emailn" value="<?php echo $city; ?>" class="input-text required-entry" placeholder="<?php echo $entry_city; ?>"/>
                 <?php if ($error_city) { ?>
                 <span class="error"><?php echo $error_city; ?></span>
                 <?php } ?>
@@ -88,7 +73,7 @@
                          </li>
                          <li class="wide">
                             <div class="input-box input-postcode">
-                <input type="text" name="postcode" value="<?php echo $postcode; ?>" class="input-text required-entry" placeholder="<?php echo $entry_postcode; ?>"/>
+                <input type="text" name="postcode" id="input-emailn" value="<?php echo $postcode; ?>" class="input-text required-entry" placeholder="<?php echo $entry_postcode; ?>"/>
                 <?php if ($error_postcode) { ?>
                 <span class="error"><?php echo $error_postcode; ?></span>
                 <?php } ?>
@@ -96,7 +81,7 @@
                          </li>
                          <li class="wide">
                             <div class="input-box input-country">
-                            <select name="country_id">
+                            <select name="country_id" id="input-emailn">
                   <option value=""><?php echo $text_select; ?></option>
                   <?php foreach ($countries as $country) { ?>
                   <?php if ($country['country_id'] == $country_id) { ?>
@@ -113,7 +98,7 @@
                          </li>
                          <li class="wide">
                             <div class="input-box input-region">
-                            <select name="zone_id">
+                            <select name="zone_id" id="input-emailn">
                 </select>
                 <?php if ($error_zone) { ?>
                 <span class="error"><?php echo $error_zone; ?></span>
