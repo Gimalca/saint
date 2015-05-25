@@ -28,7 +28,7 @@
                                 	<div class="customer-name">
                                         <div class="field name-firstname col-md-6 col-sm-6 col-xs-12">
                                         	<div class="input-box">
-                         <input type="text" name="firstname" value="<?php echo $firstname; ?>" class="input-text required-entry" placeholder="<?php echo $entry_firstname; ?> *"/>
+                         <input type="text" name="firstname" id="input-emailn" value="<?php echo $firstname; ?>" class="input-text required-entry" placeholder="<?php echo $entry_firstname; ?> *"/>
                         <?php if ($error_firstname) { ?>
                         <span class="error"><?php echo $error_firstname; ?></span>
                         <?php } ?>
@@ -36,7 +36,7 @@
                                         </div>
                                         <div class="field name-lastname col-md-6 col-sm-6 col-xs-12">
                                         	<div class="input-box">
-                       <input type="text" name="lastname" value="<?php echo $lastname; ?>" class="input-text required-entry" placeholder="<?php echo $entry_lastname; ?> *"/>
+                       <input type="text" name="lastname" id="input-emailn" value="<?php echo $lastname; ?>" class="input-text required-entry" placeholder="<?php echo $entry_lastname; ?> *"/>
                         <?php if ($error_lastname) { ?>
                         <span class="error"><?php echo $error_lastname; ?></span>
                         <?php } ?>
@@ -46,7 +46,7 @@
                                 </li>
                                 <li>
 									<div class="input-box input-email">
-                        <input type="text" name="email" value="<?php echo $email; ?>" class="input-text required-entry validate-email" placeholder="<?php echo $entry_email; ?> *" />
+                        <input type="text" name="email" id="input-emailn" value="<?php echo $email; ?>" class="input-text required-entry validate-email" placeholder="<?php echo $entry_email; ?> *" />
                         <?php if ($error_email) { ?>
                         <span class="error"><?php echo $error_email; ?></span>
                         <?php } ?>
@@ -55,13 +55,13 @@
                                 <li class="fields">
                                 	<div class="input-box input-contact">
                                         <div class="field name-firstname col-md-6 col-sm-6 col-xs-12">
-                         <input type="text" name="telephone" value="<?php echo $telephone; ?>" class="input-text required-entry" placeholder="<?php echo $entry_telephone; ?> *"/>
+                         <input type="text" name="telephone" id="input-emailn" value="<?php echo $telephone; ?>" class="input-text required-entry" placeholder="<?php echo $entry_telephone; ?> *"/>
                         <?php if ($error_telephone) { ?>
                         <span class="error"><?php echo $error_telephone; ?></span>
                         <?php } ?>
                                         </div>
                                         <div class="field name-firstname col-md-6 col-sm-6 col-xs-12">
-                       <input type="text" name="fax" value="<?php echo $fax; ?>" class="input-text required-entry" placeholder="<?php echo $entry_fax; ?> *"/>
+                       <input type="text" name="fax" id="input-emailn" value="<?php echo $fax; ?>" class="input-text required-entry" placeholder="<?php echo $entry_fax; ?> *"/>
                                         </div>
                                     </div>
                                 </li>

@@ -32,11 +32,6 @@ button.button span {
     border-color: #666666; 
     color: #666666; 
                 }
-button.button:hover span {
-    background-color: #f0877c;
-    border-color: #f0877c;
-    color: #ffffff;
-}
 .sale-product-icon { 
     background-color: transparent; 
     border-color: #f0877c; 
@@ -65,11 +60,6 @@ button.button:hover span {
     background-color: transparent; 
     border-color: #aeaeae; 
     color: #aeaeae; 
-}
-.footer button.button:hover span, .footer a.btn-like:hover {
-    background-color: #f0877c;
-    border-color: #f0877c;
-    color: #2a2a2a;
 }
 .footer .block .block-title {
     border-bottom-color: #212121;
@@ -112,8 +102,8 @@ button.button:hover span {
 .footer .fb-persons .fb-person a { color: #999999; }
 .footer .fb-persons .fb-person a:hover { color: #cccccc; }
 .footer ul.text li { color: #999999; }
-.footer div.social-icons a { background-color: #3b3b3b; }
-.footer div.social-icons a:hover { background-color: #f0877c; }
+.footer div.social-icons a {  }
+.footer div.social-icons a:hover {  }
 .footer address { color: #777777; }
 .footer .split { background-color: #505050; }
 .footer .footer-middle, .footer .footer-bottom { border-top-color: #262626; }

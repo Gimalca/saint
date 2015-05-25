@@ -4,56 +4,54 @@
             <div class="col-md-12">
                 <div class="col-md-3" id="posicion-footer">
                     <ul>
-                        <li id="footer-titulo">COMPAÑIA</li>
+                        <li id="footer-titulo" class="tamaño">COMPAÑIA</li>
                         <ul>
-                            <li>Sobre Nosotros</li>
-                            <li>Haz Negocios Con Nosotros</li>
-                            <li>Ubicacion</li>
-                            <li>Blog</li>
-                            <li>Bloggers</li>
+                            <li id="tamaño">Sobre Nosotros</li>
+                            <li id="tamaño">Haz Negocios Con Nosotros</li>
+                            <li id="tamaño">Ubicacion</li>
+                            <li id="tamaño">Blog</li>
+                            <li id="tamaño">Bloggers</li>
                         </ul>
                     </ul>
                 </div>
                 <div class="col-md-3" id="posicion-footer">
                     <ul>
-                        <li id="footer-titulo">ATENCION AL CLIENTE </li>
+                        <li id="footer-titulo" class="tamaño">ATENCION AL CLIENTE </li>
                         <ul>
-                            <li>Devoluciones y Garantias</li>
-                            <li>Informacion sobre Envios</li>
-                            <li>Metodos de Pago</li>
-                            <li>Politica de Privacidad</li>
+                            <li id="tamaño">Devoluciones y Garantias</li>
+                            <li id="tamaño">Informacion sobre Envios</li>
+                            <li id="tamaño">Metodos de Pago</li>
+                            <li id="tamaño">Politica de Privacidad</li>
                         </ul>
                     </ul>
                 </div>
                 <div class="col-md-2" id="posicion-footer">
                     <ul>
-                        <li id="footer-titulo">INFORMACION</li>
+                        <li id="footer-titulo" class="tamaño">INFORMACION</li>
                         <ul>
-                            <li>Preguntas Frecuentes</li>
-                            <li>Tabla de Tallas</li>
-                            <li>Contactanos</li>
+                            <li id="tamaño">Preguntas Frecuentes</li>
+                            <li id="tamaño">Tabla de Tallas</li>
+                            <li id="tamaño">Contactanos</li>
                         </ul>
                     </ul>
                 </div>
-                <div class="col-md-4">
-                <div class="block-content">
-                    <div class="form-subscribe-header">
-                       Newsletter
-                    </div>
-                    
-                    <div class="actions">
-                        <div class="input-box col-md-7">
-                        <input type="text" name="email" id="newsletter" title="Sign up for our newsletter" class="input-text required-entry validate-email" placeholder="Tu Email" />
+                <div class="col-md-4" style="margin-top: 21px;">
+                    <div id="newsletter-footer">
+                        <div class="col-md-12" style="margin-bottom: 11px;">
+                            Suscríbete al Newsletter<br>
+                            y promociones especiales<br>
                         </div>
-                        <button type="submit" title="Sign Up" class="button col-md-4"><span><span>Enviar</span></span></button>
                         
-                    </div>
-                    <div class="social-icons col-md-12 col-xs-offset-1">
-                        <div class="form-subscribe-header">
+                       <div class="input-box col-md-6" style="width: 222px;">
+                        <input type="text" name="email" id="newsletter" title="Sign up for our newsletter" class="input-text required-entry validate-email" placeholder="Email" />
+                        </div>
+                        <button id="boton-footer" type="submit" title="Sign Up" class="button"><span><span style="color: white;font-size: 12px;">Suscribete</span></span></button>
+                        <div class="social-icons col-md-12 col-xs-offset-1">
+                        <div class="form-subscribe-header" id="newsletter-footer">
                             Síguenos
                         </div>
                         <div class="col-md-12">
-                            <a class="facebook-icon" title="Facebook" href="http://www.facebook.com/">Facebook</a>
+                            <a class="facebook-icon" href="http://www.facebook.com/">Facebook</a>
                             <a class="twitter-icon" title="Twitter" href="http://www.twitter.com/">Twitter</a>
                             <a class="instragram-icon" title="Instragram" href="www.instragram.com/">Instragram</a>
                             <a class="pinterest-icon" title="Pinterest" href="www.pinterest.com/">Flickr</a>

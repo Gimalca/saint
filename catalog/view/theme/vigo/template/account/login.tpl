@@ -46,12 +46,12 @@
                             <ul class="form-list">
                                 <li>
 	                                <div class="input-box input-email">
-                                    <input type="text" name="email" value="<?php echo $email; ?>" class="input-text validate-password required-entry" placeholder="<?php echo $entry_email;?> *"/>
+                                    <input type="text" name="email" id="input-emailn" value="<?php echo $email; ?>" class="input-text validate-password required-entry" placeholder="<?php echo $entry_email;?> *"/>
                                     </div>
                                 </li>
                                 <li>
 	                                <div class="input-box input-password">
-                                    <input type="password" name="password" value="<?php echo $password; ?>" class="input-text validate-password required-entry" placeholder="<?php echo $entry_password; ?> *"/>
+                                    <input type="password" name="password" id="input-emailn" value="<?php echo $password; ?>" class="input-text validate-password required-entry" placeholder="<?php echo $entry_password; ?> *"/>
                                     </div>
                                 </li>
                             </ul>

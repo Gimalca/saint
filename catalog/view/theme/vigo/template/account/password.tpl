@@ -16,7 +16,7 @@
   			<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
 
             <div class="block block-change-password">
-                <div class="block-title">
+                <div class="block-title" style="margin-bottom: 27px;">
                     <strong><span><?php echo $heading_title; ?></span></strong>
                 </div>
                 <div class="block-content">
@@ -24,7 +24,7 @@
                     <li class="fields">
                         <div class="field">
                             <div class="input-box input-password">
-                    <input type="password" name="password" value="<?php echo $password; ?>" class="input-text validate-password required-entry" placeholder="<?php echo $entry_password;?> *"/>
+                    <input type="password" id="input-emailn" name="password" value="<?php echo $password; ?>" class="input-text validate-password required-entry" placeholder="<?php echo $entry_password;?> *"/>
                     <?php if ($error_password) { ?>
                     <span class="error"><?php echo $error_password; ?></span>
                     <?php } ?>
@@ -32,7 +32,7 @@
                         </div>
                         <div class="field">
                             <div class="input-box input-password">
-                    <input type="password" name="confirm" value="<?php echo $confirm; ?>" class="input-text validate-password required-entry" placeholder="<?php echo $entry_confirm;?> *"/>
+                    <input type="password" id="input-emailn" name="confirm" value="<?php echo $confirm; ?>" class="input-text validate-password required-entry" placeholder="<?php echo $entry_confirm;?> *"/>
                     <?php if ($error_confirm) { ?>
                     <span class="error"><?php echo $entry_confirm; ?></span>
                     <?php } ?>

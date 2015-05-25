@@ -21,10 +21,10 @@
   	<div class="col-main col-md-9 col-sm-8 col-xs-12">
     	<div class="my-account">
         	<div class="block block-contact-info">
-                <div class="block-title">
+                <div class="block-title" style="margin-bottom: 27px;">
                 <strong><span><?php echo $heading_title; ?></span></strong>
                 </div>
-           		<div class="block-content">
+           		<div class="block-content" style="color: black;">
             	<div class="row addresses-list">
             	<ol>
               	<?php foreach ($addresses as $result) { ?>

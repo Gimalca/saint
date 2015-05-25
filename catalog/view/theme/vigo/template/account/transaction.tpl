@@ -11,8 +11,10 @@
   
   <div class="main container">
   	<div class="col-main col-md-9 col-sm-8 col-xs-12">
-    	<div class="my-account">
-        	<h1><?php echo $heading_title; ?></h1>
+    	<div class="my-account dashboard">
+        	<div class="block-title" style="margin-bottom: 27px;">
+                	<strong><span><?php echo $heading_title; ?></span></strong>
+                </div>
               <p><?php echo $text_total; ?><b> <?php echo $total; ?></b>.</p>
               <table class="list">
                 <thead>

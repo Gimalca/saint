@@ -151,7 +151,7 @@ body          {font-family: 'Open Sans', sans-serif; font-size: 12px; color:#000
 img           { border:0; vertical-align:top; }
 
 a             { color: #000 !important; text-decoration: none; transition: color 200ms ease-in-out; -moz-transition: color 200ms ease-in-out; -webkit-transition: color 200ms ease-in-out; -o-transition: color 200ms ease-in-out; }
-a:hover       { color: #f0877c; text-decoration: none; }
+a:hover       {  text-decoration: none; }
 :focus        { outline:0 !important; }
 
 /* Headings */
@@ -288,7 +288,7 @@ button.button { line-height: 32px; overflow:visible; width:auto; border:0;   pad
 button.button span { display:block; height:30px; border:0px solid #666; background:transparent; padding:0 10px; text-align:center; white-space:nowrap; color:#fff; text-transform: uppercase; transition: background-color 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out; -moz-transition: background-color 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out; -webkit-transition: background-color 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out; -o-transition: background-color 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; }
 button.button span span { border:0; padding:0; background: transparent !important; }
 
-button.button:hover span, button.button:active span { background: #f0877c; color: #fbfbfb; border:2px solid #f0877c; }
+button.button:hover span, button.button:active span { color: #fbfbfb;  }
 button.button:hover span span, button.button:active span span { border: 0; padding: 0;  background: transparent; }
 button.disabled span { border-color:#bbb !important; background:#bbb !important; }
 
@@ -309,7 +309,7 @@ input.input-text:focus,select:focus,textarea:focus {  }
 .form-list li > div { margin-bottom: 10px; }
 .form-list label { float:left; font-weight:bold; position:relative; z-index:0; }
 .form-list label.required {}
-.form-list label.required em { float: right; font-style:normal; color:#f0877c; position:absolute; top:0; right:-8px; }
+.form-list label.required em { float: right; font-style:normal;  position:absolute; top:0; right:-8px; }
 .form-list li.control label { float: none; margin-bottom: 0; font-size: 14px; font-weight: normal;  line-height: 18px; display: inline-block; }
 .form-list li.control input.radio,
 .form-list li.control input.checkbox { margin-right: 6px; margin-top: -3px; display: inline-block; }
@@ -442,7 +442,7 @@ input.input-text:focus,select:focus,textarea:focus {  }
 .fieldset .legend { float:left; font-weight:bold; font-size:13px; border:1px solid #f19900; background:#f9f3e3; color:#e76200; margin:-33px 0 0 -10px; padding:0 8px; position:relative; }
 
 /* Form Validation */
-.validation-advice { clear:both; min-height:13px; margin:3px 0 0; padding-left:17px; font-size:11px; font-weight:bold; line-height:13px; background:url(../images/validation_advice_bg.gif) 2px 0 no-repeat; color:#f0877c; }
+.validation-advice { clear:both; min-height:13px; margin:3px 0 0; padding-left:17px; font-size:11px; font-weight:bold; line-height:13px; background:url(../images/validation_advice_bg.gif) 2px 0 no-repeat;  }
 .validation-failed { border:1px dashed #f0877c !important; background:#faebe7 !important; }
 .validation-passed {}
 p.required { font-size:11px; text-align:right; color:#f0877c; }
@@ -2035,7 +2035,6 @@ ul.checkout-types li a { line-height: 50px; }
 .footer input.input-text, .footer textarea { background: transparent; color: #aaa; border-color: #444; border-width: 2px; }
 .footer button.button span { border-color: #aeaeae; color: #aeaeae; height: 40px; font-size: 18px; line-height: 38px; padding: 0 15px; }
 .footer button.button span span { padding: 0; height: 36px; }
-.footer button.button:hover span { border-color: #f0877c; color: #2a2a2a; }
 .footer .footer-middle .block .block-title { border-bottom-width: 1px;}
 .footer .footer-middle .block .block-title strong { font-size: 18px; border-bottom-width: 1px; }
 .footer .footer-middle .block .block-title strong span { padding-bottom: 20px; border-bottom-width: 1px; margin-bottom: -1px; }
@@ -2125,11 +2124,6 @@ div.social-icons a {
     margin-left: 10px;
     margin-bottom: 0px;
     margin-top: 2px;
-    /*background-color: #3b3b3b;*/
-    transition: background-color 200ms ease-in-out;
-    -moz-transition: background-color 200ms ease-in-out;
-    -webkit-transition: background-color 200ms ease-in-out;
-    -o-transition: background-color 200ms ease-in-out;
 }
 a.facebook-icon {
     background: url(../images/socialicons/facebook.png) no-repeat;
@@ -2705,7 +2699,7 @@ td.for-desktop { display: table-cell; }
 .box-title {  font-size: 35px; font-weight: bold; color: #555; text-transform: uppercase; line-height: 45px; }
 .box-subscribe .split { margin: 15px auto; width: 40px; height: 5px; background: #555; border: 0; }
 .form-subscribe-header {  font-weight: 600 !important; font-size: 18px; color: #777; text-transform: uppercase; margin:10px 0; }
-#newsletter { text-align: left; width: 100%; height: 34px; border: 2px solid #eee; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; padding: 0 15px; background-color: #fbfbfb; }
+#newsletter { text-align: left; width: 100%; height: 34px; border: 2px solid #eee; padding: 0 15px; background-color: #fbfbfb; }
 .box-subscribe .actions { margin-top: 25px; }
 .box-subscribe .actions button.button { height: 50px; }
 .box-subscribe .actions button.button span { height: 50px; font-size: 23px; padding: 0 20px; color: #505050; border-color: #666; line-height: 48px; }
@@ -3152,7 +3146,7 @@ li.custom-menu .custom-menu-item p {
 
 /*Compra Nuevo*/
 /*Opcion 1 Nuevo*/
-#input-emailn{   margin: 0;  border: 1px solid #aaa;  height: 28px;  width: 100%;  font-size: inherit; text-transform: uppercase;  font-family: inherit;  outline: none;}
+#input-emailn{ color: black; margin: 0;  border: 1px solid #aaa;  height: 28px;  width: 100%;  font-size: inherit; text-transform: uppercase;  font-family: inherit;  outline: none;}
 .dividern{height: 278px;  display: table-cell;  text-align: center;  vertical-align: middle;  background: url("../images/center_line.png") repeat-y center;}
 
 #personales{  height: 508px;}
@@ -3164,3 +3158,13 @@ li.custom-menu .custom-menu-item p {
 #footer-titulo{
     font-weight: bold; margin-bottom: 5px; color: white;
 }
+.tamaño{
+    font-size: 9px;
+}
+#tamaño{
+    font-size: 11px; color: white;
+}
+#newsletter-footer{text-transform: uppercase; font-weight: bold; color: white; font-size: 14px; text-align: left;}
+#boton-footer{margin-left: -32px;}
+#boton-footer:hover{background: none;}
+.footer button.button span:hover{background-color: transparent;}
