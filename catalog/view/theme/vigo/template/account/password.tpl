@@ -11,7 +11,7 @@
   
   <div class="main container">
   	<div class="col-main col-md-9 col-sm-8 col-xs-12">
-    	<div class="my-account">
+    	<div class="my-account col-md-8">
         	
   			<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
 
