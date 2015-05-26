@@ -1109,8 +1109,8 @@ tr.summary-details-excluded { font-style:italic; }
 .etalage-control a { position: absolute; left: 0; background-image: url(../images/pagenation.png); background-repeat: no-repeat; text-indent: -9999px; width: 26px; height: 20px; border: 2px solid #444; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; background-color: transparent; transition: border-color 200ms ease-in-out, background-color 200ms ease-in-out; -moz-transition: border-color 200ms ease-in-out, background-color 200ms ease-in-out; -webkit-transition: border-color 200ms ease-in-out, background-color 200ms ease-in-out; -o-transition: border-color 200ms ease-in-out, background-color 200ms ease-in-out; }
 .etalage-control a.etalage-prev { background-position: 5px 4px; top: 0; }
 .etalage-control a.etalage-next { background-position: 5px -12px; bottom: 0; }
-.etalage-control a.etalage-prev:hover { background-position: 5px -28px; background-color: #f0877c; border-color: #f0877c; }
-.etalage-control a.etalage-next:hover { background-position: 5px -44px; background-color: #f0877c; border-color: #f0877c; }
+.etalage-control a.etalage-prev:hover { background-position: 5px -28px; background-color: black; border-color: black; }
+.etalage-control a.etalage-next:hover { background-position: 5px -44px; background-color: black; border-color: black; }
 
 /* Email to a Friend */
 .email-friend { margin:0; }
@@ -2054,8 +2054,8 @@ ul.checkout-types li a { line-height: 50px; }
 .footer .store-switcher { display: inline-block; margin: 11px 0; color: #999; }
 .footer .store-switcher label { font-weight:bold; vertical-align:middle; margin: 0 10px 0 0; color: #999; font-size: 14px; }
 .footer .store-switcher select { padding: 2px; vertical-align: middle; height: 25px; background: transparent; border: 1px solid #444; }
-.footer a { color:#999; text-decoration:none; transition: color 200ms ease-in-out; -moz-transition: color 200ms ease-in-out; -webkit-transition: color 200ms ease-in-out; -o-transition: color 200ms ease-in-out; }
-.footer a:hover { color: #ccc; }
+.footer a { color:white; text-decoration:none; transition: color 200ms ease-in-out; -moz-transition: color 200ms ease-in-out; -webkit-transition: color 200ms ease-in-out; -o-transition: color 200ms ease-in-out; }
+.footer a:hover { color: white; }
 .footer .bugs { margin:13px 0 0; color:#ecf3f6; }
 .footer .bugs a { color:#ecf3f6; text-decoration:underline; }
 .footer .bugs a:hover { text-decoration:none; }
@@ -2121,7 +2121,6 @@ div.social-icons a {
     width: 33px;
     height: 26px !important;
     text-indent: -9999px;
-    margin-left: 10px;
     margin-bottom: 0px;
     margin-top: 2px;
 }
@@ -3170,3 +3169,4 @@ li.custom-menu .custom-menu-item p {
 .footer button.button span:hover{background-color: transparent;}
 .pull-left a{color: white !important; }
 .pull-left{text-transform: capitalize;}
+button :hover {background-color: none;}

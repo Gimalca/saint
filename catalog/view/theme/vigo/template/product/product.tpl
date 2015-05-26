@@ -33,7 +33,7 @@
                                     <img class="etalage_thumb_image" src="<?php echo $thumb; ?>" alt="<?php echo $product['name']; ?>"/>
                                     <img class="etalage_source_image" src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>"  />
                                 </li>
-
+ 
                                 <?php foreach($images as $image) { ?>
                                 <li>
                                     <img class="etalage_thumb_image" src="<?php echo $image['thumb']; ?>" alt="<?php echo $product['name']; ?>"/>
@@ -42,7 +42,7 @@
                                 <?php } ?>
                             </ul>
                             <div class="etalage-control">
-                                <a href="javascript:void(0)" class="etalage-prev">Previous</a>
+                                <a href="javascript:void(0)" class="etalage-prev" style="top: -24px;">Previous</a>
                                 <a href="javascript:void(0)" class="etalage-next">Next</a>
                             </div>
                             <div class="clear"></div>
