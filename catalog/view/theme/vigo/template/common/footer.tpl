@@ -50,7 +50,7 @@
                         <div class="form-subscribe-header" id="newsletter-footer">
                             Síguenos
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-12"  style="margin-left: 0px; padding-left: 0px;">
                             <a class="facebook-icon" href="http://www.facebook.com/">Facebook</a>
                             <a class="twitter-icon" title="Twitter" href="http://www.twitter.com/">Twitter</a>
                             <a class="instragram-icon" title="Instragram" href="www.instragram.com/">Instragram</a>
@@ -74,12 +74,7 @@
                 }
                 //]]
             </script>
-            <div class="split scroll-top"><a href="javascript:void(0)"></a></div>
-            <div class="row footer-bottom">
-                <address class="col-md-12"><?php echo $copyright; ?></address><?php $powered; ?>
-                
-                
-            </div>
+            <div style="color: white;">© 2015 Saint. All Rights reserved.  Desarrolaldo por <a href="http://gimalca.com/es/">Gimalca.</a></div>
         </div>
     </div>
 </div>
