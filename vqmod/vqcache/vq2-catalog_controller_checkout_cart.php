@@ -126,6 +126,15 @@ class ControllerCheckoutCart extends Controller {
 			$this->data['text_freq_month'] = $this->language->get('text_freq_month');
 			$this->data['text_freq_bi_month'] = $this->language->get('text_freq_bi_month');
 			$this->data['text_freq_year'] = $this->language->get('text_freq_year');
+                        $this->data['text_checkout_option'] = $this->language->get('text_checkout_option');
+                        $this->data['text_checkout_account'] = $this->language->get('text_checkout_account');
+                        $this->data['text_checkout_payment_address'] = $this->language->get('text_checkout_payment_address');
+                        $this->data['text_checkout_shipping_address'] = $this->language->get('text_checkout_shipping_address');
+                        $this->data['text_checkout_shipping_method'] = $this->language->get('text_checkout_shipping_method');
+                        $this->data['text_checkout_payment_method'] = $this->language->get('text_checkout_payment_method');		
+                        $this->data['text_checkout_confirm'] = $this->language->get('text_checkout_confirm');
+                        $this->data['text_modify'] = $this->language->get('text_modify');
+                        $this->data['text_cart'] = $this->language->get('text_cart');
 
 			$this->data['column_image'] = $this->language->get('column_image');
 			$this->data['column_name'] = $this->language->get('column_name');

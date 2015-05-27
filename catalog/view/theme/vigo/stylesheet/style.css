@@ -1713,7 +1713,10 @@ ul.checkout-types li a { line-height: 50px; }
 
 #opc-login .buttons-set { border-top:0; }
 .opc .buttons-set button.button { float: left; margin-left: 0; margin-right: 5px; }
-.opc .buttons-set button.button span { height: 42px; font-size: 19px; line-height: 40px; padding: 0 22px; }
+.opc .buttons-set button.button span {   height: 35px;
+  font-size: 12px;
+  line-height: 37px;
+  padding: 0 12px;}
 .opc .buttons-set button.button span span { padding: 0; }
 .opc .buttons-set a { line-height: 42px; }
 #opc-login h3 { font-size:25px; padding-bottom:10px; text-transform:uppercase;  font-weight: 600; line-height: 25px; color: #444; }
@@ -3124,7 +3127,6 @@ li.custom-menu .custom-menu-item p {
   display: block;
   text-align: center;
   font-size: 1em;
-  text-transform: uppercase;
   padding: 20px 0 0 0;
   margin-bottom: 20px;
 }
@@ -3245,3 +3247,7 @@ li.custom-menu .custom-menu-item p {
    background: none !important;
 }
 button :hover {background-color: none;}
+.warning{
+    color: red;
+    font-weight: 600;     
+}

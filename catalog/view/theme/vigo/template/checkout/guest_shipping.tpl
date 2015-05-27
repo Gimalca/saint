@@ -1,54 +1,89 @@
-<table class="form">
-  <tr>
-    <td><span class="required">*</span> <?php echo $entry_firstname; ?></td>
-    <td><input type="text" name="firstname" value="<?php echo $firstname; ?>" class="large-field" /></td>
-  </tr>
-  <tr>
-    <td><span class="required">*</span> <?php echo $entry_lastname; ?></td>
-    <td><input type="text" name="lastname" value="<?php echo $lastname; ?>" class="large-field" /></td>
-  </tr>
-  <tr>
-    <td><?php echo $entry_company; ?></td>
-    <td><input type="text" name="company" value="<?php echo $company; ?>" class="large-field" /></td>
-  </tr>
-  <tr>
-    <td><span class="required">*</span> <?php echo $entry_address_1; ?></td>
-    <td><input type="text" name="address_1" value="<?php echo $address_1; ?>" class="large-field" /></td>
-  </tr>
-  <tr>
-    <td><?php echo $entry_address_2; ?></td>
-    <td><input type="text" name="address_2" value="<?php echo $address_2; ?>" class="large-field" /></td>
-  </tr>
-  <tr>
-    <td><span class="required">*</span> <?php echo $entry_city; ?></td>
-    <td><input type="text" name="city" value="<?php echo $city; ?>" class="large-field" /></td>
-  </tr>
-  <tr>
-    <td><span id="shipping-postcode-required" class="required">*</span> <?php echo $entry_postcode; ?></td>
-    <td><input type="text" name="postcode" value="<?php echo $postcode; ?>" class="large-field" /></td>
-  </tr>
-  <tr>
-    <td><span class="required">*</span> <?php echo $entry_country; ?></td>
-    <td><select name="country_id" class="large-field">
-        <option value=""><?php echo $text_select; ?></option>
-        <?php foreach ($countries as $country) { ?>
-        <?php if ($country['country_id'] == $country_id) { ?>
-        <option value="<?php echo $country['country_id']; ?>" selected="selected"><?php echo $country['name']; ?></option>
-        <?php } else { ?>
-        <option value="<?php echo $country['country_id']; ?>"><?php echo $country['name']; ?></option>
-        <?php } ?>
-        <?php } ?>
-      </select></td>
-  </tr>
-  <tr>
-    <td><span class="required">*</span> <?php echo $entry_zone; ?></td>
-    <td><select name="zone_id" class="large-field">
-      </select></td>
-  </tr>
-</table>
-<br />
-<div class="buttons">
-  <div class="right"><input type="button" value="<?php echo $button_continue; ?>" id="button-guest-shipping" class="button" /></div>
+<div class="left">
+    <ul class="form-list">
+       
+        <li>
+          <div class="input-box name-firstname col-md-8 col-sm-8 col-xs-12">
+                <div class="input-box">
+                    <input id="input-emailn" type="text" name="firstname" value="<?php echo $firstname; ?>" class="input-text required-entry" placeholder="<?php echo $entry_firstname; ?> *"/>
+                </div>
+            </div>   
+        </li>
+        <li >               
+            <div class="input-box name-lastname col-md-8 col-sm-8 col-xs-12">
+                <div class="input-box">
+                    <input id="input-emailn" type="text" name="lastname" value="<?php echo $lastname; ?>" class="input-text required-entry" placeholder="<?php echo $entry_lastname; ?> *"/>
+                </div>
+            </div>     
+        </li>
+        <li >               
+            <div class="input-box name-lastname col-md-8 col-sm-8 col-xs-12">
+                <div class="input-box">
+                    <input id="input-emailn" type="text" name="lastname" value="<?php echo $lastname; ?>" class="input-text required-entry" placeholder="<?php echo $entry_lastname; ?> *"/>
+                </div>
+            </div>     
+        </li>
+        <li class="fields">
+                <div class="field">
+                	<div class="input-box input-address col-md-8 col-sm-8 col-xs-12">
+                    <input id="input-emailn" type="text" name="address_1" value="<?php echo $address_1; ?>" class="input-text required-entry" placeholder="<?php echo $entry_address_1; ?> *"/>
+                    </div>
+                </div>
+                <div class="field">
+                	<div class="input-box input-address col-md-8 col-sm-8 col-xs-12">
+                    <input id="input-emailn" type="text" name="address_2" value="<?php echo $address_2; ?>" class="input-text required-entry" placeholder="<?php echo $entry_address_2; ?>"/>
+                    </div>
+                </div>
+            </li>
+            
+       
+    </ul>
+</div>
+<div class="right">
+   
+    <ul class="form-list">
+        <li class="fields">
+                <div class="field">
+                	<div class="input-box input-city col-md-8 col-sm-8 col-xs-12">
+                    	<input id="input-emailn" type="text" name="city" value="<?php echo $city; ?>" class="input-text required-entry" placeholder="<?php echo $entry_city; ?> *"/>
+                    </div>
+                </div>
+                <div class="field">
+                	<div class="input-box input-postcode col-md-8 col-sm-8 col-xs-12">
+                    <input  id="input-emailn" type="text" name="postcode" value="<?php echo $postcode; ?>" class="input-text required-entry" placeholder="<?php echo $entry_postcode; ?> *"/>
+                    </div>
+                </div>
+                
+            </li>
+            
+           <li class="field">
+                    <div class="input-box input-country col-md-8 col-sm-8 col-xs-12">
+                        <select id="input-emailn" name="country_id" class="large-field">
+                            <option value=""><?php echo $text_select; ?></option>
+                            <?php foreach ($countries as $country) { ?>
+                            <?php if ($country['country_id'] == $country_id) { ?>
+                            <option value="<?php echo $country['country_id']; ?>" selected="selected"><?php echo $country['name']; ?></option>
+                            <?php } else { ?>
+                            <option value="<?php echo $country['country_id']; ?>"><?php echo $country['name']; ?></option>
+                            <?php } ?>
+                            <?php } ?>
+                        </select>
+                    </div>
+              </li>
+            <li class="fields">
+                
+                <div class="field">
+                    <div class="input-box input-region col-md-8 col-sm-8 col-xs-12">
+                        <select id="input-emailn" name="zone_id" class="large-field">
+                        </select>
+                    </div>
+                </div>
+            </li>
+    </ul>
+</div>
+<div class="field buttons-set col-md-6 col-lg-6 col-xs-12">
+    <button style="margin-left: 15px" type="button" value="<?php echo $button_continue; ?>" id="button-guest-shipping" class="button input-box" >
+		<span><span><?php echo $button_continue; ?></span></span>
+    </button>
 </div>
 <script type="text/javascript"><!--
 $('#shipping-address select[name=\'country_id\']').bind('change', function() {

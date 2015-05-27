@@ -21,6 +21,14 @@ $_['text_shipping_estimate'] = 'Estimar envío &amp; Impuestos';
 $_['text_shipping_detail']   = 'Introduce tu destino para obtener un estimado para tu envío.';
 $_['text_shipping_method']   = 'Por favor seleeciona el metodo preferido de envío para usar en este pedido.';
 $_['text_empty']             = 'Tu carrito esta vacío!';
+$_['text_cart']                      = 'Carrito';
+$_['text_checkout_option']           = 'Opciones de compra';
+$_['text_checkout_account']          = 'Detalles de cuenta &amp; facturación';
+$_['text_checkout_payment_address']  = 'Detalles de facturación';
+$_['text_checkout_shipping_address'] = 'Detalles de entrega';
+$_['text_checkout_shipping_method']  = 'Método de entrega';
+$_['text_checkout_payment_method']   = 'Método de pago';
+$_['text_checkout_confirm']          = 'Confirmar Pedido';
 
 // Column
 $_['column_image']           = 'Imagen';
@@ -53,6 +61,8 @@ $_['error_country']          = 'Por favor seleeciona un País!';
 $_['error_zone']             = 'Por favor seleeciona un región / Estado!';
 $_['error_shipping']         = 'Cuidado: Metodo de envío obligatorio!';
 $_['error_no_shipping']      = 'Cuidado: Ninguna opción de envío disponible. Por favor <a href="%s">Contactanos</a> por ayuda!';
+
+
 
 			/* Notification AddToCart */
 			$_['text_success'] = '<div class="title">Zboží bylo přidáno do košíku</div><div class="content"><a href="%s"><img src="%s"><span class="name">%s</span></a><br class="clear" /><a href="%s" class="button">Zobrazit košík</a> <br class="clear" /></div>';

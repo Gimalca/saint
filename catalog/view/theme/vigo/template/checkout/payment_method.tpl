@@ -24,21 +24,25 @@
 <br />
 <?php if ($text_agree) { ?>
 <div class="buttons">
-  <div class="right"><?php echo $text_agree; ?>
+  <div class="right" style="width: 60%;"><?php echo $text_agree; ?>
     <?php if ($agree) { ?>
     <input type="checkbox" name="agree" value="1" checked="checked" />
     <?php } else { ?>
     <input type="checkbox" name="agree" value="1" />
     <?php } ?>
-    <input type="button" value="<?php echo $button_continue; ?>" id="button-payment-method" class="button" />
+    <button style="margin-left: 15px" type="button" value="<?php echo $button_continue; ?>" id="button-payment-method" class="button input-box" >
+		<span><span><?php echo $button_continue; ?></span></span>
+    </button>
   </div>
 </div>
 <?php } else { ?>
-<div class="buttons">
-  <div class="right">
-    <input type="button" value="<?php echo $button_continue; ?>" id="button-payment-method" class="button" />
-  </div>
+
+<div class="field buttons-set col-md-6 col-lg-6 col-xs-12">
+    <button style="margin-left: 15px" type="button" value="<?php echo $button_continue; ?>" id="button-payment-method" class="button input-box" >
+		<span><span><?php echo $button_continue; ?></span></span>
+    </button>
 </div>
+
 <?php } ?>
 <script type="text/javascript"><!--
 $('.colorbox').colorbox({

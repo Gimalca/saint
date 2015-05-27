@@ -32,6 +32,14 @@ $_['text_week']              = 'week';
 $_['text_semi_month']        = 'half-month';
 $_['text_month']             = 'month';
 $_['text_year']              = 'year';
+$_['text_cart']                      = 'Shopping Cart';
+$_['text_checkout_option']           = 'Checkout Options';
+$_['text_checkout_account']          = 'Account &amp; Billing Details';
+$_['text_checkout_payment_address']  = 'Billing Details';
+$_['text_checkout_shipping_address'] = 'Delivery Details';
+$_['text_checkout_shipping_method']  = 'Delivery Method';
+$_['text_checkout_payment_method']   = 'Payment Method';
+$_['text_checkout_confirm']          = 'Confirm Order';
 
 // Column
 $_['column_image']           = 'Image';
@@ -69,4 +77,6 @@ $_['error_profile_required'] = 'Please select a payment profile!';
 $_['text_trial']             = '%s every %s %s for %s payments then ';
 $_['text_recurring']         = '%s every %s %s';
 $_['text_length']            = ' for %s payments';
+
+
 ?>

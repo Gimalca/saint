@@ -24,10 +24,14 @@
                         <tbody><tr>
                             <td width="800" align="left">
                                 <ul id="progressTracker">
-                                    <li class="active heading2">SHOPPING BAG</li>
-                                    <li class="heading2">SHIPPING &amp; BILLING</li>
-                                    <li class="heading2">SHIPPING METHOD</li>
-                                    <li class="heading2">PAYMENT</li>
+                                    <li id="pt1" class="active heading2"><?php echo $text_cart; ?></li>
+                                    <li id="pt2" class=" heading2"><?php echo $text_checkout_option; ?></li>
+                                    <li id="pt3" class="heading2"><?php echo $text_checkout_payment_address; ?></li>
+
+                                    <li id="pt4" class="heading2"><?php echo $text_checkout_shipping_address; ?></li>
+                                    <li id="pt5" class=" heading2"><?php echo $text_checkout_shipping_method; ?></li>
+                                    <li id="pt6" class="heading2"><?php echo $text_checkout_payment_method; ?></li>
+                                    <li id="pt7" class="heading2"><?php echo $text_checkout_confirm; ?></li>
                                 </ul>
                             </td>
                         </tr>

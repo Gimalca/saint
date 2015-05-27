@@ -1,102 +1,137 @@
 <?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
 <div id="content" class="main-container col1-layout"><?php echo $content_top; ?>
 
-  
+<?php //print_r($totals); ?>
+    <div class="main container" style="padding-top: 0px !important">
+        <div id="shopping_process_bar" class="col-md-12">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody><tr>
+                        <td>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tbody><tr>
+                                        <td width="800" align="left">
+                                            <ul id="progressTracker">
+                                                <li id="pt1" class="heading2"><?php echo $text_cart; ?></li>
+                                                <li id="pt2" class="active heading2"><?php echo $text_checkout_option; ?></li>
+                                                <li id="pt3" class="heading2"><?php echo $text_checkout_payment_address; ?></li>
+                                              
+                                                <li id="pt4" class="heading2"><?php echo $text_checkout_shipping_address; ?></li>
+                                                <li id="pt5" class=" heading2"><?php echo $text_checkout_shipping_method; ?></li>
+                                                <li id="pt6" class="heading2"><?php echo $text_checkout_payment_method; ?></li>
+                                                <li id="pt7" class="heading2"><?php echo $text_checkout_confirm; ?></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><div class="billing-block-wrapper" style="border-top: 1px solid #000000;width:100%;"></div></td>
+                                    </tr>
+                                </tbody></table>
+                        </td>
+                    </tr>
+                </tbody></table>
+        </div>
+        <div class=" col-md-8 col-lg-8 ">
+            <div class="checkout opc">
+                <div id="checkout" class="section allow">
+                    <div class="checkout-heading">
+                        <?php echo $text_checkout_option; ?>
 
-<div class="main container">
-            <div id="shopping_process_bar" class="col-md-12">
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tbody><tr>
-                <td>
-                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                        <tbody><tr>
-                            <td width="800" align="left">
-                                <ul id="progressTracker">
-                                    <li class="heading2">SHOPPING BAG</li>
-                                    <li class="active heading2">SHIPPING &amp; BILLING</li>
-                                    <li class="heading2">SHIPPING METHOD</li>
-                                    <li class="heading2">PAYMENT</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2"><div class="billing-block-wrapper" style="border-top: 1px solid #000000;width:100%;"></div></td>
-                        </tr>
-                    </tbody></table>
-                </td>
-            </tr>
-        </tbody></table>
-    </div>
-		<div class="col-main">
-        	<div class="checkout opc">
-    <div id="checkout" class="section allow">
-      <div class="checkout-heading">
-      <?php echo $text_checkout_option; ?>
-      
-      </div>
-      <div class="checkout-content "></div>
-    </div>
-    <?php if (!$logged) { ?>
-    <div id="payment-address" class="section allow">
-      <div class="checkout-heading">
-      	
-        	<?php echo $text_checkout_account; ?>
-               
-     
-      </div>
-      <div class="checkout-content  a-item"></div>
-    </div>
-    <?php } else { ?>
-    <div id="payment-address" class="section allow">
-      <div class="checkout-heading">
-     
-        <?php echo $text_checkout_payment_address; ?>
-       
-      </div>
-      <div class="checkout-content  a-item"></div>
-    </div>
-    <?php } ?>
-    <?php if ($shipping_required) { ?>
-    <div id="shipping-address" class="section allow">
-      <div class="checkout-heading">
-      	
-        	<?php echo $text_checkout_shipping_address; ?>
-        
-      </div>
-      <div class="checkout-content  a-item" style="display: none;"></div>
-    </div>
-    <div id="shipping-method" class="section allow">
-      <div class="checkout-heading">
-      	
-        	<?php echo $text_checkout_shipping_method; ?>
-        
-      </div>
-      <div class="checkout-content  a-item" style="display: none;"></div>
-    </div>
-    <?php } ?>
-    <div id="payment-method" class="section allow">
-      <div class="checkout-heading">
-      	
-        	<?php echo $text_checkout_payment_method; ?>
-      
-     </div>
-      <div class="checkout-content  a-item" style="display: none;"></div>
-    </div>
-    <div id="confirm" class="opc-review section allow">
-      <div class="checkout-heading">
-      	
-        	<?php echo $text_checkout_confirm; ?>
-      	
-      </div>
-      <div class="checkout-content  a-item"></div>
-    </div>
-  </div>
+                    </div>
+                    <div class="checkout-content "></div>
+                </div>
+                <?php if (!$logged) { ?>
+                <div style="display: none" id="payment-address" class="section allow">
+                    <div class="checkout-heading">
+
+                        <?php echo $text_checkout_account; ?>
+
+
+                    </div>
+                    <div class="checkout-content  a-item"></div>
+                </div>
+                <?php } else { ?>
+                <div id="payment-address" class="section allow">
+                    <div class="checkout-heading">
+
+                        <?php echo $text_checkout_payment_address; ?>
+
+                    </div>
+                    <div class="checkout-content  a-item"></div>
+                </div>
+                <?php } ?>
+                <?php if ($shipping_required) { ?>
+                <div style="display: none" id="shipping-address" class="section allow">
+                    <div class="checkout-heading">
+
+                        <?php echo $text_checkout_shipping_address; ?>
+
+                    </div>
+                    <div class="checkout-content  a-item" style="display: none;"></div>
+                </div>
+                <div style="display: none" id="shipping-method" class="section allow">
+                    <div class="checkout-heading">
+
+                        <?php echo $text_checkout_shipping_method; ?>
+
+                    </div>
+                    <div class="checkout-content  a-item" style="display: none;"></div>
+                </div>
+                <?php } ?>
+                <div id="payment-method" style="display: none" class="section allow">
+                    <div class="checkout-heading">
+
+                        <?php echo $text_checkout_payment_method; ?>
+
+                    </div>
+                    <div class="checkout-content  a-item" style="display: none;"></div>
+                </div>
+                <div id="confirm" style="display: none" class="opc-review section allow">
+                    <div class="checkout-heading">
+
+                        <?php echo $text_checkout_confirm; ?>
+
+                    </div>
+                    <div class="checkout-content  a-item"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12" >
+            <div class="totals">
+                <div class="sumario" style="height: auto">
+                    <div class="titulo col-md-12">
+                        Sumario de compra
+                    </div>
+                    <div class="precio col-md-12">
+<br><br>
+
+                        <?php foreach ($totals as $total) { ?>
+                        <div class="sumario-sub col-md-12">
+
+                            <div class="col-md-6" style="text-align: left;"><?php echo $total['title']; ?></div>
+                            <div class="col-md-6" style="text-align: right;"><span style="font-weight: bold"> <?php echo $total['text']; ?></span></div>
+
+
+                        </div>
+
+                        <br>
+                        <?php } ?>    
+
+
+                    </div>
+                    <br><br>
+                    <div class="cancelar" id="botonn" style="height: 20px">
+
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
-  
+
   <?php echo $content_bottom; ?></div>
 <script type="text/javascript"><!--
 $('#checkout .checkout-content input[name=\'account\']').live('change', function() {
+   
 	if ($(this).attr('value') == 'register') {
 		$('#payment-address .checkout-heading span').html('<?php echo $text_checkout_account; ?>');
 	} else {
@@ -152,6 +187,7 @@ $(document).ready(function() {
 
 // Checkout
 $('#button-account').live('click', function() {
+        $('#progressTracker').children('li').removeClass('active');
 	$.ajax({
 		url: 'index.php?route=checkout/' + $('input[name=\'account\']:checked').attr('value'),
 		dataType: 'html',
@@ -165,7 +201,10 @@ $('#button-account').live('click', function() {
 		},			
 		success: function(html) {
 			$('.warning, .error').remove();
-			
+                        
+                        $('#pt3').addClass('active');
+			$('#payment-address').show();
+                        
 			$('#payment-address .checkout-content').html(html);
 				
 			$('#checkout .checkout-content').slideUp('slow');
@@ -642,6 +681,7 @@ $('#button-shipping-address').live('click', function() {
 
 // Guest
 $('#button-guest').live('click', function() {
+        $('#progressTracker').children('li').removeClass('active');
 	$.ajax({
 		url: 'index.php?route=checkout/guest/validate',
 		type: 'post',
@@ -668,47 +708,47 @@ $('#button-guest').live('click', function() {
 				}
 								
 				if (json['error']['firstname']) {
-					$('#payment-address input[name=\'firstname\'] + br').after('<span class="error">' + json['error']['firstname'] + '</span>');
+					$('#payment-address input[name=\'firstname\']').after('<span class="error">' + json['error']['firstname'] + '</span>');
 				}
 				
 				if (json['error']['lastname']) {
-					$('#payment-address input[name=\'lastname\'] + br').after('<span class="error">' + json['error']['lastname'] + '</span>');
+					$('#payment-address input[name=\'lastname\']').after('<span class="error">' + json['error']['lastname'] + '</span>');
 				}	
 				
 				if (json['error']['email']) {
-					$('#payment-address input[name=\'email\'] + br').after('<span class="error">' + json['error']['email'] + '</span>');
+					$('#payment-address input[name=\'email\']').after('<span class="error">' + json['error']['email'] + '</span>');
 				}
 				
 				if (json['error']['telephone']) {
-					$('#payment-address input[name=\'telephone\'] + br').after('<span class="error">' + json['error']['telephone'] + '</span>');
+					$('#payment-address input[name=\'telephone\']').after('<span class="error">' + json['error']['telephone'] + '</span>');
 				}	
 					
 				if (json['error']['company_id']) {
-					$('#payment-address input[name=\'company_id\'] + br').after('<span class="error">' + json['error']['company_id'] + '</span>');
+					$('#payment-address input[name=\'company_id\']').after('<span class="error">' + json['error']['company_id'] + '</span>');
 				}	
 				
 				if (json['error']['tax_id']) {
-					$('#payment-address input[name=\'tax_id\'] + br').after('<span class="error">' + json['error']['tax_id'] + '</span>');
+					$('#payment-address input[name=\'tax_id\']').after('<span class="error">' + json['error']['tax_id'] + '</span>');
 				}	
 																		
 				if (json['error']['address_1']) {
-					$('#payment-address input[name=\'address_1\'] + br').after('<span class="error">' + json['error']['address_1'] + '</span>');
+					$('#payment-address input[name=\'address_1\']').after('<span class="error">' + json['error']['address_1'] + '</span>');
 				}	
 				
 				if (json['error']['city']) {
-					$('#payment-address input[name=\'city\'] + br').after('<span class="error">' + json['error']['city'] + '</span>');
+					$('#payment-address input[name=\'city\'] ').after('<span class="error">' + json['error']['city'] + '</span>');
 				}	
 				
 				if (json['error']['postcode']) {
-					$('#payment-address input[name=\'postcode\'] + br').after('<span class="error">' + json['error']['postcode'] + '</span>');
+					$('#payment-address input[name=\'postcode\'] ').after('<span class="error">' + json['error']['postcode'] + '</span>');
 				}	
 				
 				if (json['error']['country']) {
-					$('#payment-address select[name=\'country_id\'] + br').after('<span class="error">' + json['error']['country'] + '</span>');
+					$('#payment-address select[name=\'country_id\'] ').after('<span class="error">' + json['error']['country'] + '</span>');
 				}	
 				
 				if (json['error']['zone']) {
-					$('#payment-address select[name=\'zone_id\'] + br').after('<span class="error">' + json['error']['zone'] + '</span>');
+					$('#payment-address select[name=\'zone_id\']').after('<span class="error">' + json['error']['zone'] + '</span>');
 				}
 			} else {
 				<?php if ($shipping_required) { ?>	
@@ -719,6 +759,9 @@ $('#button-guest').live('click', function() {
 						url: 'index.php?route=checkout/shipping_method',
 						dataType: 'html',
 						success: function(html) {
+                                                        $('#pt5').addClass('active');
+                                                        $('#shipping-method').show();
+                                                                
 							$('#shipping-method .checkout-content').html(html);
 							
 							$('#payment-address .checkout-content').slideUp('slow');
@@ -753,6 +796,9 @@ $('#button-guest').live('click', function() {
 						url: 'index.php?route=checkout/guest_shipping',
 						dataType: 'html',
 						success: function(html) {
+                                                        $('#pt4').addClass('active');
+                                                        $('#shipping-address').show();
+                                                        
 							$('#shipping-address .checkout-content').html(html);
 							
 							$('#payment-address .checkout-content').slideUp('slow');
@@ -802,6 +848,7 @@ $('#button-guest').live('click', function() {
 
 // Guest Shipping
 $('#button-guest-shipping').live('click', function() {
+        $('#progressTracker').children('li').removeClass('active');
 	$.ajax({
 		url: 'index.php?route=checkout/guest_shipping/validate',
 		type: 'post',
@@ -859,6 +906,9 @@ $('#button-guest-shipping').live('click', function() {
 					url: 'index.php?route=checkout/shipping_method',
 					dataType: 'html',
 					success: function(html) {
+                                                $('#pt5').addClass('active');
+                                                $('#shipping-method').show();
+                                                
 						$('#shipping-method .checkout-content').html(html);
 						
 						$('#shipping-address .checkout-content').slideUp('slow');
@@ -884,6 +934,7 @@ $('#button-guest-shipping').live('click', function() {
 });
 
 $('#button-shipping-method').live('click', function() {
+        $('#progressTracker').children('li').removeClass('active');
 	$.ajax({
 		url: 'index.php?route=checkout/shipping_method/validate',
 		type: 'post',
@@ -913,6 +964,8 @@ $('#button-shipping-method').live('click', function() {
 					url: 'index.php?route=checkout/payment_method',
 					dataType: 'html',
 					success: function(html) {
+                                                $('#pt6').addClass('active');
+                                                $('#payment-method').show();
 						$('#payment-method .checkout-content').html(html);
 						
 						$('#shipping-method .checkout-content').slideUp('slow');
@@ -937,6 +990,7 @@ $('#button-shipping-method').live('click', function() {
 });
 
 $('#button-payment-method').live('click', function() {
+        $('#progressTracker').children('li').removeClass('active');
 	$.ajax({
 		url: 'index.php?route=checkout/payment_method/validate', 
 		type: 'post',
@@ -966,6 +1020,8 @@ $('#button-payment-method').live('click', function() {
 					url: 'index.php?route=checkout/confirm',
 					dataType: 'html',
 					success: function(html) {
+                                                $('#pt7').addClass('active');
+                                                $('#confirm').show();
 						$('#confirm .checkout-content').html(html);
 						
 						$('#payment-method .checkout-content').slideUp('slow');

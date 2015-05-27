@@ -30,12 +30,10 @@
 </table>
 <br />
 <?php } ?>
-<b><?php echo $text_comments; ?></b>
-<textarea name="comment" rows="8" style="width: 98%;"><?php echo $comment; ?></textarea>
-<br />
-<br />
-<div class="buttons">
-  <div class="right">
-    <input type="button" value="<?php echo $button_continue; ?>" id="button-shipping-method" class="button" />
-  </div>
+<b><?php $text_comments; ?></b>
+<textarea style="display: none" name="comment" rows="8" style="width: 98%;"><?php echo $comment; ?></textarea>
+<div class="field buttons-set col-md-6 col-lg-6 col-xs-12">
+    <button style="margin-left: 15px" type="button" value="<?php echo $button_continue; ?>" id="button-shipping-method" class="button input-box" >
+		<span><span><?php echo $button_continue; ?></span></span>
+    </button>
 </div>
