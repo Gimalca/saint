@@ -27,7 +27,7 @@ $_['column_image']           = 'Imagen';
 $_['column_name']            = 'Nombre del Producto';
 $_['column_model']           = 'Modelo';
 $_['column_quantity']        = 'Cantidad';
-$_['column_price']           = 'Precio Unitario';
+$_['column_price']           = 'Unidad';
 $_['column_total']           = 'Total';
 
 // Entry

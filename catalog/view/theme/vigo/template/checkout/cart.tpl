@@ -65,7 +65,7 @@
                                                 <a class="right btn-remove btn-remove2" href="<?php echo $product['remove']; ?>"></a>
                                             </h2>
                                             <?php if (!$product['stock']) { ?>
-                                            <span class="stock">El Item no esta disponible</span>
+                                            <b><span style="color: #c70101;" class="stock">El Item no esta disponible</span></b>
                                             <?php } else { ?>
                                             <span class="stock">En Stock</span>
                                             <?php } ?>
@@ -118,13 +118,13 @@
                                                 <div class="col-md-12">
 
                                                     <span class="cart-price">
-                                                        <?php echo $column_price; ?>:<span class="price"><?php echo $product['price']; ?></span>
+                                                        <?php echo $column_price; ?>:&nbsp &nbsp<span class="price"><?php echo $product['price']; ?></span>
                                                     </span>
                                                 </div>
                                                 <div class="precio-unitario col-md-12" id="posicion">
 
                                                     <span class="cart-price">
-                                                        <?php echo $column_total; ?>: <span class="price"><b>  <?php echo $product['total']; ?></b></span>
+                                                        <?php echo $column_total; ?>:&nbsp &nbsp &nbsp <span class="price"><b>  <?php echo $product['total']; ?></b></span>
                                                     </span>
                                                 </div>
                                                 <?php foreach ($vouchers as $voucher) { ?>

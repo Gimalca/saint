@@ -60,7 +60,7 @@
             
 		decorateList('mini-cart', 'none-recursive');
 	</script>
-    <div class="minicart_total col-xs-7">
+    <div class="minicart_total col-xs-6">
     	<?php foreach ($totals as $total) { ?>
 			<div class="totals">
     	<span class="label minicart_name"><?php echo $total['title']; ?> </span>
@@ -70,7 +70,7 @@
     </div>
 	    <?php } ?>
     </div>
-    <div class="actions col-xs-5">
+    <div class="actions col-xs-6">
         <button class="button" type="button" onclick="setLocation('<?php echo $cart; ?>')"><span><span><?php echo $text_cart; ?></span></span></button>
         <button class="button" type="button" onclick="setLocation('<?php echo $checkout; ?>')"><span><span><?php echo $text_checkout; ?></span></span></button>
 	</div>

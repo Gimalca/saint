@@ -846,12 +846,11 @@ tr.summary-details-excluded { font-style:italic; }
 .mini-products-list .qty-price .price { font-weight: bold; color: #222; font-size: 15px; }
 .mini-cart p.cart-empty { margin: 0; }
 .mini-cart .actions { padding-right: 0; }
-.mini-cart .actions button.button { width: 100%; margin-bottom: 3px; }
+.mini-cart .actions button.button { width: 108px; margin-bottom: 3px; }
 .mini-cart .actions button.button span {color: #fff;
     font: 10px Arial,Helvetica,sans-serif;
     line-height: 30px;
     width: 100%; }
-.mini-cart .actions button.button:hover span { border-color: #f0877c; color: #fff; }
 .mini-cart .totals { padding-left: 0; }
 .mini-cart .totals .label { font-weight: bold; font-size: 14px; color: #666; text-transform: uppercase; }
 .mini-cart .totals .price {font-weight: bold; font-size: 14px; color: #222; }
