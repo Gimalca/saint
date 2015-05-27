@@ -350,9 +350,24 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
                              
                          </script>
                     </ul>
+                    <ul>
+                     
+                    <!--div class="pull-right language-switcher">
+                        <?php echo $language; ?>
+                    </div-->
+                    <div class="pull-right currency-switcher" style="display:none">
+                         <?php echo $currency; ?>
+                    </div>     
+                    </ul>
                     <ul class="links right">
-                    
-                        <!--li class="first"><a class="top-link-home" href="<?php echo $home; ?>"><?php //echo $text_home; ?></a></li-->
+                    	<div class="pull-left" style="color: white;display: -webkit-inline-box;">
+                    <?php if (!$logged) { ?>
+                    <?php echo $text_welcome; ?>
+                    <?php } else { ?>
+                    <?php echo $text_logged; ?>
+                    <?php } ?>
+                    </div>
+                        <!--li class="first"><a class="top-link-home" href="<?php echo $home; ?>"><?php echo $text_home; ?></a></li-->
                         <li class="header_wishlist"><a href="<?php echo $wishlist; ?>" class="top-link-wishlist"><?php //echo $text_wishlist; ?></a></li>
                         <li><a class="top-link-account" href="<?php echo $account; ?>"><?php //echo $text_account; ?></a></li>
                         
@@ -368,23 +383,7 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
                      
                 </div>
             </div>
-            <div class="">
-                <div class="">
-                     <!--div class="pull-left">
-                    <?php if (!$logged) { ?>
-                    <?php echo $text_welcome; ?>
-                    <?php } else { ?>
-                    <?php echo $text_logged; ?>
-                    <?php } ?>
-                    </div-->
-                    <!--div class="pull-right language-switcher">
-                        <?php echo $language; ?>
-                    </div-->
-                    <div class="pull-right currency-switcher" style="display:none">
-                         <?php echo $currency; ?>
-                    </div>      
-                </div>
-            </div>
+            
           
         </div>
   <div class="header container">

@@ -3242,3 +3242,6 @@ li.custom-menu .custom-menu-item p {
 }
 .pull-left a{color: white !important; }
 .pull-left{text-transform: capitalize;}
+#topCartContent .active{
+   background: none !important;
+}
