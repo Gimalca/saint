@@ -342,7 +342,7 @@
                                     <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
 
                                     <div class="qty-changer">
-                                        <a class="qty_inc" href="javascript:void(0)"><span>+</span></a>
+                                        <a class="qty_inc" href="javascript:void(0)" style="text-decoration: none;" ><span>+</span></a>
                                     </div>
                                     <div class="clear"></div>
                                 </div>
