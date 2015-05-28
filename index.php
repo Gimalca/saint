@@ -1,4 +1,6 @@
 <?php
+
+error_reporting(0);
 // Version
 define('VERSION', '1.5.6.1');
 
