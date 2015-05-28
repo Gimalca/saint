@@ -4,23 +4,23 @@ define('HTTP_SERVER', 'http://saints-gimalca.rhcloud.com/admin/');
 define('HTTP_CATALOG', 'http://saints-gimalca.rhcloud.com/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://131.72.168.242:8080/saint/admin/');
-define('HTTPS_CATALOG', 'http://131.72.168.242:8080/saint/');
+define('HTTPS_SERVER', 'http://saints-gimalca.rhcloud.com/admin/');
+define('HTTPS_CATALOG', 'http://saints-gimalca.rhcloud.com/');
 
 
-$rhcroot = getenv('OPENSHIFT_HOMEDIR');
+//$rhcroot = getenv('OPENSHIFT_HOMEDIR');
 // DIR
-define('DIR_APPLICATION', $rhcroot.'admin/');
-define('DIR_SYSTEM', $rhcroot.'system/');
-define('DIR_DATABASE', $rhcroot.'system/database/');
-define('DIR_LANGUAGE', $rhcroot.'admin/language/');
-define('DIR_TEMPLATE', $rhcroot.'admin/view/template/');
-define('DIR_CONFIG', $rhcroot.'system/config/');
-define('DIR_IMAGE', $rhcroot.'image/');
-define('DIR_CACHE', $rhcroot.'system/cache/');
-define('DIR_DOWNLOAD', $rhcroot.'download/');
-define('DIR_LOGS', $rhcroot.'system/logs/');
-define('DIR_CATALOG', $rhcroot.'catalog/');
+define('DIR_APPLICATION', dirname(__FILE__).'/admin/');
+define('DIR_SYSTEM', dirname(__FILE__).'/system/');
+define('DIR_DATABASE', dirname(__FILE__).'/system/database/');
+define('DIR_LANGUAGE', dirname(__FILE__).'/admin/language/');
+define('DIR_TEMPLATE', dirname(__FILE__).'/admin/view/template/');
+define('DIR_CONFIG', dirname(__FILE__).'/system/config/');
+define('DIR_IMAGE', dirname(__FILE__).'/image/');
+define('DIR_CACHE', dirname(__FILE__).'/system/cache/');
+define('DIR_DOWNLOAD', dirname(__FILE__).'/download/');
+define('DIR_LOGS', dirname(__FILE__).'/system/logs/');
+define('DIR_CATALOG', dirname(__FILE__).'/catalog/');
 
 $dbhost = getenv('OPENSHIFT_MYSQL_DB_HOST');
 $dbuser = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
