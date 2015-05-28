@@ -24,7 +24,7 @@
                         <tbody><tr>
                             <td width="800" align="left">
                                 <ul id="progressTracker">
-                                    <li id="pt1" class="active heading2"><?php echo $text_cart; ?></li>
+                                    <li id="pt1" class="active-checkout heading2"><?php echo $text_cart; ?></li>
                                     <li id="pt2" class=" heading2"><?php echo $text_checkout_option; ?></li>
                                     <li id="pt3" class="heading2"><?php echo $text_checkout_payment_address; ?></li>
 

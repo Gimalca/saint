@@ -3119,7 +3119,7 @@ li.custom-menu .custom-menu-item p {
   position: relative;
   font-size: 12px;
 }
-#shopping_process_bar .active {
+#shopping_process_bar .active-checkout {
   color: #c70101;
 }
 #shopping_process_bar {
@@ -3129,7 +3129,7 @@ li.custom-menu .custom-menu-item p {
   padding: 20px 0 0 0;
   margin-bottom: 20px;
 }
-.active {
+.active-checkout {
   background: url("../images/active.gif") no-repeat scroll center 17px transparent !important;
   font-weight: bold;
 }
