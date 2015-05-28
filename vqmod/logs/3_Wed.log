@@ -1,0 +1,259 @@
+---------- Date: 2015-03-11 07:44:00 ~ IP : 200.47.182.253 ----------
+REQUEST URI : /saint/
+MOD DETAILS:
+   modFile   : C:\wamp\www\saint\vqmod/xml/vigo_language.xml
+   id        : mod
+   version   : 1.1
+   vqmver    : 2.1.7
+   author    : OC2PS
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/wishlist.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/address.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/edit.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/order.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/login.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/register.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/password.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/return.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/affiliate/payment.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/affiliate/tracking.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/affiliate/edit.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/affiliate/password.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/affiliate/login.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/checkout/checkout.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/hungarian.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/common/header.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/common/footer.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/product/compare.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/product/manufacturer.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/product/category.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/product/search.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/product/product.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/wishlist.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/address.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/edit.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/order.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/login.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/register.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/password.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/return.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/affiliate/payment.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/affiliate/tracking.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/affiliate/edit.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/affiliate/password.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/affiliate/login.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/checkout/checkout.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/turkish.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/common/header.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/common/footer.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/product/compare.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/product/manufacturer.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/product/category.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/product/search.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/product/product.php] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : C:\wamp\www\saint\vqmod/xml/vqmm_pav_blogs_menu_shortcut.xml
+   id        : VQMod Pavo Blogs Shortcut
+   version   : 1.0.0
+   vqmver    : 2.3.0
+   author    : pavothemes.com
+
+File Name    : catalog/language/*/common/header.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $_['text_home']           = 'Home';
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-03-11 18:17:18 ~ IP : 200.47.182.253 ----------
+REQUEST URI : /saint/
+MOD DETAILS:
+   modFile   : C:\wamp\www\saint\vqmod/xml/vigo_language.xml
+   id        : mod
+   version   : 1.1
+   vqmver    : 2.1.7
+   author    : OC2PS
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/wishlist.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/address.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/edit.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/order.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/login.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/register.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/password.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/return.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/affiliate/payment.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/affiliate/tracking.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/affiliate/edit.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/affiliate/password.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/affiliate/login.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/checkout/checkout.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/hungarian.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/common/header.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/common/footer.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/product/compare.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/product/manufacturer.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/product/category.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/product/search.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/product/product.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/wishlist.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/address.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/edit.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/order.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/login.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/register.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/password.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/return.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/affiliate/payment.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/affiliate/tracking.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/affiliate/edit.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/affiliate/password.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/affiliate/login.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/checkout/checkout.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/turkish.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/common/header.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/common/footer.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/product/compare.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/product/manufacturer.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/product/category.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/product/search.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/product/product.php] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : C:\wamp\www\saint\vqmod/xml/vqmm_pav_blogs_menu_shortcut.xml
+   id        : VQMod Pavo Blogs Shortcut
+   version   : 1.0.0
+   vqmver    : 2.3.0
+   author    : pavothemes.com
+
+File Name    : catalog/language/*/common/header.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $_['text_home']           = 'Home';
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-03-11 19:20:45 ~ IP : 200.47.182.253 ----------
+REQUEST URI : /saint/admin/index.php?route=common/filemanager/image&amp;token=2713ad1f4a05b583607158e83f4b153f&amp;image=data%2F607761-132722-thickbox.jpg
+MOD DETAILS:
+   modFile   : C:\wamp\www\saint\vqmod/xml/vigo_language.xml
+   id        : mod
+   version   : 1.1
+   vqmver    : 2.1.7
+   author    : OC2PS
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/wishlist.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/address.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/edit.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/order.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/login.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/register.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/password.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/return.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/affiliate/payment.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/affiliate/tracking.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/affiliate/edit.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/affiliate/password.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/affiliate/login.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/checkout/checkout.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/hungarian.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/common/header.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/common/footer.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/product/compare.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/product/manufacturer.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/product/category.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/product/search.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/product/product.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/wishlist.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/address.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/edit.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/order.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/login.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/register.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/password.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/return.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/affiliate/payment.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/affiliate/tracking.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/affiliate/edit.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/affiliate/password.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/affiliate/login.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/checkout/checkout.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/turkish.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/common/header.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/common/footer.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/product/compare.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/product/manufacturer.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/product/category.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/product/search.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/product/product.php] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-03-11 19:20:46 ~ IP : 200.47.182.253 ----------
+REQUEST URI : /saint/admin/index.php?route=common/filemanager/image&amp;token=2713ad1f4a05b583607158e83f4b153f&amp;image=data%2F610598-127478-thickbox.jpg
+MOD DETAILS:
+   modFile   : C:\wamp\www\saint\vqmod/xml/vigo_language.xml
+   id        : mod
+   version   : 1.1
+   vqmver    : 2.1.7
+   author    : OC2PS
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/wishlist.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/address.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/edit.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/order.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/login.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/register.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/password.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/account/return.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/affiliate/payment.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/affiliate/tracking.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/affiliate/edit.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/affiliate/password.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/affiliate/login.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/checkout/checkout.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/hungarian.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/common/header.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/common/footer.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/product/compare.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/product/manufacturer.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/product/category.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/product/search.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/product/product.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/wishlist.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/address.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/edit.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/order.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/login.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/register.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/password.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/account/return.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/affiliate/payment.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/affiliate/tracking.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/affiliate/edit.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/affiliate/password.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/affiliate/login.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/checkout/checkout.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/turkish.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/common/header.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/common/footer.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/product/compare.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/product/manufacturer.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/product/category.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/product/search.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/turkish/product/product.php] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-03-11 19:21:05 ~ IP : 200.47.182.253 ----------
+REQUEST URI : /saint/index.php?route=product/product&amp;path=138_139_141&amp;product_id=106
+MOD DETAILS:
+   modFile   : C:\wamp\www\saint\vqmod/xml/vqmm_pav_blogs_menu_shortcut.xml
+   id        : VQMod Pavo Blogs Shortcut
+   version   : 1.0.0
+   vqmver    : 2.3.0
+   author    : pavothemes.com
+
+File Name    : catalog/language/*/common/header.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $_['text_home']           = 'Home';
+
+----------------------------------------------------------------------
+
+
