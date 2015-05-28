@@ -1,6 +1,6 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+error_reporting(0);
+//ini_set('display_errors', 1);
 // Version
 define('VERSION', '1.5.6.1');
 
