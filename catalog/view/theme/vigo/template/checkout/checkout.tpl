@@ -187,7 +187,7 @@ $(document).ready(function() {
 
 // Checkout
 $('#button-account').live('click', function() {
-        $('#progressTracker').children('li').removeClass('active');
+        $('#progressTracker').children('li').removeClass('active-checkout');
 	$.ajax({
 		url: 'index.php?route=checkout/' + $('input[name=\'account\']:checked').attr('value'),
 		dataType: 'html',
@@ -202,7 +202,7 @@ $('#button-account').live('click', function() {
 		success: function(html) {
 			$('.warning, .error').remove();
                         
-                        $('#pt3').addClass('active');
+                        $('#pt3').addClass('active-checkout');
 			$('#payment-address').show();
                         
 			$('#payment-address .checkout-content').html(html);
@@ -281,55 +281,55 @@ $('#button-register').live('click', function() {
 				}
 				
 				if (json['error']['firstname']) {
-					$('#payment-address input[name=\'firstname\'] + br').after('<span class="error">' + json['error']['firstname'] + '</span>');
+					$('#payment-address input[name=\'firstname\']').after('<span class="error">' + json['error']['firstname'] + '</span>');
 				}
 				
 				if (json['error']['lastname']) {
-					$('#payment-address input[name=\'lastname\'] + br').after('<span class="error">' + json['error']['lastname'] + '</span>');
+					$('#payment-address input[name=\'lastname\'] ').after('<span class="error">' + json['error']['lastname'] + '</span>');
 				}	
 				
 				if (json['error']['email']) {
-					$('#payment-address input[name=\'email\'] + br').after('<span class="error">' + json['error']['email'] + '</span>');
+					$('#payment-address input[name=\'email\']').after('<span class="error">' + json['error']['email'] + '</span>');
 				}
 				
 				if (json['error']['telephone']) {
-					$('#payment-address input[name=\'telephone\'] + br').after('<span class="error">' + json['error']['telephone'] + '</span>');
+					$('#payment-address input[name=\'telephone\'] ').after('<span class="error">' + json['error']['telephone'] + '</span>');
 				}	
 					
 				if (json['error']['company_id']) {
-					$('#payment-address input[name=\'company_id\'] + br').after('<span class="error">' + json['error']['company_id'] + '</span>');
+					$('#payment-address input[name=\'company_id\'] ').after('<span class="error">' + json['error']['company_id'] + '</span>');
 				}	
 				
 				if (json['error']['tax_id']) {
-					$('#payment-address input[name=\'tax_id\'] + br').after('<span class="error">' + json['error']['tax_id'] + '</span>');
+					$('#payment-address input[name=\'tax_id\'] ').after('<span class="error">' + json['error']['tax_id'] + '</span>');
 				}	
 																		
 				if (json['error']['address_1']) {
-					$('#payment-address input[name=\'address_1\'] + br').after('<span class="error">' + json['error']['address_1'] + '</span>');
+					$('#payment-address input[name=\'address_1\'] ').after('<span class="error">' + json['error']['address_1'] + '</span>');
 				}	
 				
 				if (json['error']['city']) {
-					$('#payment-address input[name=\'city\'] + br').after('<span class="error">' + json['error']['city'] + '</span>');
+					$('#payment-address input[name=\'city\'] ').after('<span class="error">' + json['error']['city'] + '</span>');
 				}	
 				
 				if (json['error']['postcode']) {
-					$('#payment-address input[name=\'postcode\'] + br').after('<span class="error">' + json['error']['postcode'] + '</span>');
+					$('#payment-address input[name=\'postcode\']').after('<span class="error">' + json['error']['postcode'] + '</span>');
 				}	
 				
 				if (json['error']['country']) {
-					$('#payment-address select[name=\'country_id\'] + br').after('<span class="error">' + json['error']['country'] + '</span>');
+					$('#payment-address select[name=\'country_id\'] ').after('<span class="error">' + json['error']['country'] + '</span>');
 				}	
 				
 				if (json['error']['zone']) {
-					$('#payment-address select[name=\'zone_id\'] + br').after('<span class="error">' + json['error']['zone'] + '</span>');
+					$('#payment-address select[name=\'zone_id\']').after('<span class="error">' + json['error']['zone'] + '</span>');
 				}
 				
 				if (json['error']['password']) {
-					$('#payment-address input[name=\'password\'] + br').after('<span class="error">' + json['error']['password'] + '</span>');
+					$('#payment-address input[name=\'password\'] ').after('<span class="error">' + json['error']['password'] + '</span>');
 				}	
 				
 				if (json['error']['confirm']) {
-					$('#payment-address input[name=\'confirm\'] + br').after('<span class="error">' + json['error']['confirm'] + '</span>');
+					$('#payment-address input[name=\'confirm\'] ').after('<span class="error">' + json['error']['confirm'] + '</span>');
 				}																																	
 			} else {
 				<?php if ($shipping_required) { ?>				
@@ -340,6 +340,7 @@ $('#button-register').live('click', function() {
 						url: 'index.php?route=checkout/shipping_method',
 						dataType: 'html',
 						success: function(html) {
+                                                        $('#shipping-method').show();
 							$('#shipping-method .checkout-content').html(html);
 							
 							$('#payment-address .checkout-content').slideUp('slow');
@@ -439,6 +440,7 @@ $('#button-register').live('click', function() {
 
 // Payment Address	
 $('#button-payment-address').live('click', function() {
+        $('#progressTracker').children('li').removeClass('active-checkout');
 	$.ajax({
 		url: 'index.php?route=checkout/payment_address/validate',
 		type: 'post',
@@ -509,6 +511,8 @@ $('#button-payment-address').live('click', function() {
 					url: 'index.php?route=checkout/shipping_address',
 					dataType: 'html',
 					success: function(html) {
+                                                $('#pt3').addClass('active-checkout');
+                                                $('#shipping-address').show()
 						$('#shipping-address .checkout-content').html(html);
 					
 						$('#payment-address .checkout-content').slideUp('slow');
@@ -568,6 +572,7 @@ $('#button-payment-address').live('click', function() {
 
 // Shipping Address			
 $('#button-shipping-address').live('click', function() {
+        $('#progressTracker').children('li').removeClass('active-checkout');
 	$.ajax({
 		url: 'index.php?route=checkout/shipping_address/validate',
 		type: 'post',
@@ -633,6 +638,8 @@ $('#button-shipping-address').live('click', function() {
 					url: 'index.php?route=checkout/shipping_method',
 					dataType: 'html',
 					success: function(html) {
+                                                $('#pt5').addClass('active-checkout');
+                                                $('#shipping-method').show();
 						$('#shipping-method .checkout-content').html(html);
 						
 						$('#shipping-address .checkout-content').slideUp('slow');
@@ -681,7 +688,7 @@ $('#button-shipping-address').live('click', function() {
 
 // Guest
 $('#button-guest').live('click', function() {
-        $('#progressTracker').children('li').removeClass('active');
+        $('#progressTracker').children('li').removeClass('active-checkout');
 	$.ajax({
 		url: 'index.php?route=checkout/guest/validate',
 		type: 'post',
@@ -759,7 +766,7 @@ $('#button-guest').live('click', function() {
 						url: 'index.php?route=checkout/shipping_method',
 						dataType: 'html',
 						success: function(html) {
-                                                        $('#pt5').addClass('active');
+                                                        $('#pt5').addClass('active-checkout');
                                                         $('#shipping-method').show();
                                                                 
 							$('#shipping-method .checkout-content').html(html);
@@ -796,7 +803,7 @@ $('#button-guest').live('click', function() {
 						url: 'index.php?route=checkout/guest_shipping',
 						dataType: 'html',
 						success: function(html) {
-                                                        $('#pt4').addClass('active');
+                                                        $('#pt4').addClass('active-checkout');
                                                         $('#shipping-address').show();
                                                         
 							$('#shipping-address .checkout-content').html(html);
@@ -848,7 +855,7 @@ $('#button-guest').live('click', function() {
 
 // Guest Shipping
 $('#button-guest-shipping').live('click', function() {
-        $('#progressTracker').children('li').removeClass('active');
+        $('#progressTracker').children('li').removeClass('active-checkout');
 	$.ajax({
 		url: 'index.php?route=checkout/guest_shipping/validate',
 		type: 'post',
@@ -906,7 +913,7 @@ $('#button-guest-shipping').live('click', function() {
 					url: 'index.php?route=checkout/shipping_method',
 					dataType: 'html',
 					success: function(html) {
-                                                $('#pt5').addClass('active');
+                                                $('#pt5').addClass('active-checkout');
                                                 $('#shipping-method').show();
                                                 
 						$('#shipping-method .checkout-content').html(html);
@@ -934,7 +941,7 @@ $('#button-guest-shipping').live('click', function() {
 });
 
 $('#button-shipping-method').live('click', function() {
-        $('#progressTracker').children('li').removeClass('active');
+        $('#progressTracker').children('li').removeClass('active-checkout');
 	$.ajax({
 		url: 'index.php?route=checkout/shipping_method/validate',
 		type: 'post',
@@ -964,7 +971,7 @@ $('#button-shipping-method').live('click', function() {
 					url: 'index.php?route=checkout/payment_method',
 					dataType: 'html',
 					success: function(html) {
-                                                $('#pt6').addClass('active');
+                                                $('#pt6').addClass('active-checkout');
                                                 $('#payment-method').show();
 						$('#payment-method .checkout-content').html(html);
 						
@@ -990,7 +997,7 @@ $('#button-shipping-method').live('click', function() {
 });
 
 $('#button-payment-method').live('click', function() {
-        $('#progressTracker').children('li').removeClass('active');
+        $('#progressTracker').children('li').removeClass('active-checkout');
 	$.ajax({
 		url: 'index.php?route=checkout/payment_method/validate', 
 		type: 'post',
@@ -1020,7 +1027,7 @@ $('#button-payment-method').live('click', function() {
 					url: 'index.php?route=checkout/confirm',
 					dataType: 'html',
 					success: function(html) {
-                                                $('#pt7').addClass('active');
+                                                $('#pt7').addClass('active-checkout');
                                                 $('#confirm').show();
 						$('#confirm .checkout-content').html(html);
 						

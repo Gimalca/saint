@@ -60,7 +60,7 @@
   </table>
 </div>
 <div class="buttons">
-  <div class="right">
+  <div class="right d">
     <input type="button" value="<?php echo $button_confirm; ?>" id="button-confirm" class="button" />
   </div>
 </div>

@@ -35,19 +35,19 @@
                 </div>
             </div>
             <div class="field">
-                    <div class="input-box input-country col-md-8 col-sm-8 col-xs-12">
-                        <select id="input-emailn" name="country_id" class="large-field">
-                            <option value=""><?php echo $text_select; ?></option>
-                            <?php foreach ($countries as $country) { ?>
-                            <?php if ($country['country_id'] == $country_id) { ?>
-                            <option value="<?php echo $country['country_id']; ?>" selected="selected"><?php echo $country['name']; ?></option>
-                            <?php } else { ?>
-                            <option value="<?php echo $country['country_id']; ?>"><?php echo $country['name']; ?></option>
-                            <?php } ?>
-                            <?php } ?>
-                        </select>
-                    </div>
+                <div class="input-box input-country col-md-8 col-sm-8 col-xs-12">
+                    <select id="input-emailn" name="country_id" class="large-field">
+                        <option value=""><?php echo $text_select; ?></option>
+                        <?php foreach ($countries as $country) { ?>
+                        <?php if ($country['country_id'] == $country_id) { ?>
+                        <option value="<?php echo $country['country_id']; ?>" selected="selected"><?php echo $country['name']; ?></option>
+                        <?php } else { ?>
+                        <option value="<?php echo $country['country_id']; ?>"><?php echo $country['name']; ?></option>
+                        <?php } ?>
+                        <?php } ?>
+                    </select>
                 </div>
+            </div>
         </li>
     </ul>
 </div>

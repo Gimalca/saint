@@ -291,10 +291,12 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
     $launch = explode($delimiters[0], $ready);
     return  $launch;
 }
-
+if(isset($_SERVER["QUERY_STRING"])){
+   $_SERVER["QUERY_STRING"] = 'route=common/home';
+  }
 ?>
 
-<?php  $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER["QUERY_STRING"]; $words = multiexplode(array('/','&'),$_SERVER["QUERY_STRING"]); $category_s = $words[1]  ?>
+<?php  $category_s =''; $words[1] = '.'; $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER["QUERY_STRING"]; $words = multiexplode(array('/','&'),$_SERVER["QUERY_STRING"]); $category_s = $words[1]  ?>
 <body class="">
 <div class="wrapper">
 

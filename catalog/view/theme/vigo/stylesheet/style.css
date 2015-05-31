@@ -268,7 +268,7 @@ table{ border-color: black; }
 input,select,textarea,button { font:12px/15px Arial, Helvetica, sans-serif; vertical-align:middle; color:#2f2f2f;  }
 input.input-text,select,textarea { background:#fff; border:1px solid #dbdbdb; }
 input.input-text,textarea { padding:2px; }
-select { padding: 2px; height: 26px; font-weight: normal; font-size: 10px; color: #333; }
+select { padding: 2px; height: 26px; font-weight: normal; font-size: 12px; color: #333; }
 select option { padding-right:10px; }
 select.multiselect option { border-bottom:1px solid #b6b6b6; padding:2px 5px; }
 select.multiselect option:last-child { border-bottom:0; }
@@ -284,7 +284,7 @@ input.qty:focus { background: none; }
 .qty-holder { display: inline-block; vertical-align: middle; min-width: 105px; width: 100% }
 button.button::-moz-focus-inner { padding:0; border:0; } /* FF Fix */
 button.button { -webkit-border-fit:lines; } /* <- Safari & Google Chrome Fix */
-button.button { line-height: 32px; overflow:visible; width:auto; border:0;   padding-left: 9px;  padding-right: 9px; margin:0; background:transparent; cursor:pointer; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; text-shadow: none; }
+button.button { line-height: 32px; overflow:visible; width:auto; border:0; margin:0; background:transparent; cursor:pointer; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; text-shadow: none; }
 button.button span { display:block; height:30px; border:0px solid #666; background:transparent; padding:0 10px; text-align:center; white-space:nowrap; color:#fff; text-transform: uppercase; transition: background-color 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out; -moz-transition: background-color 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out; -webkit-transition: background-color 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out; -o-transition: background-color 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; }
 button.button span span { border:0; padding:0; background: transparent !important; }
 
@@ -307,7 +307,7 @@ input.input-text:focus,select:focus,textarea:focus {  }
 .header-category{  background: #eee; padding: 20px; margin-bottom: 25px}
 .header-category .title {font-size: 33px; color:#000; height:45px; letter-spacing:1px;  font-weight:bold; text-transform: uppercase; }
 .form-list li > div { margin-bottom: 10px; }
-.form-list label { float:left; font-weight:bold; position:relative; z-index:0; }
+.form-list label {  margin-right: 10px; font-weight:bold; position:relative; z-index:0; }
 .form-list label.required {}
 .form-list label.required em { float: right; font-style:normal;  position:absolute; top:0; right:-8px; }
 .form-list li.control label { float: none; margin-bottom: 0; font-size: 14px; font-weight: normal;  line-height: 18px; display: inline-block; }
@@ -319,10 +319,10 @@ input.input-text:focus,select:focus,textarea:focus {  }
 .form-list .field {  }
 .form-list .fields .field { padding-right: 0; margin-bottom: 10px; }
 .form-list .fields .field:first-child { padding-left: 0; }
-.form-list input.input-text { width: 100%; height: 46px; border: 1px solid #dbdbdb; padding: 10px 15px; }
+.form-list input.input-text { width: 100%; height: 46px; border: 1px solid #dbdbdb; padding: 5px 15px; }
 .form-list .medium-size input.input-text { height: 35px; font-size: 14px; }
 .form-list textarea { width:100%; padding: 15px; height:10em; }
-.form-list select { width: 100%; height: 46px; ; font-size: 16px; font-weight: normal;  }
+.form-list select { width: 100%; height: 46px; ; font-size: 12px; font-weight: normal;  }
 .form-list .medium-size select { height: 35px; font-size: 13px; padding: 5px 7px; }
 .form-list li.wide .input-box {  }
 .form-list li.wide input.input-text {  }
@@ -542,7 +542,7 @@ p.required { font-size:11px; text-align:right; color:#f0877c; }
 .data-table th { padding:3px 8px; font-weight:bold; }
 .data-table td { padding:3px 8px; }
 
-.data-table thead th { font-weight: 600; border-top: 2px solid black; border-bottom: 2px solid black; padding: 5px 0; color: #444; white-space: nowrap; vertical-align: middle; font-size: 16px; text-transform: uppercase; text-align: center; }
+.data-table thead th { font-weight: 600; border-top: 2px solid black; border-bottom: 2px solid black; padding: 5px 0; color: #444; white-space: nowrap; vertical-align: middle; font-size: 12px; text-transform: uppercase; text-align: center; }
 .data-table thead th span { width: 100%; display: inline-block; border-right: 1px solid black; line-height: 16px; margin-right: -1px; padding: 0 5px; }
 .data-table thead th.wrap { white-space:normal; }
 .data-table thead th a,
@@ -2734,11 +2734,11 @@ a.twitter_fav_icon { background-position: 0 -38px; }
 .medium-size input:-moz-placeholder { font-size: 14px; }
 .medium-size input::-ms-input-placeholder { font-size: 14px; }
 .name-firstname input::-webkit-input-placeholder { background: url(../images/placeholder_icon_set.png) 0 0 no-repeat; padding-left: 25px; text-transform: uppercase; }
-.name-firstname input::-moz-placeholder { background: url(../images/placeholder_icon_set_moz.png) right -35px no-repeat; padding-left: 25px; text-transform: uppercase; }
+.name-firstname input::-moz-placeholder { background: url(../images/placeholder_icon_set_moz.png) right -40px no-repeat; padding-left: 25px; text-transform: uppercase; }
 .name-firstname input:-moz-placeholder { background: url(../images/placeholder_icon_set.png) right 5px no-repeat; padding-left: 25px; text-transform: uppercase; }
 .name-firstname input::-ms-input-placeholder { background: url(../images/placeholder_icon_set.png) 0 0 no-repeat; padding-left: 25px; text-transform: uppercase; }
 .name-lastname input::-webkit-input-placeholder { background: url(../images/placeholder_icon_set.png) 0 0 no-repeat; padding-left: 25px; text-transform: uppercase; }
-.name-lastname input::-moz-placeholder { background: url(../images/placeholder_icon_set_moz.png) right -35px no-repeat; padding-left: 25px; text-transform: uppercase; }
+.name-lastname input::-moz-placeholder { background: url(../images/placeholder_icon_set_moz.png) right -40px no-repeat; padding-left: 25px; text-transform: uppercase; }
 .name-lastname input:-moz-placeholder { background: url(../images/placeholder_icon_set.png) right 5px no-repeat; padding-left: 25px; text-transform: uppercase; }
 .name-lastname input::-ms-input-placeholder { background: url(../images/placeholder_icon_set.png) 0 0 no-repeat; padding-left: 25px; text-transform: uppercase; }
 .input-company input::-webkit-input-placeholder { background: url(../images/placeholder_icon_set.png) 0 -112px no-repeat; padding-left: 25px; text-transform: uppercase; }
@@ -3140,9 +3140,7 @@ li.custom-menu .custom-menu-item p {
 .precio{ text-align: center;   height: 133px;}
 .cancelar{border-top: 1px solid gray;  height: 52px;   background: #7e7e7e;}
 .cancelar button{  margin-top: 11px;  margin-right: 22px;  margin-left: 34px; background-color: white;}
-#botonn button.button span{
-      padding: 0px;
-}
+
 
 /*Compra Nuevo*/
 /*Opcion 1 Nuevo*/
@@ -3198,7 +3196,7 @@ li.custom-menu .custom-menu-item p {
 }
 .checkout-content .right {
 	float: right;
-	width: 48%;
+	/* width: 48%; */
 }
 .checkout-content .buttons {
 	clear: both;
@@ -3249,4 +3247,7 @@ button :hover {background-color: none;}
 .warning{
     color: red;
     font-weight: 600;     
+}
+dl{
+    margin: 0px !important;
 }

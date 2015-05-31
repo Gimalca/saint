@@ -19,4 +19,7 @@
   <div class="buttons">
     <div class="right"><input type="submit" value="<?php echo $button_confirm; ?>" class="button" /></div>
   </div>
+   <button style="margin-left: 15px" type="button" value="<?php echo $button_confirm; ?>" id="button-guest" class="button input-box" >
+		<span><span><?php echo $button_continue; ?></span></span>
+    </button>
 </form>

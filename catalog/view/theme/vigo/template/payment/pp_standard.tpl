@@ -45,8 +45,13 @@
   <input type="hidden" name="custom" value="<?php echo $custom; ?>" />
   <input type="hidden" name="bn" value="OpenCart_Cart_WPS" />
   <div class="buttons">
-    <div class="right">
-      <input type="submit" value="<?php echo $button_confirm; ?>" class="button" />
-    </div>
+      <div class="right fd">
+          <!--input type="submit" value="<?php echo $button_confirm; ?>" class="button" /-->
+
+          <button  type="submit" value="<?php echo $button_confirm; ?>" class="button input-box" >
+              <span><span><?php echo $button_confirm; ?></span></span>
+          </button>
+      </div>
+
   </div>
 </form>

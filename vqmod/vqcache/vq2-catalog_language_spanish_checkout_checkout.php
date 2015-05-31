@@ -62,7 +62,7 @@ $_['entry_postcode']                 = 'Código postal:';
 $_['entry_city']                     = 'Ciudad:';
 $_['entry_country']                  = 'País:';
 $_['entry_zone']                     = 'Región / Estado:';
-$_['entry_newsletter']               = 'Deseo suscribirme al boletín de noticias de %s.';
+$_['entry_newsletter']               = 'Suscribirme al boletín de noticias de %s.';
 $_['entry_shipping'] 	             = 'Mi dirección de entrega y facturación es la misma.';
 
 // Error
