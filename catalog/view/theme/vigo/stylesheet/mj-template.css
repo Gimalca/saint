@@ -15,20 +15,20 @@
 .left.order_comment_content {border: 1px solid #EEEEEE;float: left;min-height: 70px;padding: 10px;
 width: 100%;}
 .cart-extra-tab .highlight span.radio_button_hide_shopping_cart {display: none;}
-.cart-extra .shipping label {font-family: 'Scada';font-size: 18px;font-weight: normal;}
+.cart-extra .shipping label {font-family: 'Scada';font-size: 14px;font-weight: normal;}
 .cart-extra-tab li span.active {border-top: 1px solid #444444;}
 .form-list select.shopping_cart_sellect, .form-list select.payment_cart_sellect{height:auto;}
 #shipping-method .checkout-content .comment_heading, #payment-method .checkout-content .comment_heading {
     font-weight: bold; margin: 10px 0;}
 .opc-review .product-name {color: #555555;font-family: 'Scada';font-size: 18px;font-weight: normal;}
-.opc-review .cart-price .price {color: #222222;font-family: 'Archivo Narrow';font-size: 17px;
+.opc-review .cart-price .price {color: #222222;font-family: 'Archivo Narrow';font-size: 14px;
 font-weight: bold;}
 .opc-review .data-table tfoot td {border-bottom: 1px solid #E2E2E2;color: #777777;font-family: 'Scada';
-    font-size: 18px;font-weight: bold;padding: 15px 20px;text-transform: uppercase;}
+    font-size: 12px;font-weight: bold;padding: 5px 20px;text-transform: uppercase;}
 .opc-review .data-table td {font-family: Verdana;font-size: 12px;font-weight: bold;padding: 15px 20px;
     vertical-align: middle;}
 .opc div.section {margin-bottom: 10px;}
-.opc-review .data-table tfoot td .price {color: #222222;font-family: 'Archivo Narrow';font-size: 18px;
+.opc-review .data-table tfoot td .price {color: #222222;font-family: 'Archivo Narrow';font-size: 15px;
     font-weight: bold;}
 .input-box.input-payment.step {padding: 0;}
 .product_reture .form-list li.control {margin: 15px 0;}

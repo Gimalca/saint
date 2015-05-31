@@ -17,62 +17,84 @@
   <label for="shipping-address-new"><?php echo $text_address_new; ?></label>
 </p>
 <?php } ?>
-<div id="shipping-new" style="display: <?php echo ($addresses ? 'none' : 'block'); ?>;">
-  <table class="form">
-    <tr>
-      <td><span class="required">*</span> <?php echo $entry_firstname; ?></td>
-      <td><input type="text" name="firstname" value="" class="large-field" /></td>
-    </tr>
-    <tr>
-      <td><span class="required">*</span> <?php echo $entry_lastname; ?></td>
-      <td><input type="text" name="lastname" value="" class="large-field" /></td>
-    </tr>
-    <tr>
-      <td><?php echo $entry_company; ?></td>
-      <td><input type="text" name="company" value="" class="large-field" /></td>
-    </tr>
-    <tr>
-      <td><span class="required">*</span> <?php echo $entry_address_1; ?></td>
-      <td><input type="text" name="address_1" value="" class="large-field" /></td>
-    </tr>
-    <tr>
-      <td><?php echo $entry_address_2; ?></td>
-      <td><input type="text" name="address_2" value="" class="large-field" /></td>
-    </tr>
-    <tr>
-      <td><span class="required">*</span> <?php echo $entry_city; ?></td>
-      <td><input type="text" name="city" value="" class="large-field" /></td>
-    </tr>
-    <tr>
-      <td><span id="shipping-postcode-required" class="required">*</span> <?php echo $entry_postcode; ?></td>
-      <td><input type="text" name="postcode" value="<?php echo $postcode; ?>" class="large-field" /></td>
-    </tr>
-    <tr>
-      <td><span class="required">*</span> <?php echo $entry_country; ?></td>
-      <td><select name="country_id" class="large-field">
-          <option value=""><?php echo $text_select; ?></option>
-          <?php foreach ($countries as $country) { ?>
-          <?php if ($country['country_id'] == $country_id) { ?>
-          <option value="<?php echo $country['country_id']; ?>" selected="selected"><?php echo $country['name']; ?></option>
-          <?php } else { ?>
-          <option value="<?php echo $country['country_id']; ?>"><?php echo $country['name']; ?></option>
-          <?php } ?>
-          <?php } ?>
-        </select></td>
-    </tr>
-    <tr>
-      <td><span class="required">*</span> <?php echo $entry_zone; ?></td>
-      <td><select name="zone_id" class="large-field">
-        </select></td>
-    </tr>
-  </table>
+<div id="shipping-new" class=" col-md-12 col-lg-12 col-sm-12" style="display: <?php echo ($addresses ? 'none' : 'block'); ?>;">
+    <div class="left">  
+        <ul class="form-list">
+            <li >         
+                <div class="input-box name-firstname col-md-8 col-sm-8 col-xs-12">
+                    <div class="input-box">
+                        <input id="input-emailn" type="text" name="firstname" value="" class="input-text required-entry" placeholder="<?php echo $entry_firstname; ?> *"/>
+
+                    </div>
+                </div>
+            </li>
+            <li >               
+                <div class="input-box name-lastname col-md-8 col-sm-8 col-xs-12">
+                    <div class="input-box">
+                        <input id="input-emailn" type="text" name="lastname" value="" class="input-text required-entry" placeholder="<?php echo $entry_lastname; ?> *"/>
+                    </div>
+                </div> 
+                <input type="hidden" name="company" value="" class="large-field" />
+            </li>
+            <li class="fields">
+                <div class="field">
+                    <div class="input-box input-address col-md-8 col-sm-8 col-xs-12">
+                        <input id="input-emailn" type="text" name="address_1" value="" class="input-text required-entry" placeholder="<?php echo $entry_address_1; ?> *"/>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="input-box input-address col-md-8 col-sm-8 col-xs-12">
+                        <input id="input-emailn" type="text" name="address_2" value="" class="input-text required-entry" placeholder="<?php echo $entry_address_2; ?>"/>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="right">  
+        <ul class="form-list">
+            <li class="fields">
+                <div class="field">
+                    <div class="input-box input-city col-md-8 col-sm-8 col-xs-12">
+                        <input id="input-emailn" type="text" name="city" value="" class="input-text required-entry" placeholder="<?php echo $entry_city; ?> *"/>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="input-box input-postcode col-md-8 col-sm-8 col-xs-12">
+                        <input  id="input-emailn" type="text" name="postcode" value="" class="input-text required-entry" placeholder="<?php echo $entry_postcode; ?> *"/>
+                    </div>
+                </div>
+            </li>
+            <li class="field">
+              
+                <div class="input-box input-country col-md-8 col-sm-8 col-xs-12">
+                    <select id="input-emailn" name="country_id" class="large-field">
+                        <option value=""><?php echo $text_select; ?></option>
+                        <?php foreach ($countries as $country) { ?>
+                        <?php if ($country['country_id'] == $country_id) { ?>
+                        <option value="<?php echo $country['country_id']; ?>" selected="selected"><?php echo $country['name']; ?></option>
+                        <?php } else { ?>
+                        <option value="<?php echo $country['country_id']; ?>"><?php echo $country['name']; ?></option>
+                        <?php } ?>
+                        <?php } ?>
+                    </select>
+                </div>
+           
+            </li>
+            <li class="fields">
+                
+                <div class="field">
+                    <div class="input-box input-region col-md-8 col-sm-8 col-xs-12">
+                        <select id="input-emailn" name="zone_id" class="large-field">
+                        </select>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
 </div>
-<br />
-<div class="buttons">
-  <div class="right">
-    <input type="button" value="<?php echo $button_continue; ?>" id="button-shipping-address" class="button" />
-  </div>
-</div>
+<button class="button" value="<?php echo $button_continue; ?>" id="button-shipping-address" title="Continue" type="button">
+    <span><span><?php echo $button_continue; ?></span></span>
+</button>
 <script type="text/javascript"><!--
 $('#shipping-address input[name=\'shipping_address\']').live('change', function() {
 	if (this.value == 'new') {

@@ -147,8 +147,8 @@ class ControllerCheckoutConfirm extends Controller {
 
 			$data['payment_firstname'] = $payment_address['firstname'];
 			$data['payment_lastname'] = $payment_address['lastname'];	
-			$data['payment_company'] = $payment_address['company'];	
-			$data['payment_company_id'] = $payment_address['company_id'];	
+			//$data['payment_company'] = $payment_address['company'];	
+			//$data['payment_company_id'] = $payment_address['company_id'];	
 			$data['payment_tax_id'] = $payment_address['tax_id'];	
 			$data['payment_address_1'] = $payment_address['address_1'];
 			$data['payment_address_2'] = $payment_address['address_2'];
@@ -185,7 +185,7 @@ class ControllerCheckoutConfirm extends Controller {
 
 				$data['shipping_firstname'] = $shipping_address['firstname'];
 				$data['shipping_lastname'] = $shipping_address['lastname'];	
-				$data['shipping_company'] = $shipping_address['company'];	
+				//$data['shipping_company'] = $shipping_address['company'];	
 				$data['shipping_address_1'] = $shipping_address['address_1'];
 				$data['shipping_address_2'] = $shipping_address['address_2'];
 				$data['shipping_city'] = $shipping_address['city'];
@@ -210,7 +210,7 @@ class ControllerCheckoutConfirm extends Controller {
 			} else {
 				$data['shipping_firstname'] = '';
 				$data['shipping_lastname'] = '';	
-				$data['shipping_company'] = '';	
+				//$data['shipping_company'] = '';	
 				$data['shipping_address_1'] = '';
 				$data['shipping_address_2'] = '';
 				$data['shipping_city'] = '';
@@ -335,6 +335,7 @@ class ControllerCheckoutConfirm extends Controller {
 
 			$this->session->data['order_id'] = $this->model_checkout_order->addOrder($data);
 
+			$this->data['confirm_data'] = $data;
 			$this->data['column_name'] = $this->language->get('column_name');
 			$this->data['column_model'] = $this->language->get('column_model');
 			$this->data['column_quantity'] = $this->language->get('column_quantity');
