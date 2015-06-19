@@ -48,7 +48,7 @@
                         <button id="boton-footer" type="submit" title="Sign Up" class="button"><span><span style="color: white;font-size: 12px;">Suscribete</span></span></button>
                         <div class="social-icons col-md-12 col-xs-offset-1">
                         <div class="form-subscribe-header" id="newsletter-footer">
-                            Síguenos
+                            Síguenos en:
                         </div>
                         <div class="col-md-12"  style="margin-left: 0px; padding-left: 0px;">
                             <a class="facebook-icon" href="http://www.facebook.com/">Facebook</a>

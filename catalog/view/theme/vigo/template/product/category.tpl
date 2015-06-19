@@ -37,22 +37,6 @@
 
         <div class="block col-left sidebar col-md-3 col-sm-4 col-xs-12">
             <?php echo $column_right; ?>
-            <div class="block block-banner">
-                <div class="block-content">
-                    <div id="callouts">
-                        <img src="catalog/view/theme/vigo/images/col_right_callout.jpg" alt="" />
-                        <img src="catalog/view/theme/vigo/images/col_right_callout_1.jpg" alt="" />
-                        <img src="catalog/view/theme/vigo/images/col_right_callout_2.jpg" alt="" />
-                    </div>
-                    <script src="catalog/view/theme/vigo/javascript/jquery/jquery.slides.min.js" type="text/javascript">
-                    </script>
-
-                    <script type="text/javascript">
-                        jQuery(document).ready(function(){
-                        jQuery("#callouts").slidesjs({width:340, height:340, play: {active: false,auto:true}, navigation:{active:false},pagination:{active:true}});
-                        });                    </script>
-                </div>
-            </div>
         </div>
 
 
