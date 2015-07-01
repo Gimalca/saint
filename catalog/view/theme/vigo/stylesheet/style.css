@@ -24,129 +24,10 @@
  */
 
 /* Reset ================================================================================= */
-@font-face {
-    font-family: "Abel",sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    src: url('../fonts/Archivo_Narrow/ArchivoNarrow-Regular.ttf');
-    src: url('../fonts/Archivo_Narrow/ArchivoNarrow-Regular?iefix') format('eot'),
-        url('../fonts/Archivo_Narrow/ArchivoNarrow-Regular.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Archivo Narrow';
-    font-weight: normal;
-    font-style: italic;
-    src: url('../fonts/Archivo_Narrow/ArchivoNarrow-Italic.ttf');
-    src: url('../fonts/Archivo_Narrow/ArchivoNarrow-Italic?iefix') format('eot'),
-        url('../fonts/Archivo_Narrow/ArchivoNarrow-Italic.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Archivo Narrow';
-    font-weight: bold;
-    font-style: normal;
-    src: url('../fonts/Archivo_Narrow/ArchivoNarrow-Bold.ttf');
-    src: url('../fonts/Archivo_Narrow/ArchivoNarrow-Bold?iefix') format('eot'),
-        url('../fonts/Archivo_Narrow/ArchivoNarrow-Bold.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Archivo Narrow';
-    font-weight: bold;
-    font-style: italic;
-    src: url('../fonts/Archivo_Narrow/ArchivoNarrow-BoldItalic.ttf');
-    src: url('../fonts/Archivo_Narrow/ArchivoNarrow-BoldItalic?iefix') format('eot'),
-        url('../fonts/Archivo_Narrow/ArchivoNarrow-BoldItalic.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Scada';
-    font-weight: normal;
-    font-style: normal;
-    src: url('../fonts/Scada/Scada-Regular.ttf');
-    src: url('../fonts/Scada/Scada-Regular?iefix') format('eot'),
-        url('../fonts/Scada/Scada-Regular.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Scada';
-    font-weight: normal;
-    font-style: italic;
-    src: url('../fonts/Scada/Scada-Italic.ttf');
-    src: url('../fonts/Scada/Scada-Italic?iefix') format('eot'),
-        url('../fonts/Scada/Scada-Italic.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Scada';
-    font-weight: bold;
-    font-style: normal;
-    src: url('../fonts/Scada/Scada-Bold.ttf');
-    src: url('../fonts/Scada/Scada-Bold?iefix') format('eot'),
-        url('../fonts/Scada/Scada-Bold.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Scada';
-    font-weight: bold;
-    font-style: italic;
-    src: url('../fonts/Scada/Scada-BoldItalic.ttf');
-    src: url('../fonts/Scada/Scada-BoldItalic?iefix') format('eot'),
-        url('../fonts/Scada/Scada-BoldItalic.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Source Code Pro';
-    font-weight: normal;
-    font-style: normal;
-    src: url('../fonts/Source_Code_Pro/SourceCodePro-Regular.ttf');
-    src: url('../fonts/Source_Code_Pro/SourceCodePro-Regular?iefix') format('eot'),
-        url('../fonts/Source_Code_Pro/SourceCodePro-Regular.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Source Code Pro';
-    font-weight: 200;
-    font-style: normal;
-    src: url('../fonts/Source_Code_Pro/SourceCodePro-ExtraLight.ttf');
-    src: url('../fonts/Source_Code_Pro/SourceCodePro-ExtraLight?iefix') format('eot'),
-        url('../fonts/Source_Code_Pro/SourceCodePro-ExtraLight.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Source Code Pro';
-    font-weight: 300;
-    font-style: normal;
-    src: url('../fonts/Source_Code_Pro/SourceCodePro-Light.ttf');
-    src: url('../fonts/Source_Code_Pro/SourceCodePro-Light?iefix') format('eot'),
-        url('../fonts/Source_Code_Pro/SourceCodePro-Light.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Source Code Pro';
-    font-weight: 500;
-    font-style: normal;
-    src: url('../fonts/Source_Code_Pro/SourceCodePro-Medium.ttf');
-    src: url('../fonts/Source_Code_Pro/SourceCodePro-Medium?iefix') format('eot'),
-        url('../fonts/Source_Code_Pro/SourceCodePro-Medium.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Source Code Pro';
-    font-weight: 600;
-    font-style: normal;
-    src: url('../fonts/Source_Code_Pro/SourceCodePro-Semibold.ttf');
-    src: url('../fonts/Source_Code_Pro/SourceCodePro-Semibold?iefix') format('eot'),
-        url('../fonts/Source_Code_Pro/SourceCodePro-Semibold.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Source Code Pro';
-    font-weight: bold;
-    font-style: normal;
-    src: url('../fonts/Source_Code_Pro/SourceCodePro-Bold.ttf');
-    src: url('../fonts/Source_Code_Pro/SourceCodePro-Bold?iefix') format('eot'),
-        url('../fonts/Source_Code_Pro/SourceCodePro-Bold.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Source Code Pro';
-    font-weight: 900;
-    font-style: normal;
-    src: url('../fonts/Source_Code_Pro/SourceCodePro-Black.ttf');
-    src: url('../fonts/Source_Code_Pro/SourceCodePro-Black?iefix') format('eot'),
-        url('../fonts/Source_Code_Pro/SourceCodePro-Black.ttf') format('truetype');
-}
+
 * { margin:0; padding:0; }
 
-body          {font-family: 'Open Sans', sans-serif; font-size: 12px; color:#000; text-align:center; background: #fff; }
+body          {font-family: 'Oswald', sans-serif; font-size: 12px; color:#000; text-align:center; background: #fff; }
 
 img           { border:0; vertical-align:top; }
 
@@ -570,8 +451,8 @@ p.required { font-size:11px; text-align:right; color:#f0877c; }
 .data-table tbody td .option-label { font-weight:bold; font-style:italic; }
 .data-table tbody td .option-value { padding-left:10px; }
 
-/*Tamaño de Tabla*/
-#tabla-tamaño{width: 100px; float: left;}
+/*Tama?o de Tabla*/
+#tabla-tama?o{width: 100px; float: left;}
 /* Generic Info Box */
 .info-box { background:#fff url(../images/bkg_block-title.gif) 0 0 repeat-x; border:1px solid #d0cbc1; padding:12px 15px; margin:0 0 15px; }
 .info-box h2 { font-weight:bold; font-size:13px; }
@@ -2256,7 +2137,7 @@ a.custom-icon {
 .header-container .top-links2 { min-height: 47px; }
 .header-container .top-links select, .header-container .top-links2 select { right: 0; }
 .header-container .top-links, .footer-container { background-color: #000; }
-.header-container .top-links a { font-weight: normal; color: #ccc; font-size: 12px;  text-decoration: none; text-transform: uppercase; display: block; line-height: 18px; height: 18px; }
+.header-container .top-links a { font-weight: normal; color: #fff; font-size: 12px;  text-decoration: none; text-transform: uppercase; display: block; line-height: 18px; height: 18px; }
 .header-container .top-links a.btn-remove2 { height: 25px; }
 .header-container .top-links a:hover { color: #e5e5e5; }
 .header-container .top-links .container { padding: 10px 15px; }
@@ -2279,8 +2160,8 @@ ul.right-links > li { display: inline-block; }
 .header-container .top-links ul.right-links > li { border: 0; padding: 11px 0; margin: -11px 0; background: url(../images/top_links_split.png) right no-repeat; transition: background 100ms ease-in-out; -moz-transition: background 100ms ease-in-out; -webkit-transition: background 100ms ease-in-out; -o-transition: background 100ms ease-in-out; position: relative; z-index: 1002; }
 .header-container .top-links ul.right-links > li.last { background: none; }
 .header-container .top-links ul.right-links > li > a { color: #fff !important; display: block; padding: 0 20px 0 40px; background-image: url(../images/top_right_links.png); background-repeat: no-repeat; cursor: default; }
-.header-container .top-links ul.right-links > li:hover > a { background-image: url(../images/top_right_links_hover.png); color: #000 !important; }
-.header-container .top-links ul.right-links > li:hover { background-color: #f2f2f2; position: relative; }
+.header-container .top-links ul.right-links > li:hover > a { background-image: url(../images/top_right_links_hover.png); color: #fff !important; }
+.header-container .top-links ul.right-links > li:hover { background-color: #000; position: relative; }
 a.wishlist-link { background-position: 20px 2px; }
 a.mybag-link { background-position: 20px -18px; }
 
@@ -3156,10 +3037,10 @@ li.custom-menu .custom-menu-item p {
 #footer-titulo{
     font-weight: bold; margin-bottom: 5px; color: white;
 }
-.tamaño{
+.tama?o{
     font-size: 9px;
 }
-#tamaño{
+#tama?o{
     font-size: 11px; color: white;
 }
 #newsletter-footer{text-transform: uppercase; font-weight: bold; color: white; font-size: 14px; text-align: left;}
