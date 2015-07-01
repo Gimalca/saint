@@ -14,12 +14,12 @@
 	color: #fff;
 }
 .selectbox:hover .select {
-	background-color: #4b4a4a;
+	background-color: #000;
 	background-position: 0 -10px;
     color: #fff;
 }
 .selectbox .select:active {
-	background: #f5f5f5;
+	background: #000;
 	box-shadow: inset 0 1px 3px rgba(0,0,0,0.15);
 }
 .selectbox.focused .select {
@@ -60,7 +60,7 @@
 	top: auto;
 	margin: 0;
 	padding: 4px 0;
-	background: #F2F2F2;
+	background: #000;
 	box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 	font: 13px/18px Arial, Tahoma, sans-serif;
     text-align: left;
@@ -68,7 +68,7 @@
 .selectbox ul { margin-bottom: 0; }
 .selectbox li {
 	padding: 5px 10px 6px;
-	color: #555;
+	color: #fff;
     display: block;
     transition: background-color 200ms ease-in-out; -webkit-transition: background-color 200ms ease-in-out; -moz-transition: background-color 200ms ease-in-out; -o-transition: background-color 200ms ease-in-out;
 }

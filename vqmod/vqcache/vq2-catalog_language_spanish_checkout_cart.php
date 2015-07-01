@@ -63,6 +63,7 @@ $_['error_shipping']         = 'Cuidado: Metodo de envío obligatorio!';
 $_['error_no_shipping']      = 'Cuidado: Ninguna opción de envío disponible. Por favor <a href="%s">Contactanos</a> por ayuda!';
 
 
+<?php
 // Heading  
 $_['heading_title']          = 'Carrito de Compra';
 

@@ -18,12 +18,7 @@
 <?php } ?>
                                                                                         
 
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<!--<link href='http://fonts.googleapis.com/css?family=Scada' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Archivo+Narrow' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
--->
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
  
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/vigo/stylesheet/mj-template.css" />
