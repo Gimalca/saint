@@ -1,8 +1,8 @@
 <div class="footer-container">
     <div class="footer">
         <div class="container">
-            <div class="col-md-12">
-                <div class="col-md-3" id="posicion-footer">
+            <div class="col-md-12 row">
+                <div class="col-md-2" id="posicion-footer">
                     <ul>
                         <li id="footer-titulo" class="tamaño">COMPAÑIA</li>
                         <ul>
@@ -35,18 +35,18 @@
                         </ul>
                     </ul>
                 </div>
-                <div class="col-md-4" style="margin-top: 21px;">
+                <div class="col-md-5" style="margin-top: 21px;">
                     <div id="newsletter-footer">
-                        <div class="col-md-12" style="margin-bottom: 11px;">
-                            Suscríbete al Newsletter<br>
-                            y promociones especiales<br>
+                        <div id="footer-titulo" class="col-md-12" style="margin-bottom: 11px;">
+                             Newsletter
+                            y promociones especiales
                         </div>
                         
-                       <div class="input-box col-md-6" style="width: 222px;">
+                       <div class="input-box col-md-7" >
                         <input type="text" name="email" id="newsletter" title="Sign up for our newsletter" class="input-text required-entry validate-email" placeholder="Email" />
                         </div>
                         <button id="boton-footer" type="submit" title="Sign Up" class="button"><span><span style="color: white;font-size: 12px;">Suscribete</span></span></button>
-                        <div class="social-icons col-md-12 col-xs-offset-1">
+                        <!--div class="social-icons col-md-12 col-xs-offset-1">
                         <div class="form-subscribe-header" id="newsletter-footer">
                             Síguenos
                         </div>
@@ -56,13 +56,14 @@
                             <a class="instragram-icon" title="Instragram" href="www.instragram.com/">Instragram</a>
                             <a class="pinterest-icon" title="Pinterest" href="www.pinterest.com/">Flickr</a>
                             <a class="google-icon" title="google" href="www.google.com/">google</a>
-                        </div>
-                            
-
-                    </div>
+                          </div>
+                        </div-->
 
             </div>
                 </div>
+            </div>
+            <div class="row col-md-12 footer-pay">
+                <img  src="image/data/pay_method.jpg" alt="Instagram">
             </div>
             </div>
             
@@ -74,7 +75,7 @@
                 }
                 //]]
             </script>
-            <div style="color: white;">© 2015 Saint. All Rights reserved.  Desarrolaldo por <a href="http://gimalca.com/es/">Gimalca.</a></div>
+            <div style=" color: #222; padding: 5px; font-size: 12px ">© 2015 Saint. All Rights reserved.  Desarrolaldo por <a style="color: #444" target="_blank" href="http://gimalca.com">Gimalca.</a></div>
         </div>
     </div>
 </div>

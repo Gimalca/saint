@@ -169,27 +169,20 @@
             </div>
 
             <div>
-                <!--div class="filter-products col-sm-8 col-lg-8">
-                    <l class="tabs">
-                        <li class="active"><a rel="#fp_new" href="javascript:void(0);"><?php echo $text_home_latest;?></a></li>
-                        <li><a rel="#fp_featured " href="javascript:void(0);"><?php echo $text_home_feature;?></a></li>
-                        <li><a rel="#fp_special" href="javascript:void(0);"><?php echo $text_home_special;?></a></li>
-                    </ul>
-
-                    <?php echo $content_bottom; ?>
-
-
-                </div-->
+                <div class="filter-products col-sm-12 col-lg-12">
+                   
+                    <?php echo $column_left; ?>
+                </div>
 
 
 
                 <div class="row">
-
-                    <?php //echo $column_left; ?>
+                     <?php echo $content_bottom; ?>
+                    
 
                     <?php //echo $column_right; ?>
                 </div>
-                <div class="row">
+                <!--div class="row">
 
                     <div class="col-sm-4 full-width-img">
                         <a href="index.php?route=product/category&amp;path=59">
@@ -207,13 +200,14 @@
                         </a>
                     </div>
 
-                </div>
+                </div-->
                 <div class="row">
 
-                    <div class="col-lg-12">
+                    <div class="col-lg-12" style="margin-bottom: 40px">
                         <div class="block block-from-blog">
                             <div class="block-title">
-                                <strong><span>Instagram</span></strong>
+                                <img style=" width:600px" src="image/data/title-instagram.jpg" alt="Instagram">
+                                <!--strong><span>Instagram</span></strong-->
 
                             </div>
                         </div>

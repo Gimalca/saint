@@ -8,9 +8,9 @@
         <?php if($listing_effect==1) { ?>
           	<ul class="products-grid producteffect<?php echo "$listing_effect"; ?>">
                	<?php foreach($products as $product) { ?>
-                	<li class="item">
+                	<li class="item home-dee">
             			<div class="product-image-area" hover_img="<?php echo  $product['add']; ?>" base_img="<?php echo $product['thumb']; ?>" product_url="<?php echo $product['href']; ?>">
-                            <a href="<?php echo $product['href']; ?>" title="Black and white dust dress" class="product-image">
+                                 <a href="<?php echo $product['href']; ?>" title="Black and white dust dress" class="product-image">
                                 <img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>"/>
                             </a>
                             <?php if($product['special']){ ?>
@@ -48,11 +48,24 @@
                 </div>
                 
             
-                		<h2 class="product-name"><a href="<?php echo $product['href'];?>" title="<?php echo $product['name'];?>"><?php echo $product['name'];?></a></h2>
+                		<h2 class="product-name"><a href="<?php echo $product['href'];?>" title="<?php echo $product['name'];?>"><?php echo $product['name'];?>
+                                    
+                                    </a></h2>
+                            <div class="col-lg-2"></div>
+                            <div class="feature-desc col-lg-8">
+                              
+                            <?php echo $product['desc'];?>
+                            </div>
+                            <div class="add-to-cart">
+                               
+                                <a href="<?php echo $product['href'];?>" title="<?php echo $product['name'];?>">
+                                    <button type="button" value="Agregar al Carrito" id="button-cart" class="button btn-cart"><span><span>Comprar</span></span></button>
+                            </a>    
+                            </div>
             
-    
+                                
             
-                 		<div class="price-box">
+                 		<!--div class="price-box">
                     <?php if($product['special']){ ?>
                         <p class="old-price">
                            	<span class="price"> <?php echo $product['price'];?> </span>
@@ -65,7 +78,7 @@
                             <span class="price"><?php echo $product['price'];?></span>
                         </span>     
                    <?php } ?>    
-               </div>
+               </div-->
                
     
             </li>
