@@ -1,17 +1,7 @@
 <?php echo $header; ?><?php echo $column_left; ?>
 <div id="content" class="main-container col2-right-layout">
 
-    <div class="breadcrumbs">
-        <div class="container">
-            <a title="Volver atrás" href="javascript:window.history.back();" style="margin-right: 5px">
-                <img src="catalog/view/theme/vigo/images/historyback.png">
-
-            </a>
-            <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-            <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
-            <?php } ?>
-        </div>
-    </div>
+   
 
     <div class="main container">
         
@@ -30,29 +20,31 @@
                 <?php echo $heading_title; ?>
             </div>
         </div>
+        
         <?php //echo $description; ?>
         <?php } ?>
 
         <?php } ?>
+       <div class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li>
+                    <a title="Volver atrás" href="javascript:window.history.back();" style="margin-right: 5px">
+                        <img src="catalog/view/theme/vigo/images/historyback.png">
 
+                    </a>
+                </li>
+                <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+                <li>
+                    <a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a> <span style="color:#ddd"> > </span> 
+                </li>
+                <?php } ?>
+            </ul>
+        </div>
+    </div>
         <div class="block col-left sidebar col-md-3 col-sm-4 col-xs-12">
             <?php echo $column_right; ?>
-            <div class="block block-banner">
-                <div class="block-content">
-                    <div id="callouts">
-                        <img src="catalog/view/theme/vigo/images/col_right_callout.jpg" alt="" />
-                        <img src="catalog/view/theme/vigo/images/col_right_callout_1.jpg" alt="" />
-                        <img src="catalog/view/theme/vigo/images/col_right_callout_2.jpg" alt="" />
-                    </div>
-                    <script src="catalog/view/theme/vigo/javascript/jquery/jquery.slides.min.js" type="text/javascript">
-                    </script>
-
-                    <script type="text/javascript">
-                        jQuery(document).ready(function(){
-                        jQuery("#callouts").slidesjs({width:340, height:340, play: {active: false,auto:true}, navigation:{active:false},pagination:{active:true}});
-                        });                    </script>
-                </div>
-            </div>
+           
         </div>
 
 

@@ -12,7 +12,7 @@
                 </li>
                 <?php foreach ($breadcrumbs as $breadcrumb) { ?>
                 <li>
-                    <a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a> 
+                    <a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a> <span style="color:#ddd"> > </span> 
                 </li>
                 <?php } ?>
             </ul>
@@ -107,8 +107,13 @@
                         <div class="product-shop col-md-6 col-sm-12">
                             <div class="product-name">
                                 <h1><?php echo $heading_title; ?></h1>
+                                
+                               
                             </div>
-                            <div class="short-description"><?php echo $description; ?></div>
+                             <p class="availability in-stock"><?php echo $text_manufacturer; ?> <span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a></span></p>
+                           
+                             <p class="availability in-stock"><?php //echo $text_stock; ?><span style="color: <?php if($stock == 'Out Of Stock')echo 'red'; if($stock == 'In Stock' || $stock =='En stock')echo 'green'; ?>  " ><?php echo $stock; ?></span></p>
+                            <!--div class="short-description"><?php echo $description; ?></div-->
                             <!--div class="ratings">
                                 <div class="rating-box">
                                         <?php $product_rate =  $rating * 20; ?>
@@ -117,8 +122,8 @@
                                 
                                 <p class="rating-links">
 <a onclick="$('a[href=\'#tab-review\']').trigger('click');"><?php echo $reviews; ?></a>
-                            <!--<span class="separator">|</span>
-                            <a onclick="$('a[href=\'#tab-review\']').trigger('click');"><?php echo $text_write; ?></a>>
+                            <span class="separator">|</span>
+                            <a onclick="$('a[href=\'#tab-review\']').trigger('click');"><?php echo $text_write; ?></a>
                                                                                             </p>
                                                         </div-->
 
@@ -152,10 +157,8 @@
                                 </div>
                                 <?php } ?>
                             </div>                            
-                            <!--p class="availability in-stock"><?php echo $text_stock; ?><span><?php echo $stock; ?></span></p>
-                            <p class="availability in-stock"><?php echo $text_model; ?><span><?php echo $model; ?></span></p>
-                            <p class="availability in-stock"><?php echo $text_manufacturer; ?><span><a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a></span></p>
-                            -->
+                            
+                           
 
 
                             <?php if ($profiles): ?>

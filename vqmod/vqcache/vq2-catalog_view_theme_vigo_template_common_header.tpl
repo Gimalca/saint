@@ -156,116 +156,6 @@ jQuery('html').niceScroll({zindex : 9999});
 </style>
 <?php } ?>
 <!--text color start-->
-<style type="text/css">
-body, .products-grid .product-name a, .products-grid.producteffect5 .short_desc, .block .block-title strong, .block-from-blog p, .comments-widget .comment-box p, .comments-widget .avatar-line .text .time, .block-bestseller-home .block-title strong, .block-about-shop h2, .block-about-shop p, .block-about-shop h3, .block-about-shop span.function, .block-about-shop p, .block-twitter-feed .user span:first-child, .block-twitter-feed .user span, .block-twitter-feed p.tweet, .block-twitter-feed p.interact a, .block-twitter-feed p.timePosted, .box-title, label, p, input.input-text, textarea, .regular-price .price, .old-price .price, .special-price .price,  .block.block-layered-nav .akordeon-heading, .block.block-category-nav .block-title strong, .results, .main .category-products .toolbar .pager .links a, .main .category-products .toolbar .pager .links a, h1, h2, h3, h4, h5, h6, .product-view .product-shop .availability, .product-view .product-shop .availability span, .product-accordion .akordeon-heading, .review-counts,  select, .qty-changer a, .block.block-related .block-title strong span, #block_related .product-name a, .data-table thead th, .cart-table .item-options > div > b, .cart-table .item-options > div, #shopping-cart-table .product-name a, #wishlist-table .product-name a, .products-list .product-name a, .products-list .short_desc, .opc .step-title h2, .opc-review .product-name, .opc-review .cart-price .price, .opc-review .data-table tfoot td, .opc-review .data-table tfoot td .price, .products-grid.producteffect6 .product-name a, .products-grid.producteffect6 .regular-price .price, .products-grid.producteffect6 .old-price .price, .products-grid.producteffect6 .special-price .price{
-	color:#000;
-	}
-</style>
-<!--text color end-->
-
-
-<!--Link color start-->
-<style type="text/css">
-a,  .header-container a, .header-container a.sign-link, .navbar-default .navbar-nav > li > a, .simple_menu li.level0 > a, .simple_menu li.submenu a span, .filter-products .tabs li a, .comments-widget .comment-box h2 a, .block-from-blog a.more-link, .comments-widget .avatar-line .text .name, .block-about-shop a.more-link, .block-twitter-feed p.tweet a, .block-twitter-feed p.tweet a span, .block-category-nav .akordeon-heading a, .block-category-nav .akordeon-heading a, .block-category-nav a, .block-layered-nav a, .breadcrumbs a, .block-account .block-content li a, .block-content .row .col-sm-6 .box .box-content li a, .link-wishlist, .link-compare, .mini-products-list .product-details .product-name a{
-	color:#000
-	}
-
-</style>
-<!--Link color end-->
-
-<!--Link hover color start-->
-<style type="text/css">
-a:hover,  .header-container a:hover, .header-container a.sign-link:hover, .navbar-default .navbar-nav > li:hover > a, .navbar-default .navbar-nav > li:focus > a, .simple_menu li.level0 > a:hover, .simple_menu li.submenu a:hover span, .filter-products .tabs li.active a, .filter-products .tabs li a:hover, .block-category-nav .akordeon-heading a:hover, .block-category-nav .akordeon-heading a:hover, .block-category-nav a:hover, .block-layered-nav a:hover, .breadcrumbs a:hover, .block-account .block-content li a:hover, .block-content .row .col-sm-6 .box .box-content li a:hover, .link-wishlist:hover, .link-compare:hover, .mini-products-list .product-details .product-name a:hover{
-	color:<?php echo $link_hover_color; ?>
-	}
-
-</style>
-<!--Link hover color end-->
-
-<!--Button background color start-->
-<style type="text/css">
-ul.cart-button-set a.addtocart, ul.cart-button-set a.addtowishlist, ul.cart-button-set a.addtocompare, .button.btn-twitter-follow, button.button, #content .col-right #button-filter, .my-account input.button.btn-cart, a.button.btn-cart, .products-grid.producteffect2 .addtowishlist.link-wishlist, .products-grid.producteffect2 a.addtowishlist, .products-grid.producteffect2 .addtocompare.link-compare,.products-grid.producteffect2 a.addtocompare, .products-grid.producteffect2 .addtocart.button.btn-cart, .products-grid.producteffect2 a.addtocart, .products-grid.producteffect3 .addtocart.button.btn-cart, .products-grid.producteffect3 a.addtocart, .products-grid.producteffect3 .addtowishlist.link-wishlist, .products-grid.producteffect3 a.addtowishlist, .products-grid.producteffect3 .addtocompare.link-compare, .products-grid.producteffect3 a.addtocompare, .products-grid.producteffect5 .addtocart.button.btn-cart, .products-grid.producteffect5 a.addtocart, .products-grid.producteffect5 .addtowishlist.link-wishlist, .products-grid.producteffect5 a.addtowishlist, .products-grid.producteffect5 .addtocompare.link-compare,.products-grid.producteffect5 a.addtocompare{
-	background-color:#000;
-	}
-</style>
-<!--Button background color end-->
-
-<!--Button border color start-->
-<style type="text/css">
-/*ul.cart-button-set a.addtocart, ul.cart-button-set a.addtowishlist, ul.cart-button-set a.addtocompare,*/ .button.btn-twitter-follow,  #content .col-right #button-filter, .my-account input.button.btn-cart, a.button.btn-cart, .products-grid.producteffect2 .addtowishlist.link-wishlist, .products-grid.producteffect2 a.addtowishlist, .products-grid.producteffect2 .addtocompare.link-compare,.products-grid.producteffect2 a.addtocompare, .products-grid.producteffect2 .addtocart.button.btn-cart, .products-grid.producteffect2 a.addtocart, .products-grid.producteffect3 .addtocart.button.btn-cart, .products-grid.producteffect3 a.addtocart, .products-grid.producteffect3 .addtowishlist.link-wishlist, .products-grid.producteffect3 a.addtowishlist, .products-grid.producteffect3 .addtocompare.link-compare, .products-grid.producteffect3 a.addtocompare, .products-grid.producteffect5 .addtocart.button.btn-cart, .products-grid.producteffect5 a.addtocart, .products-grid.producteffect5 .addtowishlist.link-wishlist, .products-grid.producteffect5 a.addtowishlist, .products-grid.producteffect5 .addtocompare.link-compare,.products-grid.producteffect5 a.addtocompare{
-	border:0px solid <?php echo $button_border_color; ?>
-	}
-</style>
-<!--Button border color end-->
-
-<!--Button text color start-->
-<style type="text/css">
-/*ul.cart-button-set a.addtocart, ul.cart-button-set a.addtowishlist, ul.cart-button-set a.addtocompare,*/ .button.btn-twitter-follow, button.button, #content .col-right #button-filter, .my-account button.button span, .my-account input.button.btn-cart, a.button.btn-cart, .products-grid.producteffect2 .addtowishlist.link-wishlist, .products-grid.producteffect2 a.addtowishlist, .products-grid.producteffect2 .addtocompare.link-compare,.products-grid.producteffect2 a.addtocompare, .products-grid.producteffect2 .addtocart.button.btn-cart, .products-grid.producteffect2 a.addtocart, .products-grid.producteffect3 .addtocart.button.btn-cart, .products-grid.producteffect3 a.addtocart, .products-grid.producteffect3 .addtowishlist.link-wishlist, .products-grid.producteffect3 a.addtowishlist, .products-grid.producteffect3 .addtocompare.link-compare, .products-grid.producteffect3 a.addtocompare, .products-grid.producteffect5 .addtocart.button.btn-cart, .products-grid.producteffect5 a.addtocart, .products-grid.producteffect5 .addtowishlist.link-wishlist, .products-grid.producteffect5 a.addtowishlist, .products-grid.producteffect5 .addtocompare.link-compare,.products-grid.producteffect5 a.addtocompare{
-	color:#fff
-	}
-</style>
-<!--Button text color end-->
-
-<!--Button hover background color start-->
-<style type="text/css">
-ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, ul.cart-button-set a.addtocompare:hover, .button.btn-twitter-follow:hover, button.button:hover span, ul.cart-button-set a.addtocart.button:hover, #content .col-right #button-filter:hover, .my-account input.button.btn-cart:hover, .products-list a.btn-cart:hover, .products-grid.producteffect2 .addtowishlist.link-wishlist:hover, .products-grid.producteffect2 a.addtowishlist:hover, .products-grid.producteffect2 .addtocompare.link-compare:hover,.products-grid.producteffect2 a.addtocompare:hover, .products-grid.producteffect2 .addtocart.button.btn-cart:hover, .products-grid.producteffect2 a.addtocart:hover, .products-grid.producteffect3 .addtocart.button.btn-cart:hover, .products-grid.producteffect3 a.addtocart:hover, .products-grid.producteffect3 .addtowishlist.link-wishlist:hover, .products-grid.producteffect3 a.addtowishlist:hover, .products-grid.producteffect3 .addtocompare.link-compare:hover, .products-grid.producteffect3 a.addtocompare:hover, .products-grid.producteffect5 .addtocart.button.btn-cart:hover, .products-grid.producteffect5 a.addtocart:hover, .products-grid.producteffect5 .addtowishlist.link-wishlist:hover,.products-grid.producteffect5 a.addtowishlist:hover, .products-grid.producteffect5 .addtocompare.link-compare:hover,.products-grid.producteffect5 a.addtocompare:hover{
-	background-color:#444;
-	}
-</style>
-<!--Button hover background color end-->
-
-<!--Button hover border color start-->
-<style type="text/css">
-ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, ul.cart-button-set a.addtocompare:hover, .button.btn-twitter-follow:hover, button.button:hover span, ul.cart-button-set a.addtocart.button:hover, #content .col-right #button-filter:hover, .my-account input.button.btn-cart:hover, .products-list a.btn-cart:hover, .products-grid.producteffect2 .addtowishlist.link-wishlist:hover, .products-grid.producteffect2 a.addtowishlist:hover, .products-grid.producteffect2 .addtocompare.link-compare:hover,.products-grid.producteffect2 a.addtocompare:hover, .products-grid.producteffect2 .addtocart.button.btn-cart:hover, .products-grid.producteffect2 a.addtocart:hover, .products-grid.producteffect3 .addtocart.button.btn-cart:hover, .products-grid.producteffect3 a.addtocart:hover, .products-grid.producteffect3 .addtowishlist.link-wishlist:hover, .products-grid.producteffect3 a.addtowishlist:hover, .products-grid.producteffect3 .addtocompare.link-compare:hover, .products-grid.producteffect3 a.addtocompare:hover, .products-grid.producteffect5 .addtocart.button.btn-cart:hover, .products-grid.producteffect5 a.addtocart:hover, .products-grid.producteffect5 .addtowishlist.link-wishlist:hover,.products-grid.producteffect5 a.addtowishlist:hover, .products-grid.producteffect5 .addtocompare.link-compare:hover,.products-grid.producteffect5 a.addtocompare:hover{
-	border:0px solid <?php echo $button_hover_border_color; ?>
-	}
-</style>
-<!--Button hover border color end-->
-
-<!--Button hover text color start-->
-<style type="text/css">
-ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, ul.cart-button-set a.addtocompare:hover, .button.btn-twitter-follow:hover, button.button:hover span, ul.cart-button-set a.addtocart.button:hover, #content .col-right #button-filter:hover, .my-account button.button:hover span, .my-account input.button.btn-cart:hover, .products-list a.btn-cart:hover, .products-grid.producteffect2 .addtowishlist.link-wishlist:hover, .products-grid.producteffect2 a.addtowishlist:hover, .products-grid.producteffect2 .addtocompare.link-compare:hover,.products-grid.producteffect2 a.addtocompare:hover, .products-grid.producteffect2 .addtocart.button.btn-cart:hover, .products-grid.producteffect2 a.addtocart:hover, .products-grid.producteffect3 .addtocart.button.btn-cart:hover, .products-grid.producteffect3 a.addtocart:hover, .products-grid.producteffect3 .addtowishlist.link-wishlist:hover, .products-grid.producteffect3 a.addtowishlist:hover, .products-grid.producteffect3 .addtocompare.link-compare:hover, .products-grid.producteffect3 a.addtocompare:hover, .products-grid.producteffect5 .addtocart.button.btn-cart:hover, .products-grid.producteffect5 a.addtocart:hover, .products-grid.producteffect5 .addtowishlist.link-wishlist:hover,.products-grid.producteffect5 a.addtowishlist:hover, .products-grid.producteffect5 .addtocompare.link-compare:hover,.products-grid.producteffect5 a.addtocompare:hover{
-	color:#fff
-	}
-</style>
-<!--Button hover text color end-->
-
-<!--Label new background color Start-->
-<style type="text/css">
-.sale-product-icon{background:<?php echo $label_new_background_color; ?>}
-</style>
-<!--Label new background color end-->
-
-<!--Label new button color Start-->
-<style type="text/css">
-.sale-product-icon{border: 2px solid <?php echo label_new_border_color;?>}
-</style>
-<!--Label new button color End-->
-
-<!--Label new Text color Start-->
-<style type="text/css">
-.sale-product-icon{color: <?php echo $label_new_text_color;?>}
-</style>
-<!--Label new Text color Start-->
-
-
-<!--Label sale background color Start-->
-<style type="text/css">
-.new-product-icon{background:<?php echo $label_sale_background_color; ?>}
-</style>
-<!--Label sale background color end-->
-
-<!--Label sale button color Start-->
-<style type="text/css">
-.new-product-icon{border: 2px solid <?php echo $label_sale_border_color;?>}
-</style>
-<!--Label sale button color End-->
-
-<!--Label sale Text color Start-->
-<style type="text/css">
-.new-product-icon{color: <?php echo $label_sale_text_color;?>}
-</style>
-<!--Label sale Text color Start-->
 
 </head>
 <?php 
@@ -287,12 +177,13 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
     $launch = explode($delimiters[0], $ready);
     return  $launch;
 }
-if(isset($_SERVER["QUERY_STRING"])){
+//echo $_SERVER["QUERY_STRING"];
+if(!$_SERVER["QUERY_STRING"]){
    $_SERVER["QUERY_STRING"] = 'route=common/home';
   }
 ?>
 
-<?php  $category_s =''; $words[1] = '.'; $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER["QUERY_STRING"]; $words = multiexplode(array('/','&'),$_SERVER["QUERY_STRING"]); $category_s = $words[1]  ?>
+<?php ; $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER["QUERY_STRING"]; $words = multiexplode(array('/','&'),$_SERVER["QUERY_STRING"]);$category_s = $words[1]; //print_r($category_s) ?>
 <body class="">
 <div class="wrapper">
 
@@ -386,7 +277,7 @@ if(isset($_SERVER["QUERY_STRING"])){
   <div class="header container">
                  <a class="logo" href="<?php echo $home; ?>"><!--<?php echo $name; ?>-->
                      <!--img src="<?php echo $logo; ?>" alt="<?php echo $home; ?>" /-->
-                     <img width="360px" src="image/logo-ejmp.png" alt="<?php echo $home; ?>" />
+                     <img  src="image/logo-saint.png" alt="<?php echo $home; ?>" />
                  </a>
             </div>
         <div class="navbar navbar-default">
@@ -435,9 +326,9 @@ if(isset($_SERVER["QUERY_STRING"])){
                 <?php if($megamenu==1) { ?>
                 <?php if ($categories) { ?>
                     <ul id="nav_custom" class="nav navbar-nav">
-                        <li class="level0">
+                        <!--li class="level0">
                             <a id="linkm" href="index.php?route=common/home" class="main-menu"></a>
-                        </li>
+                        </li-->
                         <?php foreach ($categories as $category) { ?>
                             
                        
@@ -689,6 +580,8 @@ if(isset($_SERVER["QUERY_STRING"])){
 <script type="text/javascript">
 //<![CDATA[
     jQuery(document).ready(function(){
+        jQuery('.header').css('position', 'relative');
+        jQuery('.navbar-default').hide();
         var scrolled = false;
         jQuery(window).scroll(function(){
             if(50<jQuery(window).scrollTop() && !scrolled){
@@ -710,15 +603,20 @@ if(isset($_SERVER["QUERY_STRING"])){
 //<![CDATA[
     jQuery(document).ready(function(){
         var scrolled = false;
+       
         jQuery(window).scroll(function(){
-            if(200<jQuery(window).scrollTop() && !scrolled){
-                jQuery('.navbar').addClass('sticky-menu').css('top','-50px').animate({top:'0px'}, 500);
+            if(100<jQuery(window).scrollTop() && !scrolled){
+                jQuery('.header-container').addClass('sticky-menu').css('top','-50px').animate({top:'0px'}, 500);
+                 jQuery('.navbar').addClass('sticky-menu').css('top','-50px').animate({top:'48px'}, 500);
                 scrolled = true;
             }
-            if(200>jQuery(window).scrollTop() && scrolled){
+            if(100>jQuery(window).scrollTop() && scrolled){
+                jQuery('.header-container').removeClass('sticky-menu');
                 jQuery('.navbar').removeClass('sticky-menu');
+                jQuery('.navbar').css('top','160px')
                 scrolled = false;
             }
+           
         });
        /* jQuery("#nav_custom li.level0").mouseover(function(){
             if(jQuery(window).width() >= 768){
@@ -816,7 +714,7 @@ inarea = false;
                 var bxslider1,bxslider2,bxslider3;
                 if(window_size<992 && window_size >= 768){
                     bxslider1=jQuery('#fp_new .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 3,  maxSlides: 3,  slideWidth: 230,  slideMargin: 15});
-                    bxslider2=jQuery('#fp_featured .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 3,  maxSlides: 3,  slideWidth: 230,  slideMargin: 15});
+                    bxslider2=jQuery('#fp_featured .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 3,  maxSlides: 3,  slideWidth: 350,  slideMargin: 15});
                     bxslider3=jQuery('#fp_special .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 3,  maxSlides: 3,  slideWidth: 230,  slideMargin: 15});
                 } else if(window_size<768){
                     bxslider1=jQuery('#fp_new .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 1,  maxSlides: 1});
@@ -824,7 +722,7 @@ inarea = false;
                     bxslider3=jQuery('#fp_special .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 1,  maxSlides: 1});
                 }else {
                     bxslider1=jQuery('#fp_new .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 4,  maxSlides: 4,  slideWidth: 270,  slideMargin: 20});
-                    bxslider2=jQuery('#fp_featured .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 4,  maxSlides: 4,  slideWidth: 270,  slideMargin: 20});
+                    bxslider2=jQuery('#fp_featured .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 3,  maxSlides: 3,  slideWidth: 450,  slideMargin: 5});
                     bxslider3=jQuery('#fp_special .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 4,  maxSlides: 4,  slideWidth: 270,  slideMargin: 20});
                 }
                 var reloaded1, reloaded2, reloaded3;

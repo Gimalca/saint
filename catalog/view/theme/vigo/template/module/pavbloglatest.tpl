@@ -1,9 +1,13 @@
 <div class="split">
-    <div>&nbsp;</div>
+    <div class="block-title">
+                                <img style=" width:382px" src="image/data/tittle-blog.jpg" alt="Instagram">
+                                <!--strong><span>Instagram</span></strong-->
+
+                            </div>
 </div>
 
-<div class="row">
-    <div class="col-sm-6 home_blog_part" >
+    
+    <div class="col-sm-6 col-md-6 col-lg-6 " >
         <div class="block block-from-blog">
             <!--div class="block-title">
                 <strong><span><?php echo $heading_title; ?></span></strong>
@@ -11,58 +15,67 @@
             </div-->
             <div class="block-content" style="background-color:#fff; padding: 5px; ">
                 <ul>
-                    <?php if( !empty($blogs) ) { ?>
-                    <?php foreach( $blogs as $key => $blog ) { $key = $key + 1; ?>
+                    <?php if( !empty($blogs) ) { $blog = $blogs?>
+                  
                     <li class="bx-clone">
                         <div class="row">
                             <div class="col-md-12 col-sm-12">
-                                <?php if( $blog['thumb']  )  { ?>
-                                <img src="<?php echo $blog['thumb'];?>" title="<?php echo $blog['title'];?>"/>
+                                <?php if( $blog[0]['thumb']  )  { ?>
+                                <img src="<?php echo $blog[0]['thumb'];?>" title="<?php echo $blog[0]['title'];?>"/>
+                                <?php } ?>
+                            
+                                <h1>
+                                    <a style="color: #000" href="<?php echo $blog[0]['link'];?>" title="<?php echo $blog[0]['title'];?>"><?php echo $blog[0]['title'];?></a>
+                                </h1>
+                                <div><?php echo rtrim(substr(html_entity_decode($blog[0]['description']),0,500)); ?>
+                                    <a  style="color: #000;float: left" href="<?php echo $blog[0]['link'];?>" class=""><?php echo $this->language->get('text_readmore');?> ></a>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </li>
+                   
+                    <?php } ?>
+                </ul>
+            </div>
+          
+        </div>
+        
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6" >
+        <div class="block block-from-blog">
+            <!--div class="block-title">
+                <strong><span><?php echo $heading_title; ?></span></strong>
+                <?php echo $text_from_the_staff; ?>
+            </div-->
+            <div class="block-content" style="background-color:#fff; padding: 5px; ">
+                <ul>
+                    <?php if( !empty($blogs) ) { $blog = $blogs?>
+                  
+                    <li class="bx-clone">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <?php if( $blog[1]['thumb']  )  { ?>
+                                <img  src="<?php echo $blog[1]['thumb'];?>" title="<?php echo $blog[1]['title'];?>"/>
                                 <?php } ?>
                             </div>
                         </div>
                         <div class="row">    
                             <div class="col-md-12 col-sm-12 details">
                                 <h1>
-                                    <a style="color: #2a6496" href="<?php echo $blog['link'];?>" title="<?php echo $blog['title'];?>"><?php echo $blog['title'];?></a>
+                                    <a style="color: #000" href="<?php echo $blog[1]['link'];?>" title="<?php echo $blog[1]['title'];?>"><?php echo $blog[1]['title'];?></a>
                                 </h1>
-                                <div><?php echo rtrim(substr(html_entity_decode($blog['description']),0,500)); ?></div>
-
-                                <div>                            <a  style="color: #2a6496" href="<?php echo $blog['link'];?>" class=""><?php echo $this->language->get('text_readmore');?> ></a></div>
-                            </div>
+                                <div><?php echo rtrim(substr(html_entity_decode($blog[1]['description']),0,500)); ?>
+                                    <a  style="color: #000;float: left" href="<?php echo $blog[1]['link'];?>" class=""><?php echo $this->language->get('text_readmore');?> ></a>
+                                </div>
                         </div>
                     </li>
-                    <?php if( ( $key%$cols==0 || $key == count($blogs)) ){  ?>
-                    <!--<div class="clearfix"></div>-->
-                    <?php } ?>
-                    <?php } ?>
+                   
                     <?php } ?>
                 </ul>
             </div>
-           <div class="box-subscribe">
-                       
-                      
-                        <form action="#" method="post" name="newslatter" class="validate" target="_blank" novalidate>
-
-                            <div class="block-content" style="padding-top: 0px; margin-bottom: 22px">
-                                <div class="form-subscribe-header">
-                                    <label for="newsletter">Recibe Noticias y promociones</label>
-                                </div>
-                                <div class="col-sm-8">
-                                    <input type="text" name="email" id="newsletter" title="Sign up for our newsletter" class="input-text required-entry validate-email" placeholder="email" />
-                                    
-                                </div>
-                                <div class=" col-sm-2">
-                                    <button type="submit" title="Sign Up" class="button"><span><span>enviar</span></span></button>
-                                </div>
-                            </div>
-                        </form>
-                        <script type="text/javascript">
-                            //<![CDATA[
-                            var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
-                            //]]>
-                        </script>
-                    </div>
+          
         </div>
         
     </div>
@@ -101,8 +114,4 @@
                     <?php } ?>
             </div>
      </div>-->
-    <script type="text/javascript">// &lt;![CDATA[
-        jQuery(function ($) {
-            $('.block-from-blog ul').bxSlider({adaptiveHeight: false, auto: false, autoStart: false, autoHover: false, mode:'horizontal', speed:1000, pager: false});
-        });
-    // ]]&gt;</script>
+  

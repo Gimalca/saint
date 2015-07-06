@@ -6,7 +6,7 @@
     width: 100%;
     font-size: 15px;
     margin-top: 20px;
-    border-bottom: 1px solid #d9d9d9;
+    border-bottom: 0px solid #d9d9d9;
 }
 .akordeon-item
 {
@@ -106,11 +106,11 @@
 }
 .akordeon-border-top
 {
-    border-top: solid 1px black;
+    border-top: solid 0px black;
 }
 .akordeon-item.expanded .akordeon-item-body.akordeon-border-bottom
 {
-    border-bottom: solid 1px #d9d9d9 !important;
+    border-bottom: solid 0px #d9d9d9 !important;
     overflow: hidden;
 }
 .akordeon-item.akordeon-item-first .akordeon-item-head
@@ -124,7 +124,7 @@
 }
 .akordeon-item.akordeon-item-last.expanded .akordeon-item-head
 {
-    border-bottom: solid 1px #d9d9d9;
+    border-bottom: solid 0px #d9d9d9;
 }
 .akordeon-item.akordeon-item-last.expanded .akordeon-item-body
 {
