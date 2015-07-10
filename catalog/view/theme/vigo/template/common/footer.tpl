@@ -35,7 +35,7 @@
                         </ul>
                     </ul>
                 </div>
-                <div class="col-md-5" style="margin-top: 21px;">
+                <div class="col-md-5" style="margin-top: 50px;">
                     <div id="newsletter-footer">
                         <div id="footer-titulo" class="col-md-12" style="margin-bottom: 11px;">
                              Newsletter
@@ -75,7 +75,7 @@
                 }
                 //]]
             </script>
-            <div style=" color: #222; padding: 5px; font-size: 12px ">© 2015 Saint. All Rights reserved.  Desarrolaldo por <a style="color: #444" target="_blank" href="http://gimalca.com">Gimalca.</a></div>
+            <div style=" color: #666; padding: 5px; font-size: 9px; text-transform: uppercase ">© 2015 Saint. All Rights reserved.  Desarrolaldo por <a style="color: #777" target="_blank" href="http://gimalca.com">Gimalca.</a></div>
         </div>
     </div>
 </div>

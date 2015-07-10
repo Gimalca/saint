@@ -203,7 +203,7 @@
                 </div-->
                 <div class="row">
 
-                    <div class="col-lg-12" style="margin-bottom: 40px">
+                    <div class="col-lg-12" style="margin-bottom: 70px">
                         <div class="block block-from-blog">
                             <div class="block-title">
                                 <img style=" width:600px" src="image/data/title-instagram.jpg" alt="Instagram">
@@ -212,7 +212,7 @@
                             </div>
                         </div>
 
-                        <iframe src="http://snapwidget.com/sc/?u=bG9saXRhcHJhbmF8aW58MjAwfDN8M3x8eWVzfDIwfGZhZGVPdXR8b25TdGFydHx5ZXN8eWVz&ve=110315" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:1200px; height:200px"></iframe>
+                        <iframe src="http://snapwidget.com/sc/?u=bG9saXRhcHJhbmF8aW58MjAwfDN8M3x8eWVzfDIwfGZhZGVPdXR8b25TdGFydHx5ZXN8eWVz&ve=110315" title="Instagram Widget" class="snapwidget-widget" allowTransparency="false" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:1200px; height:200px"></iframe>
                     </div>
 
                 </div>

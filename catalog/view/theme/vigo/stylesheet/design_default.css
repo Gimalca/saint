@@ -71,12 +71,12 @@ button.button span {
     border-bottom-color: #444444;
                 }
 .navbar { background-color: #fafafa; }
-.navbar .navbar-header, .navbar.navbar-default .navbar-collapse { border-color: #e6e6e6; }
+.navbar .navbar-header, .navbar.navbar-default .navbar-collapse { text-align: center; display: block !important;}
 #nav_custom li.level0 > a { color: #444444; }
-#nav_custom li.level0:hover > a { color: #f0877c; border-top-color: #444444; }
+#nav_custom li.level0:hover > a { border-top-color: #444444; }
 #nav_custom ul { background-color: transparent; }
 #nav_custom ul li.level1 > a > span { color: #555555; border-bottom-color: #999999; }
-#nav_custom ul li.level1 > a:hover > span { color: #f0877c; }
+#nav_custom ul li.level1 > a:hover > span { }
 #nav_custom ul li.level1 > a { border-bottom-color: #e4e4e4; }
 #nav_custom ul span { color: #777777; }
 #nav_custom ul li a:hover span { color: #f0877c !important; }
