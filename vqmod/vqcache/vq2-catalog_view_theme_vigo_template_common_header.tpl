@@ -204,6 +204,35 @@ if(!$_SERVER["QUERY_STRING"]){
             <div class="top-links">
                 <div class="container" style="padding:0px">
                     
+                    <div class="for-desktop">
+                        <div class="form-search for-not-tablet">
+                            <form id="search_mini_form" method="get" action="">
+                                <input type="hidden" name="route" value="product/search"/>
+                                <input type="text" name="search" class="input-text search_inputbox" maxlength="25" placeholder="<?php echo $text_search; ?>" />
+
+                                <!--button class="button-search button btn-search" title="Search" type="submit">
+                                <span>
+                                        
+                                    <span><?php echo $text_search;?></span>
+                                </span>
+                                </button-->
+                            </form>
+                            <!--<button class="button button-search" title="Search" type="submit" >
+                                <span><span><?php echo $text_search;?></span></span>
+                            </button>-->
+                            <script type="text/javascript">
+                                                    jQuery(".search_inputbox").click(function(){
+                                                    jQuery(this).parent().children('button').addClass('active');
+                                                    }).blur(function(){
+                                                    jQuery(this).parent().children('button').removeClass('active');
+                                                    });
+                            </script>
+
+
+
+                        </div>
+                    </div>
+                    
                         <div class="social-icons" style="margin-top:7px">
                             <a class="facebook-icon" title="Facebook" href="http://www.facebook.com/">Facebook</a>
                             <a class="twitter-icon" title="Twitter" href="http://www.twitter.com/">Twitter</a>
@@ -256,8 +285,8 @@ if(!$_SERVER["QUERY_STRING"]){
                     <?php } ?>
                     </div>
                         <!--li class="first"><a class="top-link-home" href="<?php echo $home; ?>"><?php echo $text_home; ?></a></li-->
-                        <li class="header_wishlist"><a href="<?php echo $wishlist; ?>" class="top-link-wishlist"><?php //echo $text_wishlist; ?></a></li>
-                        <li><a class="top-link-account" href="<?php echo $account; ?>"><?php //echo $text_account; ?></a></li>
+                        <!--li class="header_wishlist"><a href="<?php echo $wishlist; ?>" class="top-link-wishlist"><?php //echo $text_wishlist; ?></a></li-->
+                        <!--li><a class="top-link-account" href="<?php echo $account; ?>"><?php //echo $text_account; ?></a></li-->
                         
                         <!--li><a class="top-link-cart" href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a></li-->
                         <!--li><a class="top-link-checkout" href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></li-->
@@ -277,7 +306,7 @@ if(!$_SERVER["QUERY_STRING"]){
   <div class="header container">
                  <a class="logo" href="<?php echo $home; ?>"><!--<?php echo $name; ?>-->
                      <!--img src="<?php echo $logo; ?>" alt="<?php echo $home; ?>" /-->
-                     <img  src="image/logo-saint.png" alt="<?php echo $home; ?>" />
+                     <img width="700px" class=" responsive img-responsive"  src="image/saints_clothes_bk.svg" alt="<?php echo $home; ?>" />
                  </a>
             </div>
         <div class="navbar navbar-default">
@@ -288,35 +317,7 @@ if(!$_SERVER["QUERY_STRING"]){
                     </button>
                 </div>
         		<div class="for-mobile">
-                    	<div class="form-search">
-                   			<div id="search">
-                    		<button type="submit" title="Search" class="button-search  button btn-search"><span><span><?php echo $text_search;?></span></span></button>
-                                <input id="mb_search" type="text" name="search" class="input-text" maxlength="128" placeholder="<?php echo $text_search; ?>" value="<?php echo $search; ?>"/>
-                                <a class="btn-remove btn-remove2" href="javascript:void(0)">Close</a>
-                                <button type="button" title="Search" class="button btn-search-flg"><span><span><?php echo $text_search;?></span></span></button>
-                    		
-        <script type="text/javascript">
-          //&lt;![CDATA[   
-         
-        jQuery("button.btn-search-flg").click(function(){
-            jQuery(this).parent().children("button.btn-search-flg").hide();
-            jQuery(this).parent().children("button.btn-search").show();
-            jQuery(this).parent().children("#mb_search").show();
-            jQuery(this).parent().children("#mb_search").focus();
-            jQuery(this).parent().children("a.btn-remove").css('display','inline-block');
-            jQuery("button.navbar-toggle").hide();
-        });
-        jQuery(".navbar .for-mobile a.btn-remove").click(function(){
-            jQuery(this).parent().children("button.btn-search-flg").show();
-            jQuery(this).parent().children("button.btn-search").hide();
-            jQuery(this).parent().children("#mb_search").hide();
-            jQuery(this).parent().children("a.btn-remove").hide();
-            jQuery("button.navbar-toggle").show();
-        });
-        //]]&gt;
-        </script>
-                    	</div>
-                        </div>
+                    	
                     </div>
         
                 <nav class="collapse navbar-collapse bs-navbar-collaspe " role="navigation" id="jsn-pos-mainnav">
@@ -369,9 +370,9 @@ if(!$_SERVER["QUERY_STRING"]){
                                             <?php } ?>
                                           <?php } ?>
                                           
-                                          <li class="level1 thumbnail-image-area" style="position: relative;">
-												<?php echo html_entity_decode($category_image); ?>
-                                          </li>
+                                          <!--li class="level1 thumbnail-image-area" style="position: relative;">
+												<?php //echo html_entity_decode($category_image); ?>
+                                          </li-->
                                            
                                        	
                                         </ul>
@@ -497,72 +498,10 @@ if(!$_SERVER["QUERY_STRING"]){
                 	<?php } ?>
                 <?php } ?>
                  
-               <div class="for-desktop">
-                    <div class="form-search for-not-tablet">
-                    <form id="search_mini_form" method="get" action="">
-                    	<input type="hidden" name="route" value="product/search"/>
-                            <input type="text" name="search" class="input-text search_inputbox" maxlength="25" placeholder="<?php //echo $text_search; ?>" />
-                            
-                                <button class="button-search button btn-search" title="Search" type="submit">
-                                <span>
-                                	
-                                    <span><?php echo $text_search;?></span>
-                                </span>
-                            	</button>
-                                </form>
-                            <!--<button class="button button-search" title="Search" type="submit" >
-                                <span><span><?php echo $text_search;?></span></span>
-                            </button>-->
-                        	<script type="text/javascript">
-							jQuery(".search_inputbox").click(function(){
-							jQuery(this).parent().children('button').addClass('active');
-							}).blur(function(){
-							jQuery(this).parent().children('button').removeClass('active');
-							});
-							</script>
-                        
-						
-                            
-                    </div>
-                 </div>
+               
                         	
                    
-                    <div class="form-search for-tablet">
-                        
-                        <form id="tb_search_mini_form" method="get" action="">
-                        	
-                        	 <button type="submit" title="Search" class="button-search button btn-search" style="display: none;"><span><span><?php echo $text_search;?></span></span></button>
-                             <input type="hidden" name="route" value="product/search"/>
-                             <input id="tb_search" type="text" name="search" class="input-text" maxlength="25" placeholder="<?php echo $text_search; ?>" value="<?php echo $search; ?>" style="display: none;" />
-                            
-                           <a class="btn-remove btn-remove2" href="javascript:void(0)" style="display: none;">Close</a>
-                           <button type="button" title="Search" class="button btn-search-flg"><span><span>Search</span></span></button>
-                            <!--<input type="text" name="search" placeholder="<?php echo $text_search; ?>" value="<?php echo $search; ?>" class="input-text" id="tb_search"/>-->
-                            <!--<button class="button button-search" title="Search" type="submit" >
-                                <span><span><?php echo $text_search;?></span></span>
-                            </button>-->
-                            <script type="text/javascript">
-                            //<![CDATA[
-                            jQuery(".for-tablet button.btn-search-flg").click(function(){
-                                jQuery(this).parent().children("button.btn-search-flg").hide();
-                                jQuery(this).parent().children("button.btn-search").show();
-                                jQuery(this).parent().children("#tb_search").show();
-                                jQuery(this).parent().children("#tb_search").focus();
-                                jQuery(this).parent().children("a.btn-remove").css('display','inline-block');
-                                jQuery(".form-search.for-tablet").css("width","100%");
-                            });
-                            jQuery(".for-tablet a.btn-remove").click(function(){
-                                jQuery(this).parent().children("button.btn-search-flg").show();
-                                jQuery(this).parent().children("button.btn-search").hide();
-                                jQuery(this).parent().children("#tb_search").hide();
-                                jQuery(this).parent().children("a.btn-remove").hide();
-                                jQuery(".form-search.for-tablet").css("width","30px");
-                            });
-                            //]]>
-                            </script>
-                            </form>
-                         
-                    </div>
+                    
                      
                 
                 </nav>
@@ -659,7 +598,7 @@ if(!$_SERVER["QUERY_STRING"]){
 
 <!-- Latest,    Featured,    Specials on hover black come -->
 <script type="text/javascript">
-jQuery(document).ready(function(){
+{*jQuery(document).ready(function(){
 jQuery('.category-products .product-image-area').mouseenter(function(){
 jQuery(this).children('.hover-area').fadeIn();
 }).mouseleave(function(){
@@ -701,7 +640,7 @@ jQuery(ele).fadeOut(400,function(){jQuery(ele).remove();});
 inarea = false;
 });
 });
-});
+});*}
 </script>
 
 
@@ -714,15 +653,15 @@ inarea = false;
                 var bxslider1,bxslider2,bxslider3;
                 if(window_size<992 && window_size >= 768){
                     bxslider1=jQuery('#fp_new .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 3,  maxSlides: 3,  slideWidth: 230,  slideMargin: 15});
-                    bxslider2=jQuery('#fp_featured .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 3,  maxSlides: 3,  slideWidth: 350,  slideMargin: 15});
+                    //bxslider2=jQuery('#fp_featured .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 3,  maxSlides: 3,  slideWidth: 350,  slideMargin: 15});
                     bxslider3=jQuery('#fp_special .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 3,  maxSlides: 3,  slideWidth: 230,  slideMargin: 15});
                 } else if(window_size<768){
                     bxslider1=jQuery('#fp_new .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 1,  maxSlides: 1});
-                    bxslider2=jQuery('#fp_featured .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 1,  maxSlides: 1});
+                    //bxslider2=jQuery('#fp_featured .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 1,  maxSlides: 1});
                     bxslider3=jQuery('#fp_special .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 1,  maxSlides: 1});
                 }else {
                     bxslider1=jQuery('#fp_new .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 4,  maxSlides: 4,  slideWidth: 270,  slideMargin: 20});
-                    bxslider2=jQuery('#fp_featured .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 3,  maxSlides: 3,  slideWidth: 450,  slideMargin: 5});
+                    //bxslider2=jQuery('#fp_featured .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 3,  maxSlides: 3,  slideWidth: 450,  slideMargin: 5});
                     bxslider3=jQuery('#fp_special .products-grid').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 4,  maxSlides: 4,  slideWidth: 270,  slideMargin: 20});
                 }
                 var reloaded1, reloaded2, reloaded3;
@@ -735,7 +674,7 @@ inarea = false;
                     jQuery('.filter-products .tab-contents .tab.active').removeClass('active');
                     jQuery(active_id).show();
                     jQuery(active_id).addClass('active');
-                    if(active_id == "#fp_featured" && !reloaded2){
+                    {*if(active_id == "#fp_featured" && !reloaded2){
                         if(window_size<992 && window_size >= 768){
                             bxslider2.reloadSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 3,  maxSlides: 3,  slideWidth: 230,  slideMargin: 15});
                         } else if(window_size<768){
@@ -753,7 +692,7 @@ inarea = false;
                             bxslider3.reloadSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 4,  maxSlides: 4,  slideWidth: 270,  slideMargin: 20});
                         }
                         reloaded3 = true;
-                    }
+                    }*}
                 });
                 setTimeout(function(){
                     jQuery('.filter-products .tab-contents .tab').hide();

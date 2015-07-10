@@ -447,7 +447,7 @@ button.button span.compare_continue{font: bold 20px/40px 'Scada',Helvetica,sans-
 .full-width-img img.slider_4_banner_2 {margin: 0; width:auto;}
 .full-width-img img.slider_4_banner_1 {margin-bottom:30px; width:auto;}
 .mega_menu_disable{display:none;}
-.tp-bullets.simplebullets.round {margin-top: 280px !important;}
+.tp-bullets.simplebullets.round {margin-top: 310px !important;}
 /*slider 4 banner end*/
 @media (max-width: 767px){
 #mini-cart .product-image  img {float: left;height: auto;width: 100px;}
@@ -475,7 +475,8 @@ button.button span.compare_continue{font: bold 20px/40px 'Scada',Helvetica,sans-
 #cart .heading .mini-products-list .item .product-details.voucher-details {margin-left: 0;}
 /*dixit css*/
 .contactinfo {color: #999999;font-family: Verdana;font-size:15px;line-height: 40px;}
-#nav_custom .level0 .level1>li {padding-left: 20px !important;}
+#nav_custom .level0 .level1>li {padding: 6px 5px 6px 20px;}
+#nav_custom .level0 .level1>li:hover { background-color: #000}
 div.social-icons a{	float:left;}
 .page #content .main.container { padding-top: 20px;}
 #columnright .box-filter .akordeon-item-body .akordeon-item-content label {font-weight: 400 !important;}

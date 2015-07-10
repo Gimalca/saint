@@ -5,9 +5,9 @@
 
 <div id="fp_featured" class="tab">
     <div class="category-products">
-        <?php if($listing_effect==1) { ?>
+        <?php if($listing_effect==1) { ; ?>
           	<ul class="products-grid producteffect<?php echo "$listing_effect"; ?>">
-               	<?php foreach($products as $product) { ?>
+               	<?php shuffle($products); $i=0; foreach($products as $product) { ?>
                 	<li class="item home-dee">
             			<div class="product-image-area" hover_img="<?php echo  $product['add']; ?>" base_img="<?php echo $product['thumb']; ?>" product_url="<?php echo $product['href']; ?>">
                                  <a href="<?php echo $product['href']; ?>" title="Black and white dust dress" class="product-image">
@@ -83,7 +83,7 @@
     
             </li>
                   		
-          		<?php } ?>     
+          		<?php if (++$i == 3) break;} ?>     
           </ul>
          <?php } else if($listing_effect==2) { ?>
        		<ul class="products-grid producteffect<?php echo "$listing_effect"; ?>">
