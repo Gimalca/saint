@@ -303,12 +303,14 @@ if(!$_SERVER["QUERY_STRING"]){
             
           
         </div>
-  <div class="header container">
+        <?php if ( $category_s == "home"  ):?>
+           <div class="header container">
                  <a class="logo" href="<?php echo $home; ?>"><!--<?php echo $name; ?>-->
                      <!--img src="<?php echo $logo; ?>" alt="<?php echo $home; ?>" /-->
                      <img width="700px" class=" responsive img-responsive"  src="image/saints_clothes_bk.svg" alt="<?php echo $home; ?>" />
                  </a>
             </div>
+         <?php endif ?>
         <div class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
@@ -514,22 +516,30 @@ if(!$_SERVER["QUERY_STRING"]){
     
 <?php } ?>
 
-<?php if ($category_s == "category" || $category_s == "product" || $category_s == "cart" || $category_s == "checkout"  ):?>
+<?php if ( $category_s == "category" || $category_s == "product" || $category_s == "cart" || $category_s == "checkout"  ):?>
 
 <script type="text/javascript">
 //<![CDATA[
     jQuery(document).ready(function(){
         jQuery('.header').css('position', 'relative');
-        jQuery('.navbar-default').hide();
-        var scrolled = false;
-        jQuery(window).scroll(function(){
-            if(50<jQuery(window).scrollTop() && !scrolled){
-                jQuery('.header-container').addClass('sticky-menu').css('top','-50px').animate({top:'0px'}, 500);
-                scrolled = true;
-            }
-            if(50>jQuery(window).scrollTop() && scrolled){
-                jQuery('.header-container').removeClass('sticky-menu');
-                scrolled = false;
+        
+           jQuery('.header-container').addClass('sticky-menu').css('top','-50px').animate({top:'0px'}, 500);
+           jQuery('.navbar').addClass('sticky-menu').css('top','-50px').animate({top:'48px'}, 500);
+      
+        
+          jQuery("#nav_custom li span.plus").click(function(e){
+            e.stopPropagation();
+            if(jQuery(this).hasClass('expanded')){
+                jQuery(this).removeClass('expanded');
+                jQuery(this).parent().removeClass('expanded');
+                jQuery(this).parent().children('ul').slideUp();
+            } else {
+                jQuery(this).parent().parent().children('li.expanded').children('ul').slideUp();
+                jQuery(this).parent().parent().children('li.expanded').children('span.expanded').removeClass('expanded');
+                jQuery(this).parent().parent().children('li.expanded').removeClass('expanded');
+                jQuery(this).addClass('expanded');
+                jQuery(this).parent().addClass('expanded');
+                jQuery(this).parent().children('ul').slideDown();
             }
         });
       

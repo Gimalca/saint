@@ -117,7 +117,7 @@ button.button span {
 .product-name a:hover { color: #555555; }
 
 .price-box .price, .regular-price .price { 
-    color: #222222; 
+    color: #000; 
     }
 .old-price .price { 
     color: #999999; 
@@ -136,7 +136,7 @@ button.button span {
     color: #444444; 
 }
 
-.block-category-nav .akordeon-heading a, .block-category-nav a, .block-layered-nav a { color: #000; }
+.block-category-nav .akordeon-heading a, .block-category-nav a, .block-layered-nav a { color: #222; }
 .block-category-nav .akordeon-heading a:hover, .block-category-nav a:hover, .block-layered-nav a:hover { color: #000; }
 
 ul.cart-button-set a.addtocart, ul.cart-button-set a.addtowishlist, ul.cart-button-set a.addtocompare {

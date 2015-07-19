@@ -478,7 +478,7 @@ button.button span.compare_continue{font: bold 20px/40px 'Scada',Helvetica,sans-
 #nav_custom .level0 .level1>li {padding: 6px 5px 6px 20px;}
 #nav_custom .level0 .level1>li:hover { background-color: #000}
 div.social-icons a{	float:left;}
-.page #content .main.container { padding-top: 20px;}
+.page #content .main.container { padding-top: 70px; margin-top: 155px;}
 #columnright .box-filter .akordeon-item-body .akordeon-item-content label {font-weight: 400 !important;}
 .page .product-shop .add-to-cart .input-text.qty {color: #2F2F2F;}
 .accordion-content.open-content {display: none;}

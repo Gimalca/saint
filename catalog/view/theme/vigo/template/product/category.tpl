@@ -16,9 +16,9 @@
         
         <?php if ($description) { ?>
         <div class=" header-category">
-            <div class=" title">
+            <h1 class="title">
                 <?php echo $heading_title; ?>
-            </div>
+            </h1>
         </div>
         
         <?php //echo $description; ?>
@@ -36,7 +36,7 @@
                 </li>
                 <?php foreach ($breadcrumbs as $breadcrumb) { ?>
                 <li>
-                    <a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a> <span style="color:#ddd"> > </span> 
+                    <a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a> <span style="padding-top: 2px"> > </span> 
                 </li>
                 <?php } ?>
             </ul>
@@ -254,7 +254,10 @@
                                     <div class="sale-product-icon" style="top: 10px">Sale</div>
                                     <?php } ?>
                                     <?php if($listing_effect==2){ } else { ?>
-                                    <div class="hover-area" style="display: none;">
+                                    <div class="hover-area2">
+                                         <a class="addtowishlist link-wishlist" onclick="addToWishList('<?php echo $product['product_id']; ?>');"><?php //echo $button_wishlist; ?></a>
+                                    </div> 
+                                    <div class="hover-area" style="">
 
                                         <?php 
                                         $star_rate_1 = $product['rating'];
