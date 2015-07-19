@@ -51,7 +51,7 @@
     <?php } ?>
 </div>
 
-<div class="main-container">
+<div class="main-container home-container" style="margin-top: 0px">
     <div class="container">
         <div class="col-main">
 

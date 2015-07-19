@@ -328,7 +328,7 @@ a.no-border{border:none !important;}
     width: 50%;
 }
 .product-info .product-view {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 .col-main .checkout.opc {
     margin-top: 56px;
@@ -478,7 +478,7 @@ button.button span.compare_continue{font: bold 20px/40px 'Scada',Helvetica,sans-
 #nav_custom .level0 .level1>li {padding: 6px 5px 6px 20px;}
 #nav_custom .level0 .level1>li:hover { background-color: #000}
 div.social-icons a{	float:left;}
-.page #content .main.container { padding-top: 70px; margin-top: 155px;}
+.page #content .main.container { padding-top: 70px;}
 #columnright .box-filter .akordeon-item-body .akordeon-item-content label {font-weight: 400 !important;}
 .page .product-shop .add-to-cart .input-text.qty {color: #2F2F2F;}
 .accordion-content.open-content {display: none;}
@@ -995,7 +995,7 @@ background-position: 7px 2px;
 .main-container.col1-layout .main.container{padding-top:40px !important}
 .product-shop.col-md-6.col-sm-12 p:first-of-type{margin-top: 0px;}
 .main-container .row .product-accordion .akordeon-border-bottom,.main-container .row .product-accordion .akordeon-item.akordeon-item-last.expanded .akordeon-item-head {border-bottom: 0px!important;}
-.main-container .col-main .row .col-md-12 .block.block-related {margin-top: 100px;}
+.main-container .col-main .row .col-md-12 .block.block-related {margin-top: 40px;width: 1040px;}
 .main-container .col-main  .product-review-area.col-md-6.col-sm-12{padding-left:25px!important;}
 .main-container .col-main .product-accordion.col-md-6.col-sm-12{padding-right:25px!important;}
 .main-container .col-main .row .block-content .tab-content .accordion-header .addreview .buttons-set{padding:0!important;margin:0!important}
