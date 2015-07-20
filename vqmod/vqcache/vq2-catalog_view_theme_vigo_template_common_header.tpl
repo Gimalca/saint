@@ -208,7 +208,7 @@ if(!$_SERVER["QUERY_STRING"]){
                         <div class="form-search for-not-tablet">
                             <form id="search_mini_form" method="get" action="">
                                 <input type="hidden" name="route" value="product/search"/>
-                                <input type="text" name="search" class="input-text search_inputbox" maxlength="25" placeholder="<?php echo $text_search; ?>" />
+                                <input type="text" name="search" class="input-text search_inputbox" maxlength="25" placeholder="<?php echo $txt_search; ?>" />
 
                                 <!--button class="button-search button btn-search" title="Search" type="submit">
                                 <span>
