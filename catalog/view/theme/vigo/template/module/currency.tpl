@@ -6,9 +6,9 @@
 ).submit(); $(this).parent().parent().submit();">
 			<?php foreach ($currencies as $currency) { ?>
             	<?php if ($currency['code'] == $currency_code) { ?>
-                    	<option class="option" selected value="<?php echo $currency['code']; ?>"><?php echo $currency['symbol_left'].$currency['symbol_right'].' '.$currency['code']; ?></option><!--<?php echo $currency['title']; ?>-->
+                    	<option class="option" selected value="<?php echo $currency['code']; ?>"><?php echo $currency['code']; ?></option><!--<?php echo $currency['title']; ?>-->
             	<?php }else{  ?>
-                    	<option class="option" value="<?php echo $currency['code']; ?>"><?php echo $currency['symbol_left'].$currency['symbol_right'].' '.$currency['code']; ?></option><!--<?php echo $currency['title']; ?>-->
+                    	<option class="option" value="<?php echo $currency['code']; ?>"><?php echo $currency['code']; ?></option><!--<?php echo $currency['title']; ?>-->
 				<?php } ?>
             <?php } ?>
             </select>

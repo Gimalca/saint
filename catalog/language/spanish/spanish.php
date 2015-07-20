@@ -22,7 +22,7 @@ $_['text_separator']        = ' → ';
 $_['button_add_address']    = 'Añadir Dirección';
 $_['button_back']           = 'Atrás';
 $_['button_continue']       = 'Continuar';
-$_['button_cart']           = 'Agregar al Carrito';
+$_['button_cart']           = 'Añadir a la bolsa';
 $_['button_compare']        = 'Comparar';
 $_['button_wishlist']       = 'Agregar a la lista de Deseos';
 $_['button_checkout']       = 'Caja';
@@ -163,6 +163,6 @@ $_['txt_product_qr']						=	'Código QR';
 
 /////////***************change***************************///
 $_['txt_return']						=	'volver';
-$_['txt_add_to_cart']					=	'Añadir al carro';
+$_['txt_add_to_cart']					=	'Añadir a la bolsa';
 $_['txt_remove']						=	'eliminar';
 ?>

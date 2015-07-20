@@ -42,7 +42,7 @@
                                 <?php } ?>
                             </ul>
                             <div class="etalage-control">
-                                <a href="javascript:void(0)" class="etalage-prev" style="top: -24px;">Previous</a>
+                                <a href="javascript:void(0)" class="etalage-prev">Previous</a>
                                 <a href="javascript:void(0)" class="etalage-next">Next</a>
                             </div>
                             <div class="clear"></div>
@@ -51,37 +51,38 @@
                         <script type="text/javascript">
                                     jQuery(document).ready(function(){
                             var width = jQuery('.product-view .product-img-box').width() * 0.72;
-                                    var src_img_width = 80;
-                                    var src_img_height = 100;
-                                    var ratio_width = 452;
-                                    var ratio_height = 540;
+                                    var src_img_width = 0;
+                                    var src_img_height = 0;
+                                    var ratio_width = 370;
+                                    var ratio_height = 455;
                                     src_img_width = 100 * ratio_width / ratio_height;
                                     var height = width * ratio_height / ratio_width;
                                     jQuery('#etalage').etalage({
-                            thumb_image_width: width,
-                                    thumb_image_height: height,
-                                    source_image_width: src_img_width,
+                                    thumb_image_width: width,
+                                    thumb_image_height: 550,
+                                    source_image_width: 50,
                                     source_image_height: src_img_height,
                                     zoom_area_width: width,
                                     zoom_area_height: height,
                                     zoom_enable: false,
                                     smallthumb_hide_single: false,
                                     smallthumbs_position: 'left',
+                                    smallthumbs_image_width:50,
                                     show_icon: false,
                                     autoplay: false
                             });
                                     jQuery(".product-img-box .etalage li.etalage_thumb").zoom();
-                                    jQuery('.product-view .product-img-box .etalage-control a').css('left', ((jQuery('.etalage_small_thumbs').width() - 25) / 2) + "px");
+                                   // jQuery('.product-view .product-img-box .etalage-control a').css('left', ((jQuery('.etalage_small_thumbs').width() - 25) / 2) + "px");
                                     if (jQuery('.etalage_small_thumbs').width() == 0)
-                                    jQuery('.product-view .product-img-box .etalage-control a').css('left', ((jQuery('.etalage_small_thumbs img').first().width() - 25) / 2) + "px");
+                                   // jQuery('.product-view .product-img-box .etalage-control a').css('left', ((jQuery('.etalage_small_thumbs img').first().width() - 25) / 2) + "px");
                                     jQuery(window).resize(function(e){
-                            var width = jQuery('.product-view .product-img-box').width() * 0.72;
+                                    var width = jQuery('.product-view .product-img-box').width() * 0.72;
                                     var height = width * ratio_height / ratio_width;
                                     zoom_enabled = false;
                                     if (jQuery(window).width() < 480)
                                     zoom_enabled = false;
                                     jQuery('#etalage').etalage({
-                            thumb_image_width: width,
+                                    thumb_image_width: width,
                                     thumb_image_height: height,
                                     source_image_width: src_img_width,
                                     source_image_height: src_img_height,
@@ -93,7 +94,7 @@
                                     show_icon: true,
                                     autoplay: false
                             });
-                                    jQuery('.product-view .product-img-box .etalage-control a').css('left', ((jQuery('.etalage_small_thumbs').width() - 25) / 2) + "px");
+                                    jQuery('.product-view .product-img-box .etalage-control a').css('left', ((jQuery('.etalage_small_thumbs').width() - 0) / 2) + "px");
                             });
                                     jQuery('.etalage-prev').on('click', function(){
                             etalage_previous();
@@ -110,10 +111,11 @@
                                 
                                
                             </div>
-                             <p class="availability in-stock"><?php echo $text_manufacturer; ?> <span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a></span></p>
+                             <!--p class="availability in-stock"><?php echo $text_manufacturer; ?> <span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a></span></p-->
                            
-                             <p class="availability in-stock"><?php //echo $text_stock; ?><span style="color: <?php if($stock == 'Out Of Stock')echo 'red'; if($stock == 'In Stock' || $stock =='En stock')echo 'green'; ?>  " ><?php echo $stock; ?></span></p>
-                            <!--div class="short-description"><?php echo $description; ?></div-->
+                             <p class="availability in-stock"> <img src="<?php if($stock == 'Out Of Stock')echo 'image/agotado_icon.png'; if($stock == 'In Stock' || $stock =='En stock')echo 'image/existencia_icon.png'; ?>"> <?php //echo $text_stock; ?><span style="color: <?php if($stock == 'Out Of Stock')echo 'red'; if($stock == 'In Stock' || $stock =='En stock')echo 'green'; ?>  " ><?php echo $stock; ?></span></p>
+                           
+                             <!--div class="short-description"><?php echo $description; ?></div-->
                             <!--div class="ratings">
                                 <div class="rating-box">
                                         <?php $product_rate =  $rating * 20; ?>
@@ -183,15 +185,16 @@
 
                                     <?php foreach ($options as $option) { ?>
 
-                                    <?php if ($option['type'] == 'select') { ?>
+                                    <?php if ($option['type'] == 'select') { //print_r($option);?>
                                     <div class="controloption option-product" id="option-<?php echo $option['product_option_id']; ?>">
                                         <span>
                                             <span class="input-box">
                                                 <?php if ($option['required']) { ?>
                                                 <!--<span class="required">*</span>-->
                                                 <?php } ?>
+                                                <div class="name-option"><?php echo $option['name'] ?>:</div>
                                                 <select name="option[<?php echo $option['product_option_id']; ?>]">
-                                                    <option value=""><?php echo $text_select; ?></option>
+                                                    <!--option value=""><?php echo $text_select; ?></option-->
                                                     <?php foreach ($option['option_value'] as $option_value) { ?>
                                                     <option value="<?php echo $option_value['product_option_value_id']; ?>"><?php echo $option_value['name']; ?>
                                                         <?php if ($option_value['price']) { ?>
@@ -339,10 +342,32 @@
 
                                 </div>
                                 <?php } ?>
-
+                                
                                 <div class="qty-holder">
-                                    <input type="text" name="quantity" size="2" value="<?php echo $minimum; ?>" class="input-text qty" id="qty" maxlength="12"/>
-                                    <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
+                                    <div class="name-option">Cantidad:</div> 
+
+                                    <select name="quantity" id="" ">
+                                        <option selected="" value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+
+
+
+                                    </select>
+
+
+                                </div>
+                                <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
+                                <!--div class="qty-holder">
+                                    
+                                   
 
                                     <div class="qty-changer">
                                         <a class="qty_inc" href="javascript:void(0)" style="text-decoration: none;" ><span>+</span></a>
@@ -355,7 +380,7 @@
                                     jQuery(this).parent().parent().children("input#qty").val(( + jQuery(this).parent().parent().children("input#qty").val() + 1) || 0);
                                     });
                                     }); 
-                                </script>
+                                </script-->
 
                             </div>
 
@@ -372,7 +397,7 @@
                             <div class="add-to-box">
                                 <div class="add-to-cart">
 
-                                    <button type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="button btn-cart" ><span><span><?php echo $text_add_to_cart;?></span></span></button>
+                                    <button type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="button btn-cart" ><span><span><?php echo $button_cart;?></span></span></button>
                                 </div>
                                 <ul class="add-to-links">
                                     <li><a class="link-wishlist" onclick="addToWishList('<?php echo $product_id; ?>');"><?php echo $button_wishlist; ?> </a></li>
@@ -383,13 +408,13 @@
                             <div class="product-accordion col-md-10 col-sm-12">
                     <div class="product-collateral akordeon">
                         <div class="box-collateral box-description akordeon-item ">
-                            <div class="akordeon-item-head akordeon-border-bottom">
+                            <!--div class="akordeon-item-head akordeon-border-bottom">
                                 <div class="akordeon-item-head-container">
                                     <div class="akordeon-heading">
                                         <?php echo $tab_description; ?>
                                     </div>
                                 </div>
-                            </div>
+                            </div-->
 
                             <div class="akordeon-item-body akordeon-border-bottom">
                                 <div class="akordeon-item-content">
@@ -399,13 +424,13 @@
                         </div>
 
                         <div class="box-collateral box-tags akordeon-item">
-                            <div class="akordeon-item-head">
+                            <!--div class="akordeon-item-head">
                                 <div class="akordeon-item-head-container">
                                     <div class="akordeon-heading">
                                         <?php echo $tab_attribute; ?>           
                                     </div>
                                 </div>
-                            </div>
+                            </div-->
 
                             <div class="akordeon-item-body">
                                 <div class="akordeon-item-content">
@@ -452,7 +477,7 @@
                             </style>
                             <div class="sharing-tool-area">
                                 <span class="label">Share: </span>
-                                <div class="addthis_toolbox addthis_default_style addthis_32x32_style" >
+                                <div class="addthis_toolbox addthis_default_style addthis_20x20_style" >
                                     <a class="addthis_button_preferred_1 "></a>
                                     <a class="addthis_button_preferred_2"></a>
                                     <a class="addthis_button_preferred_3"></a>
@@ -611,11 +636,11 @@
         var window_size = jQuery(window).width();
                 var logo_slider;
             if (window_size < 992 && window_size >= 768){    
-        logo_slider = jQuery('.block-related ul#block_related').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 3,  maxSlides: 3,  slideWidth: 230,  slideMargin: 15});
+        logo_slider = jQuery('.block-related ul#block_related').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 3,  maxSlides: 6,  slideWidth: 130,  slideMargin: 15});
             } else if (window_size < 768){    
         logo_slider = jQuery('.block-related ul#block_related').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 1,  maxSlides: 1});
             } else {    
-        logo_slider = jQuery('.block-related ul#block_related').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 4,  maxSlides: 4,  slideWidth: 270,  slideMargin: 20});
+        logo_slider = jQuery('.block-related ul#block_related').bxSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 4,  maxSlides:6,  slideWidth:130,  slideMargin: 20});
                 }
         jQuery(window).resize(function(e){
         e.preventDefault();
@@ -624,11 +649,11 @@
                 if (time_out) clearTimeout(time_out);
                 time_out = setTimeout(function(){
             if (window_size < 992 && window_size >= 768    ){
-                logo_slider.reloadSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 3,  maxSlides: 3,  slideWidth: 230,  slideMargin: 15});
+                logo_slider.reloadSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 3,  maxSlides: 3,  slideWidth: 130,  slideMargin: 15});
             } else if (window_size < 768    ){
                 logo_slider.reloadSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 1,  maxSlides: 1});
             } else     {
-                logo_slider.reloadSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 4,  maxSlides: 4,  slideWidth: 270,  slideMargin: 20});
+                logo_slider.reloadSlider({auto:false, autoStart:false, autoHover:false, mode:'horizontal', speed:1000, pager:false, minSlides: 4,  maxSlides: 4,  slideWidth:130,  slideMargin: 20});
                 }
                 }, 100);
                 });
@@ -637,7 +662,7 @@
     <script type="text/javascript">
     //<![CDATA[
                 jQuery(document).ready(function(){
-        jQuery('.akordeon.product-collateral').akordeon({ buttons: true, toggle: true, hiddenItem: 1});
+       //   jQuery('.akordeon.product-collateral').akordeon({ buttons: true, toggle: true, hiddenItem: 1});
                 });
     //]]>
     </script>				

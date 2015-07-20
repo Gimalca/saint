@@ -117,7 +117,7 @@ button.button span {
 .product-name a:hover { color: #555555; }
 
 .price-box .price, .regular-price .price { 
-    color: #222222; 
+    color: #000; 
     }
 .old-price .price { 
     color: #999999; 
@@ -136,7 +136,7 @@ button.button span {
     color: #444444; 
 }
 
-.block-category-nav .akordeon-heading a, .block-category-nav a, .block-layered-nav a { color: #000; }
+.block-category-nav .akordeon-heading a, .block-category-nav a, .block-layered-nav a { color: #222; }
 .block-category-nav .akordeon-heading a:hover, .block-category-nav a:hover, .block-layered-nav a:hover { color: #000; }
 
 ul.cart-button-set a.addtocart, ul.cart-button-set a.addtowishlist, ul.cart-button-set a.addtocompare {
@@ -168,12 +168,12 @@ ul.cart-button-set a.addtocart:hover, ul.cart-button-set a.addtowishlist:hover, 
 .akordeon-border-bottom, .akordeon, .product-collateral { border-color: #d9d9d9; }
 .product-accordion .expanded .akordeon-heading { border-color: #444444; }
 .product-accordion .akordeon-heading { color: #555555; }
-.block.block-related .block-title { 
-    border-color: #eeeeee; 
+.block.block-related .block-title {
+    text-align: left;
+  
 }
-.block.block-related .block-title strong span {
-    border-color: #444444; color: #333333;
-                }
+.block.block-related .block-title strong span { color: #333333;
+               }
 .data-table { background-color: transparent; }
 .data-table thead th { background-color: transparent; border-color: #999999; color: #444444; }
 .data-table thead th span { border-color: #cccccc; }

@@ -49,4 +49,5 @@ $_['error_captcha']     = 'rror: El código de verificación no coincide con la 
 $_['error_upload']      = 'Subida de archivo obligatoria!';
 $_['error_filename']    = 'El nombre de archivo debe tener entre 3 y 128 carácteres!';
 $_['error_filetype']    = 'Tipo de archivo invalido!';
+$_['txt_add_to_cart']					=	'Añadir a la bolsa';
 ?>
