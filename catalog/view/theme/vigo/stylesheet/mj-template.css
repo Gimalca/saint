@@ -324,7 +324,6 @@ a.no-border{border:none !important;}
 }
 .sorter{margin:20px 0px;}
 .box-filter .akordeon-item-content li {
-    float: left;
     width: 50%;
 }
 .product-info .product-view {
@@ -670,14 +669,15 @@ background-position: 7px 2px;
 #columnright .narrow-by-list input[type="checkbox"] + label {
     background-repeat: no-repeat;
     cursor: pointer;
-    display: inline-block;
-    line-height: 25px;
-    padding-left: 40px;
+    line-height: 15px;
+    padding-left: 25px;
     
 }
 #columnright .narrow-by-list label {
+    font-size: 11px;
     background-image: url("../images/box.png");
-	background-position: left -26px;
+	
+    background-position: left -17px;
 }
 #columnright .narrow-by-list input[type="checkbox"]{display:none}
 .myblog .form-list li > div{margin-bottom:15px}
@@ -995,7 +995,7 @@ background-position: 7px 2px;
 .main-container.col1-layout .main.container{padding-top:40px !important}
 .product-shop.col-md-6.col-sm-12 p:first-of-type{margin-top: 0px;}
 .main-container .row .product-accordion .akordeon-border-bottom,.main-container .row .product-accordion .akordeon-item.akordeon-item-last.expanded .akordeon-item-head {border-bottom: 0px!important;}
-.main-container .col-main .row .col-md-12 .block.block-related {margin-top: 40px;width: 1040px;}
+.main-container .col-main .row .col-md-12 .block.block-related {margin-left: 110px;width: 1040px;}
 .main-container .col-main  .product-review-area.col-md-6.col-sm-12{padding-left:25px!important;}
 .main-container .col-main .product-accordion.col-md-6.col-sm-12{padding-right:25px!important;}
 .main-container .col-main .row .block-content .tab-content .accordion-header .addreview .buttons-set{padding:0!important;margin:0!important}
@@ -1110,7 +1110,7 @@ ul.nav-child li:hover > ul.nav-child {
 /*Simple Menu End
 .block-category-nav .akordeon-heading a, .block-category-nav a, .block-layered-nav a {text-transform: uppercase;}*/
 #columnright .narrow-by-list .box-filter .akordeon-item {margin-top: 10px;}
-#columnright .narrow-by-list .box-filter .akordeon-item .akordeon-item-head{margin-bottom:20px; width: 208px}
+#columnright .narrow-by-list .box-filter .akordeon-item .akordeon-item-head{margin-bottom: -3px; width: 208px}
 .products-grid.producteffect5 .short_desc{margin-top:20px; color:#777777;}
 .products-grid.producteffect5 .price-box .regular-price .price, .products-grid.producteffect5 .price-box .old-price .price, .products-grid.producteffect5 .price-box .special-price .price{color: #F0877C;}
 

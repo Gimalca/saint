@@ -187,7 +187,7 @@
     #store_map { height: 400px; margin-bottom: 45px; }
 }
 @media (min-width: 992px) {
-    .product-view .product-accordion { padding-right: 30px; }
+    .product-view .product-accordion { padding-right: 32px; }
     .product-view .product-review-area { padding-left: 30px; }
 }
 @media (min-width: 768px) {
