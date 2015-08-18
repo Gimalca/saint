@@ -21,23 +21,24 @@
             <tbody><tr>
                 <td>
                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                        <tbody><tr>
+                        <tbody>
+                            <tr>
+                         <tr>
+                            <td colspan="2"><div class="billing-block-wrapper" style="border-top: 1px solid #000000;width:100%;"></div></td>
+                        </tr>
                             <td width="800" align="left">
                                 <ul id="progressTracker">
-                                    <li id="pt1" class="active-checkout heading2"><?php echo $text_cart; ?></li>
-                                    <li id="pt2" class=" heading2"><?php echo $text_checkout_option; ?></li>
-                                    <li id="pt3" class="heading2"><?php echo $text_checkout_payment_address; ?></li>
-
-                                    <li id="pt4" class="heading2"><?php echo $text_checkout_shipping_address; ?></li>
-                                    <li id="pt5" class=" heading2"><?php echo $text_checkout_shipping_method; ?></li>
-                                    <li id="pt6" class="heading2"><?php echo $text_checkout_payment_method; ?></li>
-                                    <li id="pt7" class="heading2"><?php echo $text_checkout_confirm; ?></li>
+                                    <li id="pt1" class="active-checkout heading2"><?php echo $text_cart; ?> > </li>
+                                    <li id="pt2" class=" heading2"><?php echo $text_checkout_option; ?> > </li>
+                                    <li id="pt3" class="heading2"><?php echo $text_checkout_payment_address; ?> > </li>
+                                    <li id="pt4" class="heading2"><?php echo $text_checkout_shipping_address; ?> > </li>
+                                    <li id="pt5" class=" heading2"><?php echo $text_checkout_shipping_method; ?> > </li>
+                                    <li id="pt6" class="heading2"><?php echo $text_checkout_payment_method; ?> > </li>
+                                    <li id="pt7" class="heading2"><?php echo $text_checkout_confirm; ?> > </li>
                                 </ul>
                             </td>
                         </tr>
-                        <tr>
-                            <td colspan="2"><div class="billing-block-wrapper" style="border-top: 1px solid #000000;width:100%;"></div></td>
-                        </tr>
+                     
                     </tbody></table>
                 </td>
             </tr>
