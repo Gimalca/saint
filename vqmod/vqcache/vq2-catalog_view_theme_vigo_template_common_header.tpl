@@ -516,7 +516,8 @@ if(!$_SERVER["QUERY_STRING"]){
     
 <?php } ?>
 
-<?php if ( $category_s == "category" || $category_s == "product" || $category_s == "cart" || $category_s == "checkout"  ):?>
+<?php //if ( $category_s == "category" || $category_s == "product" || $category_s == "cart" || $category_s == "checkout"  ):?>
+<?php if ( $category_s != "home" ):?>
 
 <script type="text/javascript">
 //<![CDATA[

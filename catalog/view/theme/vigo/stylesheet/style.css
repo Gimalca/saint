@@ -118,7 +118,7 @@ table{ border-color: black; }
 .col1-layout .col-main { float:none; width:auto; }
 
 /* 2 Columns Layout */
-.col2-left-layout .col-main { float:right; }
+.col2-left-layout .col-main { float: left; }
 .col2-right-layout .col-main {}
 
 /* 3 Columns Layout */
@@ -677,7 +677,7 @@ ul.level1{ margin-left:-24px;background-image:url(../image/bg-dark.png);}
 
 /* Sidebar =============================================================================== */
 .block { margin-bottom: 40px; }
-.block-title {  text-align: center;   margin-bottom: 5px;  margin-top: 35px;}
+.block-title {  text-align: left;   margin-bottom: 5px;  margin-top: 35px;}
 .block .block-title strong { display:block; font-size:16px; color:#000; }
 .block .block-title strong span { text-transform: uppercase; display: inline-block; margin-bottom: 0px; color: #000 !important ; font-size: 12px; line-height: 25px;}
 .block .block-title a { text-decoration:none !important; }
@@ -3208,4 +3208,29 @@ dl{
     font-size: 12px;
     color: #222;
     width: 60px;
+}
+.block-registered-users{
+    border-right: 1px solid #000
+}
+.block-registered-users .block-title {
+ text-align:left;
+}
+.block-registered-users .block-title span{
+ font-family: 'Oswald', sans-serif;
+ font-size: 25px !important;
+ text-align:left;
+}
+.block-new-users .block-title {
+ text-align:left;
+}
+.block-new-users .block-title span{
+ font-family: 'Oswald', sans-serif;
+ font-size: 25px !important;
+ text-align:left;
+}
+
+.my-account .block-title span{
+ font-family: 'Oswald', sans-serif;
+ font-size: 25px !important;
+ text-align:left;
 }

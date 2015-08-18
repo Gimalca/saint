@@ -4,239 +4,240 @@
 <?php } ?>
 
 <div id="content" class="main-container col2-left-layout"><?php echo $content_top; ?>
-  
-  <div class="breadcrumbs">
-		<div class="container">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
-    <?php } ?>
-      </div>
-  </div>
-  
-  <div class="main container">
-  	<div class="col-main col-md-12 col-sm-12 col-xs-12">
-    <div class="col-left sidebar col-md-3 col-sm-4 col-xs-12">
-    <?php echo $column_left; ?>
-    </div>        
-	<div class="my-account col-md-4">
-            <div class="">
-  <!--<h1><?php echo $heading_title; ?></h1><p><?php echo $text_account_already; ?></p>-->
- 	  <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-  	<div class="block block-personal-info">
-    	<div class="block-title">
-        	<strong><span><?php echo $text_your_details; ?></span></strong>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+            <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+            <?php } ?>
         </div>
-        <div class="block-content">
-        	<ul class="form-list">
-                <li class="fields">
-                    <div class="customer-name">
-	                    <div class="field name-firstname col-md-6 col-sm-6 col-xs-12">
-    		                <div class="input-box">
-            <input type="text" name="firstname" id="input-emailn" value="<?php echo $firstname; ?>"  class="input-text required-entry" placeholder="<?php echo $entry_firstname; ?> *"/>
-            <?php if ($error_firstname) { ?>
-            <span class="error"><?php echo $error_firstname; ?></span>
-            <?php } ?>
-                            </div>
-                        </div>
-                        <div class="field name-lastname col-md-6 col-sm-6 col-xs-12">
-    		                <div class="input-box">
-            <input type="text" name="lastname" id="input-emailn" value="<?php echo $lastname; ?>" class="input-text required-entry" placeholder="<?php echo $entry_lastname; ?> *"/>
-            <?php if ($error_lastname) { ?>
-            <span class="error"><?php echo $error_lastname; ?></span>
-            <?php } ?>
-                            </div>
-                        </div>
-                    </div>
-                 </li>
-                <li>
-					<div class="input-box input-email">
-            <input type="text" name="email" id="input-emailn" value="<?php echo $email; ?>" class="input-text required-entry" placeholder="<?php echo $entry_email; ?> *"/>
-            <?php if ($error_email) { ?>
-            <span class="error"><?php echo $error_email; ?></span>
-            <?php } ?>
-                    </div>
-                </li>
-                <li class="fields">
-                	<div class="field">
-                        <div class="input-box input-phone">
-            <input type="text" id="input-emailn" name="telephone" value="<?php echo $telephone; ?>" class="input-text required-entry" placeholder="<?php echo $entry_telephone; ?> *"/>
-            <?php if ($error_telephone) { ?>
-            <span class="error"><?php echo $error_telephone; ?></span>
-            <?php } ?>
-                        </div>
-                    </div>
-                </li>
-                
-                    
-             </ul>
-         </div>
-    </div>
-    <div class="block block-address-info">
-    	<div class="block-title">
-        	<strong><span><?php echo $text_your_address; ?></span></strong>
-        </div>
-        <div class="block-content">
-        	<ul class="form-list">
-                
-                <li id="tax-id-display">
-					<div class="input-box input-tax">
-            <input type="text" name="tax_id" id="input-emailn" value="<?php echo $tax_id; ?>" class="input-text required-entry" placeholder="<?php echo $entry_tax_id; ?> *"/>
-            <?php if ($error_tax_id) { ?>
-            <span class="error"><?php echo $error_tax_id; ?></span>
-            <?php } ?>
-                    </div>
-                </li>
-                <li class="fields">
-	                <div class="field">
-    		            <div class="input-box input-address">
-                        <input type="text" id="input-emailn" name="address_1" value="<?php echo $address_1; ?>" class="input-text required-entry" placeholder="<?php echo $entry_address_1; ?> *"/>
-            <?php if ($error_address_1) { ?>
-            <span class="error"><?php echo $error_address_1; ?></span>
-            <?php } ?>
-                        </div>
-                    </div>
-                    <div class="field">
-    		            <div class="input-box input-address">
-                        <input type="text" id="input-emailn" name="address_2" value="<?php echo $address_2; ?>" class="input-text required-entry" placeholder="<?php echo $entry_address_2; ?>"/>
-                        </div>
-                    </div>
-                </li>
-                <li class="fields">
-	                <div class="field">
-    		            <div class="input-box input-city">
-                        <input type="text" id="input-emailn" name="city" value="<?php echo $city; ?>" class="input-text required-entry" placeholder="<?php echo $entry_city; ?> *"/>
-            <?php if ($error_city) { ?>
-            <span class="error"><?php echo $error_city; ?></span>
-            <?php } ?>
-                        </div>
-                    </div>
-                    <div class="field">
-    		            <div class="input-box input-postcode">
-                        <input type="text" id="input-emailn" name="postcode" value="<?php echo $postcode; ?>" class="input-text required-entry" placeholder="<?php echo $entry_postcode; ?> *"/>
-            <?php if ($error_postcode) { ?>
-            <span class="error"><?php echo $error_postcode; ?></span>
-            <?php } ?>
-                        </div>
-                    </div>
-                </li>
-                <li class="fields">
-	                <div class="field">
-    		            <div class="input-box input-country">
-                        <select id="input-emailn" name="country_id">
-              <option value=""><?php echo $text_select; ?></option>
-              <?php foreach ($countries as $country) { ?>
-              <?php if ($country['country_id'] == $country_id) { ?>
-              <option value="<?php echo $country['country_id']; ?>" selected="selected"><?php echo $country['name']; ?></option>
-              <?php } else { ?>
-              <option value="<?php echo $country['country_id']; ?>"><?php echo $country['name']; ?></option>
-              <?php } ?>
-              <?php } ?>
-            </select>
-            <?php if ($error_country) { ?>
-            <span class="error"><?php echo $error_country; ?></span>
-            <?php } ?>
-                        </div>
-                    </div>
-                    <div class="field">
-    		            <div class="input-box input-region">
-            <select id="input-emailn" name="zone_id">
-            </select>
-            <?php if ($error_zone) { ?>
-            <span class="error"><?php echo $error_zone; ?></span>
-            <?php } ?>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>    
-    </form>
-    	</div>
-    </div>
-    <div class="dividern col-md-1 col-sm-2 col-xs-12" id="personales"></div>
-    <div class="my-account col-md-4">
-        <div class="block block-login-info">
-        <div class="block-title">
-            <strong><span><?php echo $text_your_password; ?></span></strong>
-        </div>
-        <div class="block-content">
-            <ul class="form-list">
-                <li class="fields">
-                    <div class="field">
-                        <div class="input-box input-password">
-            <input type="password" id="input-emailn" name="password" value="<?php echo $password; ?>" class="input-text required-entry" placeholder="<?php echo $entry_password; ?> *"/>
-            <?php if ($error_password) { ?>
-            <span class="error"><?php echo $error_password; ?></span>
-            <?php } ?>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="input-box input-password">
-            <input type="password" id="input-emailn" name="confirm" value="<?php echo $confirm; ?>" class="input-text required-entry" placeholder="<?php echo $entry_confirm; ?> *"/>
-            <?php if ($error_confirm) { ?>
-            <span class="error"><?php echo $error_confirm; ?></span>
-            <?php } ?>
-                        </div>
-                    </div>
-                </li>                
-            </ul>
-        </div>
-    </div>
-    <div class="block block-newslatter-info">
-        <div class="block-title">
-            <strong><span><?php echo $text_newsletter; ?></span></strong>
-        </div>
-        <div class="block-content">
-            <ul class="form-list">
-                <li class="fields">
-                    <div class="field">
-                        <div class="input-box input-newslatter">
-                        <span><?php echo $entry_newsletter; ?></span>
-            <?php if ($newsletter) { ?>
-            <input type="radio" name="newsletter" value="1" checked="checked" />
-            <?php echo $text_yes; ?>
-            <input type="radio" name="newsletter" value="0" />
-            <?php echo $text_no; ?>
-            <?php } else { ?>
-            <input type="radio" name="newsletter" value="1" />
-            <?php echo $text_yes; ?>
-            <input type="radio" name="newsletter" value="0" checked="checked" />
-            <?php echo $text_no; ?>
-            <?php } ?>
-                        </div>
-                    </div>
-               </li>
-               <?php if ($text_agree) { ?>
-                <li class="control">
-                    <div class="input-box">
-         <?php if ($agree) { ?>
-        <input type="checkbox" name="agree" value="1" checked="checked" />
-        <?php } else { ?>
-        <input type="checkbox" name="agree" value="1" />
-        <?php } ?>
-                    </div>
-                    <label for="is_agreed"><?php echo $text_agree; ?></label>
-                </li>
-           </ul>
-       </div>
-    </div>
-    <div class="buttons-set">
-        <p class="required"><?php echo $text_required_fields; ?></p>
-        <button class="button" title="Save" type="submit" value="<?php echo $button_continue; ?>"><span><span><?php echo $button_continue; ?></span></span></button>
-    </div>
-   <?php } else { ?>
-    <div class="buttons-set">
-        <p class="required"><?php echo $text_required_fields; ?></p>
-        <button class="button" title="Save" type="submit" value="<?php echo $button_continue; ?>"><span><span><?php echo $button_continue; ?></span></span></button>
-    </div>
-    <?php } ?>
     </div>
 
-    
- </div>
-  </div>
-  <?php echo $column_right; ?>
-  <?php echo $content_bottom; ?></div>
+    <div class="main container">
+        <div class="col-main col-md-12 col-sm-12 col-xs-12">
+            <!--div class="col-left sidebar col-md-3 col-sm-4 col-xs-12">
+            <?php //echo $column_left; ?>
+            </div-->        
+            <div class="my-account col-md-offset-1 col-md-4">
+                <div class="">
+                    <!--<h1><?php echo $heading_title; ?></h1><p><?php echo $text_account_already; ?></p>-->
+                    <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+                        <div class="block block-personal-info">
+                            <div class="block-title">
+                                <strong><span><?php echo $text_your_details; ?></span></strong>
+                            </div>
+                            <div class="block-content">
+                                <ul class="form-list">
+                                    <li class="fields">
+                                        <div class="customer-name">
+                                            <div class="field name-firstname col-md-6 col-sm-6 col-xs-12">
+                                                <div class="input-box">
+                                                    <input type="text" name="firstname" id="input-emailn" value="<?php echo $firstname; ?>"  class="input-text required-entry" placeholder="<?php echo $entry_firstname; ?> *"/>
+                                                    <?php if ($error_firstname) { ?>
+                                                    <span class="error"><?php echo $error_firstname; ?></span>
+                                                    <?php } ?>
+                                                </div>
+                                            </div>
+                                            <div class="field name-lastname col-md-6 col-sm-6 col-xs-12">
+                                                <div class="input-box">
+                                                    <input type="text" name="lastname" id="input-emailn" value="<?php echo $lastname; ?>" class="input-text required-entry" placeholder="<?php echo $entry_lastname; ?> *"/>
+                                                    <?php if ($error_lastname) { ?>
+                                                    <span class="error"><?php echo $error_lastname; ?></span>
+                                                    <?php } ?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="input-box input-email">
+                                            <input type="text" name="email" id="input-emailn" value="<?php echo $email; ?>" class="input-text required-entry" placeholder="<?php echo $entry_email; ?> *"/>
+                                            <?php if ($error_email) { ?>
+                                            <span class="error"><?php echo $error_email; ?></span>
+                                            <?php } ?>
+                                        </div>
+                                    </li>
+                                    <li class="fields">
+                                        <div class="field">
+                                            <div class="input-box input-phone">
+                                                <input type="text" id="input-emailn" name="telephone" value="<?php echo $telephone; ?>" class="input-text required-entry" placeholder="<?php echo $entry_telephone; ?> *"/>
+                                                <?php if ($error_telephone) { ?>
+                                                <span class="error"><?php echo $error_telephone; ?></span>
+                                                <?php } ?>
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="block block-address-info">
+                            <div class="block-title">
+                                <strong><span><?php echo $text_your_address; ?></span></strong>
+                            </div>
+                            <div class="block-content">
+                                <ul class="form-list">
+
+                                    <li id="tax-id-display">
+                                        <div class="input-box input-tax">
+                                            <input type="text" name="tax_id" id="input-emailn" value="<?php echo $tax_id; ?>" class="input-text required-entry" placeholder="<?php echo $entry_tax_id; ?> *"/>
+                                            <?php if ($error_tax_id) { ?>
+                                            <span class="error"><?php echo $error_tax_id; ?></span>
+                                            <?php } ?>
+                                        </div>
+                                    </li>
+                                    <li class="fields">
+                                        <div class="field">
+                                            <div class="input-box input-address">
+                                                <input type="text" id="input-emailn" name="address_1" value="<?php echo $address_1; ?>" class="input-text required-entry" placeholder="<?php echo $entry_address_1; ?> *"/>
+                                                <?php if ($error_address_1) { ?>
+                                                <span class="error"><?php echo $error_address_1; ?></span>
+                                                <?php } ?>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="input-box input-address">
+                                                <input type="text" id="input-emailn" name="address_2" value="<?php echo $address_2; ?>" class="input-text required-entry" placeholder="<?php echo $entry_address_2; ?>"/>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="fields">
+                                        <div class="field">
+                                            <div class="input-box input-city">
+                                                <input type="text" id="input-emailn" name="city" value="<?php echo $city; ?>" class="input-text required-entry" placeholder="<?php echo $entry_city; ?> *"/>
+                                                <?php if ($error_city) { ?>
+                                                <span class="error"><?php echo $error_city; ?></span>
+                                                <?php } ?>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="input-box input-postcode">
+                                                <input type="text" id="input-emailn" name="postcode" value="<?php echo $postcode; ?>" class="input-text required-entry" placeholder="<?php echo $entry_postcode; ?> *"/>
+                                                <?php if ($error_postcode) { ?>
+                                                <span class="error"><?php echo $error_postcode; ?></span>
+                                                <?php } ?>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="fields">
+                                        <div class="field">
+                                            <div class="input-box input-country">
+                                                <select id="input-emailn" name="country_id">
+                                                    <option value=""><?php echo $text_select; ?></option>
+                                                    <?php foreach ($countries as $country) { ?>
+                                                    <?php if ($country['country_id'] == $country_id) { ?>
+                                                    <option value="<?php echo $country['country_id']; ?>" selected="selected"><?php echo $country['name']; ?></option>
+                                                    <?php } else { ?>
+                                                    <option value="<?php echo $country['country_id']; ?>"><?php echo $country['name']; ?></option>
+                                                    <?php } ?>
+                                                    <?php } ?>
+                                                </select>
+                                                <?php if ($error_country) { ?>
+                                                <span class="error"><?php echo $error_country; ?></span>
+                                                <?php } ?>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="input-box input-region">
+                                                <select id="input-emailn" name="zone_id">
+                                                </select>
+                                                <?php if ($error_zone) { ?>
+                                                <span class="error"><?php echo $error_zone; ?></span>
+                                                <?php } ?>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>    
+                   
+                </div>
+            </div>
+            <div class="dividern col-md-1 col-sm-2 col-xs-12" id="personales"></div>
+            <div class="my-account  col-md-4">
+                <div class="block block-login-info">
+                    <div class="block-title">
+                        <strong><span><?php echo $text_your_password; ?></span></strong>
+                    </div>
+                    <div class="block-content">
+                        <ul class="form-list">
+                            <li class="fields">
+                                <div class="field">
+                                    <div class="input-box input-password">
+                                        <input type="password" id="input-emailn" name="password" value="<?php echo $password; ?>" class="input-text required-entry" placeholder="<?php echo $entry_password; ?> *"/>
+                                        <?php if ($error_password) { ?>
+                                        <span class="error"><?php echo $error_password; ?></span>
+                                        <?php } ?>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="input-box input-password">
+                                        <input type="password" id="input-emailn" name="confirm" value="<?php echo $confirm; ?>" class="input-text required-entry" placeholder="<?php echo $entry_confirm; ?> *"/>
+                                        <?php if ($error_confirm) { ?>
+                                        <span class="error"><?php echo $error_confirm; ?></span>
+                                        <?php } ?>
+                                    </div>
+                                </div>
+                            </li>                
+                        </ul>
+                    </div>
+                </div>
+                <div class="block block-newslatter-info">
+                    <div class="block-title">
+                        <strong><span><?php echo $text_newsletter; ?></span></strong>
+                    </div>
+                    <div class="block-content">
+                        <ul class="form-list">
+                            <li class="fields">
+                                <div class="field">
+                                    <div class="input-box input-newslatter">
+                                        <span><?php echo $entry_newsletter; ?></span>
+                                        <?php if ($newsletter) { ?>
+                                        <input type="radio" name="newsletter" value="1" checked="checked" />
+                                        <?php echo $text_yes; ?>
+                                        <input type="radio" name="newsletter" value="0" />
+                                        <?php echo $text_no; ?>
+                                        <?php } else { ?>
+                                        <input type="radio" name="newsletter" value="1" />
+                                        <?php echo $text_yes; ?>
+                                        <input type="radio" name="newsletter" value="0" checked="checked" />
+                                        <?php echo $text_no; ?>
+                                        <?php } ?>
+                                    </div>
+                                </div>
+                            </li>
+                            <?php if ($text_agree) { ?>
+                            <li class="control">
+                                <div class="input-box">
+                                    <?php if ($agree) { ?>
+                                    <input type="checkbox" name="agree" value="1" checked="checked" />
+                                    <?php } else { ?>
+                                    <input type="checkbox" name="agree" value="1" />
+                                    <?php } ?>
+                                </div>
+                                <label for="is_agreed"><?php echo $text_agree; ?></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="buttons-set">
+   		<p class="required"><?php echo $text_required_fields; ?></p>
+        <button class="button" title="Save" type="submit" value="<?php echo $button_continue; ?>"><span><span><?php echo $button_continue; ?></span></span></button>
+	</div>
+   <?php } else { ?>
+    <div class="buttons-set">
+   		<p class="required"><?php echo $text_required_fields; ?></p>
+        <button class="button" title="Save" type="submit" value="<?php echo $button_continue; ?>"><span><span><?php echo $button_continue; ?></span></span></button>
+	</div>
+    <?php } ?>
+    </form>
+            </div>
+
+
+        </div>
+    </div>
+    <?php echo $column_right; ?>
+    <?php echo $content_bottom; ?></div>
 <script type="text/javascript"><!--
 $('input[name=\'customer_group_id\']:checked').live('change', function() {
 	var customer_group = [];
