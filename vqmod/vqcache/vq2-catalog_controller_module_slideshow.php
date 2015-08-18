@@ -17,12 +17,14 @@ $this->data['text_sorry_no_slider'] = $this->language->get('text_sorry_no_slider
 		} else {
 			$this->document->addStyle('catalog/view/theme/default/stylesheet/slideshow.css');
 		}
-		
+	        //print_r($this->data);
 		$this->data['width'] = $setting['width'];
 		$this->data['height'] = $setting['height'];
 		
 		$this->data['banners'] = array();
 		
+                //print_r($setting);die;
+                
 		if (isset($setting['banner_id'])) {
 			$results = $this->model_design_banner->getBanner($setting['banner_id']);
 
@@ -69,7 +71,7 @@ public function getList() {
 							$image = $this->model_tool_image->resize($result['image'], 1170,550);
 						}
 						elseif($this->data['slidereffect'] ==2){
-							$image = $this->model_tool_image->resize($result['image'], 1100,550);
+							$image = $this->model_tool_image->resize($result['image'], 1900,750);
 						}
 						elseif($this->data['slidereffect'] == 4){
 							$image = $this->model_tool_image->resize($result['image'], 770,615);
@@ -87,7 +89,7 @@ public function getList() {
 							$image = $this->model_tool_image->resize($result['image'], 1170,550);
 						}
 						elseif($this->data['slidereffect'] ==2){
-							$image = $this->model_tool_image->resize($result['image'], 1100,550);
+							$image = $this->model_tool_image->resize($result['image'], 1900,750);
 						}
 						elseif($this->data['slidereffect'] == 4){
 							$image = $this->model_tool_image->resize($result['image'], 770,615);

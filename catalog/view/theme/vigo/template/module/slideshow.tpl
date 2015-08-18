@@ -90,7 +90,7 @@ delay:9000,startheight:550,startwidth:'1170',onHoverStop:'off',hideThumbs:10,nav
     tpj(document).ready(function() {
 
         tpj('.tp-banner').revolution({
-delay:9000,startheight:720,startwidth:'1170',onHoverStop:'off',hideThumbs:10,navigationType:'bullet',navigationArrows:'solo',navigationStyle:'round',navigationHAlign:'center',navigationVAlign:'center',touchenabled:'on',hideThumbsOnMobile:'off',hideBulletsOnMobile:'off',hideArrowsOnMobile:'off',fullWidth:'on',autoHeight:'off',fullScreenAlignForce:'off',forceFullWidth:'on',fullScreen:'off',shadow:0        });
+delay:9000,startheight:750,startwidth:'1900',onHoverStop:'off',hideThumbs:10,navigationType:'bullet',navigationArrows:'solo',navigationStyle:'round',navigationHAlign:'center',navigationVAlign:'center',touchenabled:'on',hideThumbsOnMobile:'off',hideBulletsOnMobile:'off',hideArrowsOnMobile:'off',fullWidth:'on',autoHeight:'off',fullScreenAlignForce:'off',forceFullWidth:'on',fullScreen:'off',shadow:0        });
 
 });
 </script>

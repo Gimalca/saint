@@ -13,12 +13,14 @@ class ControllerModuleSlideshow extends Controller {
 		} else {
 			$this->document->addStyle('catalog/view/theme/default/stylesheet/slideshow.css');
 		}
-		
+	        //print_r($this->data);
 		$this->data['width'] = $setting['width'];
 		$this->data['height'] = $setting['height'];
 		
 		$this->data['banners'] = array();
 		
+                //print_r($setting);die;
+                
 		if (isset($setting['banner_id'])) {
 			$results = $this->model_design_banner->getBanner($setting['banner_id']);
 
