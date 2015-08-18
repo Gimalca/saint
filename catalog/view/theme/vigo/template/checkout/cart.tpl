@@ -158,11 +158,11 @@
                                                 <?php } ?>
                                             </div>
                                             <div class="cancelar" id="botonn">
-                                                <a href="<?php echo $continue; ?>">
+                                                <!--a href="<?php echo $continue; ?>">
                                                     <button  class="button btn-continue" type="button" value="<?php echo $button_shopping; ?>">
                                                         <span><span><?php echo $button_shopping; ?></span></span>
                                                     </button>
-                                                </a>
+                                                </a-->
                                                 <a href="<?php echo $checkout; ?>">
                                                     <button  class="button btn-continue" type="button" value="<?php echo $button_checkout; ?>">
                                                         <span><span><?php echo $button_checkout; ?></span></span>

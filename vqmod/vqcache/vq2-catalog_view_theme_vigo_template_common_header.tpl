@@ -516,7 +516,8 @@ if(!$_SERVER["QUERY_STRING"]){
     
 <?php } ?>
 
-<?php if ( $category_s == "category" || $category_s == "product" || $category_s == "cart" || $category_s == "checkout"  ):?>
+<?php //if ( $category_s == "category" || $category_s == "product" || $category_s == "cart" || $category_s == "checkout"  ):?>
+<?php if ( $category_s != "home" ):?>
 
 <script type="text/javascript">
 //<![CDATA[
@@ -525,8 +526,24 @@ if(!$_SERVER["QUERY_STRING"]){
         
            jQuery('.header-container').addClass('sticky-menu').css('top','-50px').animate({top:'0px'}, 500);
            jQuery('.navbar').addClass('sticky-menu').css('top','-50px').animate({top:'48px'}, 500);
-      
-        
+           var scrolled = false;
+          
+           jQuery(window).scroll(function(){
+            if(100<jQuery(window).scrollTop() && !scrolled){               
+                // jQuery('.header-container').addClass('sticky-menu').css('top','-50px').animate({top:'0px'}, 500);
+                jQuery('.navbar').removeClass('sticky-menu');
+                scrolled = true;
+            }
+            if(100>jQuery(window).scrollTop() && scrolled){
+                //jQuery('.header-container').removeClass('sticky-menu');
+                jQuery('.navbar').addClass('sticky-menu').css('top','-50px').animate({top:'48px'}, 500);
+                
+               // jQuery('.navbar').css('top','160px')
+                scrolled = false;
+            }
+           
+        });
+          
           jQuery("#nav_custom li span.plus").click(function(e){
             e.stopPropagation();
             if(jQuery(this).hasClass('expanded')){

@@ -9,7 +9,7 @@ body {
     color: #2f2f2f;
                 }
 h1, h2, h3, h4, h5, h6 { color: #777777; }
-label, p { color: #eee; }
+label, p { color: #000; }
 a { 
     color: #777777; 
                 }
@@ -21,7 +21,8 @@ select {
     border-color: #dbdbdb; 
     color: #999999; 
 }
-input.input-text, textarea { 
+input.input-text, textarea {
+    font-size: 11px; 
     background-color: #ffffff; 
     border-color: #dbdbdb; 
     color: #2f2f2f; 

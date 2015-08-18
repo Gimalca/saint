@@ -4,7 +4,7 @@
             <strong><span><?php echo $heading_title; ?></span></strong>
         </div>
         <div class="akordeon narrow-by-list">
-            <div class="block-category-nav" >
+            <div class="block-category-nav box-filter" >
                 <?php foreach ($filter_groups as $filter_group) { ?>
                 <div class="akordeon-item">
                     <div class="akordeon-item-head">
@@ -42,13 +42,14 @@
     </div>
     
 
-    <button style="margin-top: 10px;" type="button" value="<?php echo $button_filter; ?>" id="button-cart" class="button btn-cart"><span><?php echo $button_filter; ?></span></button>
+    <button style="margin-top: 10px;" type="button" value="<?php echo $button_filter; ?>" id="button-cart" class="button btn-cart button-filter"><span><?php echo $button_filter; ?></span></button>
 
 </div>
 
 
 <script type="text/javascript"><!--
-$('#button-filter').bind('click', function () {
+$('.button-filter').bind('click', function () {
+    alert('sirve');
         filter = [];
 
         $('.box-filter input[type=\'checkbox\']:checked').each(function (element) {
@@ -62,7 +63,7 @@ $('#button-filter').bind('click', function () {
 
 <script type="text/javascript">
     jQuery(document).ready(function () {
-        jQuery('.akordeon.narrow-by-list').akordeon({expandedItem: 5,buttons: true, toggle: true, expandedAll: false});
+       // jQuery('.akordeon.narrow-by-list').akordeon({expandedItem: 5,buttons: true, toggle: true, expandedAll: false});
     });
 </script>                                                           
 
