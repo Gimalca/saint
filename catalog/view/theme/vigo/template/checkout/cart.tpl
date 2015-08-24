@@ -11,39 +11,48 @@
 <?php echo $column_left; ?><?php echo $column_right; ?>
 <div id="content" class="main-container col1-layout"><?php echo $content_top; ?>
     <div>
-        
+
     </div>
 
-    
+
     <div class="main container">
+        <h1>
+            <?php echo $heading_title; ?>
+        </h1>
         <div id="shopping_process_bar" class="col-md-12">
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tbody><tr>
-                <td>
-                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                        <tbody>
-                            <tr>
-                         <tr>
-                            <td colspan="2"><div class="billing-block-wrapper" style="border-top: 1px solid #000000;width:100%;"></div></td>
-                        </tr>
-                            <td width="800" align="left">
-                                <ul id="progressTracker">
-                                    <li id="pt1" class="active-checkout heading2"><?php echo $text_cart; ?> > </li>
-                                    <li id="pt2" class=" heading2"><?php echo $text_checkout_option; ?> > </li>
-                                    <li id="pt3" class="heading2"><?php echo $text_checkout_payment_address; ?> > </li>
-                                    <li id="pt4" class="heading2"><?php echo $text_checkout_shipping_address; ?> > </li>
-                                    <li id="pt5" class=" heading2"><?php echo $text_checkout_shipping_method; ?> > </li>
-                                    <li id="pt6" class="heading2"><?php echo $text_checkout_payment_method; ?> > </li>
-                                    <li id="pt7" class="heading2"><?php echo $text_checkout_confirm; ?> > </li>
-                                </ul>
-                            </td>
-                        </tr>
-                     
-                    </tbody></table>
-                </td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody><tr>
+                        <td>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr>
+                                    <tr>
+                                        <td colspan="2"><div class="billing-block-wrapper" style="border-top: 1px solid #000000;width:100%;"></div></td>
+                                    </tr>
+                                <td width="800" align="left">
+                                    <ul id="progressTracker">
+                                        <li id="pt1" class="active-checkout heading2"><?php echo $text_cart; ?>  </li>
+                                        <li><b> > </b></li>
+                                        <li id="pt2" class=" heading2"><?php echo $text_checkout_option; ?>  </li>
+                                        <li><b> > </b></li>
+                                        <li id="pt3" class="heading2"><?php echo $text_checkout_payment_address; ?> </li>
+                                        <li><b> > </b></li>
+                                        <li id="pt4" class="heading2"><?php echo $text_checkout_shipping_address; ?>  </li>
+                                        <li><b> > </b></li>
+                                        <li id="pt5" class=" heading2"><?php echo $text_checkout_shipping_method; ?>  </li>
+                                        <li><b> > </b></li>
+                                        <li id="pt6" class="heading2"><?php echo $text_checkout_payment_method; ?> </li>
+                                        <li><b> > </b></li>
+                                        <li id="pt7" class="heading2"><?php echo $text_checkout_confirm; ?>  </li>
+                                    </ul>
+                                </td>
+                    </tr>
+
+                </tbody></table>
+            </td>
             </tr>
-        </tbody></table>
-    </div>
+            </tbody></table>
+        </div>
         <div class="col-main">
             <div class="cart">
                 <div class="page-title title-buttons">
@@ -54,92 +63,106 @@
                         <fieldset class="col-md-12">
                             <div class="row ">
                                 <div class="col-md-8 col-sm-12" >
-                                    <?php foreach ($products as $product) { ?>
+                                    <?php $qt = 0; foreach ($products as $product) { ?>
                                     <div class="carro-producto col-xs-12 col-sm-6 col-md-12">
 
-                                        <div class="row imagen-producto col-md-4">
+                                        <div class="imagen-producto col-md-2">
 
                                             <?php if ($product['thumb']) { ?>                        
                                             <a class="product-image" href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" /></a>
                                             <?php } ?>
                                         </div>
 
-                                        <div class="row nombre-container col-md-8">
+                                        <div class="nombre-container col-md-10" >
+                                            <div class="col-md-12">
                                             <h2 class="product-name">
                                                 <a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
-                                                <a class="right btn-remove btn-remove2" href="<?php echo $product['remove']; ?>"></a>
+                                               
                                             </h2>
-                                            <?php if (!$product['stock']) { ?>
-                                            <b><span style="color: #c70101;" class="stock">El Item no esta disponible</span></b>
-                                            <?php } else { ?>
-                                            <span class="stock">En Stock</span>
-                                            <?php } ?>
-                                        </div>
-                                        <div class="datos-container col-md-8">
-                                            <div class="col-md-5">
-                                                <div class="item-options">
-                                                    <?php foreach ($product['option'] as $option) { ?>
-                                                    <div>
-                                                        <?php echo $option['name']; ?>: <b><?php echo $option['value']; ?></b>
-                                                    </div>
-                                                    <?php } ?>
-                                                    <?php if($product['recurring']): ?>
-                                                    <div>
-                                                        <?php echo $text_payment_profile ?>: <b><?php echo $product['profile_name'] ?></b>
-                                                    </div>
-                                                    <?php endif; ?>
-                                                    <?php if ($product['reward']) { ?>
-                                                    <div><?php echo $product['reward']; ?></div>
-                                                    <?php } ?>
-                                                    <div> <?php echo $column_model;?>: <b><?php echo $product['model']; ?></b> </div>
+                                                <p style=" text-transform: uppercase; font-size: 10px"> <?php echo $column_model;?>: <b><?php echo $product['model']; ?></b> </p>
                                                 </div>
+                                            <div class="col-md-12">
+                                                <div class="col-md-6">
+                                                    <div class="item-options">
+                                                        <ul class=" list-inline"> 
+                                                            <?php foreach ($product['option'] as $option) { ?>
+                                                            <li>
+                                                                <?php echo $option['name']; ?>: <b><?php echo $option['value']; ?></b>
+                                                            </li>
+                                                            <?php } ?>
+                                                        </ul>
+                                                    </div>
 
-                                            </div>
+                                                </div>
+                                                <div class="col-md-6" style="padding: 0px">
+                                                    <div class="item-options right ">
+                                                        <ul class=" list-inline">    
+                                                             <li>
+                                                                <div class="qty-holder">
+                                                                    <?php echo $column_quantity; ?>:
+                                                                    <select name="quantity[<?php echo $product['key']; ?>]" id="" onchange="change_quantity()">
+                                                                        <?php 
+                                                                        $x = 1; 
 
-                                            <div class="col-md-7">           
-                                                <div class="col-md-12">
-                                                    <div class="qty-holder">
-                                                        <?php echo $column_quantity; ?>:
+                                                                        while($x <= 10) { ?>
+                                                                        <option <?php if($product['quantity'] == $x ) echo 'selected'?> value="<?php echo $x ?>"><?php echo $x ?></option>
+                                                                        <?php  $x++;
+                                                                        } 
+                                                                        ?>
 
-                                                        <select name="quantity[<?php echo $product['key']; ?>]" id="" onchange="change_quantity()">
-                                                            <?php 
-                                                            $x = 1; 
+                                                                    </select>
+                                                                </div>
+                                                            </li>
 
-                                                            while($x <= 10) { ?>
-                                                            <option <?php if($product['quantity'] == $x ) echo 'selected'?> value="<?php echo $x ?>"><?php echo $x ?></option>
-                                                           <?php  $x++;
-                                                            } 
-                                                            ?>
+                                                            <?php if($product['recurring']): ?>
+                                                            <li>
+                                                                <?php echo $text_payment_profile ?>: <b><?php echo $product['profile_name'] ?></b>
+                                                            </li>
+                                                            <?php endif; ?>
+                                                            <?php if ($product['reward']) { ?>
+                                                            <li><?php echo $product['reward']; ?></li>
+                                                            <?php } ?>
                                                            
-                                                       
-
-                                                        </select>
-
-                                                       
+                                                           
+                                                            <!--li>
+                                                                <span class="cart-price">
+                                                                    <?php echo $column_price; ?>:&nbsp &nbsp<span class="price"><?php echo $product['price']; ?></span>
+                                                                </span>
+                                                            </li-->
+                                                            <li>
+                                                                <span class="cart-price">
+                                                                    <?php //echo $column_total; ?>&nbsp &nbsp &nbsp <span class="price"><b>  <?php echo $product['total']; ?></b></span>
+                                                                </span>
+                                                            </li>
+                                                        </ul>
                                                     </div>
-                                                    </p>
                                                 </div>
-
-                                                <div class="col-md-12">
-
-                                                    <span class="cart-price">
-                                                        <?php echo $column_price; ?>:&nbsp &nbsp<span class="price"><?php echo $product['price']; ?></span>
-                                                    </span>
-                                                </div>
-                                                <div class="precio-unitario col-md-12" id="posicion">
-
-                                                    <span class="cart-price">
-                                                        <?php echo $column_total; ?>:&nbsp &nbsp &nbsp <span class="price"><b>  <?php echo $product['total']; ?></b></span>
-                                                    </span>
-                                                </div>
-                                                <?php foreach ($vouchers as $voucher) { ?>
-                                                <a class="btn-remove btn-remove2 top-btn-remove" title="Remove This Item" onclick="(getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') ? location = 'index.php?route=checkout/cart&remove=<?php echo $voucher['key']; ?>' : $('#cart').load('index.php?route=module/cart&remove=<?php echo $voucher['key']; ?>' + ' #cart > *');" /></a>
-                                                <?php } ?>
                                             </div>
+                                             <div class="col-md-6">
+                                                 <p class="availability in-stock"> 
+                                                     <img src="<?php if(!$product['stock'])echo 'image/agotado_icon.png'; if($product['stock'])echo 'image/existencia_icon.png'; ?>"> 
+                                                     <?php //echo print_r($product); ?>
+                                                     <span style="color: <?php if(!$product['stock'])echo 'red'; if($product['stock'])echo 'green'; ?>  " >
+                                                       <?php if(!$product['stock'])echo 'Out of Stock'; if($product['stock'])echo 'In Stock'; ?>
+                                                     </span></p>
+                                                   
+                                                </div>
+                                            
+                                            
+
+
                                         </div>
+                                       
 
                                     </div>
-                                    <?php } ?>
+                                   
+                                            <?php foreach ($vouchers as $voucher) { ?>
+                                            <a class="btn-remove btn-remove2 top-btn-remove" title="Remove This Item" onclick="(getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') ? location = 'index.php?route=checkout/cart&remove=<?php echo $voucher['key']; ?>' : $('#cart').load('index.php?route=module/cart&remove=<?php echo $voucher['key']; ?>' + ' #cart > *');" /></a>
+                                            <?php } ?>
+                                            <a class="right" style=" margin-bottom: 10px" href="<?php echo $product['remove']; ?>">Borrar | Comprar Despues </a>
+                                    
+
+                                    <?php $qt= $qt+$product['quantity'];  } ?>
                                 </div>
 
                                 <div class="col-md-4 col-sm-12" >
@@ -149,14 +172,26 @@
                                                 Sumario de compra
                                             </div>
                                             <div class="precio col-md-12">
-                                                <?php foreach ($totals as $total) { ?><br>
-
+                                                
+                                                   
                                                 <div class="sumario-sub col-md-12">
-                                                    <div class="col-md-6" style="text-align: left;"><?php echo $total['title']; ?></div>
-                                                    <div class="col-md-6" style="text-align: right;"><?php echo $total['text']; ?></div>
+                                                    <div class="col-md-6" style="text-align: left;"><?php echo $column_quantity; ?></div>
+                                                    <div class="col-md-6" style="text-align: right;"><?php echo $qt; ?></div>
+                                                </div>
+                                                
+                                                <?php //foreach ($totals as $total) {  ?><br>
+                                                
+                                                <div class="sumario-sub col-md-12">
+                                                    <div class="col-md-6" style="text-align: left;"><?php echo $totals[0]['title']; ?></div>
+                                                    <div class="col-md-6" style="text-align: right;"><?php echo $totals[0]['text']; ?></div>
+                                                </div>
+                                                <br>
+                                                <div class=" col-md-12">
+                                                    <div class="col-md-6 price" style="text-align: right; " ><b><?php echo $totals[1]['title']; ?></b></div>
+                                                    <div class="col-md-6 price" style="text-align: right;"><b><?php echo $totals[1]['text']; ?></b></div>
                                                 </div>
 
-                                                <?php } ?>
+                                                <?php //} ?>
                                             </div>
                                             <div class="cancelar" id="botonn">
                                                 <!--a href="<?php echo $continue; ?>">
@@ -393,11 +428,11 @@
 
         </div>
         <script type="text/javascript">
-             function change_quantity(){
-               $("#cart_checkout").submit();
-             };
+                    function change_quantity(){
+                    $("#cart_checkout").submit();
+                    };
                     jQuery(document).ready(function(){
-                      
+
             jQuery(".qty_inc").click(function(){
             jQuery(this).parent().parent().children("input.qty").val(( + jQuery(this).parent().parent().children("input.qty").val() + 1) || 0);
             });
@@ -423,8 +458,8 @@ $('input[name=\'next\']').bind('change', function() {
 <?php if ($shipping_status) { ?>
 
 <script type="text/javascript"><!--
-   
-$('select[name=\'country_id\']').bind('change', function() {
+
+            $('select[name=\'country_id\']').bind('change', function() {
     $.ajax({
     url: 'index.php?route=checkout/cart/country&country_id=' + this.value,
             dataType: 'json',
