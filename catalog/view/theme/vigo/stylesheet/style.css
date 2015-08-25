@@ -1014,7 +1014,7 @@ ul.level1{ margin-left:-24px;background-image:url(../image/bg-dark.png);}
 .alert-stock { margin:0; font-size:11px; }
 
 /********** < Product Prices */
-.price { white-space:nowrap !important; text-align: right; font-size: 15px; /* font-weight: bold; */}
+.price { white-space:nowrap !important; /* text-align: right; */ font-size: 15px; /* font-weight: bold; */}
 
 .price-box { margin: 0; }
 .price-box .price { color: #000; font-size: 15px; margin-top: 8px;}
@@ -3197,7 +3197,7 @@ dl{
 }
 .etalage_small_thumbs{
    margin-top: 50px !important;
-   margin-left:100px !important;
+   /* margin-left:100px !important; */
 }
 .etalage_small_thumb{
     width: 50px !important;
@@ -3213,8 +3213,8 @@ dl{
     width: 60px;
 }
 .block-registered-users{
-    border-right: 1px solid #000
-}
+    /* border-right: 1px solid #000
+ */}
 .block-registered-users .block-title {
  text-align:left;
 }

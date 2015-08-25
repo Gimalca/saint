@@ -48,64 +48,67 @@
                             <div class="clear"></div>
                         </div>
 
-                        <script type="text/javascript">
+                           <script type="text/javascript">
                                     jQuery(document).ready(function(){
-                            var width = jQuery('.product-view .product-img-box').width() * 0.72;
-                                    var src_img_width = 0;
-                                    var src_img_height = 0;
-                                    var ratio_width = 370;
-                                    var ratio_height = 455;
-                                    src_img_width = 100 * ratio_width / ratio_height;
-                                    var height = width * ratio_height / ratio_width;
-                                    jQuery('#etalage').etalage({
-                                    thumb_image_width: width,
-                                    thumb_image_height: 550,
-                                    source_image_width: 50,
-                                    source_image_height: src_img_height,
-                                    zoom_area_width: width,
-                                    zoom_area_height: height,
-                                    zoom_enable: false,
-                                    smallthumb_hide_single: false,
-                                    smallthumbs_position: 'left',
-                                    smallthumbs_image_width:50,
-                                    show_icon: false,
-                                    autoplay: false
-                            });
-                                    jQuery(".product-img-box .etalage li.etalage_thumb").zoom();
-                                   // jQuery('.product-view .product-img-box .etalage-control a').css('left', ((jQuery('.etalage_small_thumbs').width() - 25) / 2) + "px");
-                                    if (jQuery('.etalage_small_thumbs').width() == 0)
-                                   // jQuery('.product-view .product-img-box .etalage-control a').css('left', ((jQuery('.etalage_small_thumbs img').first().width() - 25) / 2) + "px");
-                                    jQuery(window).resize(function(e){
-                                    var width = jQuery('.product-view .product-img-box').width() * 0.72;
-                                    var height = width * ratio_height / ratio_width;
-                                    zoom_enabled = false;
-                                    if (jQuery(window).width() < 480)
-                                    zoom_enabled = false;
-                                    jQuery('#etalage').etalage({
-                                    thumb_image_width: width,
-                                    thumb_image_height: height,
-                                    source_image_width: src_img_width,
-                                    source_image_height: src_img_height,
-                                    zoom_area_width: width,
-                                    zoom_area_height: height,
-                                    zoom_enable: zoom_enabled,
-                                    smallthumb_hide_single: false,
-                                    smallthumbs_position: 'left',
-                                    show_icon: true,
-                                    autoplay: false
-                            });
-                                    jQuery('.product-view .product-img-box .etalage-control a').css('left', ((jQuery('.etalage_small_thumbs').width() - 0) / 2) + "px");
-                            });
-                                    jQuery('.etalage-prev').on('click', function(){
-                            etalage_previous();
-                            });
-                                    jQuery('.etalage-next').on('click', function(){
-                            etalage_next();
-                            });
-                            });                                </script>
+                                        var width = jQuery('.product-view .product-img-box').width() * 0.52;
+                                        var src_img_width = 80;
+                                        var src_img_height = 100;
+                                        var ratio_width = 300;
+                                        var ratio_height = 455;
+                                        
+                                        src_img_width = 100 * ratio_width / ratio_height;
+                                        var height = width * ratio_height / ratio_width;
+                                
+                                        jQuery('#etalage').etalage({
+                                            thumb_image_width: width,
+                                            thumb_image_height: height,
+                                            source_image_width: src_img_width,
+                                            source_image_height: src_img_height,
+                                            zoom_area_width: width,
+                                            zoom_area_height: height,
+                                            zoom_enable: false,
+                                            smallthumb_hide_single: false,
+                                            smallthumbs_position: 'left',
+                                            show_icon: false,
+                                            autoplay: false
+                                        });
+                                        jQuery(".product-img-box .etalage li.etalage_thumb").zoom();
+                                       // jQuery('.product-view .product-img-box .etalage-control a').css('left',((jQuery('.etalage_small_thumbs').width()-25)/2)+"px");
+                                        if(jQuery('.etalage_small_thumbs').width() == 0)
+                                       //     jQuery('.product-view .product-img-box .etalage-control a').css('left',((jQuery('.etalage_small_thumbs img').first().width()-25)/2)+"px");
+                                        jQuery(window).resize(function(e){
+                                            var width = jQuery('.product-view .product-img-box').width() * 0.72;
+                                            var height = width * ratio_height / ratio_width;
+                                            zoom_enabled = false;
+                                            if(jQuery(window).width()<480)
+                                                zoom_enabled = false;
+                                            jQuery('#etalage').etalage({
+                                                thumb_image_width: width,
+                                                thumb_image_height: height,
+                                                source_image_width: src_img_width,
+                                                source_image_height: src_img_height,
+                                                zoom_area_width: width,
+                                                zoom_area_height: height,
+                                                zoom_enable: zoom_enabled,
+                                                smallthumb_hide_single: false,
+                                                smallthumbs_position: 'left',
+                                                show_icon: true,
+                                                autoplay: false
+                                            });
+                                            jQuery('.product-view .product-img-box .etalage-control a').css('left',((jQuery('.etalage_small_thumbs').width()))+"px");
+                                        });
+                                        jQuery('.etalage-prev').on('click', function(){
+                                            etalage_previous();
+                                        });
+                                
+                                        jQuery('.etalage-next').on('click', function(){
+                                            etalage_next();
+                                        });
+                                    });
+                                </script>
+                        
 
-
-                        <div class="product-shop col-md-6 col-sm-12">
+                        <div class="product-shop col-md-5 col-sm-12">
                             <div class="product-name">
                                 <h1><?php echo $heading_title; ?></h1>
                                 

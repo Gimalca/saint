@@ -1,6 +1,6 @@
 <div class="">
    
-    <div class="block-content col-md-6">
+    <div class="block-content col-md-12">
         <?php if ($addresses) { ?>
         <ul class="form-list">
             <li class="control">
@@ -8,7 +8,7 @@
                 <label for="payment-address-existing"><?php echo $text_address_existing; ?></label>
             </li>
             <div id="payment-existing">
-                <select name="address_id" style="width: 100%; margin-bottom: 15px;" size="5" class="payment_cart_sellect">
+                <select name="address_id" style="width: 50%; margin-bottom: 15px;" size="1" class="payment_cart_sellect">
                     <?php foreach ($addresses as $address) { ?>
                     <?php if ($address['address_id'] == $address_id) { ?>
                     <option value="<?php echo $address['address_id']; ?>" selected="selected"><?php echo $address['firstname']; ?> <?php echo $address['lastname']; ?>, <?php echo $address['address_1']; ?>, <?php echo $address['city']; ?>, <?php echo $address['zone']; ?>, <?php echo $address['country']; ?></option>
@@ -22,7 +22,7 @@
         <?php } ?>
     </div>
         
-    <div class="block-content col-md-6">
+    <div class="block-content col-md-12">
         <ul class="form-list">
             <li class="control">
                 <input type="radio" name="payment_address" value="new" id="payment-address-new" class="radio" />
@@ -31,7 +31,11 @@
         </ul>
 
 
-        <div id="payment-new" style="display: <?php echo ($addresses ? 'none' : 'block'); ?>;" col-md-5>
+        <div id="payment-new" class="col-md-12" style="display: <?php echo ($addresses ? 'none' : 'block'); ?>; " >
+            
+            <div class="col-md-6">
+                
+           
             <ul class="form-list">
                 <li class="fields">
 
@@ -68,6 +72,12 @@
                         </div>
                     </div>
                 </li>
+            </ul> 
+              </div> 
+                <div class="col-md-6">
+                
+           
+            <ul class="form-list">
                 <li class="fields">
                     <div class="field">
                         <div class="input-box input-city">
@@ -105,13 +115,14 @@
 
 
         </div>
+       
+    </div> 
         <div id="billing-buttons-container" class="buttons-set">
-            <p class="required"><?php echo $text_required_fields; ?></p>
+            <p class="required"><?php //echo $text_required_fields; ?></p>
             <button class="button" value="<?php echo $button_continue; ?>" id="button-payment-address" title="Continue" type="button">
                 <span><span><?php echo $button_continue; ?></span></span>
             </button>
         </div>
-    </div>
 </div>
 
 <script type="text/javascript"><!--

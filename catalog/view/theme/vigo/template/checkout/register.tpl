@@ -139,23 +139,37 @@
   
                         <?php } ?>
                         <br/>
-                        <input type="checkbox" name="newsletter" value="1" id="" />
+                        <input type="checkbox" name="newsletter" value="1" id=""  checked="checked"/>
                         <label for="newsletter"><?php echo $entry_newsletter; ?></label>
                         
                         
                     </div>
                 </div>
             </li>
-
+            <li class="fields">
+                <div class="field">
+                    <div class="input-box col-md-8 col-sm-8 col-xs-12">
+                        <input type="checkbox" name="agree" value="1" /><label for="newsletter"><?php echo $text_agree; ?></label>
+                    </div>
+                </div>  
+            </li>
     </ul> 
 </div>
 <div class=" row">
+    <ul>
+       
+    </ul>
+</div>
+<div class=" row">
         <ul>
+           
             <li class="fields">
                 <?php if ($text_agree) { ?>
+                
                 <div class="buttons">
-                    <div class="right"><?php echo $text_agree; ?>
-                        <input type="checkbox" name="agree" value="1" />
+                   
+                    <div class="right">
+                      
 
                         <button style="margin-left: 15px" type="button" value="<?php echo $button_continue; ?>" id="button-register" class="button input-box" >
                             <span><span><?php echo $button_continue; ?></span></span>
