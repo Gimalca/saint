@@ -3197,7 +3197,7 @@ dl{
 }
 .etalage_small_thumbs{
    margin-top: 50px !important;
-   margin-left:100px !important;
+   /* margin-left:100px !important; */
 }
 .etalage_small_thumb{
     width: 50px !important;
@@ -3213,8 +3213,8 @@ dl{
     width: 60px;
 }
 .block-registered-users{
-    border-right: 1px solid #000
-}
+    /* border-right: 1px solid #000
+ */}
 .block-registered-users .block-title {
  text-align:left;
 }

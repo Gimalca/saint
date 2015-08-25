@@ -2,7 +2,7 @@
 <input type="radio" name="shipping_address" value="existing" id="shipping-address-existing" checked="checked" />
 <label for="shipping-address-existing"><?php echo $text_address_existing; ?></label>
 <div id="shipping-existing">
-  <select name="address_id" style="width: 100%; margin-bottom: 15px;" size="5">
+  <select name="address_id" style="width: 50%; margin-bottom: 15px;" size="1">
     <?php foreach ($addresses as $address) { ?>
     <?php if ($address['address_id'] == $address_id) { ?>
     <option value="<?php echo $address['address_id']; ?>" selected="selected"><?php echo $address['firstname']; ?> <?php echo $address['lastname']; ?>, <?php echo $address['address_1']; ?>, <?php echo $address['city']; ?>, <?php echo $address['zone']; ?>, <?php echo $address['country']; ?></option>
@@ -18,9 +18,15 @@
 </p>
 <?php } ?>
 <div id="shipping-new" class=" col-md-12 col-lg-12 col-sm-12" style="display: <?php echo ($addresses ? 'none' : 'block'); ?>;">
+     <ul class="form-list">
+            <li class="control">
+                <input type="radio" name="payment_address" value="new" id="payment-address-new" class="radio" />
+                <label for="payment-address-new"><?php echo $text_address_new; ?></label>
+            </li>
+        </ul>
     <div class="left">  
         <ul class="form-list">
-            <li >         
+            <li  class="fields" >         
                 <div class="input-box name-firstname col-md-8 col-sm-8 col-xs-12">
                     <div class="input-box">
                         <input id="input-emailn" type="text" name="firstname" value="" class="input-text required-entry" placeholder="<?php echo $entry_firstname; ?> *"/>
@@ -28,7 +34,7 @@
                     </div>
                 </div>
             </li>
-            <li >               
+            <li  class="fields" >               
                 <div class="input-box name-lastname col-md-8 col-sm-8 col-xs-12">
                     <div class="input-box">
                         <input id="input-emailn" type="text" name="lastname" value="" class="input-text required-entry" placeholder="<?php echo $entry_lastname; ?> *"/>
