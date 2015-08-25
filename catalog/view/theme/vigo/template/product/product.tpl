@@ -27,7 +27,7 @@
             <div class="product-view">
                 <div class="row">
                     <div class="product-essential col-md-12">
-                        <div class="product-img-box col-md-7 col-sm-12">
+                        <div class="product-img-box col-md-6 col-sm-12">
                             <ul id="etalage">
                                 <li>
                                     <img class="etalage_thumb_image" src="<?php echo $thumb; ?>" alt="<?php echo $product['name']; ?>"/>
