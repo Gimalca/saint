@@ -69,6 +69,8 @@ $_['button_approve']          = 'Aprovar';
 $_['button_reset']            = 'Reiniciar';
 
 // Tab
+$_['tab_marketplace_links']         = 'Links';
+$_['tab_profile']                   = 'Profiles';
 $_['tab_address']             = 'Dirección';
 $_['tab_admin']               = 'Administrador';
 $_['tab_attribute']           = 'Atributo';
