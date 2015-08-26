@@ -915,7 +915,7 @@ ul.level1{ margin-left:-24px;background-image:url(../image/bg-dark.png);}
 .products-grid li.item { float:left; padding: 10px 0px 0px; position: relative; margin: 0px 15px 15px 0px !important;}
 .products-grid .product-image { margin:0; }
 .products-grid .product-name { /*min-height:2.7em;*/ font-size: 12px; text-align: left;  margin-top: 0px; font-size:13px; color: #000; }
-#fp_featured .products-grid .product-name a { font-size: 25px; padding: 10px; text-align:center; font-weight:bold ; line-height: 14px; letter-spacing: 1.25px; text-transform: uppercase; color: #000 !important; font-family: Oswald;}
+#fp_featured .products-grid .product-name a { font-size: 25px; padding: 10px; text-align:center; font-weight:bold ; line-height: 28px; letter-spacing: 1.25px; text-transform: uppercase; color: #000 !important; font-family: Oswald;}
 .products-grid .product-name a { color: #666 !important; font-size: 12px; font-weight: normal; text-align: left; text-decoration: none; width: 100%; display: block; margin: 0; line-height: 22px; padding: 0px;}
 
 .products-grid .product-fabricante{ padding: 15px 0px 0px 0px;color: #000;

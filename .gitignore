@@ -8,6 +8,4 @@ config.php
 /.settings/
 /deployment.properties
 /deployment.xml
-/nbproject/private
-/nbproject/project.xml
-/nbproject/project.properties
+/image/
