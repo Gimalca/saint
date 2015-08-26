@@ -212,7 +212,7 @@
                             </div>
                         </div>
 
-                        <iframe src="http://snapwidget.com/sc/?u=bG9saXRhcHJhbmF8aW58MjAwfDN8M3x8eWVzfDIwfGZhZGVPdXR8b25TdGFydHx5ZXN8eWVz&ve=110315" title="Instagram Widget" class="snapwidget-widget" allowTransparency="false" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:1200px; height:200px"></iframe>
+                        <iframe src="http://snapwidget.com/sc/?u=c2FpbnRzX3ZlfGlufDIwMHwzfDN8fG5vfDV8ZmFkZU91dHxvblN0YXJ0fHllc3xubw==&ve=250815" title="Instagram Widget" class="snapwidget-widget" allowTransparency="false" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:1200px; height:200px"></iframe>
                     </div>
 
                 </div>
