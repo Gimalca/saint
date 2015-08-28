@@ -3054,9 +3054,10 @@ li.custom-menu .custom-menu-item p {
 }
 /*Totales Nuevo*/
 .sumario{  border: 1px solid gray;  height: auto;   margin-bottom: 27px;   background: #fff;}
-.sumario-sub{border-bottom: 1px dotted gray;  height: 22px;}
+.sumario-sub{border-bottom: 1px dotted gray;  height: 22px;margin-top: 10px;}
+.sumario-sub .total_cart{ font-weight:bold; font-size:15px }
 .titulo{  text-align: center;  margin-top: 30px;  margin-bottom: 20px;  font-size: 20px; font-size: 1.5em; font-weight: bold; text-transform: uppercase;}
-.precio{ text-align: center;   height: 133px;}
+.precio{ text-align: center;   /* height: 133px; */}
 .cancelar{/* border-top: 1px solid gray; */  height: 52px;   /* background: #7e7e7e; */text-align: center;}
 .cancelar button{ width:75%;  margin-top: 11px;  /* margin-right: 22px; */  /* margin-left: 34px; */   background-color: #000;  color: #fff;}
 .cancelar button span{color: #fff;}

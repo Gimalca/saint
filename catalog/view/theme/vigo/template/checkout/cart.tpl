@@ -179,15 +179,24 @@
                                                     <div class="col-md-6" style="text-align: right;"><?php echo $qt; ?></div>
                                                 </div>
                                                 
-                                                <?php foreach ($totals as $total) {  ?><br>
+                                                <?php  foreach ($totals as $total) {  
                                                 
-                                                <div class="sumario-sub col-md-12">
-                                                    <div class="col-md-6" style="text-align: left;"><?php echo $total['title']; ?></div>
-                                                    <div class="col-md-6" style="text-align: right;"><?php echo $total['text']; ?></div>
-                                                </div>
-                                                <br>
-                                                
+                                                    if($total['code'] == 'total'){ ?>
 
+                                                    <div class="sumario-sub col-md-12" style="border-bottom: 0px">
+                                                          <div class="col-md-6 total_cart" style="text-align: right;"><?php echo $total['title']; ?></div>
+                                                          <div class="col-md-6 total_cart" style="text-align: right;"><?php echo $total['text']; ?></div>
+                                                      </div>
+
+                                                   <?php  }else{ ?>
+
+                                                      <div class="sumario-sub col-md-12">
+                                                          <div class="col-md-6" style="text-align: left;"><?php echo $total['title']; ?></div>
+                                                          <div class="col-md-6" style="text-align: right;"><?php echo $total['text']; ?></div>
+                                                      </div>
+                                                   
+                                                   <?php  } ?>
+ 
                                                 <?php } ?>
                                             </div>
                                             <div class="cancelar" id="botonn">
@@ -249,7 +258,7 @@
                                         <div class="panel panel-default" >
                                             <div class="panel-heading" role="tab" id="headingTwo">
                                                 <h4 class="panel-title">
-                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    <div class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                                         <?php if ($voucher_status) { ?>
                                                         <span class="radio_button_hide_shopping_cart"><?php if ($next == 'voucher') { ?>
                                                             <input type="radio" name="next" value="voucher" id="use_voucher" checked="checked" />
@@ -270,7 +279,7 @@
 
 
                                                         <?php } ?>
-                                                    </a>
+                                                    </div>
                                                 </h4>
                                             </div>
                                             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
