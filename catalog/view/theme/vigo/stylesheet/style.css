@@ -1327,7 +1327,7 @@ button.button:hover{background-color:#000}
 
 
 /* Content Styles ================================================================= */
-.product-name { margin: 5px 0px; font-size: 10px; font-weight:normal; }
+.product-name { margin: 1px 0px; font-size: 10px; font-weight:normal; }
 .product-name a { color: #000;  font-size: 15px; letter-spacing: normal;}
 
 /* Product Tags */
@@ -1417,7 +1417,7 @@ button.button:hover{background-color:#000}
 
 /* Discount Codes & Estimate Shipping and Tax Boxes */
 .cart .discount,
-.cart .shipping { margin: 0; /* border-top: 1px solid #d9d9d9; */ padding: 20px; background: none;  font-size: 14px; border-bottom: none; }
+.cart .shipping { margin: 0; /* border-top: 1px solid #d9d9d9; */ /* padding: 20px; */ background: none;  font-size: 14px; border-bottom: none; }
 .cart .discount h2,
 .cart .shipping h2 { background-position:0 0; background-repeat:no-repeat; font:bold 13px/16px Arial, Helvetica, sans-serif; padding:0 0 0 21px; color:#e26703; text-transform:uppercase; }
 .cart .discount .buttons-set,
@@ -2239,7 +2239,7 @@ li.mini-wishlist:hover #topWishlistContent { display: block; opacity: 1; filter:
 .col3-layout .products-grid li.item { width: 31.3%; margin-right: 3%; }
 /* Product Grid */
 .products-grid li.item .product-image img { width: 100%; position: relative; }
-#fp_featured .products-grid li.item .product-image img { width: 350px; height:540px  }
+#fp_featured .products-grid li.item .product-image img { width: 350px; height:540px}
 #fp_featured .products-grid .products-grid .product-image{  display: block;width: 100%;margin: 0;}
 #fp_featured .products-grid li.item{float: left;width: 365px;padding: 10px 5px 0px;position: relative;margin: 0px 15px 15px 0px !important;}
 /* Product List */
@@ -2912,7 +2912,7 @@ a.twitter_fav_icon { background-position: 0 -38px; }
 }
 
 .logo.sticky-logo { float: left; margin: 12px 0; display: none; }
-.logo.sticky-logo img { height: 100%; width: auto; }
+.logo.sticky-logo img { height: 100%; /* width: auto; */ margin: 0 auto;}
 .sticky-menu .for-desktop #search_mini_form { display: block; }
 
 /* ------------ For Custom Menu -------------- */
@@ -3182,7 +3182,7 @@ dl{
     font-weight:normal;  
     font-size: 15px;
     font-family: Arial;
-    padding: 0px 7px 7px;
+    padding: 0px 0px 7px;
     margin-top: 8px;    
     overflow: hidden;    
     text-overflow: ellipsis;
@@ -3236,4 +3236,8 @@ dl{
  font-family: 'Oswald', sans-serif;
  font-size: 25px !important;
  text-align:left;
+}
+
+.panel-title label{
+    cursor:pointer;
 }

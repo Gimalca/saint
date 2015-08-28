@@ -324,7 +324,10 @@ if(!$_SERVER["QUERY_STRING"]){
         
                 <nav class="collapse navbar-collapse bs-navbar-collaspe " role="navigation" id="jsn-pos-mainnav">
                     
-                        <a href="<?php echo $home; ?>" title="<?php echo $home; ?>" class="logo sticky-logo col-lg-12 col-md-12"><strong></strong><img src="<?php echo $logo; ?>" alt="<?php echo $home; ?>" /></a>
+                    <a href="<?php echo $home; ?>" title="<?php echo $home; ?>" class="logo sticky-logo col-lg-12 col-md-12">
+                        <strong></strong>
+                        <img  width="700px" class=" img-responsive"  src="image/saints_clothes_wt.svg" alt="<?php echo $home; ?>" />
+                    </a>
                    
                 <?php if($megamenu==1) { ?>
                 <?php if ($categories) { ?>
