@@ -14,7 +14,7 @@ a {
     color: #777777; 
                 }
 a:hover { 
-    color: #f0877c;
+    /* color: #f0877c; */
 }
 select { 
     background-color: #ffffff; 
