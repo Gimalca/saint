@@ -159,10 +159,10 @@
                                             <span id="product-price-<?php echo $product['product_id']; ?>" class="price"><?php echo $product['special']; ?></span>
                                         </p>
                                         <?php } ?>
-                                        <?php if ($product['tax']) { ?>
-                                        <br />
-                                        <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
-                                        <?php } ?>
+                                        <?php //if ($product['tax']) { ?>
+                                        
+                                        <!--span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span-->
+                                        <?php //} ?>
                                     </div>
                                     <?php } ?>
                                     <?php 
@@ -343,10 +343,10 @@
                                     <span id="product-price-<?php echo $product['product_id']; ?>" class="price"><?php echo $product['special']; ?></span>
                                 </p>
                                 <?php } ?>
-                                <?php if ($product['tax']) { ?>
-                                <br />
-                                <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
-                                <?php } ?>
+                                <?php //if ($product['tax']) { ?>
+                                
+                                <!--span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span-->
+                                <?php //} ?>
                             </div>
                             <?php } ?>
 

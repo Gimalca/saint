@@ -179,19 +179,16 @@
                                                     <div class="col-md-6" style="text-align: right;"><?php echo $qt; ?></div>
                                                 </div>
                                                 
-                                                <?php //foreach ($totals as $total) {  ?><br>
+                                                <?php foreach ($totals as $total) {  ?><br>
                                                 
                                                 <div class="sumario-sub col-md-12">
-                                                    <div class="col-md-6" style="text-align: left;"><?php echo $totals[0]['title']; ?></div>
-                                                    <div class="col-md-6" style="text-align: right;"><?php echo $totals[0]['text']; ?></div>
+                                                    <div class="col-md-6" style="text-align: left;"><?php echo $total['title']; ?></div>
+                                                    <div class="col-md-6" style="text-align: right;"><?php echo $total['text']; ?></div>
                                                 </div>
                                                 <br>
-                                                <div class=" col-md-12">
-                                                    <div class="col-md-6 price" style="text-align: right; " ><b><?php echo $totals[1]['title']; ?></b></div>
-                                                    <div class="col-md-6 price" style="text-align: right;"><b><?php echo $totals[1]['text']; ?></b></div>
-                                                </div>
+                                                
 
-                                                <?php //} ?>
+                                                <?php } ?>
                                             </div>
                                             <div class="cancelar" id="botonn">
                                                 <!--a href="<?php echo $continue; ?>">
@@ -501,93 +498,103 @@ $('input[name=\'next\']').bind('change', function() {
 //--></script>
 <script type="text/javascript"><!--
 $('#button-quote').live('click', function() {
-    $.ajax({
-    url: 'index.php?route=checkout/cart/quote',
-            type: 'post',
-            data: 'country_id=' + $('select[name=\'country_id\']').val() + '&zone_id=' + $('select[name=\'zone_id\']').val() + '&postcode=' + encodeURIComponent($('input[name=\'postcode\']').val()),
-            dataType: 'json',
-            beforeSend: function() {
-            $('#button-quote').attr('disabled', true);
-                    $('#button-quote').after('<span class="wait">&nbsp;<img src="catalog/view/theme/vigo/image/loading.gif" alt="" /></span>');
-            },
-            complete: function() {
-            $('#button-quote').attr('disabled', false);
-                    $('.wait').remove();
-            },
-            success: function(json) {
-            $('.success, .warning, .attention, .error').remove();
-                    if (json['error']) {
-            if (json['error']['warning']) {
-            $('#notification').html('<div class="warning" style="display: none;">' + json['error']['warning'] + '<img src="catalog/view/theme/vigo/image/close.png" alt="" class="close" /></div>');
-                    $('.warning').fadeIn('slow');
-                    $('html, body').animate({ scrollTop: 0 }, 'slow');
-            }
-
-            if (json['error']['country']) {
-            $('select[name=\'country_id\']').after('<span class="error">' + json['error']['country'] + '</span>');
-            }
-
-            if (json['error']['zone']) {
-            $('select[name=\'zone_id\']').after('<span class="error">' + json['error']['zone'] + '</span>');
-            }
-
-            if (json['error']['postcode']) {
-            $('input[name=\'postcode\']').after('<span class="error">' + json['error']['postcode'] + '</span>');
-            }
-            }
-
-            if (json['shipping_method']) {
-            html = '<h2><?php echo $text_shipping_method; ?></h2>';
-                    html += '<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">';
-                    html += '  <ul class="cart-extra-tab">';
-                    for (i in json['shipping_method']) {
-            html += '<li>';
-                    html += '  <span><b>' + json['shipping_method'][i]['title'] + '</b></span>';
-                    html += '</li>';
-                    if (!json['shipping_method'][i]['error']) {
-            for (j in json['shipping_method'][i]['quote']) {
-            html += '<li class="highlight">';
-                    if (json['shipping_method'][i]['quote'][j]['code'] == '<?php echo $shipping_method; ?>') {
-            html += '<span><input type="radio" name="shipping_method" value="' + json['shipping_method'][i]['quote'][j]['code'] + '" id="' + json['shipping_method'][i]['quote'][j]['code'] + '" checked="checked" /></span>';
-            } else {
-            html += '<span><input type="radio" name="shipping_method" value="' + json['shipping_method'][i]['quote'][j]['code'] + '" id="' + json['shipping_method'][i]['quote'][j]['code'] + '" /></span>';
-            }
-
-            html += '  <span><label for="' + json['shipping_method'][i]['quote'][j]['code'] + '">' + json['shipping_method'][i]['quote'][j]['title'] + '</label></span>';
-                    html += '  <span style="text-align: right;"><label for="' + json['shipping_method'][i]['quote'][j]['code'] + '">' + json['shipping_method'][i]['quote'][j]['text'] + '</label></span>';
-                    html += '</li>';
-            }
-            } else {
-            html += '<li>';
-                    html += '  <span><div class="error">' + json['shipping_method'][i]['error'] + '</div></span>';
-                    html += '</li>';
-            }
-            }
-
-            html += '  </ul>';
-                    html += '  <br />';
-                    html += '  <input type="hidden" name="next" value="shipping" />';
-                    < ?php if ($shipping_method) { ? >
-                    html += '  <input type="submit" value="<?php echo $button_shipping; ?>" id="button-shipping" class="button" />';
-                    < ?php } else { ? >
-                    html += '  <input type="submit" value="<?php echo $button_shipping; ?>" id="button-shipping" class="button" disabled="disabled" />';
-                    < ?php } ? >
-                    html += '</form>';
-                    $.colorbox({
-                    overlayClose: true,
-                            opacity: 0.5,
-                            width: '600px',
-                            height: '400px',
-                            href: false,
-                            html: html
-                    });
-                    $('input[name=\'shipping_method\']').bind('change', function() {
-            $('#button-shipping').attr('disabled', false);
-            });
-            }
-            }
-    });
-    });
+	$.ajax({
+		url: 'index.php?route=checkout/cart/quote',
+		type: 'post',
+		data: 'country_id=' + $('select[name=\'country_id\']').val() + '&zone_id=' + $('select[name=\'zone_id\']').val() + '&postcode=' + encodeURIComponent($('input[name=\'postcode\']').val()),
+		dataType: 'json',		
+		beforeSend: function() {
+			$('#button-quote').attr('disabled', true);
+			$('#button-quote').after('<span class="wait">&nbsp;<img src="catalog/view/theme/vigo/image/loading.gif" alt="" /></span>');
+		},
+		complete: function() {
+			$('#button-quote').attr('disabled', false);
+			$('.wait').remove();
+		},		
+		success: function(json) {
+			$('.success, .warning, .attention, .error').remove();			
+						
+			if (json['error']) {
+				if (json['error']['warning']) {
+					$('#notification').html('<div class="warning" style="display: none;">' + json['error']['warning'] + '<img src="catalog/view/theme/vigo/image/close.png" alt="" class="close" /></div>');
+					
+					$('.warning').fadeIn('slow');
+					
+					$('html, body').animate({ scrollTop: 0 }, 'slow'); 
+				}	
+							
+				if (json['error']['country']) {
+					$('select[name=\'country_id\']').after('<span class="error">' + json['error']['country'] + '</span>');
+				}	
+				
+				if (json['error']['zone']) {
+					$('select[name=\'zone_id\']').after('<span class="error">' + json['error']['zone'] + '</span>');
+				}
+				
+				if (json['error']['postcode']) {
+					$('input[name=\'postcode\']').after('<span class="error">' + json['error']['postcode'] + '</span>');
+				}					
+			}
+			
+			if (json['shipping_method']) {
+				html  = '<h2><?php echo $text_shipping_method; ?></h2>';
+				html += '<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">';
+				html += '  <ul class="cart-extra-tab">';
+				
+				for (i in json['shipping_method']) {
+					html += '<li>';
+					html += '  <span><b>' + json['shipping_method'][i]['title'] + '</b></span>';
+					html += '</li>';
+				
+					if (!json['shipping_method'][i]['error']) {
+						for (j in json['shipping_method'][i]['quote']) {
+							html += '<li class="highlight">';
+							
+							if (json['shipping_method'][i]['quote'][j]['code'] == '<?php echo $shipping_method; ?>') {
+								html += '<span><input type="radio" name="shipping_method" value="' + json['shipping_method'][i]['quote'][j]['code'] + '" id="' + json['shipping_method'][i]['quote'][j]['code'] + '" checked="checked" /></span>';
+							} else {
+								html += '<span><input type="radio" name="shipping_method" value="' + json['shipping_method'][i]['quote'][j]['code'] + '" id="' + json['shipping_method'][i]['quote'][j]['code'] + '" /></span>';
+							}
+								
+							html += '  <span><label for="' + json['shipping_method'][i]['quote'][j]['code'] + '">' + json['shipping_method'][i]['quote'][j]['title'] + '</label></span>';
+							html += '  <span style="text-align: right;"><label for="' + json['shipping_method'][i]['quote'][j]['code'] + '">' + json['shipping_method'][i]['quote'][j]['text'] + '</label></span>';
+							html += '</li>';
+						}		
+					} else {
+						html += '<li>';
+						html += '  <span><div class="error">' + json['shipping_method'][i]['error'] + '</div></span>';
+						html += '</li>';						
+					}
+				}
+				
+				html += '  </ul>';
+				html += '  <br />';
+				html += '  <input type="hidden" name="next" value="shipping" />';
+				
+				<?php if ($shipping_method) { ?>
+				html += '  <input type="submit" value="<?php echo $button_shipping; ?>" id="button-shipping" class="button" />';	
+				<?php } else { ?>
+				html += '  <input type="submit" value="<?php echo $button_shipping; ?>" id="button-shipping" class="button" disabled="disabled" />';	
+				<?php } ?>
+							
+				html += '</form>';
+				
+				$.colorbox({
+					overlayClose: true,
+					opacity: 0.5,
+					width: '600px',
+					height: '400px',
+					href: false,
+					html: html
+				});
+				
+				$('input[name=\'shipping_method\']').bind('change', function() {
+					$('#button-shipping').attr('disabled', false);
+				});
+			}
+		}
+	});
+});
 //--></script> 
 <script type="text/javascript"><!--
 $('select[name=\'country_id\']').bind('change', function() {

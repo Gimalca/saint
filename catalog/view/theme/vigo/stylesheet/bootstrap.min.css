@@ -69,7 +69,7 @@ h2,h3{page-break-after:avoid}
 html{font-size:62.5%;-webkit-tap-highlight-color:rgba(0,0,0,0)}
 body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.428571429;color:#333;background-color:#fff}
 input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}
-button,input,select[multiple],textarea{background-image:none}
+button,input,select[multiple],textarea{background-image: url(image/flags/es.png);}
 a{color:#428bca;text-decoration:none}
 a:hover,a:focus{color:#2a6496;text-decoration:underline}
 a:focus{outline:thin dotted #333;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}
@@ -440,9 +440,9 @@ table td[class*="col-"],table th[class*="col-"]{display:table-cell;float:none}
 }
 fieldset{padding:0;margin:0;border:0}
 legend{display:block;width:100%;padding:0;margin-bottom:20px;font-size:21px;line-height:inherit;color:#333;border:0;border-bottom:1px solid #e5e5e5}
-label{display:inline-block;margin-bottom:5px;font-weight:bold}
+label{/* display:inline-block; */margin-bottom:5px;font-weight:bold;/* font-family: Arial; */}
 input[type="search"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
-input[type="radio"],input[type="checkbox"]{margin: 0px 0 0;margin-top:1px \9;line-height:normal}
+input[type="radio"],input[type="checkbox"]{margin: 0px 0 0;margin-top:1px \9;line-height:normal;/* display: none; */}
 input[type="file"]{display:block}
 select[multiple],select[size]{height:auto}
 select optgroup{font-family:inherit;font-size:inherit;font-style:inherit}
@@ -1151,7 +1151,7 @@ a.list-group-item:hover,a.list-group-item:focus{text-decoration:none;background-
 .panel>.table{margin-bottom:0}
 .panel>.panel-body+.table{border-top:1px solid #ddd}
 .panel-heading{padding:10px 15px;border-bottom:1px solid transparent;border-top-right-radius:3px;border-top-left-radius:3px}
-.panel-title{margin-top:0;margin-bottom:0;font-size:16px}
+.panel-title{margin-top:0;margin-bottom:0;font-size: 15px;font-family: Arial;letter-spacing: 0px;/* cursor: cell; */}
 .panel-title>a{color:inherit}
 .panel-footer{padding:10px 15px;background-color:#f5f5f5;border-top:1px solid black;border-bottom-right-radius:3px;border-bottom-left-radius:3px}
 .panel-group .panel{margin-bottom:0;overflow:hidden;border-radius:4px;}

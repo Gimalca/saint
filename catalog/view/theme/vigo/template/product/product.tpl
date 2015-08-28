@@ -143,7 +143,7 @@
                                     <?php } ?>
 
                                     <?php if ($tax) { ?>
-                                    <span class="price-tax"><?php echo $text_tax; ?> <?php echo $tax; ?></span>
+                                    <!--span class="price-tax"><?php echo $text_tax; ?> <?php echo $tax; ?></span-->
                                     <?php } ?>
                                     <?php if ($points) { ?>
                                     <br />
