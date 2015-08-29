@@ -104,17 +104,25 @@
                     <div class="precio col-md-12">
 <br><br>
 
-                        <?php foreach ($totals as $total) { ?>
-                        <div class="sumario-sub col-md-12">
+                      <?php  foreach ($totals as $total) {  
+                                                
+                                                    if($total['code'] == 'total'){ ?>
 
-                            <div class="col-md-6" style="text-align: left;"><?php echo $total['title']; ?></div>
-                            <div class="col-md-6" style="text-align: right;"><span style="font-weight: bold"> <?php echo $total['text']; ?></span></div>
+                                                    <div class="sumario-sub col-md-12" style="border-bottom: 0px">
+                                                          <div class="col-md-6 total_cart" style="text-align: right;"><?php echo $total['title']; ?></div>
+                                                          <div class="col-md-6 total_cart" style="text-align: right;"><?php echo $total['text']; ?></div>
+                                                      </div>
 
+                                                   <?php  }else{ ?>
 
-                        </div>
-
-                        <br>
-                        <?php } ?>    
+                                                      <div class="sumario-sub col-md-12">
+                                                          <div class="col-md-6" style="text-align: left;"><?php echo $total['title']; ?></div>
+                                                          <div class="col-md-6" style="text-align: right;"><?php echo $total['text']; ?></div>
+                                                      </div>
+                                                   
+                                                   <?php  } ?>
+ 
+                                                <?php } ?>
 
 
                     </div>

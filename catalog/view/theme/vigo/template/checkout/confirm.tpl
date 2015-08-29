@@ -1,76 +1,39 @@
-<?php if (!isset($redirect)) {  //print_r($confirm_data)?>
-
-<div class="left">
-     
-	<ul >
-	<!-- mp_trans_disable_start -->
-		<li class="name">
-			<h5><?php echo $confirm_data['firstname'].' '.$confirm_data['lastname'] ?></h5>
-		</li>
-		
-		<li class="addr1"><?php echo $confirm_data['payment_address_1'] ?></li>
-		
-		<li class="city-state-zip">
-			<?php echo $confirm_data['payment_city'].', '.$confirm_data['payment_zone'].' '.$confirm_data['payment_postcode'] ?>
-			
-				
-		</li>
-		
-		<li class="country" data-shipcountry="VE"><?php echo $confirm_data['payment_country'] ?></li>
-		<!-- mp_trans_disable_end -->
-	</ul>
-</div>
-
-<div class="right col-lg-6 ">
-    
-  <ul id="" >
-        
-        <li class="name">
-            <h5><?php echo $confirm_data['payment_method'] ?></h5>
-        </li>
-        <li class="eta" > <?php echo $confirm_data['shipping_method'] ?></li>
-    </ul>
-
-</div>
+<?php if (!isset($redirect)) { ?>
 
 <div id="checkout-review-load" class="order-review checkout-product">
 	<div id="checkout-review-table-wrapper">
-  <table id="checkout-review-table" class="data-table">
-  	<colgroup>
-    	<col />
-        <col width="1" />
-        <col width="1" />
-        <col width="1" />
-        <col width="1" />
-    </colgroup>
+            
+            <table class="table">
     <thead>
-    	<tr class="for-mobile first">
-			<th class="last" colspan="5"><span><?php echo $text_product;?></span></th>
-		</tr>
-      <tr class="for-desktop last">
-        <th rowspan="1"><span><?php echo $column_name; ?></span></th>
-        <th class="a-center" colspan="1"><span><?php echo $column_model; ?></span></th>
-        <th class="a-center" rowspan="1"><span><?php echo $column_quantity; ?></span></th>
-        <th class="a-center" colspan="1"><span><?php echo $column_price; ?></span></th>
-        <th class="a-center last" rowspan="1"><span><?php echo $column_total; ?></span></th>
+      <tr >
+        <th ><span><?php echo $column_name; ?></span></th>
+        <th ><span><?php echo $column_model; ?></span></th>
+        <th ><span><?php echo $column_quantity; ?></span></th>
+        <th ><span><?php echo $column_price; ?></span></th>
+        <th ><span><?php echo $column_total; ?></span></th>
       </tr>
     </thead>
     <tbody>
+    
       <?php foreach ($products as $product) { ?>  
       <?php if($product['recurring']): ?>
         <tr>
-            <td colspan="6" style="border:none;"><image src="catalog/view/theme/vigo/image/reorder.png" alt="" title="" style="float:left;" /><span style="float:left;line-height:18px; margin-left:10px;"> 
+            <td  style="border:none;">
+                
+                <image src="catalog/view/theme/vigo/image/reorder.png" alt="" title="" style="float:left;" /><span style="float:left;line-height:18px; margin-left:10px;"> 
                 <strong><?php echo $text_recurring_item ?></strong>
                 <?php echo $product['profile_description'] ?>
                 </span>
             </td>
         </tr>
       <?php endif; ?>
-      <tr class="for-desktop">
-        <td class="a-center">
-        	<a href="<?php echo $product['href']; ?>">
-            	<h3 class="product-name"><?php echo $product['name']; ?></h3>
-            </a>
+      <tr >
+        <td >
+            <h2 class="product-name">
+                <a href="<?php echo $product['href']; ?>"> <?php echo $product['name']; ?></a>
+
+            </h2>
+        	
            	<dl class="item-options">
           <?php foreach ($product['option'] as $option) { ?>
           	<dt><?php echo $option['name']; ?>:</dt><dd> <?php echo $option['value']; ?></dd>
