@@ -335,7 +335,7 @@ class ModelCheckoutOrder extends Model {
 			$replace = array(
 				'firstname' => $order_info['payment_firstname'],
 				'lastname'  => $order_info['payment_lastname'],
-				'company'   => $order_info['payment_company'],
+				//'company'   => $order_info['payment_company'],
 				'address_1' => $order_info['payment_address_1'],
 				'address_2' => $order_info['payment_address_2'],
 				'city'      => $order_info['payment_city'],
@@ -369,7 +369,7 @@ class ModelCheckoutOrder extends Model {
 			$replace = array(
 				'firstname' => $order_info['shipping_firstname'],
 				'lastname'  => $order_info['shipping_lastname'],
-				'company'   => $order_info['shipping_company'],
+				//'company'   => $order_info['shipping_company'],
 				'address_1' => $order_info['shipping_address_1'],
 				'address_2' => $order_info['shipping_address_2'],
 				'city'      => $order_info['shipping_city'],

@@ -52,7 +52,7 @@ legend        { display:none; }
 
 /* Table */
 table         { border:0; /*border-collapse:collapse;*/ border-spacing:0; empty-cells:show; font-size:100%; }
-caption,th,td { vertical-align:top; text-align:left; font-weight:normal; }
+caption,th,td { /* vertical-align:top; */ text-align:left; font-weight:normal; }
 
 /* Content */
 p             { margin:0 0 10px; }
@@ -677,7 +677,9 @@ ul.level1{ margin-left:-24px;background-image:url(../image/bg-dark.png);}
 
 /* Sidebar =============================================================================== */
 .block { margin-bottom: 40px; }
+.box-heading{margin: 0px auto !important; }
 .block-title {  text-align: center;   margin-bottom: 5px;  margin-top: 35px;}
+
 .block .block-title strong { display:block; font-size:16px; color:#000; }
 .block .block-title strong span { text-transform: uppercase; display: inline-block; margin-bottom: 0px; color: #000 !important ; font-size: 12px; line-height: 25px;}
 .block .block-title a { text-decoration:none !important; }
@@ -745,7 +747,7 @@ ul.level1{ margin-left:-24px;background-image:url(../image/bg-dark.png);}
     width: 100%; } 
 .mini-cart .actions button.button:hover span {color: #888}
 .mini-cart .totals { padding-left: 0; }
-.mini-cart .totals .label { font-weight: normal; font-size: 12px; color: #fff; text-transform: uppercase; }
+.mini-cart .totals .label { font-weight: normal; font-size: 10px; color: #fff; text-transform: uppercase; }
 .mini-cart .totals .price {font-weight: normal; font-size: 12px; color: #ccc; }
 /* Block: Account */
 .sidebar .block-account .block-content { padding-top: 20px; }
@@ -1328,7 +1330,7 @@ button.button:hover{background-color:#000}
 
 /* Content Styles ================================================================= */
 .product-name { margin: 1px 0px; font-size: 10px; font-weight:normal; }
-.product-name a { color: #000;  font-size: 15px; letter-spacing: normal;}
+.product-name a { color: #000;  font-size: 15px; letter-spacing: normal; font-family: Oswald;}
 
 /* Product Tags */
 .tags-list { display:block; font-size:13px; border:1px solid #c1c4bc; background:#f8f7f5; padding:10px; }
@@ -1586,6 +1588,10 @@ ul.checkout-types li a { line-height: 50px; }
 .opc .buttons-set.disabled button.button { display:none; }
 .opc .buttons-set .please-wait { height:21px; line-height:21px; }
 .opc .ul { list-style:disc outside; padding-left:18px; }
+
+#review-buttons-container .button{
+    float: right !important;
+}
 
 .opc { position:relative; }
 .opc li.section { margin-bottom: 20px; }
@@ -2155,7 +2161,7 @@ a.custom-icon {
 .header-container .top-links2 { min-height: 47px; }
 .header-container .top-links select, .header-container .top-links2 select { right: 0; }
 .header-container .top-links, .footer-container { background-color: #000; }
-.header-container .top-links a { font-weight: normal; color: #fff;  text-decoration: none; text-transform: uppercase; display: block; line-height: 18px; height: 18px; }
+.header-container .top-links a { font-weight: normal; color: #fff;  text-decoration: none; text-transform: uppercase; display: block; /* line-height: 18px; */ height: 18px; }
 .header-container .top-links a.btn-remove2 { height: 20px; }
 .header-container .top-links a:hover { color: #e5e5e5; }
 .header-container .top-links .container { padding: 10px 15px; }
@@ -3152,7 +3158,7 @@ li.custom-menu .custom-menu-item p {
 	text-align: right;
 }
 .checkout-product tbody td {
-	vertical-align: top;
+	/* vertical-align: top; */
 	border-bottom: 1px solid #DDDDDD;
 }
 .checkout-product tbody .name, .checkout-product tbody .model {
@@ -3160,6 +3166,10 @@ li.custom-menu .custom-menu-item p {
 }
 .checkout-product tbody .quantity, .checkout-product tbody .price, .checkout-product tbody .total {
 	text-align: right;
+}
+checkout-review-table-wrapper .price{
+    font-weight: normal;
+    font-family: arial;
 }
 .checkout-product tfoot td {
 	text-align: right;

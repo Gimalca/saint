@@ -53,7 +53,7 @@
 </div>
 <div class="right">
     <div class="block-title">
-        <h2><?php echo $text_your_details; ?></h2>
+        <h2><?php echo $text_your_address; ?></h2>
     </div>
     <ul class="form-list">
           

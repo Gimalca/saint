@@ -34,6 +34,11 @@ $_['column_reason']      = 'Razón';
 $_['column_action']      = 'Acción';
 $_['column_date_added']  = 'Fecha de alta';
 $_['column_status']      = 'Estado';
+$_[ 'text_view' ] = 'VISTA';
+						  $_[ 'text_product' ] = 'producto';
+						  $_[ 'text_enter_your_captch' ] = 'Ingrese su Captcha';
+						  
+			
 
 // Entry
 $_['entry_order_id']     = 'ID del pedido:';

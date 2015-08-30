@@ -11,6 +11,8 @@ $_['text_your_address']    = 'Tu dirección';
 $_['text_newsletter']      = 'Boletín de noticias';
 $_['text_your_password']   = 'Tu contraseña';
 $_['text_agree']           =  'He leido y acepto las <a class="thickbox" href="%s" alt="%s"><b>%s</b></a>';
+$_['text_recurring']     = 'Pagos Recurentes';
+$_['text_address']      = 'Direcciones';
 
 // Entry
 $_['entry_firstname']      = 'Nombre:';

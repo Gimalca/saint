@@ -10,6 +10,9 @@
   </div>
   
   <div class="main container">
+      <div class="col-md-2 col-sm-4 col-xs-12">
+    <?php echo $column_left; ?>
+    </div>
   	<div class="col-main col-md-9 col-sm-8 col-xs-12">
     	<div class="my-account dashboard">
         	<div class="block-title" style="margin-bottom: 27px;">
@@ -43,9 +46,7 @@
               <div class="pagination"><?php echo $pagination; ?></div>
         </div>
     </div>
-    <div class="col-left sidebar col-md-3 col-sm-4 col-xs-12">
-    	<?php echo $column_left; ?>
-   </div>
+  
  </div>
   
   

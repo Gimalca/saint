@@ -17,13 +17,13 @@
       <?php } else { ?>
       <input type="radio" name="shipping_method" value="<?php echo $quote['code']; ?>" id="<?php echo $quote['code']; ?>" />
       <?php } ?></td>
-    <td><label for="<?php echo $quote['code']; ?>"><?php echo $quote['title']; ?></label></td>
-    <td style="text-align: right;"><label for="<?php echo $quote['code']; ?>"><?php echo $quote['text']; ?></label></td>
+    <td> <label for="<?php echo $quote['code']; ?>"> <?php echo $quote['title']; ?></label></td>
+    <td style="text-align: right;"> <label for="<?php echo $quote['code']; ?>">  <?php echo ':  '.$quote['text']; ?> </label></td>
   </tr>
   <?php } ?>
   <?php } else { ?>
   <tr>
-    <td colspan="3"><div class="error"><?php echo $shipping_method['error']; ?></div></td>
+    <td colspan="3"><div class="error"> <?php echo $shipping_method['error']; ?></div></td>
   </tr>
   <?php } ?>
   <?php } ?>

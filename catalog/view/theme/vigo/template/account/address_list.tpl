@@ -18,6 +18,9 @@
   </div>
   
   <div class="main container">
+       <div class="col-md-2 col-sm-4 col-xs-12">
+    <?php echo $column_left; ?>
+    </div>
   	<div class="col-main col-md-9 col-sm-8 col-xs-12">
     	<div class="my-account">
         	<div class="block block-contact-info">
@@ -55,9 +58,7 @@
                <button class="button" title="Save" type="submit" value="<?php echo $button_continue; ?>"><span><span><?php echo $button_new_address; ?></span></span></button></a>
             </div>
     </div>
-    <div class="col-left sidebar col-md-3 col-sm-4 col-xs-12">
-    	<?php echo $column_left; ?>
-   </div>
+   
   </div>
   
   <?php echo $column_right; ?>

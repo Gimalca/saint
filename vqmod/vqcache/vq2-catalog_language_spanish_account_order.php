@@ -36,4 +36,9 @@ $_['column_action']         = 'Acción';
 $_['column_date_added']     = 'Fecha de alta';
 $_['column_status']         = 'Estado';
 $_['column_comment']        = 'Comentarios';
+$_[ 'text_item_ordered' ] = 'artículos pedidos';
+						  $_[ 'text_view_order' ] = 'Ver pedido';
+						  $_[ 'text_reorder' ] = 'Reordenar';
+						  
+			
 ?>

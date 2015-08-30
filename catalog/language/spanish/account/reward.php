@@ -12,4 +12,6 @@ $_['text_account']       = 'Cuenta';
 $_['text_reward']        = 'Puntos de recompensa';
 $_['text_total']         = 'El total de tus puntos de recompensa es:';
 $_['text_empty']         = 'o tienes ningún punto de recompensa!';
+$_['text_recurring']     = 'Pagos Recurentes';
+$_['text_address']      = 'Direcciones';
 ?>

@@ -37,7 +37,9 @@
            
         </li>
     </ul>
+    <div class="block-title">
     <h2><?php echo $text_your_password; ?></h2>
+    </div>
     <ul class="form-list">
         <li>
            <div class="field">

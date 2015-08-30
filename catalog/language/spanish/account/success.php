@@ -7,4 +7,6 @@ $_['text_message']  = '<p>Enhorabuena! Tu nueva cuenta ha sido creada satisfacto
 $_['text_approval'] = '<p>Gracias por registrarte en %s!</p><p>Te notificaremos por email una vez que la cuenta haya sido activada.</p><p>Si tienes alguna duda de la operación de esta tienda online, por favor <a href="%s">contacta con el dueño</a>.</p>';
 $_['text_account']  = 'Cuenta';
 $_['text_success']  = 'Éxito';
+$_['text_recurring']     = 'Pagos Recurentes';
+$_['text_address']      = 'Direcciones';
 ?>

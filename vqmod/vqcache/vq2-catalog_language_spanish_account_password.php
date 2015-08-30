@@ -12,6 +12,8 @@ $_['text_address']      = 'Direcciones';
 // Entry
 $_['entry_password'] = 'Contraseña:';
 $_['entry_confirm']  = 'Confirmar contraseña:';
+$_[ 'text_required_fields' ] = '* Los campos requeridos';
+			
 
 // Error
 $_['error_password'] = 'La contraseña debe tener entre 4 y 20 carácteres!';

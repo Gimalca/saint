@@ -11,4 +11,6 @@ $_['text_name']       = 'Nombre:';
 $_['text_remaining']  = 'Restantes:';
 $_['text_size']       = 'Tamaño:';
 $_['text_empty']      = 'No has hecho pedidos de descarga con anterioridad!';
+$_['text_recurring']     = 'Pagos Recurentes';
+$_['text_address']      = 'Direcciones';
 ?>
