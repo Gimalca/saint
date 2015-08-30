@@ -24,6 +24,8 @@ $_['entry_city']        = 'Ciudad:';
 $_['entry_country']     = 'Pais:';
 $_['entry_zone']        = 'Región / Estado:';
 $_['entry_default']     = 'Dirección por defecto:';
+$_[ 'text_required_fields' ] = '* Los campos requeridos';
+			
 
 // Error
 $_['error_delete']      = 'Cuidado: Usted debe agregar al menos una dirección';

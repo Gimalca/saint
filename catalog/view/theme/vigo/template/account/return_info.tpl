@@ -11,6 +11,9 @@
   </div>
   
   <div class="main container">
+      <div class="col-md-2 col-sm-4 col-xs-12">
+    <?php echo $column_left; ?>
+    </div>
   	<div class="col-main col-md-9 col-sm-8 col-xs-12">
     	<div class="my-account dashboard">
         	<div class="block block-product-return-info">
@@ -147,9 +150,7 @@
   <?php } ?>
         </div>
     </div>
-    <div class="col-left sidebar col-md-3 col-sm-4 col-xs-12">
-    	<?php echo $column_left; ?>
-   </div>
+   
  </div>
         
   

@@ -15,8 +15,9 @@
 
   <div class="main container">
       <div class="col-md-2 col-sm-4 col-xs-12">
-    	<?php echo $column_left; ?>
-  	</div>
+    <?php echo $column_left; ?>
+    </div>
+    
       
   	<div class="col-main col-md-9 col-sm-8 col-xs-12">
     	<div class="my-account">

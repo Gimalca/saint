@@ -26,4 +26,6 @@ $_['error_email']      = 'El E-Mail no parece ser valido!';
 $_['error_theme']      = 'Debes seleccionar un tema!';
 $_['error_amount']     = 'La Cantidad debe estar entre %s y %s!';
 $_['error_agree']      = 'Cuidado: Tu debes estar de acuerdo que los certificados de regalo no son reembolsables!';
+$_['text_recurring']     = 'Pagos Recurentes';
+$_['text_address']      = 'Direcciones';
 ?>

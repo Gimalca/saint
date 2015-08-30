@@ -12,4 +12,6 @@ $_['text_account']       = 'Cuenta';
 $_['text_transaction']   = 'Tus transacciones';
 $_['text_total']         = 'Tu balance actual es:';
 $_['text_empty']         = 'No tienes ninguna transacción!';
+$_['text_recurring']     = 'Pagos Recurentes';
+$_['text_address']      = 'Direcciones';
 ?>

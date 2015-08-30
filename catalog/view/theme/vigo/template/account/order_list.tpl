@@ -10,6 +10,9 @@
   </div>
   
   <div class="main container">
+    <div class="col-md-2 col-sm-4 col-xs-12">
+    <?php echo $column_left; ?>
+    </div>
   	<div class="col-main col-md-9 col-sm-8 col-xs-12">
     	<div class="my-account">
         <?php if ($orders) { ?>
@@ -19,34 +22,25 @@
                 </div>
             </div>
             
-            <table id="my-orders-table" class="data-table">
-            	<colgroup>
-               	<col width="1" />
-                <col width="1" />
-                <col />
-                <col width="1" />
-                <col width="1" />
-                <col width="1" />
-                <col width="1" />
-                </colgroup>
-              <thead>
-					<tr class="for-desktop">
-                    	<th><?php echo $text_order_id; ?> </th>
-                        <th><?php echo $text_date_added; ?></th>
-                        <th><?php echo $text_customer; ?></th>
-                        <th><span class="nobr"><?php echo $text_products; ?></span></th>
-                        <th><span class="nobr"><?php echo $text_total; ?></span></th>
-                        <th><span class="nobr"><?php echo $text_status; ?></span></th>
-                        <th></th>
-                    </tr>
-                    <tr class="for-mobile">
+               <table class="table">
+    <thead>
+      <tr >
+     	<th><?php echo $text_order_id; ?> </th>
+        <th><?php echo $text_date_added; ?></th>
+        <th><?php echo $text_customer; ?></th>
+        <th><span class="nobr"><?php echo $text_products; ?></span></th>
+        <th><span class="nobr"><?php echo $text_total; ?></span></th>
+        <th><span class="nobr"><?php echo $text_status; ?></span></th>
+      </tr>
+       <tr class="for-mobile">
                     	<th colspan="7"><?php echo $text_order; ?></th>
                     </tr>
-                </thead>
-                <tbody>
+    </thead>
+    <tbody>
+			
                 
   					<?php foreach ($orders as $order) { ?>
-                  <tr class="for-desktop ">
+                  <tr>
                     	<td># <?php echo $order['order_id']; ?></td>
                         <td><span class="nobr"><?php echo $order['date_added']; ?></span></td>
                         <td><?php echo $order['name']; ?></td>
@@ -118,9 +112,7 @@
   
        </div>
     </div>
-    <div class="col-left sidebar col-md-3 col-sm-4 col-xs-12">
-    	<?php echo $column_left; ?>
-   </div>
+   
  </div>
   
   <?php echo $column_right; ?>

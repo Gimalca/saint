@@ -7,6 +7,8 @@ $_['text_account']      = 'Cuenta';
 $_['text_edit']         = 'Editar información';
 $_['text_your_details'] = 'Tus detalles personales';
 $_['text_success']      = 'Éxito: Tu cuenta ha sido satisfactoriamente actualizada.';
+$_['text_recurring']     = 'Pagos Recurentes';
+$_['text_address']      = 'Direcciones';
 
 // Entry
 $_['entry_firstname']  = 'Nombre::';
@@ -14,6 +16,7 @@ $_['entry_lastname']   = 'Apellido/s:';
 $_['entry_email']      = 'E-Mail:';
 $_['entry_telephone']  = 'Teléfono:';
 $_['entry_fax']        = 'Fax:';
+
 
 // Error
 $_['error_exists']     = 'Cuidado: La dirección de e-mail ya está registrada!';

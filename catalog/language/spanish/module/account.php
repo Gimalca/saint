@@ -15,5 +15,5 @@ $_['text_order']       = 'Historial de pedidos';
 $_['text_download']    = 'Descargas';
 $_['text_return']      = 'Devoluciones';
 $_['text_transaction'] = 'Transacciones';
-$_['text_newsletter']  = 'NBoletín de noticias';
+$_['text_newsletter']  = 'Boletín de noticias';
 ?>

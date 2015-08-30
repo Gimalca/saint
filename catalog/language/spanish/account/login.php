@@ -11,6 +11,8 @@ $_['text_register_account']        = 'Creando una cuenta podrás comprar más ra
 $_['text_returning_customer']      = 'Cliente frecuente';
 $_['text_i_am_returning_customer'] = 'Ya soy cliente';
 $_['text_forgotten']               = 'Contraseña olvidada';
+$_['text_recurring']     = 'Pagos Recurentes';
+$_['text_address']      = 'Direcciones';
 
 // Entry
 $_['entry_email']                  = 'Dirección e-mail:';
