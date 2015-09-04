@@ -1,4 +1,5 @@
 <div class="box block block-account">
+    
   <div class="box-heading block-title"><strong><span><?php echo $heading_title; ?></span></strong></div>
   <div class="box-content block-content">
     <ul>
