@@ -13,10 +13,10 @@
   	<div class="col-main col-md-9 col-sm-8 col-xs-12">
     	<div class="my-account">
           <div class="block block-account-info">
-              <div class="block-title" style=" text-align:left">
+            <div class="block-title">
          	   <strong><span><?php echo $heading_title; ?></span></strong>
             </div>
-            <div class="block-content" >
+            <div class="block-content">
                 
                 <?php echo $text_message; ?>
             </div>
@@ -29,7 +29,7 @@
         </div>
     </div>
     <div class="col-left sidebar col-md-3 col-sm-4 col-xs-12">
-    	<?php //echo $column_left; ?>
+    	<?php echo $column_left; ?>
    </div>
  </div>
   

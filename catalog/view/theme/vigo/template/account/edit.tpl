@@ -15,7 +15,7 @@
 
   <div class="main container">
       <div class="col-md-2 col-sm-4 col-xs-12">
-    <?php //echo $column_left; ?>
+    <?php echo $column_left; ?>
     </div>
     
       
