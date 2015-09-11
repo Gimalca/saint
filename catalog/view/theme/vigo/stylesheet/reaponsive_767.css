@@ -240,6 +240,13 @@
 
     .main-container {margin-top: 80px;}
 
+    .link-wishlist {display:none !important}
+    .product-image-area .hover-area2 { display:none !important}
+    .product-image-area .hover-area { display:none !important}
+
+    .sorter .view-mode, .sorter .limiter{float:none !important;}
+    /* --- */
+
     .footer div.social-icons { float: none; }
     .footer address { float: none; }
     .footer textarea { padding: 10px; }
