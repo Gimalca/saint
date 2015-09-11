@@ -234,6 +234,11 @@
     #nav_custom ul li { display: inline-block; margin:0; padding-bottom:1px; vertical-align: top; width: 100%; padding: 0 25px; border-bottom: 1px #ccc solid;}
     #nav_custom li.level1 a span{ color: #222 !important }
 
+    .navbar.sticky-menu{ background-color: #fff;background-image:none; z-index: 100; height: 50px;} 
+    .navbar.sticky-menu span{color:#000 !important}
+
+    .main-container {margin-top: 5px;}
+
     .footer div.social-icons { float: none; }
     .footer address { float: none; }
     .footer textarea { padding: 10px; }
