@@ -345,11 +345,11 @@ if(!$_SERVER["QUERY_STRING"]){
                             <li class="level0"><a id="linkm" href="index.php?route=product/category&amp;path=163"><span>Bloggers</span></a>
                             <li class="level0"><a id="linkm" href="<?php echo $category['href']; ?>"><span><?php $category['name'] = 'Blog'; echo $category['name'];?></span></a>
                             <?php endif; ?>    
-                            <span class="plus"></span>
+                            
                               <?php if ($category['children']) { ?>
-                                    
+                                    <span class="plus"></span>
                                     <?php for ($i = 0; $i < count($category['children']);) { ?>
-                                        <ul class="level1 dropdown">
+                                        <ul class="level1 ">
                                           <?php $j = $i + ceil(count($category['children']) / $category['column']); ?>
                                           <?php for (; $i < $j; $i++) { ?>
                                             <?php if (isset($category['children'][$i])) { ?>

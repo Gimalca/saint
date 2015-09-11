@@ -223,10 +223,17 @@
     #nav_custom > li > ul { box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; padding: 0; min-height: 0; }
     #nav_custom ul li { width: 100% !important; display: block; }
     #nav_custom li.thumbnail-image-area { display: none; }
-    #nav_custom ul li.level1 > a { margin: 0; border-bottom: 1px solid #eee; display: block; }
+    #nav_custom ul li.level1 > a { margin: 0; /* border-bottom: 1px solid #eee; */ display: block; }
     #nav_custom ul li.level1 > a > span { border-color: transparent !important; }
-    #nav_custom ul li.level1 ul { border-bottom: 1px solid #eee; padding: 10px 20px; }
-    #nav_custom ul li.level1.expanded > a > span { border-color: #999 !important; }
+    #nav_custom ul li.level1 ul { border-bottom: 0px solid #eee; padding: 10px 20px; }
+    #nav_custom ul li.level1.expanded > a > span { border-color: none !important; }
+    /* ++ */
+    #nav_custom li.level0 {max-height: 100%;}
+    #nav_custom ul.level1{ margin-left:2px;background-color:#eee; background-image:none;max-width: 100%;}
+    .navbar.sticky-menu span{color:#222 !important }
+    #nav_custom ul li { display: inline-block; margin:0; padding-bottom:1px; vertical-align: top; width: 100%; padding: 0 25px; border-bottom: 1px #ccc solid;}
+    #nav_custom li.level1 a span{ color: #222 !important }
+
     .footer div.social-icons { float: none; }
     .footer address { float: none; }
     .footer textarea { padding: 10px; }
