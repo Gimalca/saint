@@ -21,8 +21,8 @@
 /* Large thumbnail: */
 #etalage .etalage_thumb{
 	background: url(../images/loading.gif) center no-repeat;
-    cursor: move;
-	left: 200px !important;
+	cursor: move;
+	/* left: 200px !important; */
 }
 /* Large thumbnail - image (in case you want to add a border around the image within the frame) */
 #etalage .etalage_thumb_image{ }
@@ -81,10 +81,10 @@
 .etalage img, .etalage li{ -webkit-user-select:none; -khtml-user-select:none; -moz-user-select:none; -o-user-select:none; user-select:none; -webkit-user-drag:none; -moz-user-drag:none; user-drag:none }
 .etalage, .etalage_small_thumbs li{ float:left }
 .etalage_right{ float:right }
-.etalage li{ position:absolute }
+.etalage li{ position:absolute;}
 .etalage img{ vertical-align:bottom; max-width:none }
 .etalage_magnifier{ cursor:default }
-.etalage_magnifier div, .etalage_small_thumbs{ overflow:hidden ; margin-left: 88px !important; margin-top: 50px;}
+.etalage_magnifier div, .etalage_small_thumbs{ overflow:hidden ; /* margin-left: 88px !important; */ margin-top: 50px;}
 .etalage_magnifier div img{ display:none }
 .etalage_icon, .etalage_hint{ cursor:default; width:0; height:0; overflow:hidden }
 .etalage_small_thumbs li.vertical{ float:none }

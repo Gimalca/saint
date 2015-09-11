@@ -1001,9 +1001,9 @@ tr.summary-details-excluded { font-style:italic; }
 .product-view .product-shop .availability span { font-weight:normal;color: #777; text-transform: uppercase; }
 .product-view .product-shop .ratings { border: 1px solid #eee; border-width: 1px 0; padding: 10px 0; }
 .product-view .product-shop button.button.btn-cart span { font-weight: bold; }
-.etalage-control {  }
+#etalage .etalage_thumb{left: 200px !important;}
 .etalage-control a { position: absolute; left: 0; background-image: url(../images/pagenation.png); background-repeat: no-repeat; text-indent: -9999px; width: 26px; height: 20px; border: 0px solid #444; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; background-color: transparent; transition: border-color 200ms ease-in-out, background-color 200ms ease-in-out; -moz-transition: border-color 200ms ease-in-out, background-color 200ms ease-in-out; -webkit-transition: border-color 200ms ease-in-out, background-color 200ms ease-in-out; -o-transition: border-color 200ms ease-in-out, background-color 200ms ease-in-out; }
-.etalage-control a.etalage-prev { background-position: 5px 4px; top: 10px; left:100px }
+.etalage-control a.etalage-prev { background-position: 5px 4px; top: 10px; left:100px}
 .etalage-control a.etalage-next { background-position: 5px -12px; bottom: 0; left:100px }
 .etalage-control a.etalage-prev:hover { background-position: 5px -28px; }
 .etalage-control a.etalage-next:hover { background-position: 5px -44px; }
@@ -3212,7 +3212,7 @@ dl{
 }
 .etalage_small_thumbs{
    margin-top: 50px !important;
-   /* margin-left:100px !important; */
+   margin-left: 88px !important;
 }
 .etalage_small_thumb{
     width: 50px !important;

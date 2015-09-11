@@ -570,11 +570,12 @@ if(!$_SERVER["QUERY_STRING"]){
     <script type="text/javascript">
 //<![CDATA[
     jQuery(document).ready(function(){
+        jQuery('.navbar').addClass('navbarhome');
         var scrolled = false;
        
         jQuery(window).scroll(function(){
             if(100<jQuery(window).scrollTop() && !scrolled){
-                jQuery('.header-container').addClass('sticky-menu').css('top','-50px').animate({top:'0px'}, 500);
+                 jQuery('.header-container').addClass('sticky-menu').css('top','-50px').animate({top:'0px'}, 500);
                  jQuery('.navbar').addClass('sticky-menu').css('top','-50px').animate({top:'48px'}, 500);
                 scrolled = true;
             }
@@ -585,6 +586,14 @@ if(!$_SERVER["QUERY_STRING"]){
                 scrolled = false;
             }
            
+        });
+        
+         jQuery(window).resize(function(){
+         
+          if(430 < jQuery(window).width()){
+              alert('sirve')
+          }
+         
         });
        /* jQuery("#nav_custom li.level0").mouseover(function(){
             if(jQuery(window).width() >= 768){
