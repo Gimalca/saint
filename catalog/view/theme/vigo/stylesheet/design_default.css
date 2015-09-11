@@ -72,7 +72,7 @@ button.button span {
     border-bottom-color: #444444;
                 }
 .navbar { background-color: #fafafa; }
-.navbar .navbar-header, .navbar.navbar-default .navbar-collapse { text-align: center; display: block !important;}
+.navbar .navbar-header, .navbar.navbar-default .navbar-collapse { text-align: center; /* display: block !important; */}
 #nav_custom li.level0 > a { color: #444444; }
 #nav_custom li.level0:hover > a { border-top-color: #444444; }
 #nav_custom ul { background-color: transparent; }
