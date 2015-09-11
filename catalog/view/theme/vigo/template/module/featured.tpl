@@ -6,46 +6,18 @@
 <div id="fp_featured" class="tab">
     <div class="category-products">
         <?php if($listing_effect==1) { ; ?>
-          	<ul class="products-grid producteffect<?php echo "$listing_effect"; ?>">
+          	<div class="products-grid producteffect<?php echo "$listing_effect"; ?>"-->
                	<?php shuffle($products); $i=0; foreach($products as $product) { ?>
-                	<li class="item home-dee">
-            			<div class="product-image-area" hover_img="<?php echo  $product['add']; ?>" base_img="<?php echo $product['thumb']; ?>" product_url="<?php echo $product['href']; ?>">
-                                 <a href="<?php echo $product['href']; ?>" title="Black and white dust dress" class="product-image">
-                                <img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>"/>
-                            </a>
-                            <?php if($product['special']){ ?>
+                	<div class="item home-dee col-xs-11 col-sm-4 col-md-4">
+                            <div class="product-image-area" hover_img="<?php echo  $product['add']; ?>" base_img="<?php echo $product['thumb']; ?>" product_url="<?php echo $product['href']; ?>">
+                                <a href="<?php echo $product['href']; ?>" title="Black and white dust dress" class="product-image">
+                                    <img class="img-responsive" src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>"/>
+                                </a>
+                                <?php if($product['special']){ ?>
                                 <div class="sale-product-icon" style="top: 10px">Sale</div>
-                           <?php }?>
-                            <div class="hover-area">
-                               
-                                <div class="ratings">
-                                    <div class="rating-box">
-                                        <?php $product_rate =  $product['rating'] * 20; ?>
-                                        <div class="rating" style="width:<?php echo $product_rate?>%;"></div>
-                                    </div>
-                                
-                                    <span class="amount"><?php echo $product['reviews']; ?></span>
-                                </div>
-                                
-                    
-                   				<div class="short_desc"><?php echo $product['desc']; ?></div>
-                
-                                    <ul class="cart-button-set">
-                                        <li class="first">
-                                          <a class="addtocart" onclick="addToCart('<?php echo $product['product_id']; ?>');"><?php echo $button_cart; ?></a>
-                                           
-                                        </li>
-                                        <li><a class="addtowishlist" onclick="addToWishList('<?php echo $product['product_id']; ?>');"><?php echo $button_wishlist; ?></a>
-                                        </li>
-                                        <li class="last"><a class="addtocompare" onclick="addToCompare('<?php echo $product['product_id']; ?>');"><?php echo $text_compare; ?></a>
-                                        </li>
-                                    
-                                    </ul>
-                    
-                    
-                             	<div class="clearer"></div>
-                         		</div>
-                </div>
+                                <?php }?>
+
+                            </div>
                 
             
                 		<h2 class="product-name"><a href="<?php echo $product['href'];?>" title="<?php echo $product['name'];?>"><?php echo $product['name'];?>
@@ -81,10 +53,10 @@
                </div-->
                
     
-            </li>
+            </div>
                   		
           		<?php if (++$i == 3) break;} ?>     
-          </ul>
+          </div>
          <?php } else if($listing_effect==2) { ?>
        		<ul class="products-grid producteffect<?php echo "$listing_effect"; ?>">
                	<?php foreach($products as $product) { ?>

@@ -348,7 +348,7 @@ if(!$_SERVER["QUERY_STRING"]){
                               <?php if ($category['children']) { ?>
                                     
                                     <?php for ($i = 0; $i < count($category['children']);) { ?>
-                                        <ul class="level1">
+                                        <ul class="level1 dropdown">
                                           <?php $j = $i + ceil(count($category['children']) / $category['column']); ?>
                                           <?php for (; $i < $j; $i++) { ?>
                                             <?php if (isset($category['children'][$i])) { ?>

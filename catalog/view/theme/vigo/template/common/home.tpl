@@ -201,7 +201,7 @@
                     </div>
 
                 </div-->
-                <div class="row">
+                <div class="row hidden-xs">
 
                     <div class="col-lg-12" style="margin-bottom: 70px">
                         <div class="block block-from-blog">

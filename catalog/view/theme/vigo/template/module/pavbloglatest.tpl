@@ -1,6 +1,6 @@
 <div class="split">
     <div class="block-title">
-                                <img style=" width:382px" src="image/data/tittle-blog.jpg" alt="Instagram">
+        <img class="img-responsive" style=" width:382px" src="image/data/tittle-blog.jpg" alt="Blog">
                                 <!--strong><span>Instagram</span></strong-->
 
                             </div>
