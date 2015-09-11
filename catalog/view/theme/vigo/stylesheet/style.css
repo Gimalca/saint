@@ -2245,7 +2245,7 @@ li.mini-wishlist:hover #topWishlistContent { display: block; opacity: 1; filter:
 .col3-layout .products-grid li.item { width: 31.3%; margin-right: 3%; }
 /* Product Grid */
 .products-grid li.item .product-image img { width: 100%; position: relative; }
-#fp_featured .products-grid .item .product-image img { width: 350px; height:540px}
+#fp_featured .products-grid .item .product-image img { width: 350px; max-height:540px}
 #fp_featured .products-grid .products-grid .product-image{  display: block;width: 100%;margin: 0;}
 #fp_featured .products-grid li.item{/* float: left; *//* width: 365px; *//* padding: 10px 5px 0px; */position: relative;/* margin: 0px 15px 15px 0px !important; */}
 #fp_featured .products-grid .item{/* float: left; *//* width: 365px; */padding: 10px 5px 0px;position: relative;/* margin: 0px 15px 15px 0px !important; */}
