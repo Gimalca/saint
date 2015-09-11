@@ -1,4 +1,4 @@
-<div class="block block-category-nav">
+<div class="block block-category-nav hidden-xs">
     <div class="block-title">
         <strong><span><?php echo $heading_title; ?></span></strong>
     </div>
