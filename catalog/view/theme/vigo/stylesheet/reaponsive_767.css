@@ -56,14 +56,15 @@
         width: 20px;
         text-indent: -9999px;
     }
-    .header-container .top-links ul.right-links li a { 
+    .header-container .top-links ul.right-links li a {
         padding-right: 10px;
         width: 20px;
         text-indent: -9999px;
         height: 19px;
+        color: #fff;
     }
-    li.mini-cart #topCartContent { top: 40px; }
-    li.mini-cart:hover #topCartContent { text-indent: 0; }
+    li.mini-cart #topCartContent { top: 40px; width: 340px; margin: 0 auto;}
+    li.mini-cart:hover #topCartContent { text-indent: 0; text-align: center;}
     .header .logo { display: block; }
     a.sign-link { float: none !important; position: static; display: inline-block; margin-top: 15px; }
     .header { margin-bottom: 55px; margin-top: 100px; }
@@ -178,7 +179,7 @@
     }
     .cart .totals {
         margin-top: 30px;
-        float: none;
+        float: left;
         width: 100%;
     }
     ul.checkout-types li { float: left; margin: 0; margin-right: 20px; margin-bottom: 10px; }
@@ -256,7 +257,12 @@
     .etalage-control a.etalage-prev { background-position: 5px 4px; top: 10px; left:20px}
     .etalage-control a.etalage-next { background-position: 5px -12px; bottom: 0; left:20px }
 
+    .heading .mini-products-list .product-details {margin-left: 166px!important;color: #fff;}
+    .mini-products-list .product-details a.btn-remove2 {  background-position: 35px;}
+
     .main-container .col-main .row .col-md-12 .block.block-related {margin-left: 0px;width: 340px;}
+
+    .page #content .main.container { margin-top: 90px;}
     /* --- */
 
     .footer div.social-icons { float: none; }

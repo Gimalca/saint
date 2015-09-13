@@ -36,7 +36,7 @@
         </div>
   
 </div>
-    <div class="dividern col-md-2 col-sm-2 col-xs-12">
+    <div class="dividern col-md-2 col-sm-2 hidden-xs">
         
     </div>
 <div id="login" class="block block-registered-users col-md-4 col-sm-4 col-xs-12">

@@ -449,7 +449,7 @@ button.button span.compare_continue{font: bold 20px/40px 'Scada',Helvetica,sans-
 .tp-bullets.simplebullets.round {margin-top: 310px !important;}
 /*slider 4 banner end*/
 @media (max-width: 767px){
-#mini-cart .product-image  img {float: left;height: auto;width: 100px;}
+#mini-cart .product-image  img {float: left;height: auto;/* width: 100px; */}
 .header-container .top-links ul.right-links li a{padding:0px;}
 .slider_4_banner{width:100%; height:auto;}
 }

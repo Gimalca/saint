@@ -261,6 +261,8 @@ if(!$_SERVER["QUERY_STRING"]){
                             }).mouseleave(function(){
                               jQuery('#topCartContent').hide()
                             });
+                            
+                         
                                  
                                      
                              

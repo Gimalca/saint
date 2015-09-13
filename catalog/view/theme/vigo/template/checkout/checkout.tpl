@@ -3,7 +3,7 @@
 
 <?php //print_r($totals); ?>
     <div class="main container" style="padding-top: 0px !important">
-        <div id="shopping_process_bar" class="col-md-12">
+        <div id="shopping_process_bar" class="col-md-12 hidden-xs">
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
                 <tbody><tr>
                         <td>

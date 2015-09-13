@@ -1,13 +1,5 @@
 <?php echo $header; ?>
-<?php if ($attention) { ?>
-<div class="attention"><?php echo $attention; ?><img src="catalog/view/theme/vigo/image/close.png" alt="" class="close" /></div>
-<?php } ?>
-<?php if ($success) { ?>
-<div class="success"><?php echo $success; ?><img src="catalog/view/theme/vigo/image/close.png" alt="" class="close" /></div>
-<?php } ?>
-<?php if ($error_warning) { ?>
-<div class="warning"><?php echo $error_warning; ?><img src="catalog/view/theme/vigo/image/close.png" alt="" class="close" /></div>
-<?php } ?>
+
 <?php echo $column_left; ?><?php echo $column_right; ?>
 <div id="content" class="main-container col1-layout"><?php echo $content_top; ?>
     <div>
@@ -16,10 +8,20 @@
 
 
     <div class="main container">
+       
         <h1>
             <?php echo $heading_title; ?>
         </h1>
-        <div id="shopping_process_bar" class="col-md-12">
+         <?php if ($attention) { ?>
+<div class="attention"><?php echo $attention; ?><img src="catalog/view/theme/vigo/image/close.png" alt="" class="close" /></div>
+<?php } ?>
+<?php if ($success) { ?>
+<div class="success"><?php echo $success; ?><img src="catalog/view/theme/vigo/image/close.png" alt="" class="close" /></div>
+<?php } ?>
+<?php if ($error_warning) { ?>
+<div class="warning"><?php echo $error_warning; ?><img src="catalog/view/theme/vigo/image/close.png" alt="" class="close" /></div>
+<?php } ?>
+        <div id="shopping_process_bar" class="col-md-12 hidden-xs">
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
                 <tbody><tr>
                         <td>
@@ -174,7 +176,7 @@
                                             <div class="precio col-md-12">
                                                 
                                                    
-                                                <div class="sumario-sub col-md-12">
+                                                <div class="row sumario-sub ">
                                                     <div class="col-md-6" style="text-align: left;"><?php echo $column_quantity; ?></div>
                                                     <div class="col-md-6" style="text-align: right;"><?php echo $qt; ?></div>
                                                 </div>
@@ -183,14 +185,14 @@
                                                 
                                                     if($total['code'] == 'total'){ ?>
 
-                                                    <div class="sumario-sub col-md-12" style="border-bottom: 0px">
+                                                    <div class="row sumario-sub " style="border-bottom: 0px">
                                                           <div class="col-md-6 total_cart" style="text-align: right;"><?php echo $total['title']; ?></div>
                                                           <div class="col-md-6 total_cart" style="text-align: right;"><?php echo $total['text']; ?></div>
                                                       </div>
 
                                                    <?php  }else{ ?>
 
-                                                      <div class="sumario-sub col-md-12">
+                                                      <div class="row  sumario-sub ">
                                                           <div class="col-md-6" style="text-align: left;"><?php echo $total['title']; ?></div>
                                                           <div class="col-md-6" style="text-align: right;"><?php echo $total['text']; ?></div>
                                                       </div>

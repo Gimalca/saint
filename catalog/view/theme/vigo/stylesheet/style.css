@@ -736,7 +736,7 @@ tr.summary-details-excluded { font-style:italic; }
 .mini-products-list .product-details a.btn-remove2 { position: absolute; right: 0; top: 0; background-position: 5px;}
 .mini-products-list .product-details a.btn-remove2:hover { background-position: -15px;}
 .mini-products-list li { margin-bottom: 10px;}
-.mini-products-list .qty-price {  font-weight: normal;   font-size: 12px; }
+.mini-products-list .qty-price {  font-weight: normal;   font-size: 12px; color: #eee;}
 .mini-products-list .qty-price .price { font-weight: normal; color: #ccc; font-size: 12px; }
 .mini-cart p.cart-empty { margin: 0; }
 .mini-cart .actions { padding-right: 0; }
@@ -3063,8 +3063,8 @@ li.custom-menu .custom-menu-item p {
   font-weight: bold;
 }
 /*Totales Nuevo*/
-.sumario{  border: 1px solid gray;  height: auto;   margin-bottom: 27px;   background: #fff;}
-.sumario-sub{border-bottom: 1px dotted gray;  height: 22px;margin-top: 10px;}
+.sumario{  border: 1px solid gray;  height: auto;   margin-bottom: 27px;   background: #fff;/* position: relative; */}
+.sumario-sub{border-bottom: 1px dotted gray;  /* height: auto; *//* margin-top: 10px; */margin: 10px;padding: 5px;}
 .sumario-sub .total_cart{ font-weight:bold; font-size:15px }
 .titulo{  text-align: center;  margin-top: 30px;  margin-bottom: 20px;  font-size: 20px; font-size: 1.5em; font-weight: bold; text-transform: uppercase;}
 .precio{ text-align: center;   /* height: 133px; */}
@@ -3187,7 +3187,8 @@ checkout-review-table-wrapper .price{
 button :hover {background-color: none;}
 .warning{
     color: red;
-    font-weight: 600;     
+    font-weight: 600;
+    margin-top: 5px;
 }
 dl{
     margin: 0px !important;
