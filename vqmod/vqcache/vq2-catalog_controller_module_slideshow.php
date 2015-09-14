@@ -71,7 +71,7 @@ public function getList() {
 							$image = $this->model_tool_image->resize($result['image'], 1170,550);
 						}
 						elseif($this->data['slidereffect'] ==2){
-							$image = $this->model_tool_image->resize($result['image'], 1900,750);
+							$image = $this->model_tool_image->resize($result['image'], 1100,550);
 						}
 						elseif($this->data['slidereffect'] == 4){
 							$image = $this->model_tool_image->resize($result['image'], 770,615);
@@ -89,7 +89,7 @@ public function getList() {
 							$image = $this->model_tool_image->resize($result['image'], 1170,550);
 						}
 						elseif($this->data['slidereffect'] ==2){
-							$image = $this->model_tool_image->resize($result['image'], 1900,750);
+							$image = $this->model_tool_image->resize($result['image'], 1100,550);
 						}
 						elseif($this->data['slidereffect'] == 4){
 							$image = $this->model_tool_image->resize($result['image'], 770,615);

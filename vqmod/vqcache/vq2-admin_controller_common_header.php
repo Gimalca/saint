@@ -21,6 +21,9 @@ class ControllerCommonHeader extends Controller {
 
 		$this->data['heading_title'] = $this->language->get('heading_title');
 
+            $this->data['text_newssubscribe'] = $this->language->get('text_newssubscribe');
+            
+
 		$this->data['text_affiliate'] = $this->language->get('text_affiliate');
 		$this->data['text_attribute'] = $this->language->get('text_attribute');
 		$this->data['text_attribute_group'] = $this->language->get('text_attribute_group');
@@ -270,6 +273,9 @@ $this->data['vigo_color'] = $this->url->link('custom/vigo_color', 'token=' . $th
 // VQ start
 
 // VQ End
+
+            $this->data['newssubscribe'] = $this->url->link('sale/newssubscribers', 'token=' . $this->session->data['token'], 'SSL');
+            
 			$this->data['stores'] = array();
 
 			$this->load->model('setting/store');

@@ -36,30 +36,72 @@
                     </ul>
                 </div>
                 <div class="col-md-5" style="margin-top: 50px;">
-                    <div id="newsletter-footer">
-                        <div id="footer-titulo" class="col-md-12" style="margin-bottom: 11px;">
-                             Newsletter
-                            y promociones especiales
-                        </div>
-                        
-                       <div class="input-box col-md-7" >
-                        <input type="text" name="email" id="newsletter" title="Sign up for our newsletter" class="input-text required-entry validate-email" placeholder="Email" />
-                        </div>
-                        <button id="boton-footer" type="submit" title="Sign Up" class="button"><span><span style="color: white;font-size: 12px;">Suscribete</span></span></button>
-                        <!--div class="social-icons col-md-12 col-xs-offset-1">
-                        <div class="form-subscribe-header" id="newsletter-footer">
-                            Síguenos
-                        </div>
-                        <div class="col-md-12"  style="margin-left: 0px; padding-left: 0px;">
-                            <a class="facebook-icon" href="http://www.facebook.com/">Facebook</a>
-                            <a class="twitter-icon" title="Twitter" href="http://www.twitter.com/">Twitter</a>
-                            <a class="instragram-icon" title="Instragram" href="www.instragram.com/">Instragram</a>
-                            <a class="pinterest-icon" title="Pinterest" href="www.pinterest.com/">Flickr</a>
-                            <a class="google-icon" title="google" href="www.google.com/">google</a>
-                          </div>
-                        </div-->
+                    <div id="newsletter-footer">  
+                        <form name="subscribe" id="subscribe">
+                            <div id="footer-titulo" class="col-md-12" style="margin-bottom: 11px;">
+                                Newsletter
+                                y promociones especiales
+                            </div>
 
+                            <div class="input-box col-md-7" >
+
+                                <input type="text" value="" name="subscribe_email" id="subscribe_email" class="input-text required-entry validate-email" placeholder="Email" />
+                                <input type="hidden" value="-" name="subscribe_name" id="subscribe_name">
+                                <div id="subscribe_result"></div>
+                            </div>
+                            <button id="boton-footer"  onclick="email_subscribe()" type="button" title="Suscribete" class="button"><span><span style="color: white;font-size: 12px;">Suscribete</span></span></button>
+                            <!--div class="social-icons col-md-12 col-xs-offset-1">
+                            <div class="form-subscribe-header" id="newsletter-footer">
+                                Síguenos
+                            </div>
+                            <div class="col-md-12"  style="margin-left: 0px; padding-left: 0px;">
+                                <a class="facebook-icon" href="http://www.facebook.com/">Facebook</a>
+                                <a class="twitter-icon" title="Twitter" href="http://www.twitter.com/">Twitter</a>
+                                <a class="instragram-icon" title="Instragram" href="www.instragram.com/">Instragram</a>
+                                <a class="pinterest-icon" title="Pinterest" href="www.pinterest.com/">Flickr</a>
+                                <a class="google-icon" title="google" href="www.google.com/">google</a>
+                              </div>
+                            </div-->
+                        </form>
+                    </div>
+                 
+
+                   
+                </div>
             </div>
+           
+            <script language="javascript">
+		
+            function email_subscribe(){
+                    $.ajax({
+                                    type: 'post',
+                                    url: 'index.php?route=module/newslettersubscribe/subscribe',
+                                    dataType: 'html',
+                        data:$("#subscribe").serialize(),
+                                    success: function (html) {
+                                            eval(html);
+                                    }}); 
+            }
+            function email_unsubscribe(){
+                    $.ajax({
+                                    type: 'post',
+                                    url: 'index.php?route=module/newslettersubscribe/unsubscribe',
+                                    dataType: 'html',
+                        data:$("#subscribe").serialize(),
+                                    success: function (html) {
+                                            eval(html);
+                                    }}); 
+            }
+      
+            $('.fancybox_sub').fancybox({
+                    width: 180,
+                    height: 180,
+                    autoDimensions: false
+            });
+            </script>
+      
+                    
+                    
                 </div>
             </div>
             <div class="row col-md-12 footer-pay">

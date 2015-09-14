@@ -97,4 +97,7 @@ $_['text_pavblog_blog']               = 'Pav Blogs ';
 				$_['text_pavblog_comment']               = 'Pav Último comentario ';
 				$_['text_pavblog_latest']               = 'Pav Últimas';
 $_['text_zone']                        = 'Zonas';
+
+          $_['text_newssubscribe']     = 'Newsletter Subscribers';
+            
 ?>
