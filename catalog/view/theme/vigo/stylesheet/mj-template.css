@@ -671,12 +671,10 @@ background-position: 7px 2px;
     cursor: pointer;
     line-height: 15px;
     padding-left: 25px;
-    
 }
 #columnright .narrow-by-list label {
-    font-size: 11px;
+    font-size: 12px;
     background-image: url("../images/box.png");
-	
     background-position: left -17px;
 }
 #columnright .narrow-by-list input[type="checkbox"]{display:none}

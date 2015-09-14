@@ -234,9 +234,9 @@ if(!$_SERVER["QUERY_STRING"]){
                     </div>
                     
                         <div class="social-icons" style="margin-top:7px">
-                            <a class="facebook-icon" title="Facebook" href="http://www.facebook.com/">Facebook</a>
+                            <a class="facebook-icon" title="Facebook" href="https://www.facebook.com/Saints-Clothes-1491152241203314">Facebook</a>
                             <a class="twitter-icon" title="Twitter" href="http://www.twitter.com/">Twitter</a>
-                            <a class="instragram-icon" title="Instragram" href="http://www.instragram.com/">Instragram</a>
+                            <a class="instragram-icon" title="Instragram" href="https://instagram.com/saints_ve/">Instragram</a>
                             <a class="pinterest-icon" title="Pinterest" href="http://www.pinterest.com/">Flickr</a>
                             <a class="google-icon" title="google" href="http://www.google.com/">google</a>
                                                                    

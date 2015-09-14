@@ -49,7 +49,7 @@
 
 <script type="text/javascript"><!--
 $('.button-filter').bind('click', function () {
-    alert('sirve');
+
         filter = [];
 
         $('.box-filter input[type=\'checkbox\']:checked').each(function (element) {

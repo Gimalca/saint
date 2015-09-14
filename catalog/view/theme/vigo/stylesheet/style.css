@@ -3070,7 +3070,9 @@ li.custom-menu .custom-menu-item p {
 .precio{ text-align: center;   /* height: 133px; */}
 .cancelar{/* border-top: 1px solid gray; */  height: 52px;   /* background: #7e7e7e; */text-align: center;}
 .cancelar button{ width:75%;  margin-top: 11px;  /* margin-right: 22px; */  /* margin-left: 34px; */   background-color: #000;  color: #fff;}
+.cancelar button:hover{ background-color: #fff;}
 .cancelar button span{color: #fff;}
+.cancelar button:hover span{color: #000; font-weight:bold}
 
 
 /*Compra Nuevo*/

@@ -57,8 +57,8 @@ $_['entry_postcode']                 = 'Código postal:';
 $_['entry_city']                     = 'Ciudad:';
 $_['entry_country']                  = 'País:';
 $_['entry_zone']                     = 'Región / Estado:';
-$_['entry_newsletter']               = 'Suscribirme al boletín de noticias de %s.';
-$_['entry_shipping'] 	             = 'Mi dirección de entrega y facturación es la misma.';
+$_['entry_newsletter']               = 'Suscribirme al boletín de noticias de %s';
+$_['entry_shipping'] 	             = 'Mi dirección de entrega y facturación es la misma';
 
 // Error
 $_['error_warning']                  = 'Hubo un problema en el procesamiento de tu pedido! Si el problema persiste por favor intenta seleccionar un método de pago diferente o contacta con el dueño de la tienda <a href="%s">haciendo click aquí</a>.';

@@ -108,14 +108,14 @@
                                                 
                                                     if($total['code'] == 'total'){ ?>
 
-                                                    <div class="sumario-sub col-md-12" style="border-bottom: 0px">
+                                                    <div class="row sumario-sub" style="border-bottom: 0px">
                                                           <div class="col-md-6 total_cart" style="text-align: right;"><?php echo $total['title']; ?></div>
                                                           <div class="col-md-6 total_cart" style="text-align: right;"><?php echo $total['text']; ?></div>
                                                       </div>
 
                                                    <?php  }else{ ?>
 
-                                                      <div class="sumario-sub col-md-12">
+                                                      <div class="row sumario-sub">
                                                           <div class="col-md-6" style="text-align: left;"><?php echo $total['title']; ?></div>
                                                           <div class="col-md-6" style="text-align: right;"><?php echo $total['text']; ?></div>
                                                       </div>
