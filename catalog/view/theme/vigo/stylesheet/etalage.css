@@ -84,7 +84,7 @@
 .etalage li{ position:absolute;}
 .etalage img{ vertical-align:bottom; max-width:none }
 .etalage_magnifier{ cursor:default }
-.etalage_magnifier div, .etalage_small_thumbs{ overflow:hidden ; /* margin-left: 88px !important; */ margin-top: 50px;}
+.etalage_magnifier div, .etalage_small_thumbs{ overflow:hidden ; /* margin-left: 88px !important; */ /* margin-top: 50px; */}
 .etalage_magnifier div img{ display:none }
 .etalage_icon, .etalage_hint{ cursor:default; width:0; height:0; overflow:hidden }
 .etalage_small_thumbs li.vertical{ float:none }

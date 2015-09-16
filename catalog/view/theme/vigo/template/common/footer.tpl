@@ -104,8 +104,8 @@
                     
                 </div>
             </div>
-            <div class="row col-md-12 footer-pay">
-                <img  src="image/data/pay_method.jpg" alt="Instagram">
+            <div class="col-md-12 footer-pay">
+                <img class="img-responsive"  src="image/data/pay_method.jpg" alt="Instagram">
             </div>
             </div>
             

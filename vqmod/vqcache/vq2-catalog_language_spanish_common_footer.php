@@ -36,5 +36,5 @@ $_[ 'text_footer_most_favorite' ] = 'La mayoría favorita';
 						  
 			
 $_['text_powered']      = 'Powered By <a href="http://www.opencart.com">OpenCart</a> and <a href="http://www.csillamvilag.com">CsillámVilág</a><br /> %s &copy; %s';
-			//       = 'Creado por <a href="http://www.opencart.com">OpenCart</a><br /> %s &copy; %s';
+			//       = 'Desarrollado por <a href="http://www.gimalca.com">Gimalca</a><br /> %s &copy; %s';
 ?>

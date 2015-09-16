@@ -254,8 +254,9 @@
     .sorter .view-mode, .sorter .limiter{float:none !important;}
     #etalage .etalage_thumb{left: 90px !important;}
     .etalage_magnifier div, .etalage_small_thumbs{ margin-left: 20px !important}
-    .etalage-control a.etalage-prev { background-position: 5px 4px; top: 10px; left:20px}
-    .etalage-control a.etalage-next { background-position: 5px -12px; bottom: 0; left:20px }
+    .etalage_small_thumbs{margin-top: 18px !important;margin-left: 11px !important;height: 280px !important;}
+    .etalage-control a.etalage-prev { background-position: 5px 4px; top: 0px; left:20px}
+    .etalage-control a.etalage-next { background-position: 5px -12px; bottom: 0; left:20px ;top: 296px;}
 
     .heading .mini-products-list .product-details {margin-left: 166px!important;color: #fff;}
     .mini-products-list .product-details a.btn-remove2 {  background-position: 35px;}

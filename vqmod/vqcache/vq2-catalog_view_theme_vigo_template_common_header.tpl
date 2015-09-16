@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php error_reporting(E_ALL ^ E_NOTICE); ?>
 <html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>"><head>
 <meta charset="UTF-8" />
 <title><?php echo $title; ?></title>
@@ -591,14 +592,14 @@ if(!$_SERVER["QUERY_STRING"]){
            
         });
         
-         jQuery(window).resize(function(){
+        /* jQuery(window).resize(function(){
          
           if(430 < jQuery(window).width()){
               alert('sirve')
           }
          
         });
-       /* jQuery("#nav_custom li.level0").mouseover(function(){
+        jQuery("#nav_custom li.level0").mouseover(function(){
             if(jQuery(window).width() >= 768){
                 jQuery(this).children('ul.level1').fadeIn();
             }

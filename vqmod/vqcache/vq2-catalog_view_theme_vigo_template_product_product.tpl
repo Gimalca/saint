@@ -78,7 +78,7 @@
                                        //     jQuery('.product-view .product-img-box .etalage-control a').css('left',((jQuery('.etalage_small_thumbs img').first().width()-25)/2)+"px");
                                         jQuery(window).resize(function(e){
                                             var width = jQuery('.product-view .product-img-box').width() * 0.72;
-                                            var height = width * ratio_height / ratio_width;
+                                            var height = 350;
                                             zoom_enabled = false;
                                             if(jQuery(window).width()<480)
                                                 zoom_enabled = false;

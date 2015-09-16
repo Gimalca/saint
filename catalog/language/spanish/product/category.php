@@ -3,7 +3,7 @@
 $_['text_refine']       = 'Refinar búsqueda';
 $_['text_product']      = 'Productos';
 $_['text_error']        = 'Categoría no encontrada!';
-$_['text_empty']        = 'TNo hay productos para listar en esta categoría.';
+$_['text_empty']        = 'No hay productos para listar en esta categoría.';
 $_['text_quantity']     = 'Cantidad:';
 $_['text_manufacturer'] = 'Marca:';
 $_['text_model']        = 'Código del producto:'; 

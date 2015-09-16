@@ -605,7 +605,7 @@ tr.summary-details-excluded { font-style:italic; }
 /* 0 Level */
 #nav_custom li { float: left; position: static; text-transform: uppercase;}
 #nav_custom li.level0 { padding: 0 24px; max-height: 50px;}
-#nav_custom li.level0:hover { /* background-color: #000 */}
+#nav_custom li.level0:hover {  background-color: #000}
 #nav_custom li.level0:hover span{ color: #CCC; }
 #nav_custom a { float:left; padding: 15px 0; color:#444; font-weight: bold; font-size: 14px; }
 #nav_custom .sticky-menu a {  color:#fff !important;}
@@ -3216,6 +3216,7 @@ dl{
 .etalage_small_thumbs{
    margin-top: 50px !important;
    margin-left: 88px !important;
+   height: 380px !important;
 }
 .etalage_small_thumb{
     width: 50px !important;
