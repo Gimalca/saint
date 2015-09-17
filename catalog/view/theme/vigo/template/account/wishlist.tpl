@@ -24,26 +24,27 @@
                 <?php if ($products) { ?>
                 <div class="wishlist-info">
                 <fieldset>
-                	<table id="wishlist-table" class="data-table">
-                  <thead>
-                    <tr class="for-desktop first">
-                      <th></th><!--<?php echo $column_image; ?>-->
-                      <th><?php echo $column_name; ?></th><!--<?php echo $column_name; ?>-->
-                      <!--<td class="model"><?php echo $column_model; ?></td>--><!--<?php echo $column_model; ?>-->
-                      <!--<td class="stock"><?php echo $column_stock; ?></td>-->
-                      <th><?php echo $text_add_to_cart; ?></th><!--<?php echo $column_price; ?>-->
-                      <th></th><!--<?php echo $column_action; ?>-->
-                    </tr>
-                    <tr class="for-mobile last">
-	                    <th colspan="5"><?php echo $text_product; ?></th>
-                    </tr>
-                  </thead>
-                   <tbody>
+                    <table class="table">
+                        <thead>
+                            <tr >
+                                <th></th><!--<?php echo $column_image; ?>-->
+                                <th><?php echo $column_name; ?></th><!--<?php echo $column_name; ?>-->
+                                <!--<td class="model"><?php echo $column_model; ?></td>--><!--<?php echo $column_model; ?>-->
+                                <!--<td class="stock"><?php echo $column_stock; ?></td>-->
+                                <th><?php echo $text_add_to_cart; ?></th><!--<?php echo $column_price; ?>-->
+                                <th></th><!--<?php echo $column_action; ?>-->
+                            </tr>
+                            <tr class="for-mobile">
+                                <th colspan="7"><?php echo $text_order; ?></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
                   <?php foreach ($products as $product) { ?>
                  
-                    <tr class="for-desktop">
+                    <tr >
                       <td><?php if ($product['thumb']) { ?>
-                        <a class="product-image" href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" /></a>
+                          <a class="product-image" href="<?php echo $product['href']; ?>"><img class="img-responsive" style="max-width: 80px" src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" /></a>
                         <?php } ?></td>
                       <td><h3 class="product-name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h3></td>
                       <!--<td><?php echo $product['model']; ?></td>-->
@@ -59,7 +60,8 @@
                           <?php } ?>
                         	</div>
                             <div class="add-to-cart-alt">
-<input class="button btn-cart" onclick="addToCart('<?php echo $product['product_id']; ?>');" title="Add to Cart" type="button"  value="<?php echo $text_add_to_cart;?>" />
+                               
+                              <input  class="button btn-add" onclick="addToCart('<?php echo $product['product_id']; ?>');" title="Add to Cart" type="button"  value="<?php echo $text_add_to_cart;?>" />
                            </div>
                            <p>
                            <span class="model"><?php echo $column_model; ?>:-</span><span class="model_name"><?php echo $product['model']; ?></span>

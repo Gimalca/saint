@@ -19,18 +19,18 @@
                     <div class="block-content">
                         <p><?php echo $description; ?></p>
                     </div>
-                    <a href="<?php echo $continue; ?>" >
+                    <!--a href="<?php echo $continue; ?>" >
                     <button id="button-review" class="button btn-write">
                         <span><span><?php echo $button_continue; ?></span></span>
                     </button>
-                 </a>
+                 </a-->
                   </div>
-  					<?php echo $column_right; ?>
+  					<?php //echo $column_right; ?>
                 </div>
             </div>
 		</div>
         <div class="col-left sidebar col-md-3 col-sm-4 col-xs-12">
-        	<?php echo $column_left; ?>
+        	<?php //echo $column_left; ?>
         </div>
 	</div>
   

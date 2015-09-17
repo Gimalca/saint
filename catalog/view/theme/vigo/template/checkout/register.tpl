@@ -1,4 +1,4 @@
-<div class="left">
+<div class="left col-lg-6 col-md-6 col-xs-12">
     <div class="block-title">
         <h2><?php echo $text_your_details; ?></h2>
     </div>
@@ -56,7 +56,7 @@
     </ul>
 </div>
         
-<div class="right">
+<div class="right col-lg-6 col-md-6 col-xs-12">
     <div class="block-title">
         <h2><?php echo $text_your_address; ?></h2>
     </div>
@@ -170,7 +170,7 @@
                 
                 <div class="buttons">
                    
-                    <div class="right">
+                    <div class="right col-md-6">
                       
 
                         <button style="margin-left: 15px" type="button" value="<?php echo $button_continue; ?>" id="button-register" class="button input-box" >

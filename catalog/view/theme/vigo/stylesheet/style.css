@@ -3131,11 +3131,11 @@ li.custom-menu .custom-menu-item p {
 }
 .checkout-content .left {
 	float: left;
-	width: 48%;
+	/* width: 48%; */
 }
 .checkout-content .right {
 	float: right;
-	 width: 48%;
+	/* width: 48%; */
 }
 .checkout-content .buttons {
 	clear: both;
