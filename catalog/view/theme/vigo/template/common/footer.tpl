@@ -6,6 +6,13 @@
                     <ul>
                         <li id="footer-titulo" class="tamaño">COMPAÑIA</li>
                         <ul>
+                             <?php 
+                           
+                             if ($informations) { ?>
+                              <?php foreach ($informations as $information) { ?>
+                              	<li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
+                              <?php } ?>
+                              <?php } ?>
                             <li id="tamaño">Sobre Nosotros</li>
                             <li id="tamaño">Haz Negocios Con Nosotros</li>
                             <li id="tamaño">Ubicacion</li>

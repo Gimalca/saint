@@ -263,6 +263,12 @@ if(!$_SERVER["QUERY_STRING"]){
                               jQuery('#topCartContent').hide()
                             });
                             
+                             $(".mini-cart").click(function(){
+                                $("#topCartContent").toggle();
+                            });
+                            
+                           
+                            
                          
                                  
                                      
@@ -278,7 +284,7 @@ if(!$_SERVER["QUERY_STRING"]){
                          <?php echo $currency; ?>
                     </div>     
                     </ul>
-                    <ul class="links right">
+                    <ul class="links right hidden-xs">
                     	<div class="pull-left" style="color: white;display: -webkit-inline-box;">
                     <?php if (!$logged) { ?>
                     <?php echo $text_welcome; ?>
@@ -306,7 +312,7 @@ if(!$_SERVER["QUERY_STRING"]){
           
         </div>
         <?php if ( $category_s == "home"  ):?>
-           <div class="header container">
+           <div class="header container hidden-xs">
                  <a class="logo" href="<?php echo $home; ?>"><!--<?php echo $name; ?>-->
                      <!--img src="<?php echo $logo; ?>" alt="<?php echo $home; ?>" /-->
                      <img width="700px" class=" responsive img-responsive"  src="image/saints_clothes_bk.svg" alt="<?php echo $home; ?>" />
@@ -315,10 +321,15 @@ if(!$_SERVER["QUERY_STRING"]){
          <?php endif ?>
         <div class="navbar navbar-default">
             <div class="container">
-                <div class="navbar-header">
+                <div class="navbar-header hidden-md hidden-lg hidden-sm">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                         <span><?php echo $text_header_menu;?></span>
+                      
                     </button>
+                    <a class="logo" href="<?php echo $home; ?>"><!--<?php echo $name; ?>-->
+                        <!--img src="<?php echo $logo; ?>" alt="<?php echo $home; ?>" /-->
+                        <img width="250px" class=" responsive img-responsive"  src="image/saints_clothes_bk.svg" alt="<?php echo $home; ?>" />
+                    </a>
                 </div>
         		<div class="for-mobile">
                     	

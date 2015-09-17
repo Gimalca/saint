@@ -63,7 +63,7 @@
         height: 19px;
         color: #fff;
     }
-    li.mini-cart #topCartContent { top: 40px; width: 340px; margin: 0 auto;}
+    li.mini-cart #topCartContent { /* top: 40px; */ /* width: 340px; */ /* margin: 0 auto; */}
     li.mini-cart:hover #topCartContent { text-indent: 0; text-align: center;}
     .header .logo { display: block; }
     a.sign-link { float: none !important; position: static; display: inline-block; margin-top: 15px; }
@@ -205,7 +205,7 @@
     
     .breadcrumbs .page-title { font-size: 24px; float: none; }
     .breadcrumbs ul { float: none !important; }
-    .header-container { /* position: fixed; */ background-color: #000; height: 48px;}
+    .header-container { position: fixed; background-color: #000; height: 48px;top: 0px!important;width: 100%;z-index: 999;}
     
    
     .navbar-collapse { position: absolute; border: 0; width: 100%; left: 0; top: 65px; z-index: 9999; }
@@ -236,16 +236,16 @@
     #nav_custom ul li { display: inline-block; margin:0; padding-bottom:1px; vertical-align: top; width: 100%; padding: 0 25px; border-bottom: 1px #ccc solid;}
     #nav_custom li.level1 a span{ color: #222 !important }
     
-    .navbar { position: fixed; top: 0px !important;}
+    .navbar { position: fixed; /* top: 0px !important; */}
     
     
     
-    .navbar.sticky-menu{ top: 75px !important; background-color: #fff;background-image:none; z-index: 100; height: 50px;position: fixed;} 
-    .navbarhome {top: 75px !important}
-    .navbarhome.sticky-menu{top: 0px !important;}
+    .navbar.sticky-menu{ top: 48px !important; background-color: #fff;background-image:none; z-index: 100; height: 50px;position: fixed;} 
+    .navbarhome {top: 48px !important;}
+    .navbarhome.sticky-menu{top: 48px !important;}
     .navbar.sticky-menu span{color:#000 !important}
 
-    .main-container {margin-top: 60px !important;}
+    .main-container {margin-top: 106px !important;}
 
     .link-wishlist {display:none !important}
     .product-image-area .hover-area2 { display:none !important}
@@ -264,6 +264,13 @@
     .main-container .col-main .row .col-md-12 .block.block-related {margin-left: 0px;width: 340px;}
 
     .page #content .main.container { margin-top: 90px;}
+
+    .logo { margin-top: 20px;margin-left: 70px;position: relative;display: block;}
+    .product-view .product-img-box { margin-bottom: 70px; }
+    
+    .carro-producto .imagen-producto img{ border: 0px dotted gray; margin-left: -30px; */ height: aouto;}
+    .item-options{/* width: 150px; */}
+    
     /* --- */
 
     .footer div.social-icons { float: none; }
