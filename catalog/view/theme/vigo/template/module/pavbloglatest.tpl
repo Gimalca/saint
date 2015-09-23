@@ -68,7 +68,7 @@
                                     <a style="color: #000" href="<?php echo $blog[1]['link'];?>" title="<?php echo $blog[1]['title'];?>"><?php echo $blog[1]['title'];?></a>
                                 </h1>
                                 <div><?php echo rtrim(substr(html_entity_decode($blog[1]['description']),0,500)); ?>
-                                    <a  style="color: #000;float: left; font-family: Arial; font-size: 14px; text-transform: uppercase; font-weight:bold" href="<?php echo $blog[0]['link'];?>" class=""><?php echo $this->language->get('text_readmore');?> ></a>
+                                    <a  style="color: #000;float: left; font-family: Arial; font-size: 14px; text-transform: uppercase; font-weight:bold" href="<?php echo $blog[1]['link'];?>" class=""><?php echo $this->language->get('text_readmore');?> ></a>
                                 </div>
                         </div>
                     </li>

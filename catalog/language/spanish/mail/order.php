@@ -1,7 +1,7 @@
 <?php
 // Text
 $_['text_new_subject']          = '%s - Pedido %s';
-$_['text_new_greeting']         = 'Gracias por el interés en los productos de %s. Tu pedido ha sido recibido y será procesado una vez el pago se haya confimado.';
+$_['text_new_greeting']         = 'Gracias por el interés en los productos de %s. Esta orden será procesada tan pronto como se confirme el pago.';
 $_['text_new_received']         = 'Usted ha recibido un pedidor.';
 $_['text_new_link']             = 'Para ver tu pedido cliquea en el enlace inferior:';
 $_['text_new_order_detail']     = 'Detalles del pedido';
@@ -26,7 +26,7 @@ $_['text_new_total']            = 'Total';
 $_['text_new_download']         = 'Una vez el pago se haya confirmado podrás cliquear en el enlace inferior para acceder a tus productos descargables:';
 $_['text_new_comment']          = 'Los comentarios de tu pedido son:';
 $_['text_new_footer']           = 'Por favor responde a este email si tienes alguna duda.';
-$_['text_new_powered']          = 'Realizado By <a href="http://www.opencart.com">OpenCart</a>.';
+$_['text_new_powered']          = ' <a href="http://saintsclothes.com.ve">Saints Clothes</a>.';
 $_['text_update_subject']       = '%s - Actualización del pedido %s';
 $_['text_update_order']         = 'ID del pedido:';
 $_['text_update_date_added']    = 'Fecha del pedido:';

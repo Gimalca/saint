@@ -10,7 +10,8 @@
                            
                             
                             <li id="tamaño"><a href="<?php echo $informations[7]['href']; ?>"><?php echo $informations[7]['title']; ?></a></li>
-                            <li id="tamaño">Haz Negocios Con Nosotros</li>
+                            <li id="tamaño"><a href="<?php echo $informations[8]['href']; ?>"><?php echo $informations[8]['title']; ?></a></li>
+                           
                             <li id="tamaño"><a href="<?php echo $informations[5]['href']; ?>"><?php echo $informations[5]['title']; ?></a></li>
                            
                            

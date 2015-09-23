@@ -61,7 +61,11 @@ ul.cart-button-set a.addtocart.button:hover{background-color: #F0877C;border-col
 .products-list .product-image-area .hover-area .short_desc, .products-list .product-image-area .hover-area .add-to-links.cart-button-set, .products-list .product-image-area .hover-area {display: none;}
 .products-list .product-image-area .hover-area {background:none;}
 .review-item .review-content > p {color: #555555;font-family: Source Code Pro;font-size: 16px;font-weight: 600;text-transform: uppercase;}
-.block-from-blog p{text-align:justify;}
+.block-from-blog p{
+    text-align:justify; font-size: 15px;
+    font-size: 15px !important;
+    color: #999 !important;
+    font-family: Arial !important;}
 div.pluginSkinLight.pluginFontHelvetica ul.uiList li.pluginFacepileItem{width: 24% !important;}
 .block.block-facebook-like .block-content iframe.fbplug {width: 99% !important;}
 .products-list-footer .product-image img {height: auto;width: 100%;}
