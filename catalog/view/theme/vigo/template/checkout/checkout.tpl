@@ -522,11 +522,13 @@ $('#button-payment-address').live('click', function() {
                                                 $('#pt3').addClass('active-checkout');
                                                 $('#shipping-address').show()
 						$('#shipping-address .checkout-content').html(html);
-					
+                                                
 						$('#payment-address .checkout-content').slideUp('slow');
 						
 						$('#shipping-address .checkout-content').slideDown('slow');
+                                                
 						
+                                                
 						$('#payment-address .checkout-heading a').remove();
 						$('#shipping-address .checkout-heading a').remove();
 						$('#shipping-method .checkout-heading a').remove();
@@ -818,7 +820,15 @@ $('#button-guest').live('click', function() {
 							
 							$('#payment-address .checkout-content').slideUp('slow');
 							
-							$('#shipping-address .checkout-content').slideDown('slow');
+							$('#shipping-address .checkout-content').slideDown({ 
+                                                            duration: 'slow',
+                                                            step: function () {
+                                                                 $("html").getNiceScroll(0).doScrollTop($('#shipping-address').offset().top - 150, 0);
+                                                            },
+                                                            complete:  function () {
+                                                               
+                                                            }
+                                                        });
 							
 							$('#payment-address .checkout-heading a').remove();
 							$('#shipping-address .checkout-heading a').remove();

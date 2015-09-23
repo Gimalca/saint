@@ -7,17 +7,16 @@
        			 <div class="error-area">
            			 <form enctype="multipart/form-data" method="post" action="<?php echo $continue; ?>">
                 			<div class="error-content">
-                                <h2>We're Sorry...</h2>
-                                <h3><?php echo $text_error; ?></h3>
+                                            <h1><?php echo $text_error; ?></h1>
                                 <button id="button-review" class="button btn-write">
                                     <span>
                                         <span><?php echo $button_continue; ?></span>
                                     </span>
                                 </button>
                             </div>
-                            <div class="error-img">
+                            <!div class="error-img">
                    				<img src="catalog/view/theme/vigo/images/404_bg.png">
-                			</div>
+                			</div-->
             		 
         					
                             

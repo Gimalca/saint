@@ -1477,7 +1477,7 @@ $this->data['vigo_color'] = $this->url->link('custom/vigo_color', 'token=' . $th
 							$image = $this->model_tool_image->resize($result['image'], 1170,550);
 						}
 						elseif($this->data['slidereffect'] ==2){
-							$image = $this->model_tool_image->resize($result['image'], 1100,550);
+							$image = $this->model_tool_image->resize($result['image'], 1900,750);
 						}
 						elseif($this->data['slidereffect'] == 4){
 							$image = $this->model_tool_image->resize($result['image'], 770,615);
@@ -1495,7 +1495,7 @@ $this->data['vigo_color'] = $this->url->link('custom/vigo_color', 'token=' . $th
 							$image = $this->model_tool_image->resize($result['image'], 1170,550);
 						}
 						elseif($this->data['slidereffect'] ==2){
-							$image = $this->model_tool_image->resize($result['image'], 1100,550);
+							$image = $this->model_tool_image->resize($result['image'], 1900,750);
 						}
 						elseif($this->data['slidereffect'] == 4){
 							$image = $this->model_tool_image->resize($result['image'], 770,615);
@@ -1529,7 +1529,7 @@ $this->data['vigo_color'] = $this->url->link('custom/vigo_color', 'token=' . $th
 							$image = $this->model_tool_image->resize($result['image'], 1170,550);
 						}
 						elseif($this->data['slidereffect'] ==2){
-							$image = $this->model_tool_image->resize($result['image'], 1100,550);
+							$image = $this->model_tool_image->resize($result['image'], 1900,750);
 						}
 						elseif($this->data['slidereffect'] == 4){
 							$image = $this->model_tool_image->resize($result['image'], 770,615);

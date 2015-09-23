@@ -16,15 +16,15 @@
                     <div class="block-title">
                         <strong><span><?php echo $heading_title; ?></span></strong>
                     </div>
-                    <div class="block-content">
+                    <div class="block-content" style="text-align:justify">
                         <p><?php echo $description; ?></p>
                     </div>
                     <!--a href="<?php echo $continue; ?>" >
                     <button id="button-review" class="button btn-write">
                         <span><span><?php echo $button_continue; ?></span></span>
                     </button>
-                 </a-->
-                  </div>
+                 </a>
+                  </div-->
   					<?php //echo $column_right; ?>
                 </div>
             </div>

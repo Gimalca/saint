@@ -45,7 +45,7 @@
     tpj(document).ready(function() {
 
         tpj('.tp-banner').revolution({
-delay:9000,startheight:550,startwidth:'1170',onHoverStop:'off',hideThumbs:10,navigationType:'none',navigationArrows:'solo',navigationStyle:'round-old',navigationHAlign:'center',navigationVAlign:'center',touchenabled:'on',hideThumbsOnMobile:'off',hideBulletsOnMobile:'off',hideArrowsOnMobile:'off',fullWidth:'off',autoHeight:'on',fullScreenAlignForce:'off',forceFullWidth:'off',fullScreen:'off',shadow:0        });
+delay:9000,startheight:750,startwidth:'1900',onHoverStop:'off',hideThumbs:10,navigationType:'none',navigationArrows:'solo',navigationStyle:'round-old',navigationHAlign:'center',navigationVAlign:'center',touchenabled:'on',hideThumbsOnMobile:'off',hideBulletsOnMobile:'off',hideArrowsOnMobile:'off',fullWidth:'off',autoHeight:'on',fullScreenAlignForce:'off',forceFullWidth:'off',fullScreen:'off',shadow:0        });
 
 });
 </script>
@@ -57,12 +57,12 @@ delay:9000,startheight:550,startwidth:'1170',onHoverStop:'off',hideThumbs:10,nav
 	<div class="tp-banner-container " style="">
     	<div class="tp-banner" >
         	<ul>
-           <?php if ($products) { ?>
+           <?php print_r($products); if ($products) { ?>
             <?php foreach ($products as $product) { ?>
             <li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="1500">
                 <img src="<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" />
                 <div class="tp-caption header-black-36 sfr customout" style="z-index: 2;" data-x="15" data-y="166" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="500" data-start="900" data-easing="Power4.easeOut" data-endspeed="500" data-captionhidden="on"><!--span style="background-color: <?php echo $product['color']?>; color: #fff; padding: 0 10px;"><?php echo $product['name']; ?></span--></div>
-                <div class="tp-caption caption-black-17 customin customout start" style="z-index: 2;" data-x="15" data-y="235" data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="500" data-start="1100" data-easing="Power4.easeOut" data-endspeed="500" data-endeasing="Power4.easeIn" data-captionhidden="on"><?php html_entity_decode($product['desc_1']); ?></div>
+                <div class="tp-caption caption-black-17 customin customout start" style="z-index: 2;" data-x="15" data-y="235" data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="500" data-start="1900" data-easing="Power4.easeOut" data-endspeed="500" data-endeasing="Power4.easeIn" data-captionhidden="on"><?php html_entity_decode($product['desc_1']); ?></div>
                 <div class="tp-caption customin customout start" style="z-index: 2;" data-x="15" data-y="320" data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="500" data-start="1100" data-easing="Power4.easeOut" data-endspeed="500" data-endeasing="Power4.easeIn" data-captionhidden="on">
                     <!--a href="<?php echo $product['link']; ?>" >
                     <button type="button" class="button black">

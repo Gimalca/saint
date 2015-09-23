@@ -13,7 +13,7 @@ $_['text_bank']                 = 'Transferencia bancaria';
 $_['text_success']              = 'Éxito: Tu cuenta ha sido satisfactoriamente actualizad.';
 
 // Entry
-$_['entry_tax']                 = 'ID del impuesto:';
+$_['entry_tax']                 = 'Cedula:';
 $_['entry_payment']             = 'Método de pago:';
 $_['entry_cheque']              = 'Receptor del Cheque:';
 $_['entry_paypal']              = 'Email de la cuenta de Paypal:';

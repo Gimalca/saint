@@ -41,14 +41,14 @@
 
                     <div class="input-box name-firstname ">
                        
-                            <input type="text" name="firstname" id="input-emailn" value="" class="large-field input-text "  placeholder="Enter your first name*"/>
+                            <input type="text" name="firstname" id="input-emailn" value="" class="large-field input-text "  placeholder="<?php echo $entry_firstname; ?> *"/>
                      
                     </div>
                 </li>
                 <li class="fields">
                     <div class="input-box name-lastname ">
                     
-                            <input type="text" name="lastname" id="input-emailn" value="" class="large-field input-text" placeholder="Enter your last name*"/>
+                            <input type="text" name="lastname" id="input-emailn" value="" class="large-field input-text" placeholder="<?php echo $entry_lastname; ?> *"/>
                      
                     </div>
 
@@ -63,12 +63,12 @@
                 <li class="fields">
                     <div class="field">
                         <div class="input-box input-address">
-                            <input type="text" name="address_1" id="input-emailn"  value="" class="large-field input-text" placeholder="address *"/>
+                            <input type="text" name="address_1" id="input-emailn"  value="" class="large-field input-text" placeholder="<?php echo $entry_address_1; ?> *"/>
                         </div>
                     </div>
                     <div class="field">
                         <div class="input-box input-address">
-                            <input type="text" name="address_2" id="input-emailn" value="" class="large-field input-text" placeholder="address 2"/>
+                            <input type="text" name="address_2" id="input-emailn" value="" class="large-field input-text" placeholder="<?php echo $entry_address_2; ?>"/>
                         </div>
                     </div>
                 </li>
@@ -81,12 +81,12 @@
                 <li class="fields">
                     <div class="field">
                         <div class="input-box input-city">
-                            <input type="text" name="city" id="input-emailn" value="" class="large-field input-text" placeholder="city *"/>
+                            <input type="text" name="city" id="input-emailn" value="" class="large-field input-text" placeholder="<?php echo $entry_city; ?> *"/>
                         </div>
                     </div>
                     <div class="field">
                         <div class="input-box input-postcode">
-                            <input type="text" name="postcode" id="input-emailn" value="" class="large-field input-text" placeholder="postcode *"/>
+                            <input type="text" name="postcode" id="input-emailn" value="" class="large-field input-text" placeholder="<?php echo $entry_postcode; ?> *"/>
                         </div>
                     </div>
                 </li>

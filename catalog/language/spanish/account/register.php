@@ -10,7 +10,8 @@ $_['text_your_details']    = 'Tus datos personales';
 $_['text_your_address']    = 'Tu dirección';
 $_['text_newsletter']      = 'Boletín de noticias';
 $_['text_your_password']   = 'Tu contraseña';
-$_['text_agree']           =  'He leido y acepto las <a class="thickbox" href="%s" alt="%s"><b>%s</b></a>';
+$_['text_agree']           =  'He leido y acepto los <a data-toggle="modal" data-target="#agree_modal" href="#" alt="%s"><b>%s</b></a>';
+
 $_['text_recurring']     = 'Pagos Recurentes';
 $_['text_address']      = 'Direcciones';
 
@@ -24,7 +25,7 @@ $_['entry_account']        = 'Cuenta:';
 $_['entry_company']        = 'Compañia:';
 $_['entry_customer_group'] = 'Tipo de Negocio:';
 $_['entry_company_id']     = 'ID de la comapñía';
-$_['entry_tax_id']         = 'ID del Impuesto:';
+$_['entry_tax_id']         = 'Cedula:';
 $_['entry_address_1']      = 'Dirección 1:';
 $_['entry_address_2']      = 'Dirección 2:';
 $_['entry_postcode']       = 'Código postal:';
@@ -44,7 +45,7 @@ $_['error_telephone']      = 'El teléfono debe tener entre 3 y 32 carácteres!'
 $_['error_password']       = 'La contraseña debe tener entre 4 y 20 carácteres!';
 $_['error_confirm']        = 'La confirmación de contraseña no concuerda con la contraseña!';
 $_['error_company_id']     = 'ID de la compañía Obligatorio!';
-$_['error_tax_id']         = 'ID del impuesto Obligatorio!';
+$_['error_tax_id']         = 'Cedula Obligatorio!';
 $_['error_vat']            = 'El valor agrgado al Impuesto parace ser no valido!';
 $_['error_address_1']      = 'La dirección 1 debe tener entre 3 y 128 carácteres!';
 $_['error_city']           = 'La ciudad debe tener entre 2 y 128 carácteres!';

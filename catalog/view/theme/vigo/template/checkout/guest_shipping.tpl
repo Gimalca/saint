@@ -1,28 +1,21 @@
-<div class="left">
+<div class="left col-lg-6 col-md-6 col-xs-12">
+    
     <ul class="form-list">
-       
-        <li>
-          <div class="input-box name-firstname col-md-8 col-sm-8 col-xs-12">
+        <li class="fields">
+          <div class="input-box name-firstname col-md-8 col-sm-12 col-xs-12">
                 <div class="input-box">
                     <input id="input-emailn" type="text" name="firstname" value="<?php echo $firstname; ?>" class="input-text required-entry" placeholder="<?php echo $entry_firstname; ?> *"/>
                 </div>
             </div>   
-        </li>
-        <li >               
-            <div class="input-box name-lastname col-md-8 col-sm-8 col-xs-12">
-                <div class="input-box">
+        
+             <div class="field">
+           
+                <div class="input-box name-lastname col-md-8 col-sm-12 col-xs-12">
                     <input id="input-emailn" type="text" name="lastname" value="<?php echo $lastname; ?>" class="input-text required-entry" placeholder="<?php echo $entry_lastname; ?> *"/>
                 </div>
             </div>     
-        </li>
-        <li >               
-            <div class="input-box name-lastname col-md-8 col-sm-8 col-xs-12">
-                <div class="input-box">
-                    <input id="input-emailn" type="text" name="lastname" value="<?php echo $lastname; ?>" class="input-text required-entry" placeholder="<?php echo $entry_lastname; ?> *"/>
-                </div>
-            </div>     
-        </li>
-        <li class="fields">
+      
+      
                 <div class="field">
                 	<div class="input-box input-address col-md-8 col-sm-8 col-xs-12">
                     <input id="input-emailn" type="text" name="address_1" value="<?php echo $address_1; ?>" class="input-text required-entry" placeholder="<?php echo $entry_address_1; ?> *"/>
@@ -38,7 +31,7 @@
        
     </ul>
 </div>
-<div class="right">
+<div class="right col-lg-6 col-md-6 col-xs-12">
    
     <ul class="form-list">
         <li class="fields">

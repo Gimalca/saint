@@ -1,7 +1,5 @@
 <?php echo $header; ?>
-<?php if ($error_warning) { ?>
-<div class="warning"><?php echo $error_warning; ?></div>
-<?php } ?>
+
 
 <div id="content" class="main-container col2-left-layout"><?php echo $content_top; ?>
 
@@ -14,6 +12,9 @@
     </div>
 
     <div class="main container">
+        <?php if ($error_warning) { ?>
+<div class="warning"><?php echo $error_warning; ?></div>
+<?php } ?>
         <div class="col-main col-md-12 col-sm-12 col-xs-12">
             <!--div class="col-left sidebar col-md-3 col-sm-4 col-xs-12">
             <?php //echo $column_left; ?>
@@ -78,14 +79,8 @@
                             <div class="block-content">
                                 <ul class="form-list">
 
-                                    <li id="tax-id-display">
-                                        <div class="input-box input-tax">
-                                            <input type="text" name="tax_id" id="input-emailn" value="<?php echo $tax_id; ?>" class="input-text required-entry" placeholder="<?php echo $entry_tax_id; ?> *"/>
-                                            <?php if ($error_tax_id) { ?>
-                                            <span class="error"><?php echo $error_tax_id; ?></span>
-                                            <?php } ?>
-                                        </div>
-                                    </li>
+                                     <input type="hidden" name="tax_id" id="input-emailn" value="<?php echo $tax_id; ?>" class="input-text required-entry" placeholder="<?php echo $entry_tax_id; ?> *"/>
+                                            
                                     <li class="fields">
                                         <div class="field">
                                             <div class="input-box input-address">
@@ -198,9 +193,9 @@
                                         <input type="radio" name="newsletter" value="0" />
                                         <?php echo $text_no; ?>
                                         <?php } else { ?>
-                                        <input type="radio" name="newsletter" value="1" />
+                                        <input type="radio" name="newsletter" value="1" checked="checked" />
                                         <?php echo $text_yes; ?>
-                                        <input type="radio" name="newsletter" value="0" checked="checked" />
+                                        <input type="radio" name="newsletter" value="0" />
                                         <?php echo $text_no; ?>
                                         <?php } ?>
                                     </div>

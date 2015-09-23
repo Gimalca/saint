@@ -14,7 +14,7 @@ $_['text_your_password']        = 'Tu contraseña';
 $_['text_cheque']               = 'Cheque';
 $_['text_paypal']               = 'PayPal';
 $_['text_bank']                 = 'Transferencia bancaria';
-$_['text_agree']                = 'He leido y acepto las <a class="thickbox" href="%s" alt="%s"><b>%s</b></a>';
+$_['text_agree']                =  'He leido y acepto los <a data-toggle="modal" data-target="#agree_modal" href="#" alt="%s"><b>%s</b></a>';
 
 // Entry
 $_['entry_firstname']           = 'Nombre:';
@@ -30,7 +30,7 @@ $_['entry_postcode']            = 'Código postal:';
 $_['entry_city']                = 'Ciudad:';
 $_['entry_country']             = 'País:';
 $_['entry_zone']                = 'Región / estado:';
-$_['entry_tax']                 = 'ID del Impuestos';
+$_['entry_tax']                 = 'Cedula';
 $_['entry_payment']             = 'Método pago:';
 $_['entry_cheque']              = 'Nombre del receptor del cheque:';
 $_['entry_paypal']              = 'Email de la cuenta de payPal:';

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php error_reporting(E_ALL ^ E_NOTICE); ?>
+<?php error_reporting(E_ALL ^ E_NOTICE);?>
 <html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>"><head>
 <meta charset="UTF-8" />
 <title><?php echo $title; ?></title>
@@ -117,7 +117,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 /*var filternoconflict=jQuery.noConflict();*/
 
 jQuery(document).ready(function(){
-jQuery('html').niceScroll({zindex : 9999});
+jQuery('html').niceScroll({zindex : 9999, enablescrollonselection: true});
 });
 </script>
 
@@ -234,7 +234,7 @@ if(!$_SERVER["QUERY_STRING"]){
                         </div>
                     </div>
                     
-                        <div class="social-icons" style="margin-top:7px">
+                         <div class="social-icons" style="margin-top:7px">
                             <a class="facebook-icon" title="Facebook" href="https://www.facebook.com/Saints-Clothes-1491152241203314">Facebook</a>
                             <a class="twitter-icon" title="Twitter" href="https://twitter.com/saints_ve">Twitter</a>
                             <a class="instragram-icon" title="Instragram" href="https://instagram.com/saints_ve/">Instragram</a>
@@ -260,15 +260,13 @@ if(!$_SERVER["QUERY_STRING"]){
                              jQuery('.mini-cart').mouseover(function(){
                                jQuery('#topCartContent').show()
                                 return false;
-                            }).mouseleave(function(){
-                              jQuery('#topCartContent').hide()
-                            });
-                            
-                             $(".mini-cart").click(function(){
+                            	}).mouseleave(function(){
+                               jQuery('#topCartContent').hide()
+                             });
+							
+							  $(".mini-cart").click(function(){
                                 $("#topCartContent").toggle();
                             });
-                            
-                           
                             
                          
                                  
@@ -322,10 +320,9 @@ if(!$_SERVER["QUERY_STRING"]){
          <?php endif ?>
         <div class="navbar navbar-default">
             <div class="container">
-                <div class="navbar-header hidden-md hidden-lg hidden-sm">
+                <div class="navbar-header  hidden-md hidden-lg hidden-sm">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                         <span><?php echo $text_header_menu;?></span>
-                      
                     </button>
                     <a class="logo" href="<?php echo $home; ?>"><!--<?php echo $name; ?>-->
                         <!--img src="<?php echo $logo; ?>" alt="<?php echo $home; ?>" /-->
@@ -356,8 +353,10 @@ if(!$_SERVER["QUERY_STRING"]){
                              <li class="level0"><a id="linkm" href="<?php echo $category['href']; ?>"><span><?php echo $category['name'];?></span></a>
                             
                             <?php else: ?> 
-                            <li class="level0"><a id="linkm" href="index.php?route=product/category&amp;path=163"><span>Bloggers</span></a>
+                            <!--li class="level0"><a id="linkm" href="index.php?route=product/category&amp;path=163"><span>Bloggers</span></a>-->
+                             
                             <li class="level0"><a id="linkm" href="<?php echo $category['href']; ?>"><span><?php $category['name'] = 'Blog'; echo $category['name'];?></span></a>
+                            <li class="level0"><a id="linkm" href="index.php?route=information/contact"><span>Contacto</span></a>
                             <?php endif; ?>    
                             
                               <?php if ($category['children']) { ?>

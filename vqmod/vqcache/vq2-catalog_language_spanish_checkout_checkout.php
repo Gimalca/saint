@@ -28,7 +28,7 @@ $_['text_forgotten']                 = 'Contraseña olvidada';
 $_['text_your_details']              = 'Tus detalles personales';
 $_['text_your_address']              = 'Tu dirección';
 $_['text_your_password']             = 'Tu contraseña';
-$_['text_agree']                     = 'He leido y acepto los <a class="thickbox" href="%s" alt="%s"><b>%s</b></a>';
+$_['text_agree']                     =  'He leido y acepto los <a data-toggle="modal" data-target="#agree_modal" href="#" alt="%s"><b>%s</b></a>';
 $_['text_address_new']               = 'Quiero usar una nueva dirección';
 $_['text_address_existing']          = 'Quiero usar una dirección existente';
 $_['text_shipping_method']           = 'Por favor selecciona el método de envío preferido para este pedido.';
@@ -62,7 +62,7 @@ $_['entry_postcode']                 = 'Código postal:';
 $_['entry_city']                     = 'Ciudad:';
 $_['entry_country']                  = 'País:';
 $_['entry_zone']                     = 'Región / Estado:';
-$_['entry_newsletter']               = 'Suscribirme al boletín de noticias de %s.';
+$_['entry_newsletter']               = 'Suscribirme al boletín de noticias de %s';
 $_['entry_shipping'] 	             = 'Mi dirección de entrega y facturación es la misma';
 
 // Error

@@ -22,9 +22,10 @@ class ControllerModuleSlideshow extends Controller {
                 //print_r($setting);die;
                 
 		if (isset($setting['banner_id'])) {
-			$results = $this->model_design_banner->getBanner($setting['banner_id']);
-
+			$results = $this->model_design_banner->getBanner(1);
+                       //echo "entra";print_r($results);die;
 			foreach ($results as $result) {
+                           
 				if (file_exists(DIR_IMAGE . $result['image'])) {
 					$this->data['banners'][] = array(
 						'title' => $result['title'],

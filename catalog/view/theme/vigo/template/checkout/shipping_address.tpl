@@ -18,13 +18,8 @@
 </p>
 <?php } ?>
 <div id="shipping-new" class=" col-md-12 col-lg-12 col-sm-12" style="display: <?php echo ($addresses ? 'none' : 'block'); ?>;">
-     <ul class="form-list">
-            <li class="control">
-                <input type="radio" name="payment_address" value="new" id="payment-address-new" class="radio" />
-                <label for="payment-address-new"><?php echo $text_address_new; ?></label>
-            </li>
-        </ul>
-    <div class="left">  
+   
+    <div class="left col-lg-6 col-md-6 col-xs-12">  
         <ul class="form-list">
             <li  class="fields" >         
                 <div class="input-box name-firstname col-md-8 col-sm-8 col-xs-12">
@@ -56,7 +51,7 @@
             </li>
         </ul>
     </div>
-    <div class="right">  
+    <div class="right col-lg-6 col-md-6 col-xs-12">  
         <ul class="form-list">
             <li class="fields">
                 <div class="field">

@@ -63,39 +63,23 @@
   
   <div class="main container">
 	<div class="col-main">
-    	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaH2tdZkIU8u8CjrZWLunNDKrCbckeuqE&amp;sensor=true" type="text/javascript"></script>
-        
-        <script type="text/javascript">
-        function initialize() {
-            var pos = new google.maps.LatLng(-34.398, 150.884);
-            var mapOptions = {
-                center: pos,
-                zoom: 18,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-            var map = new google.maps.Map(document.getElementById("store_map"), mapOptions);
-            var marker = new google.maps.Marker({
-                position: pos,
-                map: map,
-                title: 'Vigoshop Store'
-            });
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-    	<div id="store_map"></div>
+    	
 		<div id="messages_product_view"></div>
-        <div class="contacts-area col-md-8 col-sm-8 col-xs-12">
+                
+        <div class="contacts-area col-md-offset-1 col-md-10 col-sm-10 col-xs-12">
   			<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-            	<div class="block block-contactform">
-                    <div class="block-title">
-                    	<strong><span><?php echo $text_contact; ?></span></strong>
+            	<div class="block ">
+                   
+                    <div class="block-content" style="text-transform: uppercase; text-align: justify">
+                        <h1> Si necesitas información sobre saints clothes o eres una tienda interesada en nuestros productos  ¡escríbenos!</h1>
                     </div>
+                    <br/><br/>
                     <div class="block-content">
                     	<ul class="form-list col-md-6 col-sm-12 col-xs-12 first">
                         	<li class="fields">
                                 <div class="field">
                                 	<div class="input-box name-firstname">
-                                    <input type="text" name="name" value="<?php echo $name; ?>" class="input-text required-entry" placeholder="   Enter Your Name*"/>
+                                    <input type="text" name="name" value="<?php echo $name; ?>" class="input-text required-entry" placeholder="   Nombre*"/>
                                     </div>
                                     <?php if ($error_name) { ?>
                                     <span class="error"><?php echo $error_name; ?></span>
@@ -103,7 +87,7 @@
                                 </div>
                                 <div class="field">
                                 	<div class="input-box input-email">
-                                    <input type="text" name="email" value="<?php echo $email; ?>" class="input-text required-entry"  placeholder="   Enter Your Email*"/>
+                                    <input type="text" name="email" value="<?php echo $email; ?>" class="input-text required-entry"  placeholder="   Email*"/>
                                     </div>
                                     <?php if ($error_email) { ?>
                                     <span class="error"><?php echo $error_email; ?></span>
@@ -120,12 +104,12 @@
                         	<li class="wide">
                             	<div class="field">
 	                            	<div class="input-box input-comment">
-                                <textarea name="enquiry" cols="40" rows="10" style="width: 99%;" class="input-text required-entry" placeholder="   Enter Your Message*"><?php echo $enquiry; ?></textarea>
+                                <textarea name="enquiry" cols="40" rows="10" style="width: 99%;" class="input-text required-entry" placeholder="  Mensaje*"><?php echo $enquiry; ?></textarea>
                                 </div>
                                 </div>
                                 <div class="field col-md-6 inputcaptch">
 									<div class="input-box input-captch">
-                                    	<input type="text" name="captcha" value="<?php echo $captcha; ?>" class="input-text required-entry"  placeholder="Enter Captch*"/>
+                                    	<input type="text" name="captcha" value="<?php echo $captcha; ?>" class="input-text required-entry"  placeholder="Código*"/>
                                     </div>
                                 </div>
                                 <div class="field col-md-6">
@@ -144,7 +128,7 @@
 	                            <p class="required"></p>
                             </li>
                             <li class="wide form-button">
-                            <button class="button" title="Post Comment" type="submit" value="<?php echo $button_continue; ?>">
+                            <button class="button " title="Post Comment" type="submit" value="<?php echo $button_continue; ?>">
 	                            <span><span><?php echo $button_continue; ?></span></span>
                             </button>
                             </li>
@@ -153,46 +137,7 @@
                 </div>
             </form>
     	</div>
-        <div class="block block-contactdetails col-md-4 col-sm-4 col-xs-12">
-            <div class="block-title">
-                <strong><span>Contact Details</span></strong>
-            </div>
-   			<div class="block-content">
-            	<div class="row phone">
-            		<div class="row-header">Phone:</div>
-            		<div class="row-info">
-                    	<p>8 (900) 415-7812</p>
-                        <p>8 (890) 147-1479</p>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="row mobile">
-		        	<div class="row-header">Mobile:</div>
-		            <div class="row-info">
-        	        	<p>+484 70-106-70-87</p>
-                        <p>+484 70-025-48-35</p>
-                    </div>
-            		<div class="clear"></div>
-        		</div>
-                <div class="row email">
-                    <div class="row-header">E-mail:</div>
-                    <div class="row-info">
-                        <p>eternalsoft@gmail.com</p>
-                        <p>eternalsoft_support.gmail.com</p>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="row skype">
-                    <div class="row-header">Skype:</div>
-                    <div class="row-info">
-                        <p>eternalsoft_store</p>
-                        <p>eternalsoft_support</p>
-                    </div>
-                    <div class="clear"></div>
-        		</div>
-        	</div>
-		</div>
-    </div>
+               
   </div>
  
   <?php echo $content_bottom; ?></div>

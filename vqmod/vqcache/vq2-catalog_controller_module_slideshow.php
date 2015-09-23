@@ -26,9 +26,10 @@ $this->data['text_sorry_no_slider'] = $this->language->get('text_sorry_no_slider
                 //print_r($setting);die;
                 
 		if (isset($setting['banner_id'])) {
-			$results = $this->model_design_banner->getBanner($setting['banner_id']);
-
+			$results = $this->model_design_banner->getBanner(1);
+                       //echo "entra";print_r($results);die;
 			foreach ($results as $result) {
+                           
 				if (file_exists(DIR_IMAGE . $result['image'])) {
 					$this->data['banners'][] = array(
 						'title' => $result['title'],
@@ -71,7 +72,7 @@ public function getList() {
 							$image = $this->model_tool_image->resize($result['image'], 1170,550);
 						}
 						elseif($this->data['slidereffect'] ==2){
-							$image = $this->model_tool_image->resize($result['image'], 1100,550);
+							$image = $this->model_tool_image->resize($result['image'], 1900,750);
 						}
 						elseif($this->data['slidereffect'] == 4){
 							$image = $this->model_tool_image->resize($result['image'], 770,615);
@@ -89,7 +90,7 @@ public function getList() {
 							$image = $this->model_tool_image->resize($result['image'], 1170,550);
 						}
 						elseif($this->data['slidereffect'] ==2){
-							$image = $this->model_tool_image->resize($result['image'], 1100,550);
+							$image = $this->model_tool_image->resize($result['image'], 1900,750);
 						}
 						elseif($this->data['slidereffect'] == 4){
 							$image = $this->model_tool_image->resize($result['image'], 770,615);
@@ -123,7 +124,7 @@ public function getList() {
 							$image = $this->model_tool_image->resize($result['image'], 1170,550);
 						}
 						elseif($this->data['slidereffect'] ==2){
-							$image = $this->model_tool_image->resize($result['image'], 1100,550);
+							$image = $this->model_tool_image->resize($result['image'], 1900,750);
 						}
 						elseif($this->data['slidereffect'] == 4){
 							$image = $this->model_tool_image->resize($result['image'], 770,615);
