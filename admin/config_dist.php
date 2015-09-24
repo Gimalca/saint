@@ -1,30 +1,36 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://localhost/saint/admin/');
-define('HTTP_CATALOG', 'http://localhost/saint/');
+define('HTTP_SERVER', 'http://saints-gimalca.rhcloud.com/admin/');
+define('HTTP_CATALOG', 'http://saints-gimalca.rhcloud.com/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://localhost/saint/admin/');
-define('HTTPS_CATALOG', 'http://localhost/saint/');
+define('HTTPS_SERVER', 'http://saints-gimalca.rhcloud.com/admin/');
+define('HTTPS_CATALOG', 'http://saints-gimalca.rhcloud.com/');
 
+
+//$rhcroot = getenv('OPENSHIFT_HOMEDIR');
 // DIR
-define('DIR_APPLICATION', 'D:\localhost\www\saint/admin/');
-define('DIR_SYSTEM', 'D:\localhost\www\saint/system/');
-define('DIR_DATABASE', 'D:\localhost\www\saint/system/database/');
-define('DIR_LANGUAGE', 'D:\localhost\www\saint/admin/language/');
-define('DIR_TEMPLATE', 'D:\localhost\www\saint/admin/view/template/');
-define('DIR_CONFIG', 'D:\localhost\www\saint/system/config/');
-define('DIR_IMAGE', 'D:\localhost\www\saint/image/');
-define('DIR_CACHE', 'D:\localhost\www\saint/system/cache/');
-define('DIR_DOWNLOAD', 'D:\localhost\www\saint/download/');
-define('DIR_LOGS', 'D:\localhost\www\saint/system/logs/');
-define('DIR_CATALOG', 'D:\localhost\www\saint/catalog/');
+define('DIR_APPLICATION', dirname(__FILE__).'/../admin/');
+define('DIR_SYSTEM', dirname(__FILE__).'/../system/');
+define('DIR_DATABASE', dirname(__FILE__).'/../system/database/');
+define('DIR_LANGUAGE', dirname(__FILE__).'/../admin/language/');
+define('DIR_TEMPLATE', dirname(__FILE__).'/../admin/view/template/');
+define('DIR_CONFIG', dirname(__FILE__).'/../system/config/');
+define('DIR_IMAGE', dirname(__FILE__).'/../image/');
+define('DIR_CACHE', dirname(__FILE__).'/../system/cache/');
+define('DIR_DOWNLOAD', dirname(__FILE__).'/../download/');
+define('DIR_LOGS', dirname(__FILE__).'/../system/logs/');
+define('DIR_CATALOG', dirname(__FILE__).'/../catalog/');
 
+$dbhost = getenv('OPENSHIFT_MYSQL_DB_HOST');
+$dbuser = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
+$dbpass = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
+$dbname = getenv('OPENSHIFT_APP_NAME');
 // DB
 define('DB_DRIVER', 'mysqli');
-define('DB_HOSTNAME', 'localhost');
-define('DB_USERNAME', 'admin');
-define('DB_PASSWORD', 'admin');
-define('DB_DATABASE', 'saint_db');
+define('DB_HOSTNAME', $dbhost);
+define('DB_USERNAME', $dbuser);
+define('DB_PASSWORD', $dbpass);
+define('DB_DATABASE', $dbname);
 define('DB_PREFIX', 'oc_');
 ?>

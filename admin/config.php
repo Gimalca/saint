@@ -1,36 +1,27 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://saints-gimalca.rhcloud.com/admin/');
-define('HTTP_CATALOG', 'http://saints-gimalca.rhcloud.com/');
-
+define('HTTP_SERVER', 'http://localhost/saint/admin/');
+define('HTTP_CATALOG', 'http://localhost/saint/');
 // HTTPS
-define('HTTPS_SERVER', 'http://saints-gimalca.rhcloud.com/admin/');
-define('HTTPS_CATALOG', 'http://saints-gimalca.rhcloud.com/');
-
-
-//$rhcroot = getenv('OPENSHIFT_HOMEDIR');
+define('HTTPS_SERVER', 'http://localhost/saint/admin/');
+define('HTTPS_CATALOG', 'http://localhost/saint/');
 // DIR
-define('DIR_APPLICATION', dirname(__FILE__).'/../admin/');
-define('DIR_SYSTEM', dirname(__FILE__).'/../system/');
-define('DIR_DATABASE', dirname(__FILE__).'/../system/database/');
-define('DIR_LANGUAGE', dirname(__FILE__).'/../admin/language/');
-define('DIR_TEMPLATE', dirname(__FILE__).'/../admin/view/template/');
-define('DIR_CONFIG', dirname(__FILE__).'/../system/config/');
-define('DIR_IMAGE', dirname(__FILE__).'/../image/');
-define('DIR_CACHE', dirname(__FILE__).'/../system/cache/');
-define('DIR_DOWNLOAD', dirname(__FILE__).'/../download/');
-define('DIR_LOGS', dirname(__FILE__).'/../system/logs/');
-define('DIR_CATALOG', dirname(__FILE__).'/../catalog/');
-
-$dbhost = getenv('OPENSHIFT_MYSQL_DB_HOST');
-$dbuser = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
-$dbpass = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
-$dbname = getenv('OPENSHIFT_APP_NAME');
+define('DIR_APPLICATION', 'C:/wamp/www/saint/admin/');
+define('DIR_SYSTEM', 'C:/wamp/www/saint/system/');
+define('DIR_DATABASE', 'C:/wamp/www/saint/system/database/');
+define('DIR_LANGUAGE', 'C:/wamp/www/saint/admin/language/');
+define('DIR_TEMPLATE', 'C:/wamp/www/saint/admin/view/template/');
+define('DIR_CONFIG', 'C:/wamp/www/saint/system/config/');
+define('DIR_IMAGE', 'C:/wamp/www/saint/image/');
+define('DIR_CACHE', 'C:/wamp/www/saint/system/cache/');
+define('DIR_DOWNLOAD', 'C:/wamp/www/saint/download/');
+define('DIR_LOGS', 'C:/wamp/www/saint/system/logs/');
+define('DIR_CATALOG', 'C:/wamp/www/saint/catalog/');
 // DB
 define('DB_DRIVER', 'mysqli');
-define('DB_HOSTNAME', $dbhost);
-define('DB_USERNAME', $dbuser);
-define('DB_PASSWORD', $dbpass);
-define('DB_DATABASE', $dbname);
+define('DB_HOSTNAME', 'localhost');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
+define('DB_DATABASE', 'saint_db');
 define('DB_PREFIX', 'oc_');
 ?>
