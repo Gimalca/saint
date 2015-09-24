@@ -8,6 +8,7 @@
             <?php } ?>
         </div>
     </div>
+    prueba
     <div class="myblog main container">
     	<div class="col-left col-md-9 col-sm-8 col-xs-12">
 			<div class="my-account">
