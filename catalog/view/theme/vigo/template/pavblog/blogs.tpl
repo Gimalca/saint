@@ -10,7 +10,7 @@
     </div>
   
 <div class="myblog main container">
-    <div class="col-right col-md-9 col-sm-8 col-xs-12">
+    <div class="col-right col-md-offset-1 col-md-9 col-sm-8 col-xs-12">
     	<div class="my-account">
         	<div class="account-login">
         	<?php

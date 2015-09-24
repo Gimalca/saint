@@ -109,7 +109,7 @@
                 
             </div>
             <div class="col-md-12 footer-pay">
-                <img class="img-responsive" src="image/data/pay_method.jpg" alt="Instagram">
+                <img class="img-responsive" src="image/data/pay_method.png" alt="Instagram">
             </div>
             </div>
             
