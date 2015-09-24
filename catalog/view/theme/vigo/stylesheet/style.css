@@ -1836,7 +1836,7 @@ tr.summary-details-excluded { font-style:italic; }
 
 .products-grid .product-name { /*min-height:2.7em;*/ font-size: 12px; text-align: left;  margin-top: 0px; font-size:13px; color: #000; }
 
-#fp_featured .products-grid .product-name a { font-size: 25px; padding: 10px; text-align:center; font-weight:bold ; line-height: 28px; letter-spacing: 1.25px; text-transform: uppercase; color: #000 !important; font-family: Oswald;}
+#fp_featured .products-grid .product-name a { font-size: 20px; padding: 10px; text-align:center; font-weight:bold ; line-height: 28px; letter-spacing: 1px; text-transform: uppercase; color: #000 !important; font-family: Oswald;}
 
 .products-grid .product-name a { color: #666 !important; font-size: 12px; font-weight: normal; text-align: left; text-decoration: none; width: 100%; display: block; margin: 0; line-height: 22px; padding: 0px;}
 
@@ -6391,23 +6391,15 @@ dl{
 }
 
 .feature-desc{
-
-    color: #999;
-
-    font-weight:normal;  
-
-    font-size: 15px;
-
-    font-family: Arial;
-
-    padding: 0px 0px 7px;
-
-    margin-top: 8px;    
-
-    overflow: hidden;    
-
-    text-overflow: ellipsis;
-
+color: #c7c7c7;
+font-weight: lighter;
+font-size: 15px;
+font-family: Arial;
+padding: 0px 0px 7px;
+margin-top: -5px;
+margin-bottom: 8px;
+overflow: hidden;
+text-overflow: ellipsis;
 }
 
 .footer-pay{

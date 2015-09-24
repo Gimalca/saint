@@ -61,7 +61,11 @@ ul.cart-button-set a.addtocart.button:hover{background-color: #F0877C;border-col
 .products-list .product-image-area .hover-area .short_desc, .products-list .product-image-area .hover-area .add-to-links.cart-button-set, .products-list .product-image-area .hover-area {display: none;}
 .products-list .product-image-area .hover-area {background:none;}
 .review-item .review-content > p {color: #555555;font-family: Source Code Pro;font-size: 16px;font-weight: 600;text-transform: uppercase;}
-.block-from-blog p{text-align:justify;}
+.block-from-blog p{
+    text-align:justify; font-size: 15px;
+    font-size: 15px !important;
+    color: #999 !important;
+    font-family: Arial !important;}
 div.pluginSkinLight.pluginFontHelvetica ul.uiList li.pluginFacepileItem{width: 24% !important;}
 .block.block-facebook-like .block-content iframe.fbplug {width: 99% !important;}
 .products-list-footer .product-image img {height: auto;width: 100%;}
@@ -180,13 +184,13 @@ span.selectbox.default select {right: 10px !important;}
 	width:100%;
 }
 .trego-blog-read-more {
-    color: #555555;
-    font-family: 'Scada';
+    color: #000;
+    /* font-family: 'Scada'; */
     font-size: 13px;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-	float:left;
+    float:left;
 }
 
 .block-comment ul li div.post-image {
@@ -213,6 +217,7 @@ span.selectbox.default select {right: 10px !important;}
     color: #777777;
     font-family: verdana;
     font-size: 13px;
+    text-align: justify;
 }
 .block-comment .commentWrapper .commentContent {
     color: #777777;
@@ -382,7 +387,7 @@ a.no-border{border:none !important;}
 .minicart_total .minicart_name{padding:0px !important;}
 .blogpage .add-to-links a, .blogpage .add-to-links span {
     display: inline-block;
-    font-family: 'Scada';
+    /* font-family: 'Scada'; */
     font-size: 12px;
     font-weight: bold;
     height: 20px;
@@ -522,14 +527,14 @@ div.social-icons a{	float:left;}
 .product-options-bottom.add-to-box{float:left;width:22.5%;margin-right:2.5%}
 .postContent{float:right; width:73.75%;margin-left:1.25%}
 .blog_date {
-    color: #a3a3a3;
-	font-weight: bold;
-	font-size:20px!important;
+    color: #555;
+    font-weight: bold;
+    font-size: 17px!important;
 }
-.my-account .block-content .add-to-box .add-to-links > li{font-size:15px;color:#aaaaaa;font-family:Scada}
-.my-account .block-content .add-to-box .add-to-links > li a,.myblog .blogauther{font-size:15px!important;font-family:Scada;color:#aaa;font-weight:normal!important;}
+.my-account .block-content .add-to-box .add-to-links > li{font-size:15px;color:#aaaaaa;/* font-family:Scada */}
+.my-account .block-content .add-to-box .add-to-links > li a,.myblog .blogauther{font-size: 13px!important;/* font-family:Scada; */color: #555;font-weight:normal!important;}
 .lable-hits{float:right}
-.blog-title{color:#555;font-size:20px;font-family: 'Source Code Pro', ;text-transform:uppercase}
+.blog-title{color: #000;font-size: 45px;font-family: 'Oswald', sans-serif;text-transform:uppercase}
 .lable-hits{background: url("../images/blogicon.png") no-repeat scroll 0 -34px rgba(0, 0, 0, 0);}
 .lable-hits:hover{background: url("../images/blogicon.png") no-repeat scroll 0 -50px rgba(0, 0, 0, 0);}
 
@@ -589,7 +594,7 @@ background-position: 7px 2px;
 }
 .time{color:#666;font-size:14px!important;font-family:Archivo Narrow}
 .Commentinfo{font-size:14px;font-family:Verdana}
-.myblog{padding:40px 0 0 0!important;text-align:left}
+.myblog{padding: 160px 0 0 0!important;text-align:left}
 .myblog .col-left,.myblog .col-right{padding-right:50px!important}
 .myblog .block-content{padding-top:0px!important}
 .myblog .col-main.sidebar.col-md-3.col-sm-4.col-xs-12{padding-left:0px!important}
@@ -630,7 +635,7 @@ background-position: 7px 2px;
 .myblog .name{coloe:#666;font-family:'scada'!important;font-size:16px!important}
 .myblog #columnright .block-title span{font-size:24px!important}
 .myblog .my-account .block-title span{font-size:26px!important}
-.myblog .blog_date{font-family:'Archivo Narrow'!important}
+.myblog .blog_date{/* font-family:'Archivo Narrow'!important */}
 .myblog .lable-hits.leftblog{color:#aaa!important;font-size:14px!important}
 .myblog .col-main #columnright .block-content .level1.pav-category a{color:#666}
 .myblog .comment-box1.arrow_box,myblog .block-account .block-content li a{color:#777!important;font-size:13px!important;}

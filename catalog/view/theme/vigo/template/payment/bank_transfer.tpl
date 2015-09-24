@@ -6,7 +6,10 @@
 </div>
 <div class="buttons">
   <div class="right">
-    <input type="button" value="<?php echo $button_confirm; ?>" id="button-confirm" class="button" />
+      <button style="margin-left: 15px" type="button" value="<?php echo $button_confirm; ?>" id="button-confirm" class="button input-box">
+		<span><span>Continuar</span></span>
+    </button>
+    <!--input type="button" value="<?php echo $button_confirm; ?>" id="button-confirm" class="button" /-->
   </div>
 </div>
 <script type="text/javascript"><!--
