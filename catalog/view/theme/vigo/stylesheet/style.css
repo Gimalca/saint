@@ -6391,15 +6391,24 @@ dl{
 }
 
 .feature-desc{
-color: #c7c7c7;
-font-weight: lighter;
-font-size: 15px;
-font-family: Arial;
-padding: 0px 0px 7px;
-margin-top: -5px;
-margin-bottom: 8px;
-overflow: hidden;
-text-overflow: ellipsis;
+
+color: #c7c7c7;
+
+font-weight: lighter;
+
+font-size: 15px;
+
+font-family: Arial;
+
+padding: 0px 0px 7px;
+
+margin-top: -5px;
+
+margin-bottom: 8px;
+
+overflow: hidden;
+
+text-overflow: ellipsis;
 }
 
 .footer-pay{
@@ -6550,4 +6559,7 @@ dl{
     text-align:center;
     color:black !important;
     z-index:2;
+}
+.my-blog .pav-pagination .results{
+    text-align: center;
 }

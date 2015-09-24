@@ -91,7 +91,7 @@ class Pagination {
 			$num_pages
 		);
 		
-		return ($output ? '<div class="' . $this->style_links . '">' . $output . '</div>' : '') . '<div class="' . $this->style_results . '">' . str_replace($find, $replace, $this->text) . '</div>';
+		return ($output ? '<div class="' . $this->style_links . '">' . $output . '</div>' : '') . '<div class="' . $this->style_results . 'col-md-12 col-xs-12 col-s-12 col-lg-12" style="text-align: center;">' . str_replace($find, $replace, $this->text) . '</div>';
 	}
 }
 ?>

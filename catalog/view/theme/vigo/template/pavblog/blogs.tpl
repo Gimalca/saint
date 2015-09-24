@@ -39,8 +39,8 @@
                     <?php } ?>
                     <?php } ?>
                     <?php } ?>
-
-                    <div class="pav-pagination pagination"><?php echo $pagination;?></div>
+                    <br>
+                    <div class="pav-pagination pagination col-md-12" style="clear:both;margin-bottom: 40px;"><?php echo $pagination;?></div>
                 </div>
             </div>
         </div>
@@ -57,5 +57,4 @@
             );
         });
     </script>
-    <?php echo $content_bottom; ?></div>
 <?php echo $footer; ?>
